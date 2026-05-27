@@ -51,10 +51,10 @@ Baazar Kolkata - Hasnabad,743426,Hasnabad,Hasnabad,West Bengal,Baazar Kolkata,23
 Baazar Kolkata - Hooghly Arambagh,712601,Arambagh,Hooghly,West Bengal,Baazar Kolkata,23.1833,88.25
 Baazar Kolkata - Hooghly Arambagh 2,712601,Arambagh 2,Hooghly,West Bengal,Baazar Kolkata,23.1833,88.25
 Baazar Kolkata - Hooghly Chinsurah,712101,Chinsurah,Hooghly,West Bengal,Baazar Kolkata,22.9667,88.3667
-Baazar Kolkata - Hooghly Serampore Mansi Bazar,712201,Serampore Mansi Bazar,Hooghly,West Bengal,Baazar Kolkata,22.8333,88.4167
+Baazar Kolkata - Hooghly Serampore Mansi Bazar,712201,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.8333,88.4167
 Baazar Kolkata - Hooghly Uttarpara,712258,Uttarpara,Hooghly,West Bengal,Baazar Kolkata,22.6667,88.2333
 Baazar Kolkata - Howrah Avani Mall,711102,Avani Mall,Howrah,West Bengal,Baazar Kolkata,22.5833,88.25
-Baazar Kolkata - Howrah Chintamoni Dey Road (Howrah Maidan),711101,Chintamoni Dey Road  Maidan,Howrah,West Bengal,Baazar Kolkata,22.5944,88.275
+Baazar Kolkata - Howrah Chintamoni Dey Road (Howrah Maidan),711101,Howrah,Howrah,West Bengal,Baazar Kolkata,22.5944,88.275
 Baazar Kolkata - Howrah Domjur,711405,Domjur,Howrah,West Bengal,Baazar Kolkata,22.45,88.1833
 Baazar Kolkata - Howrah Maidan G T Road,711101,Maidan G T Road,Howrah,West Bengal,Baazar Kolkata,22.5944,88.275
 Baazar Kolkata - Howrah Rangoli 2,711202,Rangoli 2,Howrah,West Bengal,Baazar Kolkata,22.55,88.2833
@@ -695,15 +695,15 @@ V2 Retail Ltd. (HB24),852131,Banka,Banka,Bihar,V2 Retail,26.1333,87.4667
 V2 Retail Ltd. (HB26),824101,Aurangabad,Aurangabad,Bihar,V2 Retail,24.8167,84.4333
 V2 Retail Ltd. (HB29),801503,Mouza Saguna Patna,Mouza Saguna Patna,Bihar,V2 Retail,25.4667,85.1667
 V2 Retail Ltd. (HB30),841428,Gopalganj,Gopalganj,Bihar,V2 Retail,26.1833,84.8333
-V2 Retail Ltd. (HB31),847211,Mouza Cheskdeh Madhubani,Mouza Cheskdeh Madhubani,Bihar,V2 Retail,26.5833,86.2833
+V2 Retail Ltd. (HB31),847211,Madhubani,Mouza Cheskdeh Madhubani,Bihar,V2 Retail,26.5833,86.2833
 V2 Retail Ltd. (HB32),821115,Sasaram,Sasaram,Bihar,V2 Retail,24.5289,84.0464
-V2 Retail Ltd. (HB34),800002,Khagaul Phulwari Sharif Patna,Khagaul Phulwari Sharif Patna,Bihar,V2 Retail,25.5941,85.1376
-V2 Retail Ltd. (HB35),841301,In Front Of Ram Jaipal College Chapra,In Front Of Ram Jaipal College Chapra,Bihar,V2 Retail,25.9833,84.75
+V2 Retail Ltd. (HB34),800002,Patna,Khagaul Phulwari Sharif Patna,Bihar,V2 Retail,25.5941,85.1376
+V2 Retail Ltd. (HB35),841301,Chapra,In Front Of Ram Jaipal College Chapra,Bihar,V2 Retail,25.9833,84.75
 V2 Retail Ltd. (HB36),844101,Hajipur Hajipur,Hajipur Hajipur,Bihar,V2 Retail,26.1667,85.6667
 V2 Retail Ltd. (HB37),800010,Ps Patliputra Patna,Ps Patliputra Patna,Bihar,V2 Retail,25.5922,85.1375
 V2 Retail Ltd. (HB38),812002,Bhagalpur,Bhagalpur,Bihar,V2 Retail,25.2856,86.5019
 V2 Retail Ltd. (HB39),821307,Dehri Dehri On Sone,Dehri Dehri On Sone,Bihar,V2 Retail,25.6,84.3333
-V2 Retail Ltd. (HB41),801505,Phulwari Sharif Patna,Phulwari Sharif Patna,Bihar,V2 Retail,25.6241,85.2117
+V2 Retail Ltd. (HB41),801505,Patna,Phulwari Sharif Patna,Bihar,V2 Retail,25.6241,85.2117
 V2 Retail Ltd. (HB42),811307,Jamui,Jamui,Bihar,V2 Retail,24.8167,86.1667
 V2 Retail Ltd. (HB43),800004,Patna,Patna,Bihar,V2 Retail,25.5941,85.1376
 V2 Retail Ltd. (HB44),811202,Munger,Munger,Bihar,V2 Retail,25.3667,86.4833
@@ -725,9 +725,9 @@ V2 Retail Ltd. (HB62),823001,Gaya,Gaya,Bihar,V2 Retail,24.7936,84.991
 V2 Retail Ltd. (HB63),800020,Patna,Patna,Bihar,V2 Retail,25.5941,85.1376
 V2 Retail Ltd. (HB64),846004,Darbhanga,Darbhanga,Bihar,V2 Retail,26.1667,85.5167
 V2 Retail Ltd. (HB65),800025,Rajeev Nagar Patna,Rajeev Nagar Patna,Bihar,V2 Retail,25.6197,85.1562
-V2 Retail Ltd. (HB67),841428,Next To Police Line Gopalganj,Next To Police Line Gopalganj,Bihar,V2 Retail,26.1833,84.8333
+V2 Retail Ltd. (HB67),841428,Gopalganj,Next To Police Line Gopalganj,Bihar,V2 Retail,26.1833,84.8333
 V2 Retail Ltd. (HC01),492001,Mall),Mall),Chhattisgarh,V2 Retail,21.2458,81.6304
-V2 Retail Ltd. (HC02),497001,Chopda Para Ambikapur,Chopda Para Ambikapur,Chhattisgarh,V2 Retail,23.1167,83.3167
+V2 Retail Ltd. (HC02),497001,Ambikapur,Chopda Para Ambikapur,Chhattisgarh,V2 Retail,23.1167,83.3167
 V2 Retail Ltd. (HC03),495001,Bilaspur,Bilaspur,Chhattisgarh,V2 Retail,21.1458,82.1496
 V2 Retail Ltd. (HC07),493445,Mahasamund,Mahasamund,Chhattisgarh,V2 Retail,21.8167,82.55
 V2 Retail Ltd. (HD22),110037,Delhi,Delhi,Delhi,V2 Retail,28.5356,77.2531
@@ -738,13 +738,13 @@ V2 Retail Ltd. (HD27),110040,Narela,Narela,Delhi,V2 Retail,28.8156,77.0469
 V2 Retail Ltd. (HD28),110045,Delhi,Delhi,Delhi,V2 Retail,28.55,77.1833
 V2 Retail Ltd. (HD29),110043,Najafgarh Delhi,Najafgarh Delhi,Delhi,V2 Retail,28.4281,76.9856
 V2 Retail Ltd. (HD30),110086,Delhi,Delhi,Delhi,V2 Retail,28.6233,77.2333
-V2 Retail Ltd. (HD31),110084,Extended Lal Dora Of Village Burari Delhi,Extended Lal Dora Of Village Burari Delhi,Delhi,V2 Retail,28.7306,77.0808
+V2 Retail Ltd. (HD31),110084,Delhi,Extended Lal Dora Of Village Burari Delhi,Delhi,V2 Retail,28.7306,77.0808
 V2 Retail Ltd. (HD32),110086,Delhi,Delhi,Delhi,V2 Retail,28.6233,77.2333
-V2 Retail Ltd. (HD34),110059,Uttam Nagar New Delhi,Uttam Nagar New Delhi,Delhi,V2 Retail,28.5244,77.1855
-V2 Retail Ltd. (HG10),403001,Taluka And Sub District Of Tiswadi Panjim,Taluka And Sub District Of Tiswadi Panjim,Goa,V2 Retail,15.4909,73.8278
+V2 Retail Ltd. (HD34),110059,New Delhi,Uttam Nagar New Delhi,Delhi,V2 Retail,28.5244,77.1855
+V2 Retail Ltd. (HG10),403001,Panaji,Taluka And Sub District Of Tiswadi Panjim,Goa,V2 Retail,15.4909,73.8278
 V2 Retail Ltd. (HG11),403504,Panjim Bicholim,Panjim Bicholim,Goa,V2 Retail,15.5781,73.6667
 V2 Retail Ltd. (HG13),403801,Goa,Goa,Goa,V2 Retail,15.3333,74.0833
-V2 Retail Ltd. (HH13),121003,Greenfields Colony Faridabad,Greenfields Colony Faridabad,Haryana,V2 Retail,28.4264,77.3089
+V2 Retail Ltd. (HH13),121003,Faridabad,Greenfields Colony Faridabad,Haryana,V2 Retail,28.4264,77.3089
 V2 Retail Ltd. (HH14),124001,Rohtak,Rohtak,Haryana,V2 Retail,28.8997,76.5635
 V2 Retail Ltd. (HH15),125050,Fatehabad,Fatehabad,Haryana,V2 Retail,29.5244,76.0678
 V2 Retail Ltd. (HH16),133001,Cantt,Cantt,Haryana,V2 Retail,29.9667,77.05
@@ -756,17 +756,17 @@ V2 Retail Ltd. (HI06),176001,Birta Kangra,Birta Kangra,Himachal Pradesh,V2 Retai
 V2 Retail Ltd. (HI07),174303,Una,Una,Himachal Pradesh,V2 Retail,31.6667,75.8333
 V2 Retail Ltd. (HJ08),831001,Sakchi Jamshedpur,Sakchi Jamshedpur,Jharkhand,V2 Retail,22.8046,84.8635
 V2 Retail Ltd. (HJ09),834001,Ranchi,Ranchi,Jharkhand,V2 Retail,23.3441,85.3096
-V2 Retail Ltd. (HJ10),825301,Pargana Champa Hazaribagh,Pargana Champa Hazaribagh,Jharkhand,V2 Retail,24.9833,85.3167
-V2 Retail Ltd. (HJ11),814112,Mouza Madhusudan Deoghar,Mouza Madhusudan Deoghar,Jharkhand,V2 Retail,24.505,86.1683
-V2 Retail Ltd. (HJ12),825412,Thana Rajhanwar Rajhanwar,Thana Rajhanwar Rajhanwar,Jharkhand,V2 Retail,23.3167,84.3333
-V2 Retail Ltd. (HJ14),814101,In Front Of India Mart Dumka,In Front Of India Mart Dumka,Jharkhand,V2 Retail,24.3,87.2667
+V2 Retail Ltd. (HJ10),825301,Hazaribagh,Pargana Champa Hazaribagh,Jharkhand,V2 Retail,24.9833,85.3167
+V2 Retail Ltd. (HJ11),814112,Deoghar,Mouza Madhusudan Deoghar,Jharkhand,V2 Retail,24.505,86.1683
+V2 Retail Ltd. (HJ12),825412,Rajhanwar,Thana Rajhanwar Rajhanwar,Jharkhand,V2 Retail,23.3167,84.3333
+V2 Retail Ltd. (HJ14),814101,Dumka,In Front Of India Mart Dumka,Jharkhand,V2 Retail,24.3,87.2667
 V2 Retail Ltd. (HJ15),827013,Mouza Chas Chas,Mouza Chas Chas,Jharkhand,V2 Retail,23.8333,85.0833
 V2 Retail Ltd. (HJ17),831013,Jamshedpur,Jamshedpur,Jharkhand,V2 Retail,22.5833,86.4167
 V2 Retail Ltd. (HJ19),834001,Po Lalpur Ranchi,Po Lalpur Ranchi,Jharkhand,V2 Retail,23.3441,85.3096
 V2 Retail Ltd. (HJ20),831012,Mango Jamshedpur,Mango Jamshedpur,Jharkhand,V2 Retail,22.8046,86.1816
 V2 Retail Ltd. (HJ21),826001,Dhanbad,Dhanbad,Jharkhand,V2 Retail,23.7957,86.4304
 V2 Retail Ltd. (HJ22),831001,Jamshedpur,Jamshedpur,Jharkhand,V2 Retail,22.8046,84.8635
-V2 Retail Ltd. (HJ23),833102,Chakradharpur Chakradharpur,Chakradharpur Chakradharpur,Jharkhand,V2 Retail,22.7167,84.75
+V2 Retail Ltd. (HJ23),833102,Chakradharpur,Chakradharpur Chakradharpur,Jharkhand,V2 Retail,22.7167,84.75
 V2 Retail Ltd. (HJ24),835302,Lohardaga,Lohardaga,Jharkhand,V2 Retail,23.6667,84.4167
 V2 Retail Ltd. (HJ25),832108,Gamharia Gamharia,Gamharia Gamharia,Jharkhand,V2 Retail,22.8156,86.45
 V2 Retail Ltd. (HJ26),826004,Dhanbad,Dhanbad,Jharkhand,V2 Retail,23.7957,86.4271
@@ -790,29 +790,29 @@ V2 Retail Ltd. (HK19),587103,Vidyagiri Bagalkot,Vidyagiri Bagalkot,Karnataka,V2 
 V2 Retail Ltd. (HK20),583231,Koppal,Koppal,Karnataka,V2 Retail,15.3396,76.4251
 V2 Retail Ltd. (HK21),560016,Bangalore,Bangalore Urban,Karnataka,V2 Retail,13.0827,77.6054
 V2 Retail Ltd. (HK22),570001,Mysuru,Mysore,Karnataka,V2 Retail,12.2958,76.6394
-V2 Retail Ltd. (HK23),583101,Beside Hot Bread Ballari,Beside Hot Bread Ballari,Karnataka,V2 Retail,15.2671,76.5217
+V2 Retail Ltd. (HK23),583101,Ballari,Beside Hot Bread Ballari,Karnataka,V2 Retail,15.2671,76.5217
 V2 Retail Ltd. (HK24),577101,Chikkamagaluru,Chikkamagaluru,Karnataka,V2 Retail,13.3186,75.7754
-V2 Retail Ltd. (HK25),560061,Balaji Theatre Bangalore,Balaji Theatre Bangalore,Karnataka,V2 Retail,12.9689,77.5941
+V2 Retail Ltd. (HK25),560061,Bangalore,Balaji Theatre Bangalore,Karnataka,V2 Retail,12.9689,77.5941
 V2 Retail Ltd. (HK27),590010,Nehru Nagar Belagavi,Nehru Nagar Belagavi,Karnataka,V2 Retail,15.8497,74.4977
 V2 Retail Ltd. (HK28),585401,Bidar,Bidar,Karnataka,V2 Retail,17.4181,77.5203
 V2 Retail Ltd. (HL03),388001,Anand,Anand,Gujarat,V2 Retail,22.5585,72.9382
 V2 Retail Ltd. (HL04),387001,Nadiad,Nadiad,Gujarat,V2 Retail,22.6428,72.8621
 V2 Retail Ltd. (HL05),384265,Patan,Patan,Gujarat,V2 Retail,23.8568,72.1234
-V2 Retail Ltd. (HL06),394210,Kailash Chaukadi Surat,Kailash Chaukadi Surat,Gujarat,V2 Retail,21.1458,72.8326
+V2 Retail Ltd. (HL06),394210,Surat,Kailash Chaukadi Surat,Gujarat,V2 Retail,21.1458,72.8326
 V2 Retail Ltd. (HL08),394601,Bardoli Surat,Bardoli Surat,Gujarat,V2 Retail,21.2667,73.1333
-V2 Retail Ltd. (HM21),482001,Hanuman Mandir Jabalpur,Hanuman Mandir Jabalpur,Madhya Pradesh,V2 Retail,23.1815,79.9864
+V2 Retail Ltd. (HM21),482001,Jabalpur,Hanuman Mandir Jabalpur,Madhya Pradesh,V2 Retail,23.1815,79.9864
 V2 Retail Ltd. (HM22),486001,Tehsil Hazur Rewa,Tehsil Hazur Rewa,Madhya Pradesh,V2 Retail,24.5373,81.4947
 V2 Retail Ltd. (HM23),461331,Harda,Harda,Madhya Pradesh,V2 Retail,22.4385,75.6484
 V2 Retail Ltd. (HM24),462042,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.1815,77.4029
 V2 Retail Ltd. (HM25),462018,Karond Bhopal,Karond Bhopal,Madhya Pradesh,V2 Retail,23.2156,77.3521
 V2 Retail Ltd. (HM26),450331,Khargone,Khargone,Madhya Pradesh,V2 Retail,21.8243,75.4724
-V2 Retail Ltd. (HM28),480001,In Front Of New Swastik Bakery Chhindwara,In Front Of New Swastik Bakery Chhindwara,Madhya Pradesh,V2 Retail,22.0667,78.6333
+V2 Retail Ltd. (HM28),480001,Chhindwara,In Front Of New Swastik Bakery Chhindwara,Madhya Pradesh,V2 Retail,22.0667,78.6333
 V2 Retail Ltd. (HM29),461001,Hoshangabad,Hoshangabad,Madhya Pradesh,V2 Retail,22.4312,77.7336
 V2 Retail Ltd. (HM30),483501,Gole Bazaar Katni,Gole Bazaar Katni,Madhya Pradesh,V2 Retail,23.8447,80.5893
 V2 Retail Ltd. (HM31),474002,City Center Gwalior,City Center Gwalior,Madhya Pradesh,V2 Retail,26.2389,78.1772
-V2 Retail Ltd. (HM32),487001,Itwara Bazar Kandeli Narsinghpur,Itwara Bazar Kandeli Narsinghpur,Madhya Pradesh,V2 Retail,22.5863,79.0073
+V2 Retail Ltd. (HM32),487001,Narsinghpur,Itwara Bazar Kandeli Narsinghpur,Madhya Pradesh,V2 Retail,22.5863,79.0073
 V2 Retail Ltd. (HM33),460001,Ganj Betul,Ganj Betul,Madhya Pradesh,V2 Retail,21.8084,77.6198
-V2 Retail Ltd. (HM35),462026,Chinar Fortune City Bhopal,Chinar Fortune City Bhopal,Madhya Pradesh,V2 Retail,23.1734,77.4165
+V2 Retail Ltd. (HM35),462026,Bhopal,Chinar Fortune City Bhopal,Madhya Pradesh,V2 Retail,23.1734,77.4165
 V2 Retail Ltd. (HM36),451001,Khargone,Khargone,Madhya Pradesh,V2 Retail,21.8243,75.4724
 V2 Retail Ltd. (HM37),455001,Vikas Nagar Dewas,Vikas Nagar Dewas,Madhya Pradesh,V2 Retail,22.0348,75.8449
 V2 Retail Ltd. (HM38),466001,Stand),Stand),Madhya Pradesh,V2 Retail,23.0225,75.8631
@@ -820,30 +820,30 @@ V2 Retail Ltd. (HM39),470004,Rajakhedi Sagar,Rajakhedi Sagar,Madhya Pradesh,V2 R
 V2 Retail Ltd. (HM41),482001,Jabalpur,Jabalpur,Madhya Pradesh,V2 Retail,23.1815,79.9864
 V2 Retail Ltd. (HM42),485002,Satna,Satna,Madhya Pradesh,V2 Retail,24.0033,80.7922
 V2 Retail Ltd. (HM44),456006,Ujjain,Ujjain,Madhya Pradesh,V2 Retail,23.1815,75.7657
-V2 Retail Ltd. (HM46),486886,P.O. Waidhan Singrauli,P.O. Waidhan Singrauli,Madhya Pradesh,V2 Retail,24.5341,82.6697
+V2 Retail Ltd. (HM46),486886,Singrauli,P.O. Waidhan Singrauli,Madhya Pradesh,V2 Retail,24.5341,82.6697
 V2 Retail Ltd. (HM47),462022,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.1621,77.3718
 V2 Retail Ltd. (HM48),474002,Lashkar Gwalior,Lashkar Gwalior,Madhya Pradesh,V2 Retail,26.2389,78.1772
 V2 Retail Ltd. (HM49),452011,Indore,Indore,Madhya Pradesh,V2 Retail,22.7347,75.8758
 V2 Retail Ltd. (HM50),473001,Guna,Guna,Madhya Pradesh,V2 Retail,24.6525,77.3214
 V2 Retail Ltd. (HN10),781008,Guwahati,Kamrup Metro,Assam,V2 Retail,26.2006,91.7362
-V2 Retail Ltd. (HN11),788001,Pargana Barakpar Silchar,Pargana Barakpar Silchar,Assam,V2 Retail,24.8333,92.8167
+V2 Retail Ltd. (HN11),788001,Silchar,Pargana Barakpar Silchar,Assam,V2 Retail,24.8333,92.8167
 V2 Retail Ltd. (HN13),781314,Barpeta,Barpeta,Assam,V2 Retail,26.3396,90.1126
 V2 Retail Ltd. (HN14),785001,Ps Jorhat,Ps Jorhat,Assam,V2 Retail,26.7509,94.2037
-V2 Retail Ltd. (HN15),781012,Adabari Tinali Guwahati,Adabari Tinali Guwahati,Assam,V2 Retail,26.2389,91.712
-V2 Retail Ltd. (HN21),799001,Mouza Agartala Agartala,Mouza Agartala Agartala,Tripura,V2 Retail,23.8103,91.2787
+V2 Retail Ltd. (HN15),781012,Guwahati,Adabari Tinali Guwahati,Assam,V2 Retail,26.2389,91.712
+V2 Retail Ltd. (HN21),799001,Agartala,Mouza Agartala Agartala,Tripura,V2 Retail,23.8103,91.2787
 V2 Retail Ltd. (HN22),788001,Silchar,Silchar,Assam,V2 Retail,24.8333,92.8167
 V2 Retail Ltd. (HN23),793001,Shillong,Shillong,Meghalaya,V2 Retail,25.5788,91.8933
 V2 Retail Ltd. (HN25),781315,Barpeta,Barpeta,Assam,V2 Retail,26.3525,90.1225
 V2 Retail Ltd. (HN26),784001,Kacharigaon Tezpur,Kacharigaon Tezpur,Assam,V2 Retail,26.7833,92.7833
 V2 Retail Ltd. (HN27),786125,Tinsukia,Tinsukia,Assam,V2 Retail,27.5,95.4667
-V2 Retail Ltd. (HN28),781335,Beside Hp Petrol Pump Nalbari,Beside Hp Petrol Pump Nalbari,Assam,V2 Retail,26.45,91.4333
+V2 Retail Ltd. (HN28),781335,Nalbari,Beside Hp Petrol Pump Nalbari,Assam,V2 Retail,26.45,91.4333
 V2 Retail Ltd. (HN29),782460,Diphu Diphu,Diphu Diphu,Assam,V2 Retail,25.8726,94.1754
-V2 Retail Ltd. (HN30),783380,North Bongaigaon Bongaigaon,North Bongaigaon Bongaigaon,Assam,V2 Retail,26.5,90.2
+V2 Retail Ltd. (HN30),783380,Bongaigaon,North Bongaigaon Bongaigaon,Assam,V2 Retail,26.5,90.2
 V2 Retail Ltd. (HN31),788711,Shri Bhumi Karimganj,Shri Bhumi Karimganj,Assam,V2 Retail,24.4761,91.2971
-V2 Retail Ltd. (HN33),786001,Jhalukpara Babulal Poddar Path Dibrugarh,Jhalukpara Babulal Poddar Path Dibrugarh,Assam,V2 Retail,27.4833,95.0167
+V2 Retail Ltd. (HN33),786001,Dibrugarh,Jhalukpara Babulal Poddar Path Dibrugarh,Assam,V2 Retail,27.4833,95.0167
 V2 Retail Ltd. (HN34),783301,Bazar),Bazar),Assam,V2 Retail,25.8667,89.3833
 V2 Retail Ltd. (HN35),782435,Hojai,Hojai,Assam,V2 Retail,25.2011,93.5195
-V2 Retail Ltd. (HN36),782001,Panigaon Chariali Nagaon,Panigaon Chariali Nagaon,Assam,V2 Retail,25.9047,93.6304
+V2 Retail Ltd. (HN36),782001,Nagaon,Panigaon Chariali Nagaon,Assam,V2 Retail,25.9047,93.6304
 V2 Retail Ltd. (HN39),784176,Chariali,Chariali,Assam,V2 Retail,27.0333,93.2333
 V2 Retail Ltd. (HN40),783121,Agia Road Goalpara,Agia Road Goalpara,Assam,V2 Retail,26.1833,90.55
 V2 Retail Ltd. (HN42),787001,Lakhimpur,Lakhimpur,Assam,V2 Retail,27.2833,94.25
@@ -857,22 +857,22 @@ V2 Retail Ltd. (HN60),797112,Dimapur,Dimapur,Nagaland,V2 Retail,25.9,93.7333
 V2 Retail Ltd. (HN80),795003,Manipur Imphal,Manipur Imphal,Manipur,V2 Retail,24.7936,94.9476
 V2 Retail Ltd. (HO08),760001,Brahmapur,Brahmapur,Odisha,V2 Retail,19.3167,84.7833
 V2 Retail Ltd. (HO09),753012,Ps Badambadi Cuttack,Ps Badambadi Cuttack,Odisha,V2 Retail,20.4625,85.883
-V2 Retail Ltd. (HO10),751013,Mouza Jayadev Vihar Bhubaneswar,Mouza Jayadev Vihar Bhubaneswar,Odisha,V2 Retail,20.1458,85.8245
+V2 Retail Ltd. (HO10),751013,Bhubaneswar,Mouza Jayadev Vihar Bhubaneswar,Odisha,V2 Retail,20.1458,85.8245
 V2 Retail Ltd. (HO11),764001,Jeypore Jeypore,Jeypore Jeypore,Odisha,V2 Retail,18.7942,83.1966
 V2 Retail Ltd. (HO12),751019,Bhubaneswar,Khordha,Odisha,V2 Retail,20.1445,85.8313
 V2 Retail Ltd. (HO13),751024,Patia Bhubaneswar,Patia Bhubaneswar,Odisha,V2 Retail,20.2965,85.8098
 V2 Retail Ltd. (HO15),755019,Jajpur,Jajpur,Odisha,V2 Retail,20.8146,85.7812
-V2 Retail Ltd. (HO16),759122,Mouza Angul Town Angul,Mouza Angul Town Angul,Odisha,V2 Retail,20.8333,84.6667
-V2 Retail Ltd. (HO18),756001,Mouza Bagbrundhaban Balasore,Mouza Bagbrundhaban Balasore,Odisha,V2 Retail,21.494,87.2842
-V2 Retail Ltd. (HO19),756100,Mouza Mathasahi Bhadrak,Mouza Mathasahi Bhadrak,Odisha,V2 Retail,21.4265,86.4532
+V2 Retail Ltd. (HO16),759122,Angul,Mouza Angul Town Angul,Odisha,V2 Retail,20.8333,84.6667
+V2 Retail Ltd. (HO18),756001,Balasore,Mouza Bagbrundhaban Balasore,Odisha,V2 Retail,21.494,87.2842
+V2 Retail Ltd. (HO19),756100,Bhadrak,Mouza Mathasahi Bhadrak,Odisha,V2 Retail,21.4265,86.4532
 V2 Retail Ltd. (HO20),752106,Ps Nimapada Nimapada,Ps Nimapada Nimapada,Odisha,V2 Retail,19.8833,85.8667
 V2 Retail Ltd. (HO21),770001,Sundargarh,Sundargarh,Odisha,V2 Retail,22.2604,84.8536
 V2 Retail Ltd. (HO23),752055,Khorda,Khorda,Odisha,V2 Retail,20.1667,85.8333
-V2 Retail Ltd. (HO24),769012,Ps Uditnagar Rourkela,Ps Uditnagar Rourkela,Odisha,V2 Retail,22.2034,84.8765
-V2 Retail Ltd. (HO25),757001,Mugabai Golei Baripada,Mugabai Golei Baripada,Odisha,V2 Retail,22.5865,86.3698
-V2 Retail Ltd. (HO26),751010,Rasulgarh Bhubaneswar,Rasulgarh Bhubaneswar,Odisha,V2 Retail,20.2961,85.8245
-V2 Retail Ltd. (HO27),760001,Girija Square Brahmapur,Girija Square Brahmapur,Odisha,V2 Retail,19.3167,84.7833
-V2 Retail Ltd. (HO28),751006,Kalpana Square Bhubaneswar,Kalpana Square Bhubaneswar,Odisha,V2 Retail,20.1532,85.8398
+V2 Retail Ltd. (HO24),769012,Rourkela,Ps Uditnagar Rourkela,Odisha,V2 Retail,22.2034,84.8765
+V2 Retail Ltd. (HO25),757001,Baripada,Mugabai Golei Baripada,Odisha,V2 Retail,22.5865,86.3698
+V2 Retail Ltd. (HO26),751010,Bhubaneswar,Rasulgarh Bhubaneswar,Odisha,V2 Retail,20.2961,85.8245
+V2 Retail Ltd. (HO27),760001,Brahmapur,Girija Square Brahmapur,Odisha,V2 Retail,19.3167,84.7833
+V2 Retail Ltd. (HO28),751006,Bhubaneswar,Kalpana Square Bhubaneswar,Odisha,V2 Retail,20.1532,85.8398
 V2 Retail Ltd. (HO29),758001,Ps Town Keonjhar,Ps Town Keonjhar,Odisha,V2 Retail,21.8667,85.1833
 V2 Retail Ltd. (HO30),768202,Jharsuguda,Jharsuguda,Odisha,V2 Retail,21.8565,84.8234
 V2 Retail Ltd. (HO31),768001,Sambalpur,Sambalpur,Odisha,V2 Retail,21.4667,84.5833
@@ -883,7 +883,7 @@ V2 Retail Ltd. (HO39),768025,Bargarh,Bargarh,Odisha,V2 Retail,21.7998,84.6532
 V2 Retail Ltd. (HO40),768201,Jharsuguda,Jharsuguda,Odisha,V2 Retail,22.2328,84.1433
 V2 Retail Ltd. (HO41),752069,Nayagarh,Nayagarh,Odisha,V2 Retail,19.7667,85.1667
 V2 Retail Ltd. (HO42),753012,Dolamundai Cuttack,Dolamundai Cuttack,Odisha,V2 Retail,20.4625,85.883
-V2 Retail Ltd. (HO43),765001,Housing Board Colony Rayagada,Housing Board Colony Rayagada,Odisha,V2 Retail,19.2833,83.3667
+V2 Retail Ltd. (HO43),765001,Rayagada,Housing Board Colony Rayagada,Odisha,V2 Retail,19.2833,83.3667
 V2 Retail Ltd. (HO44),768028,Bargarh,Bargarh,Odisha,V2 Retail,21.55,84.15
 V2 Retail Ltd. (HO45),759100,Talcher Angul,Talcher Angul,Odisha,V2 Retail,20.9865,85.1698
 V2 Retail Ltd. (HO46),756003,Remuna Balasore,Remuna Balasore,Odisha,V2 Retail,21.5032,86.9234
@@ -894,15 +894,15 @@ V2 Retail Ltd. (HP02),143521,Gurdaspur,Gurdaspur,Punjab,V2 Retail,32.1765,75.423
 V2 Retail Ltd. (HP03),145001,Pathankot,Pathankot,Punjab,V2 Retail,32.1724,75.6411
 V2 Retail Ltd. (HP04),141008,Jama Masjid Ludhiana,Jama Masjid Ludhiana,Punjab,V2 Retail,30.901,75.8573
 V2 Retail Ltd. (HP05),140603,Sas Nagar Mohali,Sas Nagar Mohali,Punjab,V2 Retail,30.6411,76.8076
-V2 Retail Ltd. (HP06),143505,Opp. Aggarwal Traders Jyoti Saria Batala,Opp. Aggarwal Traders Jyoti Saria Batala,Punjab,V2 Retail,32.0165,75.5432
+V2 Retail Ltd. (HP06),143505,Batala,Opp. Aggarwal Traders Jyoti Saria Batala,Punjab,V2 Retail,32.0165,75.5432
 V2 Retail Ltd. (HP07),140307,Mohali,Mohali,Punjab,V2 Retail,30.6394,76.8156
 V2 Retail Ltd. (HP08),148024,Dhuri,Dhuri,Punjab,V2 Retail,29.8265,75.5698
 V2 Retail Ltd. (HP09),144601,Punjab Kapurthala,Punjab Kapurthala,Punjab,V2 Retail,31.6165,75.4898
-V2 Retail Ltd. (HP10),144514,Nawanshahr Nawanshahr?,Nawanshahr Nawanshahr?,Punjab,V2 Retail,31.6932,75.8234
-V2 Retail Ltd. (HP11),146001,Hoshiarpur Hoshiarpur,Hoshiarpur Hoshiarpur,Punjab,V2 Retail,32.5732,75.9234
+V2 Retail Ltd. (HP10),144514,Nawanshahr,Nawanshahr Nawanshahr?,Punjab,V2 Retail,31.6932,75.8234
+V2 Retail Ltd. (HP11),146001,Hoshiarpur,Hoshiarpur Hoshiarpur,Punjab,V2 Retail,32.5732,75.9234
 V2 Retail Ltd. (HP12),144002,Jalandhar Jalandhar,Jalandhar Jalandhar,Punjab,V2 Retail,31.326,75.5762
 V2 Retail Ltd. (HP13),143401,Taran,Taran,Punjab,V2 Retail,31.8765,75.8932
-V2 Retail Ltd. (HP14),152116,District Fazilka Abohar,District Fazilka Abohar,Punjab,V2 Retail,29.6398,73.8032
+V2 Retail Ltd. (HP14),152116,Abohar,District Fazilka Abohar,Punjab,V2 Retail,29.6398,73.8032
 V2 Retail Ltd. (HP16),140406,Sirhind Sirhind,Sirhind Sirhind,Punjab,V2 Retail,30.6532,76.3865
 V2 Retail Ltd. (HP17),151001,Bathinda,Bathinda,Punjab,V2 Retail,29.986,74.2997
 V2 Retail Ltd. (HP18),160104,Zirakpur,Zirakpur,Punjab,V2 Retail,30.6432,76.8165
@@ -915,14 +915,14 @@ V2 Retail Ltd. (HR24),333001,Guda Mod Jhunjhunu,Guda Mod Jhunjhunu,Rajasthan,V2 
 V2 Retail Ltd. (HR25),334001,Bikaner,Bikaner,Rajasthan,V2 Retail,28.0229,74.6567
 V2 Retail Ltd. (HR26),341001,Nagaur,Nagaur,Rajasthan,V2 Retail,27.1932,74.7265
 V2 Retail Ltd. (HR28),305001,Vaishali Nagar Ajmer,Vaishali Nagar Ajmer,Rajasthan,V2 Retail,26.4365,74.6298
-V2 Retail Ltd. (HS01),530026,Gajuwaka Visakhapatnam,Gajuwaka Visakhapatnam,Andhra Pradesh,V2 Retail,17.7386,83.3119
-V2 Retail Ltd. (HS02),535003,Balaji Nagar Vizianagaram,Balaji Nagar Vizianagaram,Andhra Pradesh,V2 Retail,17.9265,83.3198
+V2 Retail Ltd. (HS01),530026,Visakhapatnam,Gajuwaka Visakhapatnam,Andhra Pradesh,V2 Retail,17.7386,83.3119
+V2 Retail Ltd. (HS02),535003,Vizianagaram,Balaji Nagar Vizianagaram,Andhra Pradesh,V2 Retail,17.9265,83.3198
 V2 Retail Ltd. (HS03),531001,Ankapali,Ankapali,Andhra Pradesh,V2 Retail,17.6865,82.2932
-V2 Retail Ltd. (HS04),530009,Opposite Punjab National Bank Visakhapatnam,Opposite Punjab National Bank Visakhapatnam,Andhra Pradesh,V2 Retail,17.6869,83.2185
+V2 Retail Ltd. (HS04),530009,Visakhapatnam,Opposite Punjab National Bank Visakhapatnam,Andhra Pradesh,V2 Retail,17.6869,83.2185
 V2 Retail Ltd. (HS05),522002,Arundelpet Guntur,Arundelpet Guntur,Andhra Pradesh,V2 Retail,16.5065,80.6432
 V2 Retail Ltd. (HS06),517325,S Pizza Madanapalle,S Pizza Madanapalle,Andhra Pradesh,V2 Retail,13.1898,78.3032
 V2 Retail Ltd. (HS07),523001,Ongole,Ongole,Andhra Pradesh,V2 Retail,14.4426,79.6304
-V2 Retail Ltd. (HT14),247667,Civil Line Compound Roorkee,Civil Line Compound Roorkee,Uttarakhand,V2 Retail,29.8698,77.7865
+V2 Retail Ltd. (HT14),247667,Roorkee,Civil Line Compound Roorkee,Uttarakhand,V2 Retail,29.8698,77.7865
 V2 Retail Ltd. (HT16),262308,Khatima Khatima,Khatima Khatima,Uttarakhand,V2 Retail,29.0165,80.3498
 V2 Retail Ltd. (HT17),263129,Haldwani,Haldwani,Uttarakhand,V2 Retail,29.2265,79.5032
 V2 Retail Ltd. (HT18),248001,Dehradun,Dehradun,Uttarakhand,V2 Retail,30.1934,78.147
@@ -933,22 +933,22 @@ V2 Retail Ltd. (HT22),263153,Rudrapur,Rudrapur,Uttarakhand,V2 Retail,29.0239,79.
 V2 Retail Ltd. (HT23),263601,Almora,Almora,Uttarakhand,V2 Retail,29.597,79.657
 V2 Retail Ltd. (HT24),262523,Champawat,Champawat,Uttarakhand,V2 Retail,29.967,80.107
 V2 Retail Ltd. (HU34),273006,Gorakhpur,Gorakhpur,Uttar Pradesh,V2 Retail,26.7597,83.1831
-V2 Retail Ltd. (HU36),222002,Wajidpur Tiraha Jaunpur,Wajidpur Tiraha Jaunpur,Uttar Pradesh,V2 Retail,25.895,82.68
+V2 Retail Ltd. (HU36),222002,Jaunpur,Wajidpur Tiraha Jaunpur,Uttar Pradesh,V2 Retail,25.895,82.68
 V2 Retail Ltd. (HU41),221005,Varanasi,Varanasi,Uttar Pradesh,V2 Retail,25.3245,82.9789
 V2 Retail Ltd. (HU44),233224,Pargana Ghazipur,Pargana Ghazipur,Uttar Pradesh,V2 Retail,25.485,83.715
-V2 Retail Ltd. (HU45),230001,Janki Mandir) Pratapgarh,Janki Mandir) Pratapgarh,Uttar Pradesh,V2 Retail,24.6731,81.4108
+V2 Retail Ltd. (HU45),230001,Pratapgarh,Janki Mandir) Pratapgarh,Uttar Pradesh,V2 Retail,24.6731,81.4108
 V2 Retail Ltd. (HU48),224146,Akbarpur Akbarpur,Akbarpur Akbarpur,Uttar Pradesh,V2 Retail,26.2397,80.7875
 V2 Retail Ltd. (HU49),271801,Bahraich Bahraich,Bahraich Bahraich,Uttar Pradesh,V2 Retail,27.5833,81.6167
-V2 Retail Ltd. (HU54),274304,Mouza Padrauna Padrauna,Mouza Padrauna Padrauna,Uttar Pradesh,V2 Retail,26.25,83.8833
+V2 Retail Ltd. (HU54),274304,Padrauna,Mouza Padrauna Padrauna,Uttar Pradesh,V2 Retail,26.25,83.8833
 V2 Retail Ltd. (HU55),221005,Varanasi,Varanasi,Uttar Pradesh,V2 Retail,25.3245,82.9789
-V2 Retail Ltd. (HU57),226021,Jankipuram Extension Lucknow,Jankipuram Extension Lucknow,Uttar Pradesh,V2 Retail,26.8124,80.985
+V2 Retail Ltd. (HU57),226021,Lucknow,Jankipuram Extension Lucknow,Uttar Pradesh,V2 Retail,26.8124,80.985
 V2 Retail Ltd. (HU58),276001,Sadar Azamgarh,Sadar Azamgarh,Uttar Pradesh,V2 Retail,26.0733,83.1867
-V2 Retail Ltd. (HU59),272001,Pargana Basti Purab Basti,Pargana Basti Purab Basti,Uttar Pradesh,V2 Retail,26.9124,82.7753
+V2 Retail Ltd. (HU59),272001,Basti,Pargana Basti Purab Basti,Uttar Pradesh,V2 Retail,26.9124,82.7753
 V2 Retail Ltd. (HU61),229001,Raebareli,Raebareli,Uttar Pradesh,V2 Retail,26.2167,81.7667
 V2 Retail Ltd. (HU64),271201,Tehsil Balrampur,Tehsil Balrampur,Uttar Pradesh,V2 Retail,27.7167,81.6333
-V2 Retail Ltd. (HU65),211002,Tehsil Sadar Prayagraj,Tehsil Sadar Prayagraj,Uttar Pradesh,V2 Retail,25.4312,81.8397
+V2 Retail Ltd. (HU65),211002,Prayagraj,Tehsil Sadar Prayagraj,Uttar Pradesh,V2 Retail,25.4312,81.8397
 V2 Retail Ltd. (HU67),262701,Lakhimpur,Lakhimpur,Uttar Pradesh,V2 Retail,27.3667,80.7833
-V2 Retail Ltd. (HU69),226028,In Front Of City Cart Lucknow,In Front Of City Cart Lucknow,Uttar Pradesh,V2 Retail,26.8469,80.9421
+V2 Retail Ltd. (HU69),226028,Lucknow,In Front Of City Cart Lucknow,Uttar Pradesh,V2 Retail,26.8469,80.9421
 V2 Retail Ltd. (HU70),208007,Kanpur,Kanpur,Uttar Pradesh,V2 Retail,26.1912,80.2473
 V2 Retail Ltd. (HU71),271001,Gonda,Gonda,Uttar Pradesh,V2 Retail,27.1899,81.8046
 V2 Retail Ltd. (HU72),243001,Bareilly,Bareilly,Uttar Pradesh,V2 Retail,28.367,79.4183
@@ -957,7 +957,7 @@ V2 Retail Ltd. (HU76),221007,Pahariya Varanasi,Pahariya Varanasi,Uttar Pradesh,V
 V2 Retail Ltd. (HU78),231217,Murdhawa Renukoot,Murdhawa Renukoot,Uttar Pradesh,V2 Retail,24.3,82.7333
 V2 Retail Ltd. (HU80),221002,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,25.3333,82.9667
 V2 Retail Ltd. (HU81),226024,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.8883,80.927
-V2 Retail Ltd. (HU82),272175,Khalilabad Khalilabad,Khalilabad Khalilabad,Uttar Pradesh,V2 Retail,26.4667,83.3667
+V2 Retail Ltd. (HU82),272175,Khalilabad,Khalilabad Khalilabad,Uttar Pradesh,V2 Retail,26.4667,83.3667
 V2 Retail Ltd. (HU83),226005,Alambagh Lucknow,Alambagh Lucknow,Uttar Pradesh,V2 Retail,26.85,80.9333
 V2 Retail Ltd. (HU84),273015,Gorakhpur,Gorakhpur,Uttar Pradesh,V2 Retail,26.7597,83.1833
 V2 Retail Ltd. (HU86),261001,Sitapur,Sitapur,Uttar Pradesh,V2 Retail,27.5597,80.8947
@@ -965,7 +965,7 @@ V2 Retail Ltd. (HU88),241001,Hardoi,Hardoi,Uttar Pradesh,V2 Retail,27.593,79.836
 V2 Retail Ltd. (HU90),244901,Rampur,Rampur,Uttar Pradesh,V2 Retail,28.807,79.045
 V2 Retail Ltd. (HU91),243601,Budaun,Budaun,Uttar Pradesh,V2 Retail,28.097,78.577
 V2 Retail Ltd. (HU92),243122,Bareilly,Bareilly,Uttar Pradesh,V2 Retail,28.367,79.3847
-V2 Retail Ltd. (HU93),201301,Tigri Ghaziabad (Tigri),Tigri Ghaziabad (Tigri),Uttar Pradesh,V2 Retail,28.6692,77.5992
+V2 Retail Ltd. (HU93),201301,Ghaziabad,Tigri Ghaziabad (Tigri),Uttar Pradesh,V2 Retail,28.6692,77.5992
 V2 Retail Ltd. (HU94),274001,Deoria,Deoria,Uttar Pradesh,V2 Retail,26.2167,83.4833
 V2 Retail Ltd. (HU95),226021,Road),Road),Uttar Pradesh,V2 Retail,26.8124,80.985
 V2 Retail Ltd. (HU96),226012,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.8467,80.9462
@@ -984,17 +984,17 @@ V2 Retail Ltd. (HW21),721101,Medinipur,Medinipur,West Bengal,V2 Retail,22.4156,8
 V2 Retail Ltd. (HW24),713305,Asansol,Paschim Bardhaman,West Bengal,V2 Retail,23.7167,87.0167
 V2 Retail Ltd. (HW25),742103,Khagra Berhampore,Khagra Berhampore,West Bengal,V2 Retail,24.15,88.2833
 V2 Retail Ltd. (HW26),743263,Parganas Habra,Parganas Habra,West Bengal,V2 Retail,22.85,88.7167
-V2 Retail Ltd. (HW31),743145,West Bengal Kanchrapara,West Bengal Kanchrapara,West Bengal,V2 Retail,22.8812,88.4078
-V2 Retail Ltd. (HW32),736182,Opposite Punjab National Bank Jaigaon,Opposite Punjab National Bank Jaigaon,West Bengal,V2 Retail,27.053,89.162
+V2 Retail Ltd. (HW31),743145,Kanchrapara,West Bengal Kanchrapara,West Bengal,V2 Retail,22.8812,88.4078
+V2 Retail Ltd. (HW32),736182,Jaigaon,Opposite Punjab National Bank Jaigaon,West Bengal,V2 Retail,27.053,89.162
 V2 Retail Ltd. (HW33),742303,Murshidabad Domkal,Murshidabad Domkal,West Bengal,V2 Retail,24.35,88.6
 V2 Retail Ltd. (HX10),184101,Parliwand Kathua,Parliwand Kathua,Jammu and Kashmir,V2 Retail,32.4292,75.397
-V2 Retail Ltd. (HX11),180001,Opposite Bus Stand Jammu,Opposite Bus Stand Jammu,Jammu and Kashmir,V2 Retail,32.7273,74.8479
+V2 Retail Ltd. (HX11),180001,Jammu,Opposite Bus Stand Jammu,Jammu and Kashmir,V2 Retail,32.7273,74.8479
 V2 Retail Ltd. (HX12),182101,Shiv Nagar Udhampur,Shiv Nagar Udhampur,Jammu and Kashmir,V2 Retail,32.7698,75.5139
 V2 Retail Ltd. (HX13),180007,Potali Janipur,Potali Janipur,Jammu and Kashmir,V2 Retail,32.692,74.892
 V2 Retail Ltd. (HX14),180010,Kunjwani Jammu,Kunjwani Jammu,Jammu and Kashmir,V2 Retail,32.6753,74.792
 V2 Retail Ltd. (HX15),182202,Near Ceo Office Doda,Near Ceo Office Doda,Jammu and Kashmir,V2 Retail,33.708,75.592
 V2 Retail Ltd. (HX16),192101,Ashajipora Anantnag,Ashajipora Anantnag,Jammu and Kashmir,V2 Retail,33.7333,75.6833
-V2 Retail Ltd. (HX19),182204,Kichloo Mohalla Road Kishtwar,Kichloo Mohalla Road Kishtwar,Jammu and Kashmir,V2 Retail,33.208,75.808
+V2 Retail Ltd. (HX19),182204,Kishtwar,Kichloo Mohalla Road Kishtwar,Jammu and Kashmir,V2 Retail,33.208,75.808
 V2 Retail Ltd. (HX50),416121,Ichalkaranji,Ichalkaranji,Maharashtra,V2 Retail,17.2742,75.2642
 V2 Retail Ltd. (HX51),413501,Midc Road Dharashiv,Midc Road Dharashiv,Maharashtra,V2 Retail,18.8667,75.2833
 V2 Retail Ltd. (HX52),413102,Ashok Nagar Baramati,Ashok Nagar Baramati,Maharashtra,V2 Retail,18.2167,75.3667
@@ -1003,7 +1003,7 @@ V2 Retail Ltd. (HY02),505001,Karimnagar,Karimnagar,Telangana,V2 Retail,18.4386,7
 V2 Retail Ltd. (U100),282002,Sanjay Place Agra,Sanjay Place Agra,Uttar Pradesh,V2 Retail,27.1767,78.0081
 V2 Retail Ltd. (U101),201102,Loni,Loni,Uttar Pradesh,V2 Retail,28.807,77.398
 V2 Retail Ltd. (U102),230001,Bela Pratapgarh,Bela Pratapgarh,Uttar Pradesh,V2 Retail,24.6731,81.4108
-V2 Retail Ltd. (U103),201308,Beta-Ii Greater Noida,Beta-Ii Greater Noida,Uttar Pradesh,V2 Retail,28.475,77.588
+V2 Retail Ltd. (U103),201308,Greater Noida,Beta-Ii Greater Noida,Uttar Pradesh,V2 Retail,28.475,77.588
 V2 Retail Ltd. (U104),242001,Shahjahanpur,Shahjahanpur,Uttar Pradesh,V2 Retail,27.8771,79.7605
 V2 Retail Ltd. (U105),202001,Aligarh,Aligarh,Uttar Pradesh,V2 Retail,27.8974,77.8974
 V2 Retail Ltd. (U106),207123,Kasganj,Kasganj,Uttar Pradesh,V2 Retail,27.207,78.687
@@ -1012,14 +1012,14 @@ V2 Retail Ltd. (U111),250001,Meerut,Meerut,Uttar Pradesh,V2 Retail,28.9845,77.70
 V2 Retail Ltd. (U112),251001,Muzaffarnagar,Muzaffarnagar,Uttar Pradesh,V2 Retail,29.4683,77.7064
 V2 Retail Ltd. (U113),205001,Mainpuri,Mainpuri,Uttar Pradesh,V2 Retail,27.5667,78.6333
 V2 Retail Ltd. (U114),273003,Chargawan Gorakhpur,Chargawan Gorakhpur,Uttar Pradesh,V2 Retail,26.748,83.408
-V2 Retail Ltd. (U115),201003,Khora Colony Ghaziabad,Khora Colony Ghaziabad,Uttar Pradesh,V2 Retail,28.6742,77.4672
+V2 Retail Ltd. (U115),201003,Ghaziabad,Khora Colony Ghaziabad,Uttar Pradesh,V2 Retail,28.6742,77.4672
 V2 Retail Ltd. (U116),262001,Pilibhit,Pilibhit,Uttar Pradesh,V2 Retail,29.1833,79.8167
 V2 Retail Ltd. (U117),224001,Ayodhya,Ayodhya,Uttar Pradesh,V2 Retail,26.7939,82.1909
-V2 Retail Ltd. (U118),283135,District Firozabad Shikohabad,District Firozabad Shikohabad,Uttar Pradesh,V2 Retail,27.5197,78.2003
-V2 Retail Ltd. (U122),272207,Husainganj Siddharth Nagar,Husainganj Siddharth Nagar,Uttar Pradesh,V2 Retail,26.952,82.5547
+V2 Retail Ltd. (U118),283135,Shikohabad,District Firozabad Shikohabad,Uttar Pradesh,V2 Retail,27.5197,78.2003
+V2 Retail Ltd. (U122),272207,Siddharth Nagar,Husainganj Siddharth Nagar,Uttar Pradesh,V2 Retail,26.952,82.5547
 V2 Retail Ltd. (U123),201009,Lal Kuan Ghaziabad,Lal Kuan Ghaziabad,Uttar Pradesh,V2 Retail,28.6692,77.5362
 V2 Retail Ltd. (U127),208019,Kanpur,Kanpur,Uttar Pradesh,V2 Retail,26.1912,80.357
-V2 Retail Ltd. (U131),284001,In Front Of Munna Lal Power House Jhansi,In Front Of Munna Lal Power House Jhansi,Uttar Pradesh,V2 Retail,25.4333,78.5833
+V2 Retail Ltd. (U131),284001,Jhansi,In Front Of Munna Lal Power House Jhansi,Uttar Pradesh,V2 Retail,25.4333,78.5833
 "Zudio - Karkambadi Road, Tirupati",517507,Tirupati,Tirupati,Andhra Pradesh,Zudio,13.1939,79.1288
 "Zudio - Commercial Complex, Vishakhapatnam",531173,Visakhapatnam,Visakhapatnam,Andhra Pradesh,Zudio,17.6869,83.3031
 "ZUDIO - Chirala, Andhra Pradesh",523155,Chirala,Bapatla,Andhra Pradesh,Zudio,14.2142,79.9864
@@ -2136,7 +2136,7 @@ mBaazar - Phulbari,794104,Phulbari,West Garo Hills Phulbari,Meghalaya,mBaazar,25
 mBaazar - PIPILI,752104,Pipili,Puri,Odisha,mBaazar,19.8333,85.85
 mBaazar - Piska More,834005,Piska More,Ranchi,Jharkhand,mBaazar,23.2667,85.3167
 mBaazar - Pratapgarh,230001,Pratapgarh,Pratapgarh,Uttar Pradesh,mBaazar,24.6731,81.4108
-mBaazar - PURI - BALAGANDI SQUARE,752001,Puri Balagandi Square,Puri,Odisha,mBaazar,19.7975,85.8345
+mBaazar - PURI - BALAGANDI SQUARE,752001,Puri,Puri,Odisha,mBaazar,19.7975,85.8345
 mBaazar - PURI - GRAND ROAD,752001,Puri Grand Road,Puri,Odisha,mBaazar,19.7975,85.8345
 mBaazar - PURNEA,854301,Purnea,Purnea,Bihar,mBaazar,25.7833,87.4667
 mBaazar - PURULIA,723101,Purulia,Purulia,West Bengal,mBaazar,23.3267,85.2534
@@ -2147,9 +2147,9 @@ mBaazar - RAIGANJ,733134,Raiganj,Uttar Dinajpur,West Bengal,mBaazar,25.5867,88.1
 mBaazar - Raj Khariar,766107,Raj Khariar,Kalahandi,Odisha,mBaazar,19.3,83.75
 mBaazar - Rajgangpur,770017,Rajgangpur,Sundargarh,Odisha,mBaazar,21.5,84.8333
 mBaazar - Rajsunakhala,752065,Rajsunakhala,Khorda,Odisha,mBaazar,20.1,85.8333
-mBaazar - RAMKRISHNA NAGAR - PATNA,800027,Ramkrishna Nagar Patna,Patna,Bihar,mBaazar,25.5941,85.1376
+mBaazar - RAMKRISHNA NAGAR - PATNA,800027,Patna,Patna,Bihar,mBaazar,25.5941,85.1376
 mBaazar - RAMPURHAT,731224,Rampurhat,Birbhum,West Bengal,mBaazar,23.8167,87.5333
-mBaazar - Rampurhat Lotus Press More,731224,Rampurhat Lotus Press More,Birbhum Rampurhat,West Bengal,mBaazar,23.8167,87.5333
+mBaazar - Rampurhat Lotus Press More,731224,Rampurhat,Birbhum Rampurhat,West Bengal,mBaazar,23.8167,87.5333
 mBaazar - Ranaghat,741201,Ranaghat,Nadia,West Bengal,mBaazar,23.4234,88.6234
 mBaazar - RANCHI,834001,Ranchi,Ranchi,Jharkhand,mBaazar,23.3441,85.3096
 mBaazar - RAXAUL,845305,Raxaul,West Champaran,Bihar,mBaazar,26.5,84.9167
@@ -2356,7 +2356,7 @@ V-Mart - Hirapur,826001,Dhanbad,Dhanbad,Jharkhand,Vmart,23.7957,86.4304
 V-Mart - Dhanbad-Saraidhella,828127,Dhanbad,Dhanbad,Jharkhand,Vmart,23.8333,86.4167
 V-Mart - Adityapur,831005,Kadma,Kadma,Jharkhand,Vmart,23.8167,85.3
 V-Mart - Jamshedpur-Sakchi Ambagan,831001,Sakchi,Sakchi,Jharkhand,Vmart,22.8046,84.8635
-V-Mart - Dumka,814101,Veer Kuwar Singh Chowk,Veer Kuwar Singh Chowk,Jharkhand,Vmart,24.3,87.2667
+V-Mart - Dumka,814101,Dumka,Veer Kuwar Singh Chowk,Jharkhand,Vmart,24.3,87.2667
 V-Mart - Morena-M S Road,476001,H B Colony,H B Colony,Madhya Pradesh,Vmart,22.85,78.6167
 V-Mart - Gwalior-Lashkar,474001,Lashkar,Lashkar,Madhya Pradesh,Vmart,26.2183,78.1797
 V-Mart - Shivpuri,473551,Bank Colony,Bank Colony,Madhya Pradesh,Vmart,22.7431,78.6522
