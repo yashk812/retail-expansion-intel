@@ -24,7 +24,7 @@ def load_data():
 df = load_data()
 
 COMPANY_COLORS = {
-    "Baazar Kolkata": "#1565C0",
+    "Baazar Kolkata": "#C62828",
     "CityKart":       "#2196F3",
     "Yousta":         "#FF9800",
     "StyleBaazar":    "#9C27B0",
