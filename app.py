@@ -269,9 +269,18 @@ elif page == "💡 Expansion Insights":
     top_pins = comp_df.groupby(["district","state"])["pincode"].apply(
         lambda x: ", ".join(x.value_counts().head(3).index.tolist())
     ).reset_index(name="top_pincodes")
+    comp_breakdown = (
+        comp_df.groupby(["district","state","company"]).size()
+        .reset_index(name="n")
+        .sort_values("n", ascending=False)
+        .groupby(["district","state"])
+        .apply(lambda x: "<br>".join(f"&nbsp;&nbsp;{r.company}: {r.n}" for r in x.itertuples()))
+        .reset_index(name="comp_breakdown")
+    )
 
     scores = scores.merge(comp_cos, on=["district","state"], how="left")
     scores = scores.merge(top_pins, on=["district","state"], how="left")
+    scores = scores.merge(comp_breakdown, on=["district","state"], how="left")
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -352,14 +361,15 @@ elif page == "💡 Expansion Insights":
             r      = max(6, int(row["opportunity_score"] / max_score * 30))
             opacity= 0.4 + 0.5 * (row["opportunity_score"] / max_score)
             bk_note= f"BK stores: {int(row['bk_stores'])}" if row["bk_stores"] > 0 else "⚠️ No BK presence"
+            breakdown = row.get('comp_breakdown','')
             popup_html = f"""
-            <div style='font-family:sans-serif;min-width:200px'>
+            <div style='font-family:sans-serif;min-width:220px'>
               <b>📍 {row['district']}, {row['state']}</b><br>
               <b style='color:#E63946'>Score: {int(row['opportunity_score'])}</b><br>
-              Competitor stores: {int(row['competitor_stores'])}<br>
+              <b>Competitor stores: {int(row['competitor_stores'])}</b><br>
+              {breakdown}<br>
               {bk_note}<br>
-              Top PINs: {row.get('top_pincodes','N/A')}<br>
-              <small>{row.get('competitors_present','')}</small>
+              Top PINs: {row.get('top_pincodes','N/A')}
             </div>"""
             folium.CircleMarker(
                 location=[row["lat"], row["lng"]],
