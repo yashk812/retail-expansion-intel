@@ -282,11 +282,16 @@ elif page == "💡 Expansion Insights":
     scores = scores.merge(top_pins, on=["district","state"], how="left")
     scores = scores.merge(comp_breakdown, on=["district","state"], how="left")
 
+    # Default to BK's core north/east states
+    bk_core_states = sorted(bk_df["state"].unique().tolist())
+    all_states = sorted(scores["state"].dropna().unique().tolist())
+
     col1, col2, col3 = st.columns(3)
     with col1:
-        filter_state = st.selectbox(
+        filter_states = st.multiselect(
             "Filter by State",
-            ["All States"] + sorted(scores["state"].dropna().unique().tolist()),
+            options=all_states,
+            default=bk_core_states,
             key="ins_state",
         )
     with col2:
@@ -299,8 +304,8 @@ elif page == "💡 Expansion Insights":
         min_comp = st.slider("Min competitor stores", 1, 50, 3)
 
     idf = scores[scores["competitor_stores"] >= min_comp].copy()
-    if filter_state != "All States":
-        idf = idf[idf["state"] == filter_state]
+    if filter_states:
+        idf = idf[idf["state"].isin(filter_states)]
     if filter_bk == "No BK stores (pure gaps)":
         idf = idf[idf["bk_stores"] == 0]
     elif filter_bk == "Has some BK stores":
