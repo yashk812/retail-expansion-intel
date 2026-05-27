@@ -375,7 +375,7 @@ elif page == "💡 Expansion Insights":
                 location=[row["lat"], row["lng"]],
                 radius=6, color="#2E7D32", fill=True,
                 fill_color="#2E7D32", fill_opacity=1.0,
-                tooltip=f"BK existing: {row['city']}",
+                tooltip=f"BK: {row['store_name']}",
             ).add_to(bk_cluster)
 
         folium.LayerControl().add_to(m2)
