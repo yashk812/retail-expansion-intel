@@ -325,8 +325,8 @@ elif page == "💡 Expansion Insights":
 
     def highlight_score(val):
         if isinstance(val, (int, float)):
-            if val >= 20: return "background-color: #ffcccc"
-            elif val >= 10: return "background-color: #fff3cc"
+            if val >= 20: return "background-color: #ffe0e0; color: #333"
+            elif val >= 10: return "background-color: #fff8cc; color: #333"
         return ""
 
     try:
@@ -373,8 +373,8 @@ elif page == "💡 Expansion Insights":
         for _, row in bk_df.dropna(subset=["lat","lng"]).iterrows():
             folium.CircleMarker(
                 location=[row["lat"], row["lng"]],
-                radius=5, color="#E63946", fill=True,
-                fill_color="#E63946", fill_opacity=1.0,
+                radius=6, color="#2E7D32", fill=True,
+                fill_color="#2E7D32", fill_opacity=1.0,
                 tooltip=f"BK existing: {row['city']}",
             ).add_to(bk_cluster)
 
