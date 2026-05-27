@@ -271,7 +271,7 @@ if page == "🗺️ Store Map":
                 radius=7, color=color, fill=True,
                 fill_color=color, fill_opacity=0.85,
                 popup=folium.Popup(popup_html, max_width=220),
-                tooltip=f"{company} | {row['city']}",
+                tooltip=f"{row['store_name']}",
             ).add_to(cluster)
 
     folium.LayerControl(collapsed=False).add_to(m)
