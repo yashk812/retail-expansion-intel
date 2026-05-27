@@ -104,7 +104,7 @@ Baazar Kolkata - Naihati (Near Yatri Niwas),743165,North  Parganas,North 24 Parg
 Baazar Kolkata - Paradeep,754141,Paradeep,Paradeep,Odisha,Baazar Kolkata,19.4234,85.8123
 Baazar Kolkata - Park Street,700016,Kolkata,Kolkata,West Bengal,Baazar Kolkata,22.5645,88.3598
 Baazar Kolkata - Puri,752001,Puri,Puri,Odisha,Baazar Kolkata,19.7975,85.8345
-Baazar Kolkata - Purulia,723101,Purulia,Purulia,West Bengal,Baazar Kolkata,23.3267,85.2534
+Baazar Kolkata - Purulia,723101,Purulia,Purulia,West Bengal,Baazar Kolkata,23.3317,86.3639
 Baazar Kolkata - Raiganj,733134,Raiganj,North Dinajpur,West Bengal,Baazar Kolkata,25.5867,88.1134
 Baazar Kolkata - Ranaghat,741201,Ranaghat,Ranaghat,West Bengal,Baazar Kolkata,23.4234,88.6234
 Baazar Kolkata - Raniganj,713347,Raniganj,Raniganj,West Bengal,Baazar Kolkata,23.8845,87.3456
@@ -742,7 +742,7 @@ V2 Retail Ltd. (HD31),110084,Delhi,Extended Lal Dora Of Village Burari Delhi,Del
 V2 Retail Ltd. (HD32),110086,Delhi,Delhi,Delhi,V2 Retail,28.6233,77.2333
 V2 Retail Ltd. (HD34),110059,New Delhi,Uttam Nagar New Delhi,Delhi,V2 Retail,28.5244,77.1855
 V2 Retail Ltd. (HG10),403001,Panaji,Taluka And Sub District Of Tiswadi Panjim,Goa,V2 Retail,15.4909,73.8278
-V2 Retail Ltd. (HG11),403504,Panjim Bicholim,Panjim Bicholim,Goa,V2 Retail,15.5781,73.6667
+V2 Retail Ltd. (HG11),403504,Panjim Bicholim,Panjim Bicholim,Goa,V2 Retail,15.5833,74.0417
 V2 Retail Ltd. (HG13),403801,Goa,Goa,Goa,V2 Retail,15.3333,74.0833
 V2 Retail Ltd. (HH13),121003,Faridabad,Greenfields Colony Faridabad,Haryana,V2 Retail,28.4264,77.3089
 V2 Retail Ltd. (HH14),124001,Rohtak,Rohtak,Haryana,V2 Retail,28.8997,76.5635
@@ -869,7 +869,7 @@ V2 Retail Ltd. (HO20),752106,Ps Nimapada Nimapada,Ps Nimapada Nimapada,Odisha,V2
 V2 Retail Ltd. (HO21),770001,Sundargarh,Sundargarh,Odisha,V2 Retail,22.2604,84.8536
 V2 Retail Ltd. (HO23),752055,Khorda,Khorda,Odisha,V2 Retail,20.1667,85.8333
 V2 Retail Ltd. (HO24),769012,Rourkela,Ps Uditnagar Rourkela,Odisha,V2 Retail,22.2034,84.8765
-V2 Retail Ltd. (HO25),757001,Baripada,Mugabai Golei Baripada,Odisha,V2 Retail,22.5865,86.3698
+V2 Retail Ltd. (HO25),757001,Baripada,Mugabai Golei Baripada,Odisha,V2 Retail,21.9335,86.7152
 V2 Retail Ltd. (HO26),751010,Bhubaneswar,Rasulgarh Bhubaneswar,Odisha,V2 Retail,20.2961,85.8245
 V2 Retail Ltd. (HO27),760001,Brahmapur,Girija Square Brahmapur,Odisha,V2 Retail,19.3167,84.7833
 V2 Retail Ltd. (HO28),751006,Bhubaneswar,Kalpana Square Bhubaneswar,Odisha,V2 Retail,20.1532,85.8398
@@ -878,7 +878,7 @@ V2 Retail Ltd. (HO30),768202,Jharsuguda,Jharsuguda,Odisha,V2 Retail,21.8565,84.8
 V2 Retail Ltd. (HO31),768001,Sambalpur,Sambalpur,Odisha,V2 Retail,21.4667,84.5833
 V2 Retail Ltd. (HO32),754142,Paradeep Paradip,Paradeep Paradip,Odisha,V2 Retail,20.7165,86.6932
 V2 Retail Ltd. (HO36),766104,Nuapada,Nuapada,Odisha,V2 Retail,20.4732,83.4865
-V2 Retail Ltd. (HO38),757001,Baripada,Baripada,Odisha,V2 Retail,22.5865,86.3698
+V2 Retail Ltd. (HO38),757001,Baripada,Baripada,Odisha,V2 Retail,21.9335,86.7152
 V2 Retail Ltd. (HO39),768025,Bargarh,Bargarh,Odisha,V2 Retail,21.7998,84.6532
 V2 Retail Ltd. (HO40),768201,Jharsuguda,Jharsuguda,Odisha,V2 Retail,22.2328,84.1433
 V2 Retail Ltd. (HO41),752069,Nayagarh,Nayagarh,Odisha,V2 Retail,19.7667,85.1667
@@ -1038,7 +1038,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,In Front Of Munna Lal Power House Jhansi,Utt
 "Zudio - Gollapudi, Vijayawada",521225,Vijayawada,Krishna,Andhra Pradesh,Zudio,16.45,80.75
 "Zudio - VRK One, Adoni",518302,Adoni,Kurnool,Andhra Pradesh,Zudio,15.6733,77.1167
 "Zudio - RLDA Complex, Guntakal",515801,Guntakal,Anantapur,Andhra Pradesh,Zudio,14.2833,77.3333
-"Zudio - Medapti's Grand Mall, Tadepalligudem",400051,Tadepalligudem,West Godavari,Maharashtra,Zudio,16.4667,81.5
+"Zudio - Medapti's Grand Mall, Tadepalligudem",534101,Tadepalligudem,West Godavari,Andhra Pradesh,Zudio,16.7833,81.5167
 "Zudio - Kopanna Complex, Kakinada",533003,Kakinada,Kakinada,Andhra Pradesh,Zudio,16.1891,82.2475
 "Zudio -TGV Anantha City Square Mall, Kurnool",518004,Kurnool,Kurnool,Andhra Pradesh,Zudio,15.8281,78.0539
 "ZUDIO - Vizag (WS), Visakhapatnam",530001,Visakhapatnam,Visakhapatnam,Andhra Pradesh,Zudio,17.6869,83.2185
@@ -1159,7 +1159,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,In Front Of Munna Lal Power House Jhansi,Utt
 "ZUDIO - MAPUSA, VALPOI ROAD",403505,Bicholim,North Goa,Goa,Zudio,15.5711,73.9268
 "ZUDIO - VASCO 1930, VASCO DA GAMA",403802,Vasco Da Gama,Vasco Da Gama,Goa,Zudio,15.3897,73.8063
 "ZUDIO - SHANTILAL RETAIL PARK, IJORSHI",403711,Mormugao,South Goa,Goa,Zudio,15.3678,73.8145
-"ZUDIO - SHETYE MAJESTIC, BICHOLIM",403504,Bicholim,North Goa,Goa,Zudio,15.5781,73.6667
+"ZUDIO - SHETYE MAJESTIC, BICHOLIM",403504,Bicholim,North Goa,Goa,Zudio,15.5833,74.0417
 "ZUDIO - CD DIVA, MARGAO",403601,Margao,South Goa,Goa,Zudio,15.2993,73.8278
 "ZUDIO - THE EMINENCE, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.1458,72.8479
 "ZUDIO - HOMELAND CITY MALL, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.1458,72.8194
@@ -2139,7 +2139,7 @@ mBaazar - Pratapgarh,230001,Pratapgarh,Pratapgarh,Uttar Pradesh,mBaazar,24.6731,
 mBaazar - PURI - BALAGANDI SQUARE,752001,Puri,Puri,Odisha,mBaazar,19.7975,85.8345
 mBaazar - PURI - GRAND ROAD,752001,Puri Grand Road,Puri,Odisha,mBaazar,19.7975,85.8345
 mBaazar - PURNEA,854301,Purnea,Purnea,Bihar,mBaazar,25.7833,87.4667
-mBaazar - PURULIA,723101,Purulia,Purulia,West Bengal,mBaazar,23.3267,85.2534
+mBaazar - PURULIA,723101,Purulia,Purulia,West Bengal,mBaazar,23.3317,86.3639
 mBaazar - Raghunatganj,742225,Raghunatganj,Murshidabad,West Bengal,mBaazar,24.15,88.2667
 mBaazar - Raha,782103,Raha,Nagaon Raha,Assam,mBaazar,24.6667,91.9167
 mBaazar - RAHAMA,754140,Rahama,Jagatsinghpur,Odisha,mBaazar,20.25,86.7167
@@ -2386,7 +2386,7 @@ V-Mart - Sambalpur,768005,Hans Nagar,Hans Nagar,Unknown,Vmart,19.8176,85.1533
 V-Mart - Keonjhar,758001,Madhapur,Madhapur,Unknown,Vmart,21.8667,85.1833
 V-Mart - Angul-Shankar Cinema Road,759122,Bazarapada,Bazarapada,Unknown,Vmart,20.8333,84.6667
 V-Mart - Nabarangpur,764059,Dolai Street,Dolai Street,Unknown,Vmart,19.3667,83.5
-V-Mart - Baripada,757001,Baripada,Baripada,Unknown,Vmart,22.5865,86.3698
+V-Mart - Baripada,757001,Baripada,Baripada,Odisha,Vmart,21.9335,86.7152
 V-Mart - Nayagarh,752078,Sundaria,Sundaria,Unknown,Vmart,20.1643,85.8267
 V-Mart -Jajpur,750019,Byasanagar,Byasanagar,Unknown,Vmart,21.4735,87.2867
 V-Mart - Cuttack-Badambadi,753009,Badambadi Colony,Badambadi Colony,Unknown,Vmart,20.45,85.9
