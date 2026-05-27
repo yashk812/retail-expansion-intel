@@ -329,10 +329,11 @@ elif page == "💡 Expansion Insights":
             elif val >= 10: return "background-color: #fff3cc"
         return ""
 
-    st.dataframe(
-        show_df.style.applymap(highlight_score, subset=["Opportunity Score"]),
-        use_container_width=True, height=500
-    )
+    try:
+        styled = show_df.style.map(highlight_score, subset=["Opportunity Score"])
+    except AttributeError:
+        styled = show_df.style.applymap(highlight_score, subset=["Opportunity Score"])
+    st.dataframe(styled, use_container_width=True, height=500)
 
     st.subheader("🗺️ Opportunity Map")
     st.caption("Bubble size = Opportunity Score. Click a bubble for details + top PIN codes.")
