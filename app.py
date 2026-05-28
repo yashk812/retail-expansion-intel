@@ -54,15 +54,25 @@ for co, cnt in df["company"].value_counts().items():
         unsafe_allow_html=True,
     )
 
+# ── Haversine distance ────────────────────────────────────────────────────────
+import numpy as np
+
+def haversine_km(lat1, lng1, lat2, lng2):
+    """Vectorised Haversine — lat2/lng2 can be arrays."""
+    R = 6371
+    lat1, lng1, lat2, lng2 = map(np.radians, [lat1, lng1, lat2, lng2])
+    dlat = lat2 - lat1
+    dlng = lng2 - lng1
+    a = np.sin(dlat/2)**2 + np.cos(lat1)*np.cos(lat2)*np.sin(dlng/2)**2
+    return R * 2 * np.arcsin(np.sqrt(a))
+
 # ── Shared opportunity score helper ───────────────────────────────────────────
-def compute_scores(df, group_cols, adjacency_level="state"):
+def compute_scores(df, group_cols, radius_km=200):
     """Compute opportunity scores grouped by group_cols.
-    adjacency_level: 'state' (district tab) or 'district' (city tab)
+    Adjacency bonus = BK stores within radius_km but outside the target area (capped at 10).
     """
     bk_df   = df[df["company"] == "Baazar Kolkata"]
     comp_df = df[df["company"] != "Baazar Kolkata"]
-    bk_states    = set(bk_df["state"].unique())
-    bk_districts = set(bk_df["district"].unique())
 
     comp_by = comp_df.groupby(group_cols).size().reset_index(name="competitor_stores")
     bk_by   = bk_df.groupby(group_cols).size().reset_index(name="bk_stores")
@@ -70,27 +80,25 @@ def compute_scores(df, group_cols, adjacency_level="state"):
     scores = comp_by.merge(bk_by, on=group_cols, how="left")
     scores["bk_stores"] = scores["bk_stores"].fillna(0).astype(int)
 
-    if adjacency_level == "district":
-        # city+state grouping has no district col — join it in from source data
-        # a city can span multiple districts so take the most common one per city+state
-        def most_common_district(x):
-            vc = x.dropna().value_counts()
-            return vc.index[0] if len(vc) > 0 else None
+    # Centroid per area
+    area_centers = df.groupby(group_cols)[["lat","lng"]].mean().reset_index()
+    scores = scores.merge(area_centers, on=group_cols, how="left")
 
-        city_district = (
-            df.groupby(["city", "state"])["district"]
-            .agg(most_common_district)
-            .reset_index()
-        )
-        scores = scores.merge(city_district, on=["city", "state"], how="left")
-        scores["adjacency_bonus"] = scores["district"].apply(
-            lambda d: 3 if (d is not None and str(d) != "nan" and d in bk_districts) else 0
-        )
-    else:
-        scores["adjacency_bonus"] = scores["state"].apply(
-            lambda s: 3 if s in bk_states else 0
-        )
+    # BK store locations
+    bk_lats = bk_df["lat"].values
+    bk_lngs = bk_df["lng"].values
+    bk_areas = bk_df[group_cols[0]].values  # area name for exclusion
 
+    def adjacency_bonus(row):
+        if pd.isna(row["lat"]) or pd.isna(row["lng"]):
+            return 0
+        dists = haversine_km(row["lat"], row["lng"], bk_lats, bk_lngs)
+        # Exclude BK stores that are IN this area
+        outside = bk_areas != row[group_cols[0]]
+        nearby = (dists <= radius_km) & outside
+        return min(int(nearby.sum()), 10)
+
+    scores["adjacency_bonus"] = scores.apply(adjacency_bonus, axis=1)
     scores["opportunity_score"] = (
         scores["competitor_stores"] - scores["bk_stores"] * 3 + scores["adjacency_bonus"]
     )
@@ -115,7 +123,7 @@ def compute_scores(df, group_cols, adjacency_level="state"):
     scores = scores.merge(comp_cos, on=group_cols, how="left")
     scores = scores.merge(top_pins, on=group_cols, how="left")
     scores = scores.merge(comp_breakdown, on=group_cols, how="left")
-    return scores, bk_df, comp_df, bk_states
+    return scores, bk_df, comp_df
 
 
 def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3):
@@ -465,13 +473,14 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that district |
             | **BK Presence** | Count of BK stores in that district |
-            | **Adjacency Bonus** | +3 if BK already operates in that **state** |
+            | **Adjacency Bonus** | BK stores within radius (outside this district), capped at 10 |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
-            State-level adjacency bonus rewards districts in states BK already has a presence in.
+            Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this district.
             """)
-        scores_d, bk_df, _, _ = compute_scores(df, ["district", "state"], adjacency_level="state")
+        radius_km_d = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="dist_radius")
+        scores_d, bk_df, _ = compute_scores(df, ["district", "state"], radius_km=radius_km_d)
         render_opportunity_ui(scores_d, bk_df, df, "district", key_prefix="dist", default_min=3)
 
     # ── Tab 2: City ───────────────────────────────────────────────────────────
@@ -483,13 +492,14 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that city |
             | **BK Presence** | Count of BK stores in that city |
-            | **Adjacency Bonus** | +3 if BK already operates in that **district** |
+            | **Adjacency Bonus** | BK stores within radius (outside this city), capped at 10 |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
-            District-level adjacency bonus rewards cities in districts BK already operates in — the most actionable next step.
+            Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this city.
             """)
-        scores_c, bk_df, _, _ = compute_scores(df, ["city", "state"], adjacency_level="district")
+        radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
+        scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c)
         render_opportunity_ui(scores_c, bk_df, df, "city", key_prefix="city", default_min=2)
 
 # ══════════════════════════════════════════════════════════════════════════════
