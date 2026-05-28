@@ -73,9 +73,13 @@ def compute_scores(df, group_cols, adjacency_level="state"):
     if adjacency_level == "district":
         # city+state grouping has no district col — join it in from source data
         # a city can span multiple districts so take the most common one per city+state
+        def most_common_district(x):
+            vc = x.dropna().value_counts()
+            return vc.index[0] if len(vc) > 0 else None
+
         city_district = (
             df.groupby(["city", "state"])["district"]
-            .agg(lambda x: x.value_counts().index[0])
+            .agg(most_common_district)
             .reset_index()
         )
         scores = scores.merge(city_district, on=["city", "state"], how="left")
