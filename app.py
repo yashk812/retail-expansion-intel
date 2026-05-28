@@ -41,7 +41,7 @@ st.sidebar.caption("Baazar Kolkata Competitive Intelligence")
 
 page = st.sidebar.radio(
     "Navigate",
-    ["🗺️ Store Map", "📊 Stats by Company", "💡 Expansion Insights"],
+    ["🗺️ Store Map", "📊 Stats by Company", "💡 Expansion Insights", "📋 Master Data"],
     label_visibility="collapsed",
 )
 
@@ -477,3 +477,52 @@ elif page == "💡 Expansion Insights":
             """)
         scores_c, bk_df, _, _ = compute_scores(df, ["city", "state"], adjacency_level="district")
         render_opportunity_ui(scores_c, bk_df, df, "city", key_prefix="city", default_min=2)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PAGE 4 – MASTER DATA
+# ══════════════════════════════════════════════════════════════════════════════
+elif page == "📋 Master Data":
+    st.title("📋 Master Data")
+    st.caption(f"Full store dataset — {len(df):,} rows. Filter and inspect.")
+
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        md_companies = st.multiselect("Company", sorted(df["company"].unique()), default=[], key="md_co",
+                                       placeholder="All companies")
+    with col2:
+        md_states = st.multiselect("State", sorted(df["state"].dropna().unique()), default=[], key="md_state",
+                                    placeholder="All states")
+    with col3:
+        fdf_md = df.copy()
+        if md_states: fdf_md = fdf_md[fdf_md["state"].isin(md_states)]
+        md_districts = st.multiselect("District", sorted(fdf_md["district"].dropna().unique()), default=[], key="md_dist",
+                                       placeholder="All districts")
+    with col4:
+        search = st.text_input("Search store name", placeholder="e.g. Patna, Zudio...", key="md_search")
+
+    mdf = df.copy()
+    if md_companies: mdf = mdf[mdf["company"].isin(md_companies)]
+    if md_states:    mdf = mdf[mdf["state"].isin(md_states)]
+    if md_districts: mdf = mdf[mdf["district"].isin(md_districts)]
+    if search:       mdf = mdf[mdf["store_name"].str.contains(search, case=False, na=False)]
+
+    st.caption(f"Showing **{len(mdf):,}** of {len(df):,} rows")
+
+    display = mdf[["store_name","company","pincode","city","district","state","lat","lng"]].reset_index(drop=True)
+    display.index += 1
+    display.columns = ["Store Name","Company","Pincode","City","District","State","Lat","Lng"]
+
+    st.dataframe(
+        display,
+        use_container_width=True,
+        height=620,
+        column_config={
+            "Lat": st.column_config.NumberColumn(format="%.4f"),
+            "Lng": st.column_config.NumberColumn(format="%.4f"),
+            "Pincode": st.column_config.TextColumn(),
+        }
+    )
+
+    # Download button
+    csv = display.to_csv(index=False).encode("utf-8")
+    st.download_button("⬇️ Download filtered data as CSV", csv, "filtered_stores.csv", "text/csv")
