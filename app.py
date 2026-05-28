@@ -398,20 +398,34 @@ elif page == "📊 Stats by Company":
     group_by = st.radio("Group by", ["State", "District", "City"], horizontal=True)
     gb_col   = group_by.lower()
 
+    available_cos = sorted(sdf["company"].unique().tolist())
+    hth_col1, hth_col2, hth_col3 = st.columns([2, 3, 2])
+    with hth_col1:
+        default_primary = "Baazar Kolkata" if "Baazar Kolkata" in available_cos else available_cos[0]
+        primary_co = st.selectbox("Primary company", available_cos,
+                                   index=available_cos.index(default_primary), key="hth_primary")
+    with hth_col2:
+        compare_cos = st.multiselect("Compare against", 
+                                      [c for c in available_cos if c != primary_co],
+                                      default=[c for c in available_cos if c != primary_co],
+                                      key="hth_compare")
+    with hth_col3:
+        top_n = st.slider("Show top N areas", 5, 50, 20)
+
+    selected_cos = [primary_co] + compare_cos
+    sdf_hth = sdf[sdf["company"].isin(selected_cos)]
+
     pivot = (
-        sdf.groupby([gb_col, "company"])
+        sdf_hth.groupby([gb_col, "company"])
         .size()
         .reset_index(name="stores")
         .pivot(index=gb_col, columns="company", values="stores")
         .fillna(0).astype(int)
     )
-    if "Baazar Kolkata" in pivot.columns:
-        pivot = pivot.sort_values("Baazar Kolkata", ascending=False)
-    else:
-        pivot["_t"] = pivot.sum(axis=1)
-        pivot = pivot.sort_values("_t", ascending=False).drop(columns="_t")
-
-    top_n = st.slider("Show top N areas", 5, 50, 20)
+    # Reorder columns: primary first, then rest
+    col_order = [primary_co] + [c for c in compare_cos if c in pivot.columns]
+    pivot = pivot[[c for c in col_order if c in pivot.columns]]
+    pivot = pivot.sort_values(primary_co, ascending=False)
     pivot_show = pivot.head(top_n)
 
     fig_heat = go.Figure(data=go.Heatmap(
@@ -424,7 +438,7 @@ elif page == "📊 Stats by Company":
         showscale=True,
     ))
     fig_heat.update_layout(
-        title=f"Stores per {group_by} × Company",
+        title=f"Stores per {group_by} × Company (sorted by {primary_co})",
         height=max(350, top_n * 22),
         margin=dict(l=140, r=20, t=50, b=60),
         xaxis_tickangle=-30,
