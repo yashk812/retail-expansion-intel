@@ -67,7 +67,7 @@ def haversine_km(lat1, lng1, lat2, lng2):
     return R * 2 * np.arcsin(np.sqrt(a))
 
 # ── Shared opportunity score helper ───────────────────────────────────────────
-def compute_scores(df, group_cols, radius_km=200):
+def compute_scores(df, group_cols, radius_km=200, adj_cap=10):
     """Compute opportunity scores grouped by group_cols.
     Adjacency bonus = BK stores within radius_km but outside the target area (capped at 10).
     """
@@ -93,10 +93,9 @@ def compute_scores(df, group_cols, radius_km=200):
         if pd.isna(row["lat"]) or pd.isna(row["lng"]):
             return 0
         dists = haversine_km(row["lat"], row["lng"], bk_lats, bk_lngs)
-        # Exclude BK stores that are IN this area
         outside = bk_areas != row[group_cols[0]]
         nearby = (dists <= radius_km) & outside
-        return int(nearby.sum())
+        return min(int(nearby.sum()), adj_cap)
 
     scores["adjacency_bonus"] = scores.apply(adjacency_bonus, axis=1)
     scores["opportunity_score"] = (
@@ -474,14 +473,18 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that district |
             | **BK Presence** | Count of BK stores in that district |
-            | **Adjacency Bonus** | BK stores within radius (outside this district) |
+            | **Adjacency Bonus** | BK stores within radius (outside this district), capped at your chosen limit |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
             Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this district.
             """)
-        radius_km_d = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="dist_radius")
-        scores_d, bk_df, _ = compute_scores(df, ["district", "state"], radius_km=radius_km_d)
+        dc1, dc2 = st.columns(2)
+        with dc1:
+            radius_km_d = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="dist_radius")
+        with dc2:
+            adj_cap_d = st.slider("Adjacency cap (max BK stores counted)", 1, 30, 10, key="dist_cap")
+        scores_d, bk_df, _ = compute_scores(df, ["district", "state"], radius_km=radius_km_d, adj_cap=adj_cap_d)
         render_opportunity_ui(scores_d, bk_df, df, "district", key_prefix="dist", default_min=3)
 
     # ── Tab 2: City ───────────────────────────────────────────────────────────
@@ -493,14 +496,18 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that city |
             | **BK Presence** | Count of BK stores in that city |
-            | **Adjacency Bonus** | BK stores within radius (outside this city) |
+            | **Adjacency Bonus** | BK stores within radius (outside this city), capped at your chosen limit |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
             Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this city.
             """)
-        radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
-        scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c)
+        cc1, cc2 = st.columns(2)
+        with cc1:
+            radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
+        with cc2:
+            adj_cap_c = st.slider("Adjacency cap (max BK stores counted)", 1, 30, 10, key="city_cap")
+        scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c, adj_cap=adj_cap_c)
         render_opportunity_ui(scores_c, bk_df, df, "city", key_prefix="city", default_min=2)
 
 # ══════════════════════════════════════════════════════════════════════════════
