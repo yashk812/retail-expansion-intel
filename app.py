@@ -71,8 +71,16 @@ def compute_scores(df, group_cols, adjacency_level="state"):
     scores["bk_stores"] = scores["bk_stores"].fillna(0).astype(int)
 
     if adjacency_level == "district":
+        # city+state grouping has no district col — join it in from source data
+        # a city can span multiple districts so take the most common one per city+state
+        city_district = (
+            df.groupby(["city", "state"])["district"]
+            .agg(lambda x: x.value_counts().index[0])
+            .reset_index()
+        )
+        scores = scores.merge(city_district, on=["city", "state"], how="left")
         scores["adjacency_bonus"] = scores["district"].apply(
-            lambda d: 3 if d in bk_districts else 0
+            lambda d: 3 if (d is not None and str(d) != "nan" and d in bk_districts) else 0
         )
     else:
         scores["adjacency_bonus"] = scores["state"].apply(
