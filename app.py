@@ -200,7 +200,8 @@ def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3
     st.caption("Bubble size = Opportunity Score. Click for details.")
 
     centers = df.groupby([area_col, "state"])[["lat", "lng"]].mean().reset_index()
-    map_data = idf.merge(centers, on=[area_col, "state"], how="left").dropna(subset=["lat", "lng"])
+    idf_map = idf.drop(columns=["lat","lng"], errors="ignore")
+    map_data = idf_map.merge(centers, on=[area_col, "state"], how="left").dropna(subset=["lat", "lng"])
 
     if not map_data.empty:
         m2 = folium.Map(
