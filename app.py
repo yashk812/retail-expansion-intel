@@ -96,7 +96,7 @@ def compute_scores(df, group_cols, radius_km=200):
         # Exclude BK stores that are IN this area
         outside = bk_areas != row[group_cols[0]]
         nearby = (dists <= radius_km) & outside
-        return min(int(nearby.sum()), 10)
+        return int(nearby.sum())
 
     scores["adjacency_bonus"] = scores.apply(adjacency_bonus, axis=1)
     scores["opportunity_score"] = (
@@ -474,7 +474,7 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that district |
             | **BK Presence** | Count of BK stores in that district |
-            | **Adjacency Bonus** | BK stores within radius (outside this district), capped at 10 |
+            | **Adjacency Bonus** | BK stores within radius (outside this district) |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
@@ -493,7 +493,7 @@ elif page == "💡 Expansion Insights":
             |-----------|---------|
             | **Competitor Presence** | Count of all non-BK stores in that city |
             | **BK Presence** | Count of BK stores in that city |
-            | **Adjacency Bonus** | BK stores within radius (outside this city), capped at 10 |
+            | **Adjacency Bonus** | BK stores within radius (outside this city) |
             | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
 
             High score = lots of competitor activity, little/no BK footprint.
