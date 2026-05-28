@@ -55,18 +55,30 @@ for co, cnt in df["company"].value_counts().items():
     )
 
 # ── Shared opportunity score helper ───────────────────────────────────────────
-def compute_scores(df, group_cols):
-    """Compute opportunity scores grouped by group_cols (e.g. ['district','state'] or ['city','state'])."""
+def compute_scores(df, group_cols, adjacency_level="state"):
+    """Compute opportunity scores grouped by group_cols.
+    adjacency_level: 'state' (district tab) or 'district' (city tab)
+    """
     bk_df   = df[df["company"] == "Baazar Kolkata"]
     comp_df = df[df["company"] != "Baazar Kolkata"]
-    bk_states = set(bk_df["state"].unique())
+    bk_states    = set(bk_df["state"].unique())
+    bk_districts = set(bk_df["district"].unique())
 
     comp_by = comp_df.groupby(group_cols).size().reset_index(name="competitor_stores")
     bk_by   = bk_df.groupby(group_cols).size().reset_index(name="bk_stores")
 
     scores = comp_by.merge(bk_by, on=group_cols, how="left")
-    scores["bk_stores"]         = scores["bk_stores"].fillna(0).astype(int)
-    scores["adjacency_bonus"]   = scores["state"].apply(lambda s: 3 if s in bk_states else 0)
+    scores["bk_stores"] = scores["bk_stores"].fillna(0).astype(int)
+
+    if adjacency_level == "district":
+        scores["adjacency_bonus"] = scores["district"].apply(
+            lambda d: 3 if d in bk_districts else 0
+        )
+    else:
+        scores["adjacency_bonus"] = scores["state"].apply(
+            lambda s: 3 if s in bk_states else 0
+        )
+
     scores["opportunity_score"] = (
         scores["competitor_stores"] - scores["bk_stores"] * 3 + scores["adjacency_bonus"]
     )
@@ -416,31 +428,40 @@ elif page == "📊 Stats by Company":
 elif page == "💡 Expansion Insights":
     st.title("💡 Expansion Insights for Baazar Kolkata")
 
-    with st.expander("🧮 How the Opportunity Score works", expanded=False):
-        st.markdown("""
-        For each area, we calculate:
-
-        | Component | Formula |
-        |-----------|---------|
-        | **Competitor Presence** | Count of all non-BK stores in that area |
-        | **BK Presence** | Count of BK stores in that area |
-        | **Adjacency Bonus** | +3 if the area's state already has ≥1 BK store |
-        | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
-
-        High score = **lots of competitor activity, little/no BK footprint**.
-        Adjacency bonus surfaces areas in states BK already operates — logical next steps.
-        """)
-
     tab1, tab2 = st.tabs(["📍 District Opportunities", "🏙️ City Opportunities"])
 
     # ── Tab 1: District ───────────────────────────────────────────────────────
     with tab1:
         st.caption("Strategic view — which districts to prioritise at a macro level.")
-        scores_d, bk_df, _, _ = compute_scores(df, ["district", "state"])
+        with st.expander("🧮 How the Opportunity Score works", expanded=False):
+            st.markdown("""
+            | Component | Formula |
+            |-----------|---------|
+            | **Competitor Presence** | Count of all non-BK stores in that district |
+            | **BK Presence** | Count of BK stores in that district |
+            | **Adjacency Bonus** | +3 if BK already operates in that **state** |
+            | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
+
+            High score = lots of competitor activity, little/no BK footprint.
+            State-level adjacency bonus rewards districts in states BK already has a presence in.
+            """)
+        scores_d, bk_df, _, _ = compute_scores(df, ["district", "state"], adjacency_level="state")
         render_opportunity_ui(scores_d, bk_df, df, "district", key_prefix="dist", default_min=3)
 
     # ── Tab 2: City ───────────────────────────────────────────────────────────
     with tab2:
         st.caption("Tactical view — which specific cities within target districts have competitor presence but no BK.")
-        scores_c, bk_df, _, _ = compute_scores(df, ["city", "state"])
+        with st.expander("🧮 How the Opportunity Score works", expanded=False):
+            st.markdown("""
+            | Component | Formula |
+            |-----------|---------|
+            | **Competitor Presence** | Count of all non-BK stores in that city |
+            | **BK Presence** | Count of BK stores in that city |
+            | **Adjacency Bonus** | +3 if BK already operates in that **district** |
+            | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
+
+            High score = lots of competitor activity, little/no BK footprint.
+            District-level adjacency bonus rewards cities in districts BK already operates in — the most actionable next step.
+            """)
+        scores_c, bk_df, _, _ = compute_scores(df, ["city", "state"], adjacency_level="district")
         render_opportunity_ui(scores_c, bk_df, df, "city", key_prefix="city", default_min=2)
