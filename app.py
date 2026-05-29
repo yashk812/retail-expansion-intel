@@ -34,6 +34,17 @@ COMPANY_COLORS = {
     "Vmart":          "#607D8B",
 }
 
+# ── States BK operates in or is targeting ─────────────────────────────────────
+FOCUS_STATES = sorted([
+    # BK current states
+    "West Bengal", "Bihar", "Odisha", "Tripura", "Sikkim",
+    # Adjacent & target states
+    "Jharkhand", "Uttar Pradesh", "Chhattisgarh", "Assam",
+    # North East 7 sisters
+    "Meghalaya", "Manipur", "Mizoram", "Nagaland",
+    "Arunachal Pradesh",
+])
+
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 st.sidebar.image("https://img.icons8.com/fluency/96/shop.png", width=60)
 st.sidebar.title("Retail Expansion Intel")
@@ -128,7 +139,7 @@ def compute_scores(df, group_cols, radius_km=200, adj_cap=10):
 def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3):
     """Render filters, bar chart, table and map for opportunity scores."""
     bk_core_states = sorted(bk_df["state"].unique().tolist())
-    all_states     = sorted(scores["state"].dropna().unique().tolist())
+    all_states     = [s for s in FOCUS_STATES if s in scores["state"].values]
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -255,7 +266,7 @@ if page == "🗺️ Store Map":
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        states = ["All States"] + sorted(df["state"].dropna().unique().tolist())
+        states = ["All States"] + FOCUS_STATES
         sel_state = st.selectbox("State", states)
     with col2:
         fdf = df if sel_state == "All States" else df[df["state"] == sel_state]
@@ -328,10 +339,10 @@ elif page == "📊 Stats by Company":
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        states2 = ["All States"] + sorted(df["state"].dropna().unique().tolist())
-        sel_state2 = st.selectbox("State", states2, key="s2_state")
+        sel_states2 = st.multiselect("State", FOCUS_STATES, default=[], key="s2_state",
+                                      placeholder="All focus states")
     with col2:
-        fdf_s = df if sel_state2 == "All States" else df[df["state"] == sel_state2]
+        fdf_s = df[df["state"].isin(sel_states2)] if sel_states2 else df[df["state"].isin(FOCUS_STATES)]
         districts2 = ["All Districts"] + sorted(fdf_s["district"].dropna().unique().tolist())
         sel_district2 = st.selectbox("District", districts2, key="s2_dist")
     with col3:
@@ -342,8 +353,7 @@ elif page == "📊 Stats by Company":
         companies2 = sorted(df["company"].unique().tolist())
         sel_cos2 = st.multiselect("Companies", companies2, default=companies2, key="s2_cos")
 
-    sdf = df.copy()
-    if sel_state2    != "All States":    sdf = sdf[sdf["state"]    == sel_state2]
+    sdf = df[df["state"].isin(sel_states2)] if sel_states2 else df[df["state"].isin(FOCUS_STATES)]
     if sel_district2 != "All Districts": sdf = sdf[sdf["district"] == sel_district2]
     if sel_city2     != "All Cities":    sdf = sdf[sdf["city"]     == sel_city2]
     sdf = sdf[sdf["company"].isin(sel_cos2)]
@@ -375,11 +385,9 @@ elif page == "📊 Stats by Company":
 
     # Only show states with BK presence by default, user can toggle
     bk_states_only = st.checkbox("Show only states where BK operates", value=True, key="ms_bk_only")
-    bk_active_states = set(df[df["company"] == "Baazar Kolkata"]["state"].unique())
-
     ms_df = sdf.copy()
     if bk_states_only:
-        ms_df = ms_df[ms_df["state"].isin(bk_active_states)]
+        ms_df = ms_df[ms_df["state"].isin(set(df[df["company"]=="Baazar Kolkata"]["state"].unique()))]
 
     state_co = ms_df.groupby(["state", "company"]).size().reset_index(name="stores")
     # Sort states by total stores desc
@@ -522,8 +530,8 @@ elif page == "📋 Master Data":
         md_companies = st.multiselect("Company", sorted(df["company"].unique()), default=[], key="md_co",
                                        placeholder="All companies")
     with col2:
-        md_states = st.multiselect("State", sorted(df["state"].dropna().unique()), default=[], key="md_state",
-                                    placeholder="All states")
+        md_states = st.multiselect("State", FOCUS_STATES, default=[], key="md_state",
+                                    placeholder="All focus states")
     with col3:
         fdf_md = df.copy()
         if md_states: fdf_md = fdf_md[fdf_md["state"].isin(md_states)]
