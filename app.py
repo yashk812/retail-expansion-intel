@@ -244,11 +244,17 @@ def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3
 
         bk_cluster = MarkerCluster(name="BK Existing Stores").add_to(m2)
         for _, row in bk_df.dropna(subset=["lat", "lng"]).iterrows():
+            bk_popup = f"""<div style='font-family:sans-serif;min-width:180px'>
+              <b style='color:#2E7D32'>{row['store_name']}</b><br>
+              <small>{row['city']}, {row['district']}</small><br>
+              <small>{row['state']} – {row['pincode']}</small>
+            </div>"""
             folium.CircleMarker(
                 location=[row["lat"], row["lng"]],
                 radius=6, color="#2E7D32", fill=True,
                 fill_color="#2E7D32", fill_opacity=1.0,
                 tooltip=f"BK: {row['store_name']}",
+                popup=folium.Popup(bk_popup, max_width=220),
             ).add_to(bk_cluster)
 
         # Warehouse marker
