@@ -266,10 +266,10 @@ if page == "🗺️ Store Map":
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        states = ["All States"] + FOCUS_STATES
-        sel_state = st.selectbox("State", states)
+        sel_states = st.multiselect("State", FOCUS_STATES, default=[], key="map_state",
+                                     placeholder="All focus states")
     with col2:
-        fdf = df if sel_state == "All States" else df[df["state"] == sel_state]
+        fdf = df[df["state"].isin(sel_states)] if sel_states else df[df["state"].isin(FOCUS_STATES)]
         districts = ["All Districts"] + sorted(fdf["district"].dropna().unique().tolist())
         sel_district = st.selectbox("District", districts)
     with col3:
@@ -280,17 +280,20 @@ if page == "🗺️ Store Map":
         companies = sorted(df["company"].unique().tolist())
         sel_companies = st.multiselect("Companies", companies, default=companies)
 
-    mdf = df.copy()
-    if sel_state    != "All States":    mdf = mdf[mdf["state"]    == sel_state]
+    mdf = df[df["state"].isin(sel_states)] if sel_states else df[df["state"].isin(FOCUS_STATES)]
     if sel_district != "All Districts": mdf = mdf[mdf["district"] == sel_district]
     if sel_city     != "All Cities":    mdf = mdf[mdf["city"]     == sel_city]
     mdf = mdf[mdf["company"].isin(sel_companies)]
+
+    # Zoom logic
+    has_state_filter = bool(sel_states)
+    has_district_filter = sel_district != "All Districts"
 
     st.caption(f"Showing **{len(mdf):,}** stores")
 
     if len(mdf):
         clat, clng = mdf["lat"].mean(), mdf["lng"].mean()
-        zoom = 5 if sel_state == "All States" else (8 if sel_district == "All Districts" else 11)
+        zoom = 5 if not has_state_filter else (8 if not has_district_filter else 11)
     else:
         clat, clng, zoom = 22.5, 83.0, 5
 
