@@ -251,6 +251,15 @@ def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3
                 tooltip=f"BK: {row['store_name']}",
             ).add_to(bk_cluster)
 
+        # Warehouse marker
+        WH_LAT, WH_LNG = 22.5958, 88.2676
+        folium.Marker(
+            location=[WH_LAT, WH_LNG],
+            popup=folium.Popup("<b>🏭 BK Central Warehouse</b><br>493 B, GT Road, Shibpur, Howrah", max_width=220),
+            tooltip="BK Central Warehouse (Howrah)",
+            icon=folium.Icon(color="darkblue", icon="home", prefix="fa"),
+        ).add_to(m2)
+
         folium.LayerControl().add_to(m2)
         st_folium(m2, width="100%", height=580, returned_objects=[])
     else:
