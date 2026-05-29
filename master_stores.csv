@@ -413,7 +413,7 @@ YOUSTA-VEGA CIRCLE MALL-SILIGURI,734004,Siliguri,Darjeeling,West Bengal,Yousta,2
 YOUSTA-GOWALA PATTI-COOCH BEHAR,736101,Cooch Behar,Cooch Behar,West Bengal,Yousta,26.2333,88.45
 YOSUTA-THAKURPUKUR-BEHALA,700063,Diamond Harbour,Kolkata,West Bengal,Yousta,21.6667,88.1667
 SB-AXIS MALL (02),700107,Kolkata,Kolkata,West Bengal,StyleBaazar,22.4865,88.3425
-EB-BALASORE,756001,Balasore,Balasore,Odisha,StyleBaazar,21.494,87.2842
+EB-BALASORE,756001,Balasore,Balasore,Odisha,StyleBaazar,21.495,86.9427
 SB-RAI BARELI ROAD,226029,Lucknow,Lucknow,Uttar Pradesh,StyleBaazar,26.8467,80.9462
 SB-BAGHAJATIN,700047,Kolkata,Kolkata,West Bengal,StyleBaazar,22.5597,88.3639
 SB-GHAZIPUR,233001,Ghazipur,Ghazipur,Uttar Pradesh,StyleBaazar,25.5941,84.7421
@@ -492,7 +492,7 @@ STYLE BAAZAR BALANGIR,767001,Balangir,Balangir,Odisha,StyleBaazar,20.8333,83.833
 STYLE BAAZAR BARGARH,768028,Bargarh,Bargarh,Odisha,StyleBaazar,21.55,84.15
 STYLE BAAZAR ANGUL,759122,Angul,Angul,Odisha,StyleBaazar,20.8333,84.6667
 STYLE BAAZAR RAHAMA,754160,Rahama,Jagatsinghpur,Odisha,StyleBaazar,20.3333,86.2167
-STYLE BAAZAR RAYAGADA,765001,Rayagada,Rayagada,Odisha,StyleBaazar,19.2833,83.3667
+STYLE BAAZAR RAYAGADA,765001,Rayagada,Rayagada,Odisha,StyleBaazar,19.17,83.42
 STYLE BAAZAR NIMAPADA,752106,Nimapada,Puri,Odisha,StyleBaazar,19.8833,85.8667
 STYLE BAAZAR NAYAGARH,752069,Nayagarh,Nayagarh,Odisha,StyleBaazar,19.7667,85.1667
 STYLE BAAZAR PARALAKHEMUNDI,761200,Paralakhemundi,Ganjam,Odisha,StyleBaazar,19.1333,84.5667
@@ -863,7 +863,7 @@ V2 Retail Ltd. (HO12),751019,Bhubaneswar,Khordha,Odisha,V2 Retail,20.1445,85.831
 V2 Retail Ltd. (HO13),751024,Bhubaneswar,Khordha,Odisha,V2 Retail,20.2965,85.8098
 V2 Retail Ltd. (HO15),755019,Jajpur,Jajpur,Odisha,V2 Retail,20.8146,85.7812
 V2 Retail Ltd. (HO16),759122,Angul,Angul,Odisha,V2 Retail,20.8333,84.6667
-V2 Retail Ltd. (HO18),756001,Balasore,Balasore,Odisha,V2 Retail,21.494,87.2842
+V2 Retail Ltd. (HO18),756001,Balasore,Balasore,Odisha,V2 Retail,21.495,86.9427
 V2 Retail Ltd. (HO19),756100,Bhadrak,Balasore,Odisha,V2 Retail,21.4265,86.4532
 V2 Retail Ltd. (HO20),752106,Nimapada,Puri,Odisha,V2 Retail,19.8833,85.8667
 V2 Retail Ltd. (HO21),770001,Sundargarh,Sundargarh,Odisha,V2 Retail,22.2604,84.8536
@@ -1622,10 +1622,10 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Pune,Maharashtra,Zudio,18.5204,73.8567
 "ZUDIO - BUXI BAZAR, CUTTACK",753001,Cuttack,Cuttack,Odisha,Zudio,20.4625,85.883
 "ZUDIO - MAHATMA GANDHI ROAD, DHENKANAL",759001,Dhenkanal,Dhenkanal,Odisha,Zudio,20.6667,85.5833
 "ZUDIO - PATIA, BHUBANESWAR",751024,Bhubaneswar,Khordha,Odisha,Zudio,20.2965,85.8098
-"ZUDIO - GMR CENTRAL, RAYAGADA",756001,Balasore,Balasore,Odisha,Zudio,21.494,87.2842
+"ZUDIO - GMR CENTRAL, RAYAGADA",765001,Rayagada,Rayagada,Odisha,Zudio,19.17,83.42
 "ZUDIO - SYMPHONY MALL, BHUBANESWAR",752101,Bhubaneswar,Bhubaneswar,Odisha,Zudio,20.1137,85.9631
 "ZUDIO - HEMSURAPADA, ANGUL",759122,Angul,Angul,Odisha,Zudio,20.8333,84.6667
-"ZUDIO - RK PLAZA, BALASORE",756001,Balasore,Balasore,Odisha,Zudio,21.494,87.2842
+"ZUDIO - RK PLAZA, BALASORE",756001,Balasore,Balasore,Odisha,Zudio,21.495,86.9427
 "ZUDIO - BPJP INFRACON, BARGARH",768028,Bargarh,Bargarh,Odisha,Zudio,21.55,84.15
 "ZUDIO - DN REGALIA MALL, BHUBANESHWAR",751019,Bhubaneswar,Khordha,Odisha,Zudio,20.1445,85.8313
 "ZUDIO - EPARI PLAZA, BRAHMAPUR",760002,Brahmapur,Brahmapur,Odisha,Zudio,19.3178,84.7915
