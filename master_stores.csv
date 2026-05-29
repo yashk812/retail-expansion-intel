@@ -519,7 +519,7 @@ STYLE BAAZAR GHORASAHAN,854303,Ghorasahan,Godda,Bihar,StyleBaazar,26.65,86.85
 STYLE BAAZAR MADHEPURA,852113,Madhepura,Madhepura,Bihar,StyleBaazar,25.8167,86.8833
 STYLE BAAZAR KISHANGANJ,855107,Kagzia Basti,West Champaran,Bihar,StyleBaazar,26.1333,88.1167
 STYLE BAAZAR MOTIHARI,845401,Motihari,East Champaran,Bihar,StyleBaazar,26.6167,84.8333
-STYLE BAAZAR PUPRI,843320,Pupri,Sitamarhi,Bihar,StyleBaazar,26.5833,85.5
+STYLE BAAZAR PUPRI,843320,Pupri,Sitamarhi,Bihar,StyleBaazar,26.5964,85.4842
 STYLE BAAZAR PIRO,802207,Piro,Bhojpur,Bihar,StyleBaazar,25.4833,84.45
 STYLE BAAZAR PHULWARI SHARIFF,801505,Patna,Patna,Bihar,StyleBaazar,25.6241,85.2117
 STYLE BAAZAR PATNA CITY,800008,Patna,Patna,Bihar,StyleBaazar,25.5941,85.1376
@@ -2222,9 +2222,9 @@ V-Mart - Sheohar,843329,Sheohar,Sitamarhi,Bihar,Vmart,26.65,85.55
 V-Mart - Saguna Mor-Patna,801503,Danapur,Patna,Bihar,Vmart,25.4667,85.1667
 V-Mart - Vaishali-Lalganj,844121,Vaishali,Vaishali,Bihar,Vmart,26.25,85.6667
 V-Mart - Patna-Gola Road,801503,Danapur,Patna,Bihar,Vmart,25.4667,85.1667
-"V Mart - Sitamarhi, Cinema Road",843302,Sitamarhi,Sitamarhi,Bihar,Vmart,26.6234,85.4856
+"V Mart - Sitamarhi, Cinema Road",843320,Sitamarhi,Sitamarhi,Bihar,Vmart,26.5964,85.4842
 V-Mart - Rajiv Nagar,800024,Patna,Patna,Bihar,Vmart,25.5941,85.1376
-V-Mart - Sitamarhi,843302,Sitamarhi,Sitamarhi,Bihar,Vmart,26.6234,85.4856
+V-Mart - Sitamarhi,843320,Sitamarhi,Sitamarhi,Bihar,Vmart,26.5964,85.4842
 V-Mart - Patna Phulwari Sharif,801505,Patna,Patna,Bihar,Vmart,25.6241,85.2117
 V-Mart - Patna-Kurji,800010,Patna,Patna,Bihar,Vmart,25.5922,85.1375
 V-Mart - Patna-Anishabad,800002,Patna,Patna,Bihar,Vmart,25.5941,85.1376
@@ -2244,7 +2244,7 @@ V-Mart - Patna-S2 Mall,800007,Patna,Patna,Bihar,Vmart,25.5941,85.1376
 V-Mart - Patna - Pachim Darwaja,800008,Patna,Patna,Bihar,Vmart,25.5941,85.1376
 V-Mart - Patna-Sampathchak,800007,Patna,Patna,Bihar,Vmart,25.5941,85.1376
 V-Mart - Patna City,800008,Patna,Patna,Bihar,Vmart,25.5941,85.1376
-V-Mart - Sitamarhi,843320,Pupri,Sitamarhi,Bihar,Vmart,26.5833,85.5
+V-Mart - Sitamarhi,843320,Pupri,Sitamarhi,Bihar,Vmart,26.5964,85.4842
 V-Mart - Fatuha,803201,Fatuha,Patna,Bihar,Vmart,25.6377,85.1374
 V-Mart - AP Colony,823001,Gaya,Gaya,Bihar,Vmart,24.7936,84.991
 V-Mart - Church Road,823001,Gaya,Gaya,Bihar,Vmart,24.7936,84.991
@@ -2375,14 +2375,14 @@ V-Mart - Jabalpur-Damohnaka,482002,Jabalpur,Jabalpur,Madhya Pradesh,Vmart,23.181
 V-Mart - Indore- Rajwada,452007,Rajwada,Rajwada,Madhya Pradesh,Vmart,22.5597,75.8433
 V-Mart - Indore-Sapna Sangeeta,452014,Indore,Indore,Madhya Pradesh,Vmart,22.5721,75.8656
 V-Mart - Waidhan-Vidhyanagar Road,486886,Singrauli,Singrauli,Madhya Pradesh,Vmart,24.5341,82.6697
-V-Mart - Churachandpur,795006,Churachandpur,Churachandpur,Arunachal Pradesh,Vmart,24.785,94.385
-V-Mart - Imphal,795001,Imphal,Imphal West,Arunachal Pradesh,Vmart,24.785,94.9389
-V-Mart - Tura-Supermarket,794001,Tura,Tura,Arunachal Pradesh,Vmart,25.5788,90.2256
-V-Mart - Jowai,793150,Jowai,Jowai,Arunachal Pradesh,Vmart,25.9788,92.2103
+V-Mart - Churachandpur,795006,Churachandpur,Churachandpur,Manipur,Vmart,24.785,94.385
+V-Mart - Imphal,795001,Imphal,Imphal West,Manipur,Vmart,24.785,94.9389
+V-Mart - Tura-Supermarket,794001,Tura,Tura,Meghalaya,Vmart,25.5788,90.2256
+V-Mart - Jowai,793150,Jowai,Jowai,Meghalaya,Vmart,25.9788,92.2103
 V-Mart - Jharsuguda,768201,Jharsuguda,Jharsuguda,Odisha,Vmart,22.2328,84.1433
 V-Mart - Bargarh,768028,Bargarh,Bargarh,Odisha,Vmart,21.55,84.15
-V-Mart - Sambalpur,768001,Sambalpur,Sambalpur,Odisha,Vmart,21.4667,84.5833
-V-Mart - Sambalpur,768005,Sambalpur,Sambalpur,Odisha,Vmart,19.8176,85.1533
+V-Mart - Sambalpur,768005,Sambalpur,Sambalpur,Odisha,Vmart,21.4735,83.1857
+V-Mart - Sambalpur,768005,Sambalpur,Sambalpur,Odisha,Vmart,21.4735,83.1857
 V-Mart - Keonjhar,758001,Keonjhar,Keonjhar,Odisha,Vmart,21.8667,85.1833
 V-Mart - Angul-Shankar Cinema Road,759122,Angul,Angul,Odisha,Vmart,20.8333,84.6667
 V-Mart - Nabarangpur,764059,Nabarangpur,Nabarangpur,Odisha,Vmart,19.3667,83.5
@@ -2431,13 +2431,13 @@ V-Mart - Udaipur-Fatehpura,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.712
 V-Mart - Udaipur,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.7127
 V-Mart - Udaipur-Hiran Mangri,313002,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.7123
 V-Mart - Udaipur-Surajpole,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.7127
-"V-Mart - Agartala, Nagarjala",799003,Agartala,West Tripura,Arunachal Pradesh,Vmart,23.8431,91.2761
+"V-Mart - Agartala, Nagarjala",799003,Agartala,West Tripura,Tripura,Vmart,23.8431,91.2761
 V-Mart - Agartala,799010,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2798
-V-Mart - Agartala-Shakuntala Road,799001,Agartala,West Tripura,Arunachal Pradesh,Vmart,23.8103,91.2787
-V-Mart - Bishalgarh-Sepahjala,799102,Bishalgarh,Bishalgarh,Arunachal Pradesh,Vmart,23.9478,91.9956
+V-Mart - Agartala-Shakuntala Road,799001,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2787
+V-Mart - Bishalgarh-Sepahjala,799102,Bishalgarh,Bishalgarh,Tripura,Vmart,23.9478,91.9956
 V-Mart - Udaipur - Tripura,799105,Udaipur Part,Udaipur Part,Tripura,Vmart,23.8267,91.2856
-V-Mart - Belonia-Hall Chowmuhani,799155,Belonia,South Tripura,Arunachal Pradesh,Vmart,23.2167,91.3833
-V-Mart - Dharmanagar-Station Road,799253,Baruakandi,Baruakandi,Arunachal Pradesh,Vmart,23.6578,91.3456
+V-Mart - Belonia-Hall Chowmuhani,799155,Belonia,South Tripura,Tripura,Vmart,23.2167,91.3833
+V-Mart - Dharmanagar-Station Road,799253,Baruakandi,Baruakandi,Tripura,Vmart,23.6578,91.3456
 V-Mart - Bhangel,201304,Noida,Gautam Buddh Nagar,Uttar Pradesh,Vmart,28.475,77.488
 V-Mart - Ghaziabad-Gandhi Nagar,201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Vmart,28.6692,77.4538
 V-Mart - Meerut,250002,Meerut,Meerut,Uttar Pradesh,Vmart,29.012,77.708
@@ -2620,20 +2620,20 @@ V-Mart - Roorkee Ramnagar,247667,Roorkee,Haridwar,Uttarakhand,Vmart,29.8698,77.7
 V-Mart - Haridwar-Shivalik Nagar,249403,Haridwar,Haridwar,Uttar Pradesh,Vmart,29.9845,79.0234
 V-Mart - Haridwar,249407,Haridwar,Haridwar,Uttarakhand,Vmart,29.9756,79.0456
 V-Mart - Kotdwar-Devi Road,246149,Kotdwar,Pauri Garhwal,Uttar Pradesh,Vmart,30.1998,78.6532
-V-Mart - Kashipur,244713,Kashipur,Kashipur,Uttar Pradesh,Vmart,29.2145,78.9456
-V-Mart - Rishikesh-Haridwar Road,249201,Rishikesh,Rishikesh,Uttar Pradesh,Vmart,30.55,78.2667
-V-Mart - Rishikesh-Dehradun Road,249201,Rishikesh,Rishikesh,Uttar Pradesh,Vmart,30.55,78.2667
+V-Mart - Kashipur,244713,Kashipur,Kashipur,Uttarakhand,Vmart,29.2145,78.9456
+V-Mart - Rishikesh-Haridwar Road,249201,Rishikesh,Rishikesh,Uttarakhand,Vmart,30.55,78.2667
+V-Mart - Rishikesh-Dehradun Road,249201,Rishikesh,Rishikesh,Uttarakhand,Vmart,30.55,78.2667
 V-Mart - Majra-Dehradun,248001,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.1934,78.147
 V-Mart - Dehradun-Haridwar Road,248001,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.1934,78.147
 V-Mart - Dehradun,248001,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.1934,78.147
 V-Mart - Dalanwala-Dehradun,248001,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.1934,78.147
-V-Mart - Sahastradhara Road-Dehradun,248013,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.1833,77.9667
-V-Mart - Dehradun-Rajpur Road,248195,Jakhan,Jakhan,Uttar Pradesh,Vmart,30.3167,77.8833
-V-Mart - Dehradun-Vikas Nagar,248198,Dehradun,Dehradun,Uttar Pradesh,Vmart,30.4333,77.9333
+V-Mart - Sahastradhara Road-Dehradun,248013,Dehradun,Dehradun,Uttarakhand,Vmart,30.1833,77.9667
+V-Mart - Dehradun-Rajpur Road,248195,Jakhan,Jakhan,Uttarakhand,Vmart,30.3167,77.8833
+V-Mart - Dehradun-Vikas Nagar,248198,Dehradun,Dehradun,Uttarakhand,Vmart,30.4333,77.9333
 V-Mart - Rudrapur,263153,Rudrapur,Udham Singh Nagar,Uttarakhand,Vmart,29.0239,79.4504
 V-Mart - Haldwani,263139,Haldwani,Haldwani,Uttar Pradesh,Vmart,29.2144,79.5092
-"V-Mart - Srinagar, Srikot",246174,Srikot,Srikot,Uttar Pradesh,Vmart,29.8167,78.8167
-"V-Mart – Pithoragarh, Siltham Chowk",262501,Siltham,Siltham,Uttar Pradesh,Vmart,29.2167,79.0167
+"V-Mart - Srinagar, Srikot",246174,Srikot,Srikot,Uttarakhand,Vmart,29.8167,78.8167
+"V-Mart – Pithoragarh, Siltham Chowk",262501,Siltham,Siltham,Uttarakhand,Vmart,29.2167,79.0167
 "V Mart - Asansol, Sentrum Mall",713305,Asansol,Paschim Burdwan,West Bengal,Vmart,23.7167,87.0167
 V-Mart - Chanchal,732123,Chanchal,Malda,West Bengal,Vmart,25.3,88.25
 V-Mart - Raiganj-Mg Road,733134,Raiganj,North Dinajpur,West Bengal,Vmart,25.5867,88.1134
