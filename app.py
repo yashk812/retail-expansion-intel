@@ -314,22 +314,6 @@ if page == "🗺️ Store Map":
 
     m = folium.Map(location=[clat, clng], zoom_start=zoom, tiles="CartoDB positron")
 
-    # Offset stacked markers so each is individually hoverable
-    import numpy as np
-    coord_counts = {}
-    mdf = mdf.copy()
-    lats, lngs = [], []
-    for _, row in mdf.iterrows():
-        key = (round(row["lat"], 4), round(row["lng"], 4))
-        n = coord_counts.get(key, 0)
-        angle = n * (2 * np.pi / 8)
-        offset = 0.003 * (1 + n // 8)
-        lats.append(row["lat"] + offset * np.sin(angle) if n > 0 else row["lat"])
-        lngs.append(row["lng"] + offset * np.cos(angle) if n > 0 else row["lng"])
-        coord_counts[key] = n + 1
-    mdf["lat_plot"] = lats
-    mdf["lng_plot"] = lngs
-
     for company in sel_companies:
         cdf = mdf[mdf["company"] == company]
         if cdf.empty:
@@ -344,7 +328,7 @@ if page == "🗺️ Store Map":
               <small>{row['state']} – {row['pincode']}</small>
             </div>"""
             folium.CircleMarker(
-                location=[row["lat_plot"], row["lng_plot"]],
+                location=[row["lat"], row["lng"]],
                 radius=7, color=color, fill=True,
                 fill_color=color, fill_opacity=0.85,
                 popup=folium.Popup(popup_html, max_width=220),
