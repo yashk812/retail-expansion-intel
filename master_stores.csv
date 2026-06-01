@@ -2495,11 +2495,11 @@ V-Mart - Jhansi,284002,Jhansi,Jhansi,Uttar Pradesh,Vmart,25.4486,78.5906,673446.
 V-Mart - Kanpur-Kalyanpur,208017,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.491124,80.260098,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur - Keshavpuram,208017,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.49051,80.270401,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Sidhauli,261303,Sidhauli,Hardoi,Uttar Pradesh,Vmart,27.5156,80.9847,24976.0,38293.0,exact,Sidhauli,1,38293.0
-V-Mart - Kanpur - Kakadeo,208025,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.8411,79.5894,13439.0,20605.0,fuzzy_broad,rajapur,1,20605.0
+V-Mart - Kanpur - Kakadeo,208025,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.4775,80.286,13439.0,20605.0,fuzzy_broad,rajapur,1,20605.0
 V-Mart - Kanpur-Gumti,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.466754,80.313918,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.512,80.345,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur-P Road,208004,Purnea,Purnia,Bihar,Vmart,26.8489,79.5789,282248.0,484649.0,corrected,Purnia,1,
-V-Mart - Saket Nagar,208014,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.8456,79.6156,2768057.0,4243972.0,manual_gap_fix,Kanpur,1,
+V-Mart - Saket Nagar,208014,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.4315,80.3147,2768057.0,4243972.0,manual_gap_fix,Kanpur,1,
 V-Mart - Kanpur-Barra,208027,Barra,Banda,Uttar Pradesh,Vmart,26.8567,79.5945,10803.0,16563.0,fuzzy_broad,barha,1,16563.0
 V-Mart - Naubasta-Kanpur,208021,Naubasta,Kanpur Nagar,Uttar Pradesh,Vmart,26.8634,79.6234,8697.0,13334.0,fuzzy_broad,basta,1,13334.0
 V-Mart - Shuklaganj,209861,Unnao,Unnao,Uttar Pradesh,Vmart,26.7234,80.4512,177658.0,272384.0,exact,Unnao,4,68096.0

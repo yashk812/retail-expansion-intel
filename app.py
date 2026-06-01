@@ -1140,7 +1140,7 @@ elif page == "🔍 City Explorer":
         gap = max(0, stores_needed - total_stores)
         comp_breakdown = {c: len(city_df[city_df["company"]==c]) for c in COMPETITORS if len(city_df[city_df["company"]==c]) > 0}
         top_pins = city_df["pincode"].value_counts().head(5).index.tolist()
-        comp_pins = comp_df["pincode"].value_counts().head(5).index.tolist()
+        comp_pins = comp_df["pincode"].value_counts().head(10).index.tolist()
         return {
             "city_df": city_df, "bk_df": bk_df, "comp_df": comp_df,
             "pop": pop, "total_stores": total_stores, "bk_stores": bk_stores,
@@ -1337,8 +1337,9 @@ Format your response with clear sections. Be specific to {city}'s geography and 
                 pin_coords = []
                 city_df_pins = data["city_df"]
                 comp_df_pins = data["comp_df"]
-                # Use top competitor pincodes as proxy for good store locations
-                for i, pin in enumerate(data["comp_pins"][:data["gap"]]):
+                # Cycle through competitor pincodes to place gap number of pins
+                pins_to_use = (data["comp_pins"] * (data["gap"] // len(data["comp_pins"]) + 1))[:data["gap"]] if data["comp_pins"] else []
+                for i, pin in enumerate(pins_to_use):
                     pin_rows = comp_df_pins[comp_df_pins["pincode"]==pin].dropna(subset=["lat","lng"])
                     if not pin_rows.empty:
                         plat = pin_rows["lat"].mean()
