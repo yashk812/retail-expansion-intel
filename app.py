@@ -189,6 +189,8 @@ def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
         "competitors_present":"Competitors Present",
         "top_pincodes":       "Top PIN Codes",
     }
+    # Sort by new_stores_needed numerically before string formatting
+    idf = idf.sort_values("new_stores_needed", ascending=False, na_position="last").reset_index(drop=True)
     show_df = idf[[c for c in display_cols if c in idf.columns]].rename(columns=display_cols)
 
     # Format pop and ps ratio
@@ -680,19 +682,17 @@ elif page == "💡 Expansion Insights":
         | **BK India Avg PS** | ~142,000 people per BK store (BK's current national average) |
         | **Recommended BK stores** | `round(BK PS Ratio / BK India Avg PS)` — for cities with no BK: `round(city pop / BK India Avg PS)` |
         | **New stores needed** | `max(0, Recommended − existing BK stores)` |
-        | **PS Score** | `min(New stores needed × 2, PS weight × 20)` |
+        | **PS Score** | `min(New stores needed × 2, 20)` |
 
         For cities with **no BK presence**, ranked by recommended stores (population signal) then competitor stores (market validation).
         Population source: Census of India 2011, extrapolated to 2026 using state-level urban CAGRs. Cities without a Census match show N/A.
         """)
 
-    sc1, sc2, sc3 = st.columns(3)
+    sc1, sc2 = st.columns(2)
     with sc1:
         radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
     with sc2:
         adj_cap_c = st.slider("Adjacency cap", 1, 30, 10, key="city_cap")
-    with sc3:
-        ps_weight = st.slider("PS ratio weight", 0.0, 1.0, 0.5, step=0.1, key="city_ps_weight")
 
     scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c, adj_cap=adj_cap_c)
 
@@ -721,7 +721,7 @@ elif page == "💡 Expansion Insights":
         lambda r: max(0, (r["recommended_bk"] or 0) - r["bk_stores_city"]) if r["recommended_bk"] is not None else None, axis=1
     )
     ps_df["ps_score"] = ps_df["new_stores_needed"].apply(
-        lambda x: min(int(x) * 2, int(ps_weight * 20)) if pd.notna(x) else 0
+        lambda x: min(int(x) * 2, 20) if pd.notna(x) else 0
     )
 
     scores_c = scores_c.merge(
