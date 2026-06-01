@@ -821,7 +821,7 @@ elif page == "💡 Expansion Insights":
         # Map
         st.subheader("🗺️ Opportunity Map")
         st.caption("Bubble size = BK stores to open. Red=P1, Orange=P2, Grey=P3. Green = existing BK.")
-        map_df = idf.dropna(subset=["lat","lng"]).copy()
+        map_df = idf[idf["bk_stores_to_open"] > 0].dropna(subset=["lat","lng"]).copy()
         if not map_df.empty:
             m2 = folium.Map(location=[map_df["lat"].mean(), map_df["lng"].mean()],
                             zoom_start=5, tiles="CartoDB positron")
