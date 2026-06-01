@@ -762,7 +762,7 @@ elif page == "💡 Expansion Insights":
             | Metric | Formula |
             |--------|---------|
             | **City PS ratio** | City pop ÷ all stores in city (BK + competitors) |
-            | **Stores city should have** | `round(city pop ÷ {int(focus_avg_ps):,})` |
+            | **Stores city should have** | `round(city pop ÷ state PS ratio)` |
             | **Gap stores** | `max(0, should have − existing)` → BK fills this gap |
             | **Tier** | P0 = BK present · P1 = <100km · P2 = 100-200km · P3 = >200km from nearest BK |
 
@@ -862,7 +862,7 @@ elif page == "💡 Expansion Insights":
                   🆕 <b>BK stores to open: {val}</b><br>
                   🏪 Existing: {int(row["total_stores"])} total (BK: {int(row["bk_stores"])})<br>
                   👥 Pop 2026: {pop_s}<br>
-                  📐 City PS: {ps_s} vs avg {int(focus_avg_ps):,}<br>
+                  📐 City PS: {ps_s} | State PS: {int(row["state_ps"]):,}<br>
                   🏪 Competitors: {int(row.get("competitor_stores",0))}<br>
                   📌 Top PINs: {row.get("top_pincodes","N/A")}<br>
                   📍 Nearest BK: {row.get("nearest_bk","N/A")} ({row.get("nearest_bk_km","?")} km)
