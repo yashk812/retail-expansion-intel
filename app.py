@@ -1212,12 +1212,12 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
             # ── Call 2: geocode each recommended area ──────────────────────────
             pins = []
             if locations_raw:
-                areas_list = "
-".join([
+                areas_list = "\n".join([
                     f'{i+1}. {loc.get("area","")}, {city}, {state}, India (PIN: {loc.get("pincode","")})'
                     for i, loc in enumerate(locations_raw)
                 ])
-                prompt2 = f"""Return precise [latitude, longitude] for each location in India.
+
+
 Return ONLY valid JSON: {{"1": [lat, lng], "2": [lat, lng], ...}}
 
 {areas_list}"""
