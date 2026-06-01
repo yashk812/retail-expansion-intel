@@ -910,7 +910,7 @@ elif page == "💡 Expansion Insights":
             bk_stores        = ("bk_stores","sum"),
             num_cities       = ("city","count"),
         ).reset_index()
-        dist_sum = dist_sum.sort_values(["p1_cities","total_bk_to_open"], ascending=False).reset_index(drop=True)
+        dist_sum = dist_sum.sort_values(["p1_bk_to_open","p1_cities"], ascending=False).reset_index(drop=True)
         dist_sum.index += 1
 
         # Bar chart
