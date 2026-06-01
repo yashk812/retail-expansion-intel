@@ -10,7 +10,7 @@ Baazar Kolkata - Asansole Raha Lane,713301,Asansol,Paschim Bardhaman,West Bengal
 Baazar Kolkata - Asansole Sentrum Mall,713305,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
 Baazar Kolkata - Bankura,722101,Bankura,Bankura,West Bengal,Baazar Kolkata,23.416563,86.993996,137386.0,181400.0,exact,Bankura,2,90700.0
 Baazar Kolkata - Barakar,713324,Barakar,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.684755,86.97232,563917.0,42563.0,district_avg,[Paschim Bardhaman avg],1,744577.0
-Baazar Kolkata - Barasat,700120,Barasat,North 24 Parganas,West Bengal,Baazar Kolkata,22.7229,88.4818,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+Baazar Kolkata - Barasat,700120,Barasat,North 24 Parganas,West Bengal,Baazar Kolkata,22.7229,88.4818,4496694.0,367636.0,corrected,Barasat,73,81333.0
 Baazar Kolkata - Bardhaman,713101,Bardhaman,Purba Bardhaman,West Bengal,Baazar Kolkata,23.2324,87.8615,56722.0,74894.0,exact,Kalna,4,18724.0
 Baazar Kolkata - Bardhaman Kalna,713101,Bardhaman,Purba Bardhaman,West Bengal,Baazar Kolkata,23.2324,87.8615,56722.0,74894.0,exact,Kalna,4,18724.0
 Baazar Kolkata - Bardhaman Memari,713146,Memari,Purba Bardhaman,West Bengal,Baazar Kolkata,23.184,88.1293,41451.0,54731.0,exact,Memari,2,27366.0
@@ -51,7 +51,7 @@ Baazar Kolkata - Hasnabad,743426,Hasnabad,North 24 Parganas,West Bengal,Baazar K
 Baazar Kolkata - Hooghly Arambagh,712601,Arambagh,Hooghly,West Bengal,Baazar Kolkata,22.8815,87.7901,66175.0,87375.0,fuzzy,arambag,5,17475.0
 Baazar Kolkata - Hooghly Arambagh 2,712601,Arambagh,Hooghly,West Bengal,Baazar Kolkata,22.8815,87.7901,66175.0,87375.0,fuzzy,arambag,5,17475.0
 Baazar Kolkata - Hooghly Chinsurah,712101,Chinsurah,Hooghly,West Bengal,Baazar Kolkata,22.8938,88.3884,179931.0,237575.0,fuzzy_broad,hugli-chinsurah,2,118788.0
-Baazar Kolkata - Hooghly Serampore Mansi Bazar,712201,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.753492,88.3402,181842.0,240098.0,exact,Serampore,6,40016.0
+Baazar Kolkata - Hooghly Serampore Mansi Bazar,712201,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.753492,88.3402,181842.0,240098.0,corrected,Serampore,6,40016.0
 Baazar Kolkata - Hooghly Uttarpara,712258,Uttarpara,Hooghly,West Bengal,Baazar Kolkata,22.6677,88.3462,66175.0,87375.0,fuzzy,arambag,5,17475.0
 Baazar Kolkata - Howrah Avani Mall,711102,Howrah,Howrah,West Bengal,Baazar Kolkata,22.563961,88.320874,1077075.0,1422134.0,corrected,Haora,16,
 Baazar Kolkata - Howrah Chintamoni Dey Road (Howrah Maidan),711101,Howrah,Howrah,West Bengal,Baazar Kolkata,22.581739,88.331165,1077075.0,1422134.0,corrected,Haora,16,
@@ -73,9 +73,9 @@ Baazar Kolkata - Kendrapara,754211,Kendrapara,Kendrapara,Odisha,Baazar Kolkata,2
 Baazar Kolkata - Kharagpur,721301,Kharagpur,Kharagpur,West Bengal,Baazar Kolkata,22.345084,87.302757,207604.0,274113.0,exact,Kharagpur,5,54823.0
 Baazar Kolkata - Kolkata Axis Mall,700156,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.57051,88.474981,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Kolkata Baghajatin,700047,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.474631,88.3765,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Kolkata Barrackpore,700120,Barrackpore,North 24 Parganas,West Bengal,Baazar Kolkata,22.756,88.3724,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Kolkata Baruipur,700144,Baruipur,South 24 Parganas,West Bengal,Baazar Kolkata,22.3574,88.4348,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Kolkata Basirhat,743411,Basirhat,North 24 Parganas,West Bengal,Baazar Kolkata,22.662988,88.862698,125254.0,165381.0,exact,Basirhat,4,41345.0
+Baazar Kolkata - Kolkata Barrackpore,700120,Barrackpore,North 24 Parganas,West Bengal,Baazar Kolkata,22.756,88.3724,4496694.0,201730.0,corrected,Barrackpore,73,81333.0
+Baazar Kolkata - Kolkata Baruipur,700144,Baruipur,South 24 Parganas,West Bengal,Baazar Kolkata,22.3574,88.4348,4496694.0,70148.0,corrected,Baruipur,73,81333.0
+Baazar Kolkata - Kolkata Basirhat,743411,Basirhat,North 24 Parganas,West Bengal,Baazar Kolkata,22.662988,88.862698,125254.0,165381.0,corrected,Basirhat,4,41345.0
 Baazar Kolkata - Kolkata Behala,700034,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.505794,88.319281,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Kolkata Behala James Long Sarani,700034,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.501165,88.320891,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Kolkata Belgharia B M Banerjee Road,700034,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.556843,88.35465,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -123,7 +123,7 @@ Baazar Kolkata - Sodepur BT Road,700115,Sodepur,North 24 Parganas,West Bengal,Ba
 Baazar Kolkata - Suri,731101,Suri,Birbhum,West Bengal,Baazar Kolkata,23.9174,87.5318,67864.0,89605.0,exact,Suri,4,22401.0
 Baazar Kolkata - Tadong,737102,Gangtok,East Sikkim,Sikkim,Baazar Kolkata,27.33032,88.60639,100286.0,183761.0,exact,Gangtok,3,61254.0
 Baazar Kolkata - Tamluk,721636,Tamluk,Purba Medinipur,West Bengal,Baazar Kolkata,22.199189,87.923853,65306.0,86228.0,exact,Tamluk,2,43114.0
-"Baazar Kolkata - Triveni Mall, Serampore",712202,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.728477,88.352938,181842.0,240098.0,exact,Serampore,6,40016.0
+"Baazar Kolkata - Triveni Mall, Serampore",712202,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.728477,88.352938,181842.0,240098.0,corrected,Serampore,6,40016.0
 Baazar Kolkata - Uluberia,711316,Uluberia,Howrah,West Bengal,Baazar Kolkata,22.4717,88.1077,235345.0,310742.0,exact,Uluberia,2,155371.0
 Baazar Kolkata - Uttar Dinajpur Islampur,733202,Islampur,Uttar Dinajpur,West Bengal,Baazar Kolkata,26.2587,88.1736,54340.0,71749.0,corrected,Islampur,1,71749.0
 Citykart Adil nagar Lucknow,226001,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.889515,80.953765,2817105.0,4319172.0,exact,Lucknow,58,74468.0
@@ -593,8 +593,8 @@ STYLE BAAZAR SODEPUR,700110,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22
 STYLE BAAZAR RAIGANJ,733134,Raiganj,Uttar Dinajpur,West Bengal,StyleBaazar,25.6188,88.124,215514.0,284558.0,fuzzy_broad,bidhannagar,1,284558.0
 STYLE BAAZAR SINGUR,712409,Singur,Hooghly,West Bengal,StyleBaazar,22.818459,88.231664,21382.0,28232.0,exact,Singur,4,7058.0
 STYLE BAAZAR SALKIA,711106,Howrah,Howrah,West Bengal,StyleBaazar,22.605394,88.334305,1077075.0,1422134.0,corrected,Haora,1,
-STYLE BAAZAR SERAMPORE,712201,Serampore,Serampore,West Bengal,StyleBaazar,22.752516,88.342481,181842.0,240098.0,exact,Serampore,6,40016.0
-STYLE BAAZAR GARIAHAT,700029,Gariahat,South 24 Parganas,West Bengal,StyleBaazar,22.521086,88.368645,21064.0,27812.0,fuzzy_broad,guriahati,1,27812.0
+STYLE BAAZAR SERAMPORE,712201,Serampore,Serampore,West Bengal,StyleBaazar,22.752516,88.342481,181842.0,240098.0,corrected,Serampore,6,40016.0
+STYLE BAAZAR GARIAHAT,700029,Gariahat,South 24 Parganas,West Bengal,StyleBaazar,22.521086,88.368645,21064.0,23361.0,district_avg,[South 24 Parganas avg],1,27812.0
 STYLE BAAZAR HABRA,743263,Habra,North 24 Parganas,West Bengal,StyleBaazar,22.8298,88.6529,278435.0,367636.0,exact,Barasat,7,52519.0
 STYLE BAAZAR EGRA,721429,Egra,Paschim Medinipur,West Bengal,StyleBaazar,21.899593,87.53739,30148.0,39806.0,manual_gap_fix,Egra,1,
 STYLE BAAZAR DURGAPUR,713213,Durgapur,Paschim Bardhaman,West Bengal,StyleBaazar,23.5204,87.3119,566517.0,748010.0,corrected,Durgapur,1,
@@ -626,9 +626,9 @@ STYLE BAAZAR BARDHMAN,713101,Bardhaman,Purba Bardhaman,West Bengal,StyleBaazar,2
 STYLE BAAZAR BOLPUR,731204,Bolpur,Birbhum,West Bengal,StyleBaazar,23.667921,87.666101,80210.0,105907.0,exact,Bolpur,2,52954.0
 STYLE BAAZAR BERHAMPORE,742103,Khagra,Murshidabad,West Bengal,StyleBaazar,24.0982,88.2499,7382.0,9747.0,fuzzy_broad,khatra,1,9747.0
 STYLE BAAZAR ARAMBAGH,712601,Arambagh,Hooghly,West Bengal,StyleBaazar,22.8815,87.7901,179931.0,237575.0,corrected,Hugli-Chinsurah,2,
-STYLE BAAZAR BASIRHAT,743411,Basirhat,Basirhat,West Bengal,StyleBaazar,22.662437,88.867,125254.0,165381.0,exact,Basirhat,4,41345.0
-STYLE BAAZAR BARUIPUR,700144,Baruipur,South 24 Parganas,West Bengal,StyleBaazar,22.3574,88.4348,53128.0,70148.0,exact,Baruipur,1,70148.0
-STYLE BAAZAR BARRACKPORE,700120,Barrackpore,North 24 Parganas,West Bengal,StyleBaazar,22.756,88.3724,152783.0,201730.0,exact,Barrackpore,2,100865.0
+STYLE BAAZAR BASIRHAT,743411,Basirhat,Basirhat,West Bengal,StyleBaazar,22.662437,88.867,125254.0,165381.0,corrected,Basirhat,4,41345.0
+STYLE BAAZAR BARUIPUR,700144,Baruipur,South 24 Parganas,West Bengal,StyleBaazar,22.3574,88.4348,53128.0,70148.0,corrected,Baruipur,1,70148.0
+STYLE BAAZAR BARRACKPORE,700120,Barrackpore,North 24 Parganas,West Bengal,StyleBaazar,22.756,88.3724,152783.0,201730.0,corrected,Barrackpore,2,100865.0
 STYLE BAAZAR BANKURA,722101,Bankura,Bankura,West Bengal,StyleBaazar,23.234524,87.063644,137386.0,181400.0,exact,Bankura,2,90700.0
 STYLE BAAZAR BANGAON,743235,Bongaon,North 24 Parganas,West Bengal,StyleBaazar,23.0525,88.828,108864.0,143740.0,corrected,Bongaon,1,
 STYLE BAAZAR BALURGHAT,733101,Balurghat,Dakshin Dinajpur,West Bengal,StyleBaazar,25.22672,88.77852,14076.0,18585.0,fuzzy_broad,dakshin raypur,1,18585.0
@@ -1945,18 +1945,18 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - MALANCHA, KHARAGPUR",721304,Kharagpur,Kharagpur,West Bengal,Zudio,22.417548,87.265313,207604.0,274113.0,exact,Kharagpur,5,54823.0
 "ZUDIO - COLLEGE MORE, BALURGHAT",733101,Balurghat,Dakshin Dinajpur,West Bengal,Zudio,25.230343,88.77819,153279.0,202385.0,exact,Balurghat,2,101192.0
 "ZUDIO - KHAGRABARI, COOCH BEHAR",736179,Cooch Behar,Cooch Behar,West Bengal,Zudio,26.357243,89.438225,77935.0,102903.0,corrected,Koch Bihar,8,12863.0
-"ZUDIO - MAITRA BAGAN, BASIRHAT",743412,Basirhat,North 24 Parganas,West Bengal,Zudio,22.657,88.8694,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - MAITRA BAGAN, BASIRHAT",743412,Basirhat,North 24 Parganas,West Bengal,Zudio,22.657,88.8694,4496694.0,165381.0,corrected,Basirhat,73,81333.0
 "ZUDIO - AMTALA, KOLKATA",743503,Bakrahat,South 24 Parganas,West Bengal,Zudio,22.368913,88.271814,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
-"ZUDIO - ALCOVE TRIVENI MALL, SERAMPORE",712202,Serampore,Hooghly,West Bengal,Zudio,22.804,88.350579,181842.0,240098.0,exact,Serampore,6,40016.0
-"ZUDIO – JUGBERIA, BARRACKPORE",700110,Sodepur,North 24 Parganas,West Bengal,Zudio,22.6957,88.3748,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - ALCOVE TRIVENI MALL, SERAMPORE",712202,Serampore,Hooghly,West Bengal,Zudio,22.804,88.350579,181842.0,240098.0,corrected,Serampore,6,40016.0
+"ZUDIO – JUGBERIA, BARRACKPORE",700110,Sodepur,North 24 Parganas,West Bengal,Zudio,22.6957,88.3748,4496694.0,498236.0,corrected,Panihati,73,81333.0
 "ZUDIO - PARADISE BUILDING, KOLKATA",700074,Kolkata,North 24 Parganas,West Bengal,Zudio,22.620457,88.372969,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - SOUTHERN WOODS, KOLKATA",700103,Kolkata,North 24 Parganas,West Bengal,Zudio,22.466815,88.379597,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - BS PLAZA, MIDNAPORE",721401,Contai,Purba Medinipur,West Bengal,Zudio,21.7885,87.7492,92226.0,121772.0,exact,Contai,5,24354.0
-"ZUDIO - WIRELESS MORE, BARRACKPORE",700121,Barrackpore,North 24 Parganas,West Bengal,Zudio,22.754875,88.36207,152783.0,201730.0,exact,Barrackpore,2,100865.0
+"ZUDIO - WIRELESS MORE, BARRACKPORE",700121,Barrackpore,North 24 Parganas,West Bengal,Zudio,22.754875,88.36207,152783.0,201730.0,corrected,Barrackpore,2,100865.0
 "ZUDIO - PARK STREET, KOLKATA",700016,Kolkata,North 24 Parganas,West Bengal,Zudio,22.541071,88.347396,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO - LAKE MALL, KOLKATA",700029,Gariahat,South 24 Parganas,West Bengal,Zudio,22.516832,88.34923,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - LAKE MALL, KOLKATA",700029,Gariahat,South 24 Parganas,West Bengal,Zudio,22.516832,88.34923,4496694.0,23361.0,district_avg,[South 24 Parganas avg],73,81333.0
 "ZUDIO - MADHYAMGRAM, KOLKATA",700129,Kolkata,North 24 Parganas,West Bengal,Zudio,22.521197,88.461309,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO - BARRACKPORE, KOLKATA",700120,Barrackpore,North 24 Parganas,West Bengal,Zudio,22.756,88.3724,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - BARRACKPORE, KOLKATA",700120,Barrackpore,North 24 Parganas,West Bengal,Zudio,22.756,88.3724,4496694.0,201730.0,corrected,Barrackpore,73,81333.0
 "ZUDIO - SHIBPUR, HOWRAH",711102,Howrah,Howrah,West Bengal,Zudio,22.680202,88.278744,1077075.0,1422134.0,corrected,Haora,16,
 "ZUDIO - COSMOS CIRCLE, JALPAIGURI",735101,Jalpaiguri,Jalpaiguri,West Bengal,Zudio,26.679552,88.46418,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
 "ZUDIO - MARTIN IMPALA, KOLKATA",700048,Kolkata,North 24 Parganas,West Bengal,Zudio,22.469415,88.402252,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -1968,10 +1968,10 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - LILUAH, KOLKATA",711204,Howrah,Howrah,West Bengal,Zudio,22.567968,88.324211,1077075.0,1422134.0,corrected,Haora,16,
 "ZUDIO - SENTRUM MALL, ASANSOL",713305,Asansol,Paschim Bardhaman,West Bengal,Zudio,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
 "ZUDIO - BARANAGAR, KOLKATA",700035,Kolkata,North 24 Parganas,West Bengal,Zudio,22.488877,88.397364,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO - NAIHATI, KOLKATA",743166,Naihati,North 24 Parganas,West Bengal,Zudio,22.8939,88.4226,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - NAIHATI, KOLKATA",743166,Naihati,North 24 Parganas,West Bengal,Zudio,22.8939,88.4226,4496694.0,287708.0,corrected,Naihati,73,81333.0
 "ZUDIO – SODEPUR, KOLKATA",700115,Kolkata,North 24 Parganas,West Bengal,Zudio,22.610843,88.376607,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - G CENTRE MALL, KOLKATA",700007,Kolkata,North 24 Parganas,West Bengal,Zudio,22.585145,88.357717,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO - SERAMPORE, HOOGHLY",712204,Serampore,Hooghly,West Bengal,Zudio,22.7484,88.3414,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+"ZUDIO - SERAMPORE, HOOGHLY",712204,Serampore,Hooghly,West Bengal,Zudio,22.7484,88.3414,4496694.0,240098.0,corrected,Serampore,73,81333.0
 "ZUDIO – MAJARHATI, KOLKATA",700135,Kolkata,North 24 Parganas,West Bengal,Zudio,22.632805,88.474277,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - FORUM RANGOLI MALL, HOWRAH",711202,Howrah,Howrah,West Bengal,Zudio,22.625329,88.353281,1077075.0,1422134.0,corrected,Haora,16,
 "ZUDIO - GARIAHAT, KOLKATA",700019,Kolkata,North 24 Parganas,West Bengal,Zudio,22.521086,88.368645,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -1997,11 +1997,11 @@ mBaazar - BALLY,711201,Bally,Howrah,West Bengal,mBaazar,22.6557,88.3408,293373.0
 mBaazar - BALUGAON,752030,Balugaon,Puri,Odisha,mBaazar,19.747713,85.20665,19289.0,28059.0,exact,Nimapada,4,7015.0
 mBaazar - Balurghat,733101,Balurghat,Dakshin Dinajpur,West Bengal,mBaazar,25.226628,88.782207,153279.0,202385.0,exact,Balurghat,2,101192.0
 mBaazar - Bangaon,743235,Bongaon,North 24 Parganas,West Bengal,mBaazar,23.0525,88.828,108864.0,143740.0,exact,Bongaon,4,35935.0
-mBaazar - BARASAT,700124,Barasat,North 24 Parganas,West Bengal,mBaazar,22.7229,88.4818,278435.0,367636.0,exact,Barasat,7,52519.0
+mBaazar - BARASAT,700124,Barasat,North 24 Parganas,West Bengal,mBaazar,22.7229,88.4818,278435.0,367636.0,corrected,Barasat,7,52519.0
 mBaazar - Barobisha,736207,Barobisha,Alipurduar,West Bengal,mBaazar,26.50241,89.316231,65232.0,86130.0,corrected,Alipurduar,1,
 mBaazar - BARPETA ROAD,781315,Barpeta,Barpeta,Assam,mBaazar,26.489059,90.958383,42649.0,63974.0,corrected,Barpeta,5,12795.0
-mBaazar - Barrackpore,700120,Barrackpore,North 24 Parganas,West Bengal,mBaazar,22.756,88.3724,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-mBaazar - BARUIPUR,700144,Baruipur,South 24 Parganas,West Bengal,mBaazar,22.3574,88.4348,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+mBaazar - Barrackpore,700120,Barrackpore,North 24 Parganas,West Bengal,mBaazar,22.756,88.3724,4496694.0,201730.0,corrected,Barrackpore,73,81333.0
+mBaazar - BARUIPUR,700144,Baruipur,South 24 Parganas,West Bengal,mBaazar,22.3574,88.4348,4496694.0,70148.0,corrected,Baruipur,73,81333.0
 mBaazar - BEHALA,700060,Behala,Kolkata,West Bengal,mBaazar,22.505836,88.319436,9584.0,12654.0,fuzzy_broad,beharia,2,6327.0
 mBaazar - Belgharia,700056,Belgharia,Kolkata,West Bengal,mBaazar,22.660625,88.388834,5858.0,7735.0,exact,Belgharia,1,7735.0
 mBaazar - Belonia,799155,Belonia,South Tripura,Tripura,mBaazar,23.250902,91.45276,19996.0,33066.0,exact,Belonia,2,16533.0
@@ -2161,7 +2161,7 @@ mBaazar - SAMBALPUR,768001,Sambalpur,Sambalpur,Odisha,mBaazar,21.465988,83.97841
 mBaazar - Samsi,732139,Samsi,Malda,West Bengal,mBaazar,25.280426,88.005325,31920.0,24661.0,district_avg,[Malda avg],1,
 mBaazar - SEALDAH,700014,Kolkata,North 24 Parganas,West Bengal,mBaazar,22.702127,88.344222,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - Semiliguda,764036,Semiliguda,Koraput,Odisha,mBaazar,18.706564,82.85414,,47000.0,district_fallback,[Koraput district est.],2,
-mBaazar - SERAMPORE,712201,Serampore,Hooghly,West Bengal,mBaazar,22.752516,88.342481,181842.0,240098.0,exact,Serampore,6,40016.0
+mBaazar - SERAMPORE,712201,Serampore,Hooghly,West Bengal,mBaazar,22.752516,88.342481,181842.0,240098.0,corrected,Serampore,6,40016.0
 mBaazar - Sikar,332001,Sikar,Sikar,Rajasthan,mBaazar,27.609494,75.140023,244497.0,381473.0,exact,Sikar,1,381473.0
 mBaazar - Silapathar,787057,Silapathar,Dhemaji,Assam,mBaazar,27.59402,94.72353,25662.0,38493.0,exact,Silapathar,1,38493.0
 mBaazar - SILCHAR,788001,Silchar,Cachar,Assam,mBaazar,24.82995,92.800341,178865.0,268299.0,exact,Silchar,8,33537.0
@@ -2650,10 +2650,10 @@ V-Mart - Bandel,712123,Bandel,Hooghly,West Bengal,Vmart,23.05,88.3833,179931.0,2
 V-Mart -Chakdaha,741222,Kalyani,Nadia,West Bengal,Vmart,23.076513,88.529407,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
 V-Mart,743165,Naihati,North 24 Parganas,West Bengal,Vmart,22.8756,88.4167,217900.0,287708.0,exact,Naihati,5,57542.0
 V-Mart - Dankuni,712311,Dankuni,Hooghly,West Bengal,Vmart,22.683,88.2985,94936.0,125350.0,exact,Dankuni,5,25070.0
-V-Mart - Alcove New Kolkata,712202,Serampore,Hooghly,West Bengal,Vmart,22.8667,88.3833,181842.0,240098.0,exact,Serampore,6,40016.0
+V-Mart - Alcove New Kolkata,712202,Serampore,Hooghly,West Bengal,Vmart,22.8667,88.3833,181842.0,240098.0,corrected,Serampore,6,40016.0
 V-Mart - Konnagar-Ig Road,712235,Konnagar,Hooghly,West Bengal,Vmart,22.7167,88.3333,76172.0,100575.0,exact,Konnagar,1,100575.0
 V-Mart - Howrah-Avani Mall,711102,Howrah,Howrah,West Bengal,Vmart,22.5833,88.25,1077075.0,1422134.0,corrected,Haora,16,
 V-Mart - Kolkata-Esplanade,700013,Kolkata,North 24 Parganas,West Bengal,Vmart,22.5628,88.3598,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-V-Mart - Kolkata-Barasat,700124,Barasat,North 24 Parganas,West Bengal,Vmart,22.7229,88.4818,278435.0,367636.0,exact,Barasat,7,52519.0
+V-Mart - Kolkata-Barasat,700124,Barasat,North 24 Parganas,West Bengal,Vmart,22.7229,88.4818,278435.0,367636.0,corrected,Barasat,7,52519.0
 V-Mart - Bongaon-Jessore Road,743235,Bongaon,North 24 Parganas,West Bengal,Vmart,23.0525,88.828,108864.0,143740.0,exact,Bongaon,4,35935.0
-V-Mart - Basirhat,743411,Basirhat,North 24 Parganas,West Bengal,Vmart,22.7134,88.786,125254.0,165381.0,exact,Basirhat,4,41345.0
+V-Mart - Basirhat,743411,Basirhat,North 24 Parganas,West Bengal,Vmart,22.7134,88.786,125254.0,165381.0,corrected,Basirhat,4,41345.0
