@@ -91,7 +91,7 @@ Baazar Kolkata - Kolkata Metro Cinema,700013,Kolkata,North 24 Parganas,West Beng
 Baazar Kolkata - Kolkata Naktala,700047,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.481817,88.356077,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Kolkata Rajarhat,700135,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.5534,88.3687,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Kolkata Sealdah,700014,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.56984,88.37451,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Kolkata Sodepur,700110,Sodepur,North 24 Parganas,West Bengal,Baazar Kolkata,22.695084,88.399821,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+Baazar Kolkata - Kolkata Sodepur,700110,Sodepur,North 24 Parganas,West Bengal,Baazar Kolkata,22.695084,88.399821,4496694.0,498236.0,manual_gap_fix,Panihati,73,81333.0
 Baazar Kolkata - Kolkata V.I.P Road,700059,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.591527,88.392631,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 Baazar Kolkata - Krishnanagar,741101,Krishnanagar,Nadia,West Bengal,Baazar Kolkata,22.457838,88.33538,153062.0,202098.0,corrected,Krishnanagar,73,81333.0
 Baazar Kolkata - Malda Pranto Pally,393217,English Bazaar,Malda,West Bengal,Baazar Kolkata,24.4234,87.8956,205521.0,271363.0,fuzzy,english bazar,2,135682.0
@@ -119,7 +119,7 @@ Baazar Kolkata - Siliguri Sevoke Road City Garden,734001,Siliguri,Darjeeling,Wes
 Baazar Kolkata - Siliguri Vega Mall,734008,Siliguri,Siliguri,West Bengal,Baazar Kolkata,26.754596,88.440786,294546.0,388909.0,manual_gap_fix,Siliguri (M Corp.),11,
 Baazar Kolkata - Singur,712409,Singur,Hooghly,West Bengal,Baazar Kolkata,22.9167,88.1333,21382.0,28232.0,exact,Singur,4,7058.0
 Baazar Kolkata - Sitamarhi,843302,Sitamarhi,Sitamarhi,Bihar,Baazar Kolkata,26.594573,85.492784,67818.0,116451.0,exact,Sitamarhi,12,9704.0
-Baazar Kolkata - Sodepur BT Road,700115,Sodepur,North 24 Parganas,West Bengal,Baazar Kolkata,22.682863,88.385694,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+Baazar Kolkata - Sodepur BT Road,700115,Sodepur,North 24 Parganas,West Bengal,Baazar Kolkata,22.682863,88.385694,4496694.0,498236.0,manual_gap_fix,Panihati,73,81333.0
 Baazar Kolkata - Suri,731101,Suri,Birbhum,West Bengal,Baazar Kolkata,24.0289,87.2845,67864.0,89605.0,exact,Suri,4,22401.0
 Baazar Kolkata - Tadong,737102,Gangtok,East Sikkim,Sikkim,Baazar Kolkata,27.33032,88.60639,100286.0,183761.0,exact,Gangtok,3,61254.0
 Baazar Kolkata - Tamluk,721636,Tamluk,Purba Medinipur,West Bengal,Baazar Kolkata,22.199189,87.923853,65306.0,86228.0,exact,Tamluk,2,43114.0
@@ -438,7 +438,7 @@ STYLE BAAZAR PARVATHIPURAM,535501,Vizianagaram,Vizianagaram,Andhra Pradesh,Style
 EB-PANDUA,712149,Pandua,Hooghly,West Bengal,StyleBaazar,23.074186,88.279625,30700.0,40535.0,exact,Pandua,2,20268.0
 EB-DINHATA,743145,Kanchrapara,North 24 Parganas,West Bengal,StyleBaazar,26.0107,89.6589,129576.0,171088.0,exact,Kanchrapara,6,28515.0
 EB-HABRA,743263,Barasat,North 24 Parganas,West Bengal,StyleBaazar,22.846125,88.657745,278435.0,367636.0,exact,Barasat,7,52519.0
-EB-SODEPUR,700114,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22.697179,88.409916,377347.0,498236.0,exact,Panihati,2,249118.0
+EB-SODEPUR,700114,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22.697179,88.409916,377347.0,498236.0,manual_gap_fix,Panihati,2,249118.0
 SB-VIKASNAGAR,226022,Lucknow,Lucknow,Uttar Pradesh,StyleBaazar,26.886962,80.95334,9456.0,14498.0,fuzzy_broad,tikait nagar,1,14498.0
 SB-RASRA,221712,Rasra,Ballia,Uttar Pradesh,StyleBaazar,25.864244,83.856545,31765.0,48702.0,exact,Rasra,1,48702.0
 SB-RAIGANJ (02),733134,Raiganj,Uttar Dinajpur,West Bengal,StyleBaazar,25.62101,88.12883,183612.0,242435.0,exact,Raiganj,4,60609.0
@@ -589,7 +589,7 @@ STYLE BAAZAR LINDSAY,700087,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22
 STYLE BAAZAR ULUBERIA,711316,Howrah,Howrah,West Bengal,StyleBaazar,22.5667,88.25,152783.0,201730.0,manual_gap_fix,Barrackpore,1,
 STYLE BAAZAR TUFANGANJ,736159,Tufan Ganj,Dinajpur,West Bengal,StyleBaazar,26.311265,89.664958,20998.0,27725.0,fuzzy,tufanganj,1,27725.0
 STYLE BAAZAR SURI,731101,Suri,Suri,West Bengal,StyleBaazar,23.892896,87.531968,67864.0,89605.0,exact,Suri,4,22401.0
-STYLE BAAZAR SODEPUR,700110,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22.696537,88.395768,8900.0,11751.0,fuzzy_broad,serpur,1,11751.0
+STYLE BAAZAR SODEPUR,700110,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22.696537,88.395768,8900.0,498236.0,manual_gap_fix,Panihati,1,11751.0
 STYLE BAAZAR RAIGANJ,733134,Raiganj,Uttar Dinajpur,West Bengal,StyleBaazar,25.585,88.1317,215514.0,284558.0,fuzzy_broad,bidhannagar,1,284558.0
 STYLE BAAZAR SINGUR,712409,Singur,Hooghly,West Bengal,StyleBaazar,22.818459,88.231664,21382.0,28232.0,exact,Singur,4,7058.0
 STYLE BAAZAR SALKIA,711106,Howrah,Howrah,West Bengal,StyleBaazar,22.605394,88.334305,235345.0,310742.0,manual_gap_fix,Uluberia,1,
@@ -1936,7 +1936,7 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - GT ROAD, UTTARPARA",712233,Uttarpara,Hooghly,West Bengal,Zudio,22.674519,88.349548,6810.0,8992.0,fuzzy,uttarparanij,2,4496.0
 "ZUDIO - GARDEN REACH, KOLKATA",700044,Kolkata,North 24 Parganas,West Bengal,Zudio,22.552689,88.269288,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - SENTRUM MALL, KRISHNANAGAR",741101,Krishnanagar,Nadia,West Bengal,Zudio,23.401091,88.48466,153062.0,202098.0,corrected,Krishnanagar,73,81333.0
-"ZUDIO - RATHINDRA CINEMA, KOLKATA",700114,Sodepur,North 24 Parganas,West Bengal,Zudio,22.701942,88.38354,377347.0,498236.0,exact,Panihati,2,249118.0
+"ZUDIO - RATHINDRA CINEMA, KOLKATA",700114,Sodepur,North 24 Parganas,West Bengal,Zudio,22.701942,88.38354,377347.0,498236.0,manual_gap_fix,Panihati,2,249118.0
 "ZUDIO - HATIBAGAN, KOLKATA",700006,Kolkata,North 24 Parganas,West Bengal,Zudio,22.594262,88.378169,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - CHANDANNAGAR, HOOGHLY",712136,Kolkata,North 24 Parganas,West Bengal,Zudio,22.51583,88.38903,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - JOYGACHI, HABRA",743263,Barasat,North 24 Parganas,West Bengal,Zudio,22.846125,88.657745,278435.0,367636.0,exact,Barasat,7,52519.0
@@ -2172,7 +2172,7 @@ mBaazar - Singur,712409,Singur,Hooghly,West Bengal,mBaazar,22.9167,88.1333,21382
 mBaazar - SITAMARHI,843302,Sitamarhi,Sitamarhi,Bihar,mBaazar,26.594631,85.49218,67818.0,116451.0,exact,Sitamarhi,12,9704.0
 mBaazar - Sitapur Road,226021,Lucknow,Lucknow,Uttar Pradesh,mBaazar,26.8124,80.985,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 mBaazar - SIWAN,841226,Siwan,Siwan,Bihar,mBaazar,26.2155,84.362257,135066.0,231922.0,exact,Siwan,10,23192.0
-mBaazar - Sodepur,700110,Sodepur,North 24 Parganas,West Bengal,mBaazar,22.5634,88.3456,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+mBaazar - Sodepur,700110,Sodepur,North 24 Parganas,West Bengal,mBaazar,22.5634,88.3456,4496694.0,498236.0,manual_gap_fix,Panihati,73,81333.0
 mBaazar - Sonari,785690,Sonari,Jorhat,Assam,mBaazar,27.026693,95.02137,19810.0,29715.0,exact,Sonari,1,29715.0
 mBaazar - Sujapur,732206,Malda,Malda,West Bengal,mBaazar,25.066313,88.137955,7773.0,10263.0,fuzzy_broad,sadpur,1,10263.0
 mBaazar - SULTANPUR,228001,Sultanpur,Sultanpur,Uttar Pradesh,mBaazar,26.261031,82.07221,107640.0,165033.0,exact,Sultanpur,5,33007.0
