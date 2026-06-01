@@ -1103,12 +1103,12 @@ elif page == "🔍 City Explorer":
 
     # ── City definitions ───────────────────────────────────────────────────────
     ARCHETYPE_CITIES = {
-        "🔴 Kolkata, WB":     {"city": "Kolkata",   "state": "West Bengal",  "archetype": "Heavy BK Presence",   "color": "#C62828"},
-        "🔴 Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Heavy BK Presence",   "color": "#C62828"},
-        "🟡 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Avg BK Presence",     "color": "#FF9800"},
-        "🟡 Siliguri, WB":    {"city": "Siliguri",  "state": "West Bengal",  "archetype": "Avg BK Presence",     "color": "#FF9800"},
-        "🟢 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "Low / No BK",         "color": "#2E7D32"},
-        "🟢 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "Low / No BK",         "color": "#2E7D32"},
+        "🔴 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "No BK — 8 stores needed",   "color": "#C62828"},
+        "🟠 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "No BK — 3 stores needed",   "color": "#E65100"},
+        "🟡 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 3 stores needed",   "color": "#F9A825"},
+        "🟡 Rourkela, OD":    {"city": "Rourkela",  "state": "Odisha",       "archetype": "No BK — 3 stores needed",   "color": "#F9A825"},
+        "🔵 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Existing Market (3 BK)",     "color": "#1565C0"},
+        "⚫ Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Saturated Market (5 BK)",    "color": "#424242"},
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
     ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
@@ -1332,6 +1332,27 @@ Format your response with clear sections. Be specific to {city}'s geography and 
                     mime="text/html"
                 )
         else:
+            # Add proposed store pins from AI recommendation (pincode centroids)
+            if data["gap"] > 0 and data["comp_pins"]:
+                pin_coords = []
+                city_df_pins = data["city_df"]
+                comp_df_pins = data["comp_df"]
+                # Use top competitor pincodes as proxy for good store locations
+                for i, pin in enumerate(data["comp_pins"][:data["gap"]]):
+                    pin_rows = comp_df_pins[comp_df_pins["pincode"]==pin].dropna(subset=["lat","lng"])
+                    if not pin_rows.empty:
+                        plat = pin_rows["lat"].mean()
+                        plng = pin_rows["lng"].mean() + 0.003 * (i % 2 == 0)  # slight offset to avoid overlap
+                        folium.Marker(
+                            location=[plat, plng],
+                            tooltip=f"📍 Proposed BK store {i+1} (PIN: {pin})",
+                            popup=folium.Popup(
+                                f"<b style='color:#2E7D32'>📍 Proposed BK Store #{i+1}</b><br>"
+                                f"Area: PIN {pin}<br>Based on competitor concentration",
+                                max_width=220
+                            ),
+                            icon=folium.Icon(color="green", icon="plus", prefix="fa")
+                        ).add_to(m)
             st_folium(m, width="100%", height=520,
                       returned_objects=[], key=f"map_{city}_{state}_auto")
 

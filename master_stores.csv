@@ -482,7 +482,7 @@ STYLE BAAZAR KENDRAPARA,754211,Kendrapara,Kendrapara,Odisha,StyleBaazar,20.50348
 STYLE BAAZAR JEYPORE,764001,Koraput,Koraput,Odisha,StyleBaazar,18.863689,82.570642,47468.0,69050.0,exact,Koraput,1,69050.0
 STYLE BAAZAR JAJPUR,755018,Jajpur,Jajpur,Odisha,StyleBaazar,20.849913,86.328445,37458.0,54489.0,fuzzy,jajapur,5,10898.0
 EXPRESS BAAZAR NAYAGARH,752069,Nayagarh,Nayagarh,Odisha,StyleBaazar,20.129406,85.121581,17030.0,24773.0,corrected,Nayagarh,2,12386.0
-CUTTACK(02),828109,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.832046,86.52138,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
+CUTTACK(02),828109,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.8386,86.5186,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
 STYLE BAAZAR NABARANGPUR,764059,Nabarangpur,Nabarangpur,Odisha,StyleBaazar,19.225986,82.54851,36945.0,53743.0,fuzzy,nabarangapur,3,17914.0
 STYLE BAAZAR ATHAGARH,754029,Athagarh,Cuttack,Odisha,StyleBaazar,21.363138,86.703479,885363.0,94411.0,district_fallback,[Cuttack district est.],1,
 STYLE BAAZAR BHAWANIPATNA,766001,Bhawanipatna,Bhawanipatna,Odisha,StyleBaazar,20.1917,83.5028,69045.0,100438.0,exact,Bhawanipatna,1,100438.0
@@ -563,7 +563,7 @@ STYLE BAAZAR BADARPUR,788806,Badarpur,Karimganj,Assam,StyleBaazar,24.8667,92.55,
 STYLE BAAZAR JAGI ROAD,782410,Nagaon,Nagaon,Assam,StyleBaazar,26.948041,94.531003,121628.0,182443.0,exact,Nagaon,6,30407.0
 STYLE BAAZAR TITABOR,785630,Titabar,Jorhat,Assam,StyleBaazar,26.15,93.2833,71782.0,33729.0,district_avg,[Jorhat avg],1,
 STYLE BAAZAR JAYANAGAR,781022,Guwahati,Guwahati,Assam,StyleBaazar,26.115451,91.78669,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
-STYLE BAAZAR HIRAPUR,826001,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.861788,86.48181,1162472.0,15119.0,state_median,[Jharkhand median],1,
+STYLE BAAZAR HIRAPUR,826001,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.8022,86.4353,1162472.0,15119.0,state_median,[Jharkhand median],1,
 STYLE BAAZAR HAZARIBAGH,825301,Hazaribagh,Hazaribagh,Jharkhand,StyleBaazar,23.988764,85.359992,142489.0,225905.0,fuzzy,hazaribag,4,56476.0
 STYLE BAAZAR CHAKRADHARPUR,833102,Chakradharpur,Chakradharpur,Jharkhand,StyleBaazar,23.6833,84.85,56531.0,89625.0,fuzzy,chakardharpur,2,44812.0
 STYLE BAAZAR GOVINDPUR,828109,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.832046,86.52138,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
@@ -2351,9 +2351,9 @@ V-Mart - Bokaro Mall,827003,Bokaro,Bokaro,Jharkhand,Vmart,23.7957,85.2689,39305.
 V-Mart - Deoghar,814122,Deoghar,Deoghar,Jharkhand,Vmart,24.493408,86.69274,142489.0,322035.0,corrected,Deoghar,1,
 V-Mart - Chaas,827013,Bokaro,Bokaro,Jharkhand,Vmart,23.8333,85.0833,39305.0,62315.0,exact,Bokaro,6,10386.0
 V-Mart - Madhupur,815353,Madhupur,Deoghar,Jharkhand,Vmart,24.95,85.4,55238.0,87575.0,exact,Madhupur,1,87575.0
-V-Mart - Dhanbad-Binodbihari Chowk,828130,Dhanbad,Dhanbad,Jharkhand,Vmart,24.215553,86.927414,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
+V-Mart - Dhanbad-Binodbihari Chowk,826013,Dhanbad,Dhanbad,Jharkhand,Vmart,23.7968,86.434,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
 V-Mart - Hirapur,826001,Dhanbad,Dhanbad,Jharkhand,Vmart,23.802227,86.435275,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
-V-Mart - Dhanbad-Saraidhella,828127,Dhanbad,Dhanbad,Jharkhand,Vmart,23.795645,86.430435,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
+V-Mart - Dhanbad-Saraidhella,828127,Dhanbad,Dhanbad,Jharkhand,Vmart,23.7821,86.4489,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
 V-Mart - Adityapur,831005,Kadma,East Singhbhum,Jharkhand,Vmart,23.8167,85.3,5753.0,9121.0,fuzzy_broad,karma,1,9121.0
 V-Mart - Jamshedpur-Sakchi Ambagan,831001,Jamshedpur,East Singhbhum,Jharkhand,Vmart,22.804179,86.20364,677350.0,1073882.0,exact,Jamshedpur,12,89490.0
 V-Mart - Dumka,814101,Dumka,Dumka,Jharkhand,Vmart,24.3,87.2667,47584.0,75440.0,exact,Dumka,4,18860.0
