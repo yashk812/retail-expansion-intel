@@ -1290,6 +1290,14 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
 
     st.markdown("---")
 
+    # ── Pre-fetch AI pins before map renders (auto mode only) ─────────────────
+    cache_key = f"{city}_{state}"
+    if mode == "🤖 Auto Recommend" and data["gap"] > 0:
+        if "ai_pins" not in st.session_state or cache_key not in st.session_state.get("ai_pins", {}):
+            with st.spinner(f"Generating AI recommendations for {city}... (~10 seconds)"):
+                _rec, _pins = get_ai_recommendation(city, state, data, arch)
+            st.rerun()  # rerun so map renders with pins already in session state
+
     # ── Main layout: map left, panel right ────────────────────────────────────
     map_col, panel_col = st.columns([3, 1])
 
@@ -1431,12 +1439,13 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
         if data["gap"] == 0:
             st.info(f"{city} is already at or above the recommended store count based on the state PS ratio. Focus on quality over quantity here.")
         else:
-            with st.spinner(f"Generating recommendation for {city}... (this takes ~10 seconds)"):
-                rec_text, ai_pins = get_ai_recommendation(city, state, data, arch)
-            st.markdown(rec_text)
-            if ai_pins:
-                st.caption(f"📍 {len(ai_pins)} proposed store location(s) shown on map above — based on AI recommendations")
-            cache_key = f"{city}_{state}"
+            # Already fetched before map — just read from cache
+            rec_text = st.session_state.get("ai_recs", {}).get(cache_key, "")
+            ai_pins  = st.session_state.get("ai_pins", {}).get(cache_key, [])
+            if rec_text:
+                st.markdown(rec_text)
+                if ai_pins:
+                    st.caption(f"📍 {len(ai_pins)} proposed store location(s) shown on map — AI recommended")
             if st.button("🔄 Regenerate", key="regen"):
                 if "ai_recs" in st.session_state and cache_key in st.session_state["ai_recs"]:
                     del st.session_state["ai_recs"][cache_key]
