@@ -656,53 +656,79 @@ elif page == "📊 Stats by Company":
 elif page == "💡 Expansion Insights":
     st.title("💡 Expansion Insights for Baazar Kolkata")
 
-    tab1, tab2 = st.tabs(["📍 District Opportunities", "🏙️ City Opportunities"])
+    # ── District tab temporarily removed — will be re-added as logistics view ──
+    # tab1, tab2 = st.tabs(["📍 District Opportunities", "🏙️ City Opportunities"])
 
-    # ── Tab 1: District ───────────────────────────────────────────────────────
-    with tab1:
-        st.caption("Strategic view — which districts to prioritise at a macro level.")
-        with st.expander("🧮 How the Opportunity Score works", expanded=False):
-            st.markdown("""
-            | Component | Formula |
-            |-----------|---------|
-            | **Competitor Presence** | Count of all non-BK stores in that district |
-            | **BK Presence** | Count of BK stores in that district |
-            | **Adjacency Bonus** | BK stores within radius (outside this district), capped at your chosen limit |
-            | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
+    st.subheader("🏙️ City Opportunities")
+    st.caption("Which cities to target for new BK stores — using competitor data, adjacency, and population/store ratios.")
 
-            High score = lots of competitor activity, little/no BK footprint.
-            Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this district.
-            """)
-        dc1, dc2 = st.columns(2)
-        with dc1:
-            radius_km_d = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="dist_radius")
-        with dc2:
-            adj_cap_d = st.slider("Adjacency cap (max BK stores counted)", 1, 30, 10, key="dist_cap")
-        scores_d, bk_df, _ = compute_scores(df, ["district", "state"], radius_km=radius_km_d, adj_cap=adj_cap_d)
-        render_opportunity_ui(scores_d, bk_df, df, "district", key_prefix="dist", default_min=3)
+    with st.expander("🧮 How scoring works", expanded=False):
+        st.markdown("""
+        #### Opportunity Score
+        | Component | Formula |
+        |-----------|---------|
+        | **Competitor Presence** | Count of all non-BK stores in that city |
+        | **BK Presence** | Count of BK stores in that city × 3 (penalty) |
+        | **Adjacency Bonus** | BK stores within radius (outside this city), capped at your chosen limit |
+        | **PS Score** | Contribution from the Population/Store ratio signal (see below) |
+        | **Total Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus + PS Score` |
 
-    # ── Tab 2: City ───────────────────────────────────────────────────────────
-    with tab2:
-        st.caption("Tactical view — which specific cities within target districts have competitor presence but no BK.")
-        with st.expander("🧮 How the Opportunity Score works", expanded=False):
-            st.markdown("""
-            | Component | Formula |
-            |-----------|---------|
-            | **Competitor Presence** | Count of all non-BK stores in that city |
-            | **BK Presence** | Count of BK stores in that city |
-            | **Adjacency Bonus** | BK stores within radius (outside this city), capped at your chosen limit |
-            | **Opportunity Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus` |
+        #### Population/Store (PS) Ratio
+        | Component | Formula |
+        |-----------|---------|
+        | **BK PS Ratio** | City pop 2026 est. ÷ BK stores in city |
+        | **BK India Avg PS** | ~142,000 people per BK store (BK's current national average) |
+        | **Recommended BK stores** | `round(city pop / BK India Avg PS)` |
+        | **New stores needed** | `max(0, Recommended − existing BK stores)` |
+        | **PS Score** | `min(New stores needed × 2, PS weight × 20)` |
 
-            High score = lots of competitor activity, little/no BK footprint.
-            Adjacency bonus = count of BK stores within your chosen radius, excluding stores in this city.
-            """)
-        cc1, cc2 = st.columns(2)
-        with cc1:
-            radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
-        with cc2:
-            adj_cap_c = st.slider("Adjacency cap (max BK stores counted)", 1, 30, 10, key="city_cap")
-        scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c, adj_cap=adj_cap_c)
-        render_opportunity_ui(scores_c, bk_df, df, "city", key_prefix="city", default_min=2)
+        For cities with **no BK presence**, ranked by recommended stores (population signal) then competitor stores (market validation).
+        Population source: Census of India 2011, extrapolated to 2026 using state-level urban CAGRs. Cities without a Census match show N/A.
+        """)
+
+    sc1, sc2, sc3 = st.columns(3)
+    with sc1:
+        radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
+    with sc2:
+        adj_cap_c = st.slider("Adjacency cap", 1, 30, 10, key="city_cap")
+    with sc3:
+        ps_weight = st.slider("PS ratio weight", 0.0, 1.0, 0.5, step=0.1, key="city_ps_weight")
+
+    scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c, adj_cap=adj_cap_c)
+
+    # ── PS ratio enrichment ───────────────────────────────────────────────────
+    BK_AVG_PS = 142000
+
+    city_pop    = df.drop_duplicates(subset=["city","state"])[["city","state","pop_2026"]].copy()
+    city_total  = df.groupby(["city","state"]).size().reset_index(name="total_stores_city")
+    city_bk     = df[df["company"]=="Baazar Kolkata"].groupby(["city","state"]).size().reset_index(name="bk_stores_city")
+
+    ps_df = city_pop.merge(city_total, on=["city","state"], how="left")
+    ps_df = ps_df.merge(city_bk,      on=["city","state"], how="left")
+    ps_df["bk_stores_city"] = ps_df["bk_stores_city"].fillna(0).astype(int)
+
+    ps_df["bk_ps_ratio"] = ps_df.apply(
+        lambda r: r["pop_2026"] / r["bk_stores_city"] if r["bk_stores_city"] > 0 and pd.notna(r["pop_2026"]) else None, axis=1
+    )
+    ps_df["recommended_bk"] = ps_df["pop_2026"].apply(
+        lambda p: max(1, round(p / BK_AVG_PS)) if pd.notna(p) else None
+    )
+    ps_df["new_stores_needed"] = ps_df.apply(
+        lambda r: max(0, (r["recommended_bk"] or 0) - r["bk_stores_city"]) if r["recommended_bk"] is not None else None, axis=1
+    )
+    ps_df["ps_score"] = ps_df["new_stores_needed"].apply(
+        lambda x: min(int(x) * 2, int(ps_weight * 20)) if pd.notna(x) else 0
+    )
+
+    scores_c = scores_c.merge(
+        ps_df[["city","state","pop_2026","bk_ps_ratio","recommended_bk","new_stores_needed","ps_score"]],
+        on=["city","state"], how="left"
+    )
+    scores_c["ps_score"]          = scores_c["ps_score"].fillna(0).astype(int)
+    scores_c["opportunity_score"] = scores_c["opportunity_score"] + scores_c["ps_score"]
+    scores_c = scores_c.sort_values("opportunity_score", ascending=False).reset_index(drop=True)
+
+    render_city_ui(scores_c, bk_df, df, key_prefix="city", default_min=2)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 4 – MASTER DATA
