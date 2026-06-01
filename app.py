@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
@@ -705,12 +706,29 @@ elif page == "💡 Expansion Insights":
     city_agg = city_agg.sort_values("total_stores", ascending=False)
     city_agg = city_agg.drop_duplicates(subset=["city","state"], keep="first").reset_index(drop=True)
 
-    # Focus avg PS
+    # ── State PS ratios ───────────────────────────────────────────────────────
+    # State PS = total state urban pop (census) / total stores in that state
+    towns_df = pd.read_csv("census_towns_2026.csv") if os.path.exists("census_towns_2026.csv") else pd.DataFrame()
+
+    state_urban_pop = pd.DataFrame()
+    if not towns_df.empty:
+        state_urban_pop = towns_df[towns_df["state_std"].isin(FOCUS_STATES)].groupby("state_std").agg(
+            state_urban_pop_2026=("pop_2026","sum")
+        ).reset_index().rename(columns={"state_std":"state"})
+
+    state_total_stores = focus_df.groupby("state").size().reset_index(name="state_total_stores")
+    state_ps_df = state_urban_pop.merge(state_total_stores, on="state", how="left")
+    state_ps_df["state_ps"] = state_ps_df["state_urban_pop_2026"] / state_ps_df["state_total_stores"]
+    state_ps_map = dict(zip(state_ps_df["state"], state_ps_df["state_ps"]))
+
+    # Fallback: focus-wide avg for any state not found
     has_pop = city_agg[city_agg["pop_2026"].notna()]
     focus_avg_ps = float(has_pop["pop_2026"].sum() / has_pop["total_stores"].sum()) if len(has_pop) > 0 else 100000.0
 
-    city_agg["city_ps"]           = (city_agg["pop_2026"] / city_agg["total_stores"]).round(0)
-    city_agg["stores_needed"]     = (city_agg["pop_2026"] / focus_avg_ps).round(0).fillna(0).clip(lower=1)
+    city_agg["state_ps"]  = city_agg["state"].map(state_ps_map).fillna(focus_avg_ps)
+    city_agg["city_ps"]   = (city_agg["pop_2026"] / city_agg["total_stores"]).round(0)
+
+    city_agg["stores_needed"]     = (city_agg["pop_2026"] / city_agg["state_ps"]).round(0).fillna(0).clip(lower=1)
     city_agg["gap_stores"]        = (city_agg["stores_needed"] - city_agg["total_stores"]).clip(lower=0)
     city_agg["bk_stores_to_open"] = city_agg["gap_stores"].fillna(0).astype(int)
     city_agg["stores_needed"]     = city_agg["stores_needed"].astype(int)
@@ -735,7 +753,7 @@ elif page == "💡 Expansion Insights":
 
     # ── Tab 1: City Opportunities ──────────────────────────────────────────────
     with tab_city:
-        st.caption(f"Focus states avg PS ratio: **{int(focus_avg_ps):,}** people per store (Census 2026 est.)")
+        st.caption(f"Each city benchmarked against its own **state PS ratio** (state urban pop ÷ state total stores). Focus avg: **{int(focus_avg_ps):,}** people/store.")
 
         with st.expander("🧮 How it works", expanded=False):
             st.markdown(f"""
@@ -813,6 +831,7 @@ elif page == "💡 Expansion Insights":
                      column_config={
                          "Pop 2026 (est.)":    st.column_config.NumberColumn(format="%d"),
                          "City PS Ratio":      st.column_config.NumberColumn(format="%d"),
+                         "State PS Ratio":     st.column_config.NumberColumn(format="%d"),
                          "BK Stores to Open":  st.column_config.NumberColumn(format="%d"),
                          "Stores Should Have": st.column_config.NumberColumn(format="%d"),
                          "Distance (km)":      st.column_config.NumberColumn(format="%d"),
