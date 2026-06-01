@@ -786,6 +786,20 @@ elif page == "💡 Expansion Insights":
         idf = idf.sort_values("bk_stores_to_open", ascending=False).reset_index(drop=True)
         idf.index += 1
 
+        # ── State PS reference cards ───────────────────────────────────────────
+        active_states = filter_states if filter_states else FOCUS_STATES
+        ps_cards = state_ps_df[state_ps_df["state"].isin(active_states)].sort_values("state_ps")
+        if not ps_cards.empty:
+            st.markdown("**State PS Ratios being used as benchmarks:**")
+            cols = st.columns(min(len(ps_cards), 7))
+            for i, (_, row) in enumerate(ps_cards.iterrows()):
+                with cols[i % len(cols)]:
+                    st.metric(
+                        label=row["state"].replace(" Bengal","_B.").replace("Arunachal Pradesh","Arunachal"),
+                        value=f"{int(row['state_ps']):,}",
+                        help=f"State urban pop: {int(row['state_urban_pop_2026']):,} ÷ {int(row['state_total_stores'])} stores"
+                    )
+
         # Bar chart top 10
         top10 = idf.head(10)
         if not top10.empty:
