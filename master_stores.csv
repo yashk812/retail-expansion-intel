@@ -98,7 +98,7 @@ Baazar Kolkata - Malda Pranto Pally,393217,English Bazaar,Malda,West Bengal,Baaz
 Baazar Kolkata - Malda PRM Centrepoint Mall,732103,Malda,Malda,West Bengal,Baazar Kolkata,24.884308,88.04569,31920.0,42146.0,fuzzy_broad,matla,6,7024.0
 Baazar Kolkata - Malda Ravindra Avenue,732101,Malda,Malda,West Bengal,Baazar Kolkata,25.0,88.14,31920.0,42146.0,fuzzy_broad,matla,6,7024.0
 Baazar Kolkata - Maslandapur,743289,Maslandapur,North 24 Parganas,West Bengal,Baazar Kolkata,22.855565,88.74653,10790.0,14247.0,exact,Maslandapur,2,7124.0
-Baazar Kolkata - Medinipur,721101,Medinipur,Purba Medinipur,West Bengal,Baazar Kolkata,22.4156,87.7834,169264.0,223491.0,exact,Medinipur,3,74497.0
+Baazar Kolkata - Medinipur,721101,Medinipur,Paschim Medinipur,West Bengal,Baazar Kolkata,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
 Baazar Kolkata - Naihati,743165,Naihati,North 24 Parganas,West Bengal,Baazar Kolkata,22.891134,88.419556,217900.0,287708.0,exact,Naihati,5,57542.0
 Baazar Kolkata - Naihati (Near Yatri Niwas),743165,Naihati,North 24 Parganas,West Bengal,Baazar Kolkata,22.887464,88.421214,217900.0,287708.0,exact,Naihati,5,57542.0
 Baazar Kolkata - Paradeep,754141,Paradeep,Jagatsinghpur,Odisha,Baazar Kolkata,20.488344,86.28435,68585.0,99769.0,manual,Paradip,3,33256.0
@@ -980,7 +980,7 @@ V2 Retail Ltd. (HW17),731224,Rampurhat,Birbhum,West Bengal,V2 Retail,24.174253,8
 V2 Retail Ltd. (HW18),713213,Durgapur,Benachity Durgapur,West Bengal,V2 Retail,23.560063,87.276889,566517.0,748010.0,exact,Durgapur,3,249337.0
 V2 Retail Ltd. (HW19),721301,Kharagpur,Kharagpur,West Bengal,V2 Retail,22.345084,87.302757,207604.0,274113.0,exact,Kharagpur,5,54823.0
 V2 Retail Ltd. (HW20),713301,Asansol,Paschim Burdwan,West Bengal,V2 Retail,23.684755,86.97232,563917.0,744577.0,exact,Asansol,9,82731.0
-V2 Retail Ltd. (HW21),721101,Medinipur,Purba Medinipur,West Bengal,V2 Retail,22.42586,87.320045,169264.0,223491.0,exact,Medinipur,3,74497.0
+V2 Retail Ltd. (HW21),721101,Medinipur,Paschim Medinipur,West Bengal,V2 Retail,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
 V2 Retail Ltd. (HW24),713305,Asansol,Paschim Burdwan,West Bengal,V2 Retail,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
 V2 Retail Ltd. (HW25),742103,Berhampore,Murshidabad,West Bengal,V2 Retail,24.106569,88.245794,195223.0,257766.0,exact,Berhampore,5,51553.0
 V2 Retail Ltd. (HW26),743263,Barasat,North 24 Parganas,West Bengal,V2 Retail,22.841873,88.6562,278435.0,367636.0,exact,Barasat,7,52519.0
@@ -2111,7 +2111,7 @@ mBaazar - MASAURHI,804452,Masaurhi,Patna,Bihar,mBaazar,25.195568,85.505138,59803
 mBaazar - MASLANDAPUR,743289,Maslandapur,North 24 Parganas,West Bengal,mBaazar,22.68797,88.449469,10790.0,14247.0,exact,Maslandapur,2,7124.0
 mBaazar - Mathabhanga,736146,Mathabhanga,Coochbehar,West Bengal,mBaazar,26.340317,89.21556,23890.0,31544.0,exact,Mathabhanga,1,31544.0
 mBaazar - Mazbat,784507,Mazbat,Udalguri Mazbat,Assam,mBaazar,26.791279,92.292076,,,no_match,,1,
-mBaazar - MEDINIPUR,721101,Medinipur,Purba Medinipur,West Bengal,mBaazar,22.42586,87.320045,169264.0,223491.0,exact,Medinipur,3,74497.0
+mBaazar - MEDINIPUR,721101,Medinipur,Paschim Medinipur,West Bengal,mBaazar,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
 mBaazar - Memari,713146,Memari,Memari,West Bengal,mBaazar,23.17685,88.09513,41451.0,54731.0,exact,Memari,2,27366.0
 mBaazar - Mirza,781125,Mirza,Kamrup,Assam,mBaazar,26.1667,90.4167,,,no_match,,1,
 mBaazar - Moirabari,782126,Moirabari,Morigaon,Assam,mBaazar,26.25219,92.342064,,,no_match,,1,

@@ -710,8 +710,12 @@ elif page == "💡 Expansion Insights":
     ps_df["bk_ps_ratio"] = ps_df.apply(
         lambda r: r["pop_2026"] / r["bk_stores_city"] if r["bk_stores_city"] > 0 and pd.notna(r["pop_2026"]) else None, axis=1
     )
-    ps_df["recommended_bk"] = ps_df["pop_2026"].apply(
-        lambda p: max(1, round(p / BK_AVG_PS)) if pd.notna(p) else None
+    # Correct formula: Recommended = round(BK PS ratio / BK avg PS)
+    # For no-BK cities: use pop / BK_AVG_PS directly (since PS ratio = infinity)
+    ps_df["recommended_bk"] = ps_df.apply(
+        lambda r: max(1, round(r["bk_ps_ratio"] / BK_AVG_PS)) if pd.notna(r["bk_ps_ratio"])
+        else (max(1, round(r["pop_2026"] / BK_AVG_PS)) if pd.notna(r["pop_2026"]) else None),
+        axis=1
     )
     ps_df["new_stores_needed"] = ps_df.apply(
         lambda r: max(0, (r["recommended_bk"] or 0) - r["bk_stores_city"]) if r["recommended_bk"] is not None else None, axis=1
