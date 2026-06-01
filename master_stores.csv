@@ -5,8 +5,8 @@ Baazar Kolkata - Agartala Post Office Chowmuhani,799001,Agartala,West Tripura,Tr
 Baazar Kolkata - Alipurduar Falakata,735211,Falakata,Alipurduar,West Bengal,Baazar Kolkata,26.51987,89.20204,25218.0,33297.0,exact,Mal,2,16648.0
 Baazar Kolkata - Amtala,743398,Amtala,South 24 Parganas,West Bengal,Baazar Kolkata,22.174924,88.209736,8765.0,11573.0,exact,Amtala,1,11573.0
 Baazar Kolkata - Andul,711109,Andul,Howrah,West Bengal,Baazar Kolkata,22.56743,88.271545,6302.0,8321.0,exact,Andul,2,4160.0
-Baazar Kolkata - Asansole Bus Stand,713301,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.6739,86.9524,563917.0,744577.0,exact,Asansol,9,82731.0
-Baazar Kolkata - Asansole Raha Lane,713301,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.6739,86.9524,563917.0,744577.0,exact,Asansol,9,82731.0
+Baazar Kolkata - Asansole Bus Stand,713301,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.6833,86.9833,563917.0,744577.0,exact,Asansol,9,82731.0
+Baazar Kolkata - Asansole Raha Lane,713301,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.6833,86.9833,563917.0,744577.0,exact,Asansol,9,82731.0
 Baazar Kolkata - Asansole Sentrum Mall,713305,Asansol,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
 Baazar Kolkata - Bankura,722101,Bankura,Bankura,West Bengal,Baazar Kolkata,23.416563,86.993996,137386.0,181400.0,exact,Bankura,2,90700.0
 Baazar Kolkata - Barakar,713324,Barakar,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.684755,86.97232,563917.0,42563.0,district_avg,[Paschim Bardhaman avg],1,744577.0
@@ -979,7 +979,7 @@ V2 Retail Ltd. (HW16),712101,Chinsurah,Hooghly,West Bengal,V2 Retail,22.8938,88.
 V2 Retail Ltd. (HW17),731224,Rampurhat,Birbhum,West Bengal,V2 Retail,23.8085,87.7882,57833.0,76361.0,exact,Rampurhat,5,15272.0
 V2 Retail Ltd. (HW18),713213,Durgapur,Paschim Bardhaman,West Bengal,V2 Retail,23.5204,87.3119,566517.0,748010.0,corrected,Durgapur,3,249337.0
 V2 Retail Ltd. (HW19),721301,Kharagpur,Kharagpur,West Bengal,V2 Retail,22.345084,87.302757,207604.0,274113.0,exact,Kharagpur,5,54823.0
-V2 Retail Ltd. (HW20),713301,Asansol,Paschim Bardhaman,West Bengal,V2 Retail,23.6739,86.9524,563917.0,744577.0,exact,Asansol,9,82731.0
+V2 Retail Ltd. (HW20),713301,Asansol,Paschim Bardhaman,West Bengal,V2 Retail,23.6833,86.9833,563917.0,744577.0,exact,Asansol,9,82731.0
 V2 Retail Ltd. (HW21),721101,Medinipur,Paschim Medinipur,West Bengal,V2 Retail,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
 V2 Retail Ltd. (HW24),713305,Asansol,Paschim Bardhaman,West Bengal,V2 Retail,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
 V2 Retail Ltd. (HW25),742103,Khagra,Murshidabad,West Bengal,V2 Retail,24.0982,88.2499,195223.0,257766.0,corrected,Berhampore,5,51553.0
@@ -1983,7 +1983,7 @@ mBaazar - AMTALA,743503,Bakrahat,South 24 Parganas,West Bengal,mBaazar,22.369211
 mBaazar - Anandapur,758015,Anandapur,Keonjhar,Odisha,mBaazar,21.213827,86.12248,39585.0,57583.0,fuzzy,anandpur,1,57583.0
 mBaazar - ANDUL ROAD,711109,Andul,Howrah,West Bengal,mBaazar,22.58441,88.246419,6302.0,8321.0,exact,Andul,2,4160.0
 mBaazar - Arambagh,712601,Arambagh,Hooghly,West Bengal,mBaazar,22.8815,87.7901,66175.0,87375.0,fuzzy,arambag,5,17475.0
-mBaazar - ASANSOL,713301,Asansol,Paschim Bardhaman,West Bengal,mBaazar,23.6739,86.9524,563917.0,744577.0,exact,Asansol,9,82731.0
+mBaazar - ASANSOL,713301,Asansol,Paschim Bardhaman,West Bengal,mBaazar,23.6833,86.9833,563917.0,744577.0,exact,Asansol,9,82731.0
 mBaazar - Aska,761110,Aska,Ganjam,Odisha,mBaazar,22.0432,86.6234,21428.0,31171.0,fuzzy,asika,2,15586.0
 mBaazar - AZAMGARH,276001,Azamgarh,Azamgarh,Uttar Pradesh,mBaazar,26.073908,83.18572,110983.0,170159.0,exact,Azamgarh,9,18907.0
 mBaazar - Backerganj,800004,Patna,Patna,Bihar,mBaazar,25.609907,85.137764,1684297.0,2892112.0,corrected,Patna,48,60252.0
@@ -2058,7 +2058,7 @@ mBaazar - HAJO,781102,Hajo,Kamrup,Assam,mBaazar,26.249462,91.52743,15188.0,22782
 mBaazar - HATIBAGAN,700004,Kolkata,North 24 Parganas,West Bengal,mBaazar,22.599966,88.372935,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - Hatsingimari,783135,Hatsingimari,Dhubri,Assam,mBaazar,25.728144,89.898766,63388.0,33950.0,district_avg,[Dhubri avg],1,
 mBaazar - HOWRAH,711101,Howrah,Howrah,West Bengal,mBaazar,22.567824,88.324377,1077075.0,1422134.0,corrected,Haora,16,
-mBaazar - HUTTON ROAD - ASANSOL,713301,Asansol,Paschim Bardhaman,West Bengal,mBaazar,23.6739,86.9524,563917.0,744577.0,exact,Asansol,9,82731.0
+mBaazar - HUTTON ROAD - ASANSOL,713301,Asansol,Paschim Bardhaman,West Bengal,mBaazar,23.6833,86.9833,563917.0,744577.0,exact,Asansol,9,82731.0
 mBaazar - Illambazar,731214,Panagarh,Paschim Bardhaman,West Bengal,mBaazar,23.664959,87.69571,7125.0,9408.0,fuzzy,ilambazar,1,9408.0
 mBaazar - JAIGAON,736182,Jaigaon,Alipurduar,West Bengal,mBaazar,26.8757,89.8369,42254.0,55791.0,fuzzy,jaygaon,2,27896.0
 mBaazar - JAJPUR,755019,Jajpur,Jajpur,Odisha,mBaazar,20.849913,86.328445,37458.0,54489.0,fuzzy,jajapur,5,10898.0
