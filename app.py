@@ -678,7 +678,7 @@ elif page == "💡 Expansion Insights":
         |-----------|---------|
         | **BK PS Ratio** | City pop 2026 est. ÷ BK stores in city |
         | **BK India Avg PS** | ~142,000 people per BK store (BK's current national average) |
-        | **Recommended BK stores** | `round(city pop / BK India Avg PS)` |
+        | **Recommended BK stores** | `round(BK PS Ratio / BK India Avg PS)` — for cities with no BK: `round(city pop / BK India Avg PS)` |
         | **New stores needed** | `max(0, Recommended − existing BK stores)` |
         | **PS Score** | `min(New stores needed × 2, PS weight × 20)` |
 
