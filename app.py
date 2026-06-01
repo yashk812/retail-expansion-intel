@@ -1222,6 +1222,7 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
                     "Return ONLY valid JSON: {\"1\": [lat, lng], \"2\": [lat, lng], ...}\n\n"
                     + areas_list
                 )
+                r2 = requests.post(
                     "https://api.anthropic.com/v1/messages",
                     headers={"Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01"},
                     json={"model":"claude-haiku-4-5-20251001","max_tokens":300,
