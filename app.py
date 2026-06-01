@@ -221,6 +221,7 @@ def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
             styled = show_df.style.applymap(highlight_new_stores, subset=["New BK Stores Needed"])
         except Exception:
             styled = show_df
+    st.dataframe(styled, use_container_width=True, height=520)
 
     # ── Map ───────────────────────────────────────────────────────────────────
     st.subheader("🗺️ Opportunity Map")
