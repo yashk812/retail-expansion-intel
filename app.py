@@ -676,7 +676,7 @@ elif page == "📊 Stats by Company":
 elif page == "💡 Expansion Insights":
     st.title("💡 Expansion Insights for Baazar Kolkata")
 
-    tab_city, tab_dist = st.tabs(["🏙️ City Opportunities", "📍 District Rollup"])
+    tab_city, tab_state, tab_dist = st.tabs(["🏙️ City Opportunities", "🗺️ State Overview", "📍 District Rollup"])
 
     # ── Shared computation ─────────────────────────────────────────────────────
     focus_df = df[df["state"].isin(FOCUS_STATES)].copy()
@@ -800,7 +800,28 @@ elif page == "💡 Expansion Insights":
                         help=f"State urban pop: {int(row['state_urban_pop_2026']):,} ÷ {int(row['state_total_stores'])} stores"
                     )
 
+        # ── State summary cards ────────────────────────────────────────────
+        active_states_filter = filter_states if filter_states else FOCUS_STATES
+        state_summary_data = idf.groupby("state").agg(
+            proposed_stores=("bk_stores_to_open","sum"),
+            num_cities=("city","count"),
+        ).reset_index()
+        state_summary_data = state_summary_data.merge(
+            state_ps_df[["state","state_ps"]], on="state", how="left"
+        )
+        if not state_summary_data.empty:
+            cols_ss = st.columns(min(len(state_summary_data), 4))
+            for i, (_, sr) in enumerate(state_summary_data.iterrows()):
+                with cols_ss[i % len(cols_ss)]:
+                    st.metric(
+                        label=f"🏙️ {sr['state']}",
+                        value=f"{int(sr['proposed_stores'])} new BK stores",
+                        delta=f"{int(sr['num_cities'])} cities | PS {int(sr['state_ps']):,}",
+                        delta_color="off",
+                    )
+
         # Bar chart top 10
+
         top10 = idf.head(10)
         if not top10.empty:
             fig = px.bar(top10[::-1], x="bk_stores_to_open", y="city",
@@ -908,7 +929,108 @@ elif page == "💡 Expansion Insights":
             folium.LayerControl().add_to(m2)
             st_folium(m2, width="100%", height=580, returned_objects=[])
 
-    # ── Tab 2: District Rollup ─────────────────────────────────────────────────
+    # ── Tab 2: State Overview ────────────────────────────────────────────────
+    with tab_state:
+        st.caption("State-level summary — where BK operates today vs where we're proposing to enter.")
+
+        COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
+
+        # BK existing stores per state
+        bk_by_state  = focus_df[focus_df["company"]=="Baazar Kolkata"].groupby("state").size().reset_index(name="bk_stores_current")
+        # Proposed new BK stores from city_agg
+        prop_by_state = city_agg.groupby("state")["bk_stores_to_open"].sum().reset_index(name="bk_stores_proposed")
+        # Competitor counts per company per state
+        comp_counts = {}
+        for comp in COMPETITORS:
+            comp_counts[comp] = focus_df[focus_df["company"]==comp].groupby("state").size().reset_index(name=comp)
+
+        state_tab_df = state_ps_df[["state","state_urban_pop_2026","state_ps"]].copy()
+        state_tab_df = state_tab_df.merge(bk_by_state,  on="state", how="left")
+        state_tab_df = state_tab_df.merge(prop_by_state, on="state", how="left")
+        state_tab_df["bk_stores_current"]  = state_tab_df["bk_stores_current"].fillna(0).astype(int)
+        state_tab_df["bk_stores_proposed"] = state_tab_df["bk_stores_proposed"].fillna(0).astype(int)
+        state_tab_df["bk_total_proposed"]  = state_tab_df["bk_stores_current"] + state_tab_df["bk_stores_proposed"]
+        state_tab_df["status"] = state_tab_df["bk_stores_current"].apply(
+            lambda x: "🟢 Existing Market" if x > 0 else "🔵 New Market"
+        )
+
+        for comp in COMPETITORS:
+            state_tab_df = state_tab_df.merge(comp_counts[comp], on="state", how="left")
+            state_tab_df[comp] = state_tab_df[comp].fillna(0).astype(int)
+
+        state_tab_df["total_competitor_stores"] = state_tab_df[COMPETITORS].sum(axis=1).astype(int)
+        state_tab_df = state_tab_df.sort_values("bk_stores_proposed", ascending=False).reset_index(drop=True)
+        state_tab_df.index += 1
+
+        # KPI summary
+        k1, k2, k3, k4 = st.columns(4)
+        k1.metric("Focus States", len(state_tab_df))
+        k2.metric("Existing BK Markets", int((state_tab_df["bk_stores_current"]>0).sum()))
+        k3.metric("New Markets", int((state_tab_df["bk_stores_current"]==0).sum()))
+        k4.metric("Total New BK Stores Proposed", int(state_tab_df["bk_stores_proposed"].sum()))
+
+        st.markdown("---")
+
+        # Bar chart
+        fig_s = px.bar(
+            state_tab_df.sort_values("bk_stores_proposed"),
+            x="bk_stores_proposed", y="state", orientation="h",
+            color="status",
+            color_discrete_map={"🟢 Existing Market":"#2E7D32","🔵 New Market":"#1565C0"},
+            title="Proposed New BK Stores by State",
+            labels={"bk_stores_proposed":"New BK Stores","state":"State"}
+        )
+        fig_s.update_layout(height=420, margin=dict(l=0,r=20,t=40,b=20))
+        st.plotly_chart(fig_s, use_container_width=True)
+
+        # Table
+        st.subheader("📋 State Overview")
+        display_state = {
+            "state":                  "State",
+            "status":                 "Status",
+            "bk_stores_current":      "BK Stores (now)",
+            "bk_stores_proposed":     "New BK Stores Proposed",
+            "bk_total_proposed":      "BK Total (after)",
+            "state_urban_pop_2026":   "Urban Pop 2026 (est.)",
+            "state_ps":               "State PS Ratio",
+            "total_competitor_stores":"Total Competitor Stores",
+        }
+        for comp in COMPETITORS:
+            display_state[comp] = comp
+
+        show_s = state_tab_df[[c for c in display_state if c in state_tab_df.columns]].rename(columns=display_state)
+
+        def hl_status(val):
+            if "Existing" in str(val): return "background-color: #e8f5e9; color: #1B5E20"
+            if "New" in str(val):      return "background-color: #e3f2fd; color: #0D47A1"
+            return ""
+
+        def hl_proposed(val):
+            if val is None: return ""
+            try:
+                n = int(val)
+                if n >= 20: return "background-color: #ff9999; color: #000; font-weight: bold"
+                if n >= 5:  return "background-color: #ffe066; color: #000; font-weight: bold"
+            except: pass
+            return ""
+
+        try:
+            styled_s = show_s.style.map(hl_status, subset=["Status"]).map(hl_proposed, subset=["New BK Stores Proposed"])
+        except Exception:
+            styled_s = show_s.style.applymap(hl_status, subset=["Status"]).applymap(hl_proposed, subset=["New BK Stores Proposed"])
+
+        st.dataframe(styled_s, use_container_width=True, height=560,
+                     column_config={
+                         "Urban Pop 2026 (est.)":    st.column_config.NumberColumn(format="%d"),
+                         "State PS Ratio":           st.column_config.NumberColumn(format="%d"),
+                         "BK Stores (now)":          st.column_config.NumberColumn(format="%d"),
+                         "New BK Stores Proposed":   st.column_config.NumberColumn(format="%d"),
+                         "BK Total (after)":         st.column_config.NumberColumn(format="%d"),
+                         "Total Competitor Stores":  st.column_config.NumberColumn(format="%d"),
+                         **{comp: st.column_config.NumberColumn(format="%d") for comp in COMPETITORS},
+                     })
+
+    # ── Tab 3: District Rollup ─────────────────────────────────────────────────
     with tab_dist:
         st.caption("Which districts should BK prioritise? Ranked by P1 cities (within 100km of existing BK).")
 
