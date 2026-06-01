@@ -193,23 +193,27 @@ def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
     idf = idf.sort_values("new_stores_needed", ascending=False, na_position="last").reset_index(drop=True)
     show_df = idf[[c for c in display_cols if c in idf.columns]].rename(columns=display_cols)
 
-    # Format pop and ps ratio
+    # Keep New BK Stores Needed as numeric for proper sorting
+    # Format Pop and PS Ratio as strings (display only), but NOT new_stores_needed
     if "Pop 2026 (est.)" in show_df.columns:
         show_df["Pop 2026 (est.)"] = show_df["Pop 2026 (est.)"].apply(
-            lambda x: f"{int(x):,}" if pd.notna(x) else "N/A"
+            lambda x: int(x) if pd.notna(x) else None
         )
     if "BK PS Ratio" in show_df.columns:
         show_df["BK PS Ratio"] = show_df["BK PS Ratio"].apply(
-            lambda x: f"{int(x):,}" if pd.notna(x) else "N/A"
+            lambda x: int(x) if pd.notna(x) else None
         )
     if "New BK Stores Needed" in show_df.columns:
         show_df["New BK Stores Needed"] = show_df["New BK Stores Needed"].apply(
-            lambda x: f"{int(x)}" if pd.notna(x) else "N/A"
+            lambda x: int(x) if pd.notna(x) else None
+        )
+    if "Recommended BK Total" in show_df.columns:
+        show_df["Recommended BK Total"] = show_df["Recommended BK Total"].apply(
+            lambda x: int(x) if pd.notna(x) else None
         )
 
     def highlight_new_stores(val):
-        if val == "N/A" or not str(val).isdigit():
-            return ""
+        if val is None or pd.isna(val): return ""
         n = int(val)
         if n >= 5:   return "background-color: #ff9999; color: #000; font-weight: bold"
         elif n >= 2: return "background-color: #ffe066; color: #000; font-weight: bold"
@@ -223,7 +227,19 @@ def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
             styled = show_df.style.applymap(highlight_new_stores, subset=["New BK Stores Needed"])
         except Exception:
             styled = show_df
-    st.dataframe(styled, use_container_width=True, height=520)
+
+    st.dataframe(
+        styled,
+        use_container_width=True,
+        height=520,
+        column_config={
+            "Pop 2026 (est.)":      st.column_config.NumberColumn(format="%d"),
+            "BK PS Ratio":          st.column_config.NumberColumn(format="%d"),
+            "New BK Stores Needed": st.column_config.NumberColumn(format="%d"),
+            "Recommended BK Total": st.column_config.NumberColumn(format="%d"),
+        }
+    )
+
 
     # ── Map ───────────────────────────────────────────────────────────────────
     st.subheader("🗺️ Opportunity Map")
