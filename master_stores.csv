@@ -11,9 +11,9 @@ Baazar Kolkata - Asansole Sentrum Mall,713305,Asansol,Paschim Burdwan,West Benga
 Baazar Kolkata - Bankura,722101,Bankura,Bankura,West Bengal,Baazar Kolkata,23.416563,86.993996,137386.0,181400.0,exact,Bankura,2,90700.0
 Baazar Kolkata - Barakar,713324,Barakar,Burdwan,West Bengal,Baazar Kolkata,23.684755,86.97232,563917.0,744577.0,manual,Asansol,1,744577.0
 Baazar Kolkata - Barasat,700120,Kolkata,North 24 Parganas,West Bengal,Baazar Kolkata,22.7645,88.3725,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Bardhaman,713101,Kalna,Hooghly,West Bengal,Baazar Kolkata,23.546972,87.293236,56722.0,74894.0,exact,Kalna,4,18724.0
-Baazar Kolkata - Bardhaman Kalna,713101,Kalna,Hooghly,West Bengal,Baazar Kolkata,23.222294,88.364456,56722.0,74894.0,exact,Kalna,4,18724.0
-Baazar Kolkata - Bardhaman Memari,713146,Memari,Memari,West Bengal,Baazar Kolkata,23.3333,87.6667,41451.0,54731.0,exact,Memari,2,27366.0
+Baazar Kolkata - Bardhaman,713101,Bardhaman,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.546972,87.293236,56722.0,74894.0,exact,Kalna,4,18724.0
+Baazar Kolkata - Bardhaman Kalna,713101,Bardhaman,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.222294,88.364456,56722.0,74894.0,exact,Kalna,4,18724.0
+Baazar Kolkata - Bardhaman Memari,713146,Memari,Purba Bardhaman,West Bengal,Baazar Kolkata,23.3333,87.6667,41451.0,54731.0,exact,Memari,2,27366.0
 Baazar Kolkata - Bargarh,768028,Bargarh,Bargarh,Odisha,Baazar Kolkata,21.343033,83.62106,80625.0,117283.0,exact,Bargarh,6,19547.0
 Baazar Kolkata - Berhampore B B Sen Road,742103,Berhampore,Murshidabad,West Bengal,Baazar Kolkata,24.109707,88.249303,195223.0,257766.0,exact,Berhampore,5,51553.0
 Baazar Kolkata - Berhampore Bus Stand,742101,Berhampore,Murshidabad,West Bengal,Baazar Kolkata,24.09325,88.25165,195223.0,257766.0,exact,Berhampore,5,51553.0
@@ -39,7 +39,7 @@ Baazar Kolkata - Diamond Harbour City Baazar,743331,Diamond Harbour,North 24 Par
 Baazar Kolkata - Diamond Harbour City Baazar,700063,Diamond Harbour,Kolkata,West Bengal,Baazar Kolkata,22.192719,88.18955,41802.0,55194.0,exact,Diamond Harbour,4,13798.0
 Baazar Kolkata - Dolamundai,759001,Dhenkanal,Dhenkanal,Odisha,Baazar Kolkata,20.462442,85.883283,67414.0,98065.0,exact,Dhenkanal,4,24516.0
 Baazar Kolkata - Dum Dum Gora Bazar,700028,Kolkata,Kolkata,West Bengal,Baazar Kolkata,22.628429,88.44606,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-Baazar Kolkata - Durgapur,713216,Durgapur,East Medinipur,West Bengal,Baazar Kolkata,23.540985,87.30857,566517.0,748010.0,exact,Durgapur,3,249337.0
+Baazar Kolkata - Durgapur,713216,Durgapur,Paschim Bardhaman,West Bengal,Baazar Kolkata,23.540985,87.30857,566517.0,748010.0,exact,Durgapur,3,249337.0
 Baazar Kolkata - East Medinipur Contai,721401,Contai,Purba Medinipur,West Bengal,Baazar Kolkata,22.457882,87.384766,92226.0,121772.0,exact,Contai,5,24354.0
 Baazar Kolkata - East Medinipur Contai Rupasi bypass,721401,Contai,Purba Medinipur,West Bengal,Baazar Kolkata,22.42586,87.320045,92226.0,121772.0,exact,Contai,5,24354.0
 Baazar Kolkata - Garia,700103,Kolkata,Kolkata,West Bengal,Baazar Kolkata,22.439841,88.402318,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -59,7 +59,7 @@ Baazar Kolkata - Howrah Domjur,711405,Domjur,Howrah,West Bengal,Baazar Kolkata,2
 Baazar Kolkata - Howrah Maidan G T Road,711101,Howrah,Howrah,West Bengal,Baazar Kolkata,22.579568,88.331676,1077075.0,1422134.0,manual_gap_fix,Haora,16,
 Baazar Kolkata - Howrah Rangoli 2,711202,Howrah,Howrah,West Bengal,Baazar Kolkata,22.625329,88.353281,1077075.0,1422134.0,manual_gap_fix,Haora,16,
 Baazar Kolkata - Howrah Rangoli Mall,711202,Howrah,Howrah,West Bengal,Baazar Kolkata,22.625329,88.353281,1077075.0,1422134.0,manual_gap_fix,Haora,16,
-Baazar Kolkata - Howrah Salkia,711106,Howrah,Howrah,West Bengal,Baazar Kolkata,22.601471,88.346579,1077075.0,1422134.0,manual_gap_fix,Haora,16,
+Baazar Kolkata - Howrah Salkia,711106,Salkia,Howrah,West Bengal,Baazar Kolkata,22.601471,88.346579,1077075.0,1422134.0,manual_gap_fix,Haora,16,
 Baazar Kolkata - Howrah Santragachi,711112,Santragachi,Howrah,West Bengal,Baazar Kolkata,22.585761,88.283142,6890.0,9097.0,fuzzy_broad,jatragachhi,1,9097.0
 Baazar Kolkata - Jajpur Road,755019,Jajpur,Jajpur,Odisha,Baazar Kolkata,20.298068,85.813103,37458.0,54489.0,fuzzy,jajapur,5,10898.0
 Baazar Kolkata - Jalpaiguri,735101,Jalpaiguri,Jalpaiguri,West Bengal,Baazar Kolkata,26.524776,88.72397,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
@@ -407,15 +407,15 @@ YOUSTA-MALL OF DEHRADUN-DEHRADUN,240001,Dehradun,Dehradun,Uttarakhand,Yousta,30.
 YOUSTA-CHAKRATA ROAD-DEHRADUN,248001,Dehradun,Dehradun,Uttarakhand,Yousta,30.345949,77.950673,574840.0,911361.0,exact,Dehradun,12,75947.0
 YOUSTA-AVANI RIVERSIDE MALL-HOWRAH,711102,Howrah,Howrah,West Bengal,Yousta,22.56534,88.319777,1077075.0,1422134.0,manual_gap_fix,Haora,16,
 YOUSTA-PRM CITY MALL-MALDA,732103,Malda,Malda,West Bengal,Yousta,24.981017,88.134495,31920.0,42146.0,fuzzy_broad,matla,6,7024.0
-YOUSTA-SALKIA-HOWRAH,711106,Howrah,Howrah,West Bengal,Yousta,22.598167,88.341558,1077075.0,1422134.0,manual_gap_fix,Haora,16,
+YOUSTA-SALKIA-HOWRAH,711106,Salkia,Howrah,West Bengal,Yousta,22.598167,88.341558,1077075.0,1422134.0,manual_gap_fix,Haora,16,
 YOUSTA-MADHYAMGRAM-KOLKATA,700129,Kolkata,North 24 Parganas,West Bengal,Yousta,22.5876,88.3456,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 YOUSTA-VEGA CIRCLE MALL-SILIGURI,734004,Siliguri,Darjeeling,West Bengal,Yousta,26.751223,88.43226,294546.0,388909.0,manual_gap_fix,Siliguri (M Corp.),11,
 YOUSTA-GOWALA PATTI-COOCH BEHAR,736101,Cooch Behar,Cooch Behar,West Bengal,Yousta,26.325,89.44,77935.0,102903.0,fuzzy_broad,koch bihar,8,12863.0
 YOSUTA-THAKURPUKUR-BEHALA,700063,Diamond Harbour,Kolkata,West Bengal,Yousta,22.464511,88.30763,41802.0,55194.0,exact,Diamond Harbour,4,13798.0
 SB-AXIS MALL (02),700107,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.5597,88.4708,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-EB-BALASORE,756001,Chidiapolo Balasore,Chidiapolo Balasore,Odisha,StyleBaazar,21.498885,86.931274,144373.0,210015.0,manual_gap_fix,Baleshwar,1,
+EB-BALASORE,756001,Balasore,Balasore,Odisha,StyleBaazar,21.498885,86.931274,144373.0,210015.0,manual_gap_fix,Baleshwar,1,
 SB-RAI BARELI ROAD,226029,Lucknow,Lucknow,Uttar Pradesh,StyleBaazar,26.896278,80.96004,2817105.0,4319172.0,exact,Lucknow,58,74468.0
-SB-BAGHAJATIN,700047,87B/1B,87B/1B,West Bengal,StyleBaazar,22.4652,88.378639,1077075.0,11201.0,state_median,[West Bengal median],1,
+SB-BAGHAJATIN,700047,Kolkata,Kolkata,West Bengal,StyleBaazar,22.4652,88.378639,1077075.0,11201.0,state_median,[West Bengal median],1,
 SB-GHAZIPUR,233001,Gazipur,Gazipur,Uttar Pradesh,StyleBaazar,28.7041,77.436,121020.0,185547.0,fuzzy,ghazipur,1,185547.0
 SB-REWA,486001,Rewa,Rewa,Madhya Pradesh,StyleBaazar,24.538809,81.350712,235654.0,353483.0,exact,Rewa,5,70697.0
 SB-FALAKATA,735211,Mal,Jalpaiguri,West Bengal,StyleBaazar,26.51987,89.20204,25218.0,33297.0,exact,Mal,2,16648.0
@@ -446,16 +446,16 @@ SB-NAWADA,805110,Nawada,Nawada,Bihar,StyleBaazar,24.928512,85.640581,98029.0,168
 SB-MASHRAKH,841417,Saran,Saran,Bihar,StyleBaazar,25.78116,84.75428,6327.0,10864.0,fuzzy_broad,asarganj,1,10864.0
 SB-MASAURHI,804452,Masahuri,Masahuri,Bihar,StyleBaazar,25.195568,85.505138,59803.0,102688.0,fuzzy,masaurhi,1,102688.0
 SB-KATRA,211002,Prayagraj,Prayagraj,Uttar Pradesh,StyleBaazar,25.43732,81.834206,,,no_match,,1,
-SB-DD PURAM BAREILLY,243122,Dd Puram,Dd Puram,Uttar Pradesh,StyleBaazar,28.367,79.4163,904797.0,1387231.0,manual_gap_fix,Bareilly,1,
+SB-DD PURAM BAREILLY,243122,Bareilly,Bareilly,Uttar Pradesh,StyleBaazar,28.367,79.4163,904797.0,1387231.0,manual_gap_fix,Bareilly,1,
 SB-DARYAPUR,800004,Patna,Patna,Bihar,StyleBaazar,25.612838,85.152716,1684297.0,2892112.0,exact,Patna,48,60252.0
 SB-BUXAR,802101,Buxar,Buxar,Bihar,StyleBaazar,25.201756,85.52006,102861.0,176623.0,exact,Buxar,3,58874.0
 SB-BRAHMAPUR (02),760001,Phulbani,Kandhamal,Odisha,StyleBaazar,19.311924,84.791926,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 SB-BIHPURIA,784161,Bihpuria,Bihpuria,Assam,StyleBaazar,27.003092,93.87841,12016.0,18024.0,exact,Bihpuria,1,18024.0
 SB-BASTI,272002,Basti,Basti,Uttar Pradesh,StyleBaazar,26.811454,82.765525,114657.0,175792.0,exact,Basti,4,43948.0
 SB-BARH,803213,Barh,Patna,Bihar,StyleBaazar,25.462515,85.70784,61470.0,105550.0,exact,Barh,3,35183.0
-SB-BARDHAMAN (02),713101,Bardhaman,Bardhaman,West Bengal,StyleBaazar,22.430271,87.316635,314265.0,414945.0,fuzzy,barddhaman,1,414945.0
+SB-BARDHAMAN (02),713101,Bardhaman,Paschim Bardhaman,West Bengal,StyleBaazar,22.430271,87.316635,314265.0,414945.0,fuzzy,barddhaman,1,414945.0
 SB-BALRAMPUR,271201,Balrampur,Balrampur,Uttar Pradesh,StyleBaazar,27.436684,82.17101,82488.0,126470.0,exact,Balrampur,3,42157.0
-SB-BAKRAHAT,743503,Bakrahat,Bakrahat,West Bengal,StyleBaazar,22.394966,88.20627,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
+SB-BAKRAHAT,743503,Bakrahat,South 24 Parganas,West Bengal,StyleBaazar,22.394966,88.20627,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
 "Style Baazar, RAMPURHAT",731324,Rampurhat,Rampurhat,West Bengal,StyleBaazar,23.8389,87.4147,57833.0,76361.0,exact,Rampurhat,5,15272.0
 "Style Baazar, PRAYAGRAJ",211011,Prayagraj,Prayagraj,Uttar Pradesh,StyleBaazar,25.434579,81.796844,,,no_match,,2,
 "Style Baazar, PATNA (04)",800007,Naharpar,Naharpar,Bihar,StyleBaazar,25.540003,85.17724,1894.0,3252.0,fuzzy_broad,paharpur,1,3252.0
@@ -464,8 +464,8 @@ SB-BAKRAHAT,743503,Bakrahat,Bakrahat,West Bengal,StyleBaazar,22.394966,88.20627,
 "Style Baazar, HAIBERGAON",782002,Nagaon,Nagaon,Assam,StyleBaazar,26.351796,92.675023,121628.0,182443.0,exact,Nagaon,6,30407.0
 "Style Baazar, CUTTACK",753012,Cuttack,Cuttack,Odisha,StyleBaazar,20.4625,85.883,610189.0,887623.0,exact,Cuttack,16,55476.0
 "Style Baazar, BRAHMAPUR [ODISHA]",760001,Phulbani,Kandhamal,Odisha,StyleBaazar,19.31689,84.794068,37371.0,54362.0,fuzzy,phulabani,11,4942.0
-"Style Baazar, BOBBILI",535558,Fort Junction,Fort Junction,Andhra Pradesh,StyleBaazar,18.598603,83.480231,,,no_match,,1,
-"Style Baazar, KEONJHAR",758001,Magurgadiaâ Keonjhar,Magurgadiaâ Keonjhar,Odisha,StyleBaazar,21.6703,85.2108,60590.0,88138.0,manual_gap_fix,kendujhar,1,
+"Style Baazar, BOBBILI",535558,Vizianagaram,Vizianagaram,Andhra Pradesh,StyleBaazar,18.598603,83.480231,,,no_match,,1,
+"Style Baazar, KEONJHAR",758001,Keonjhar,Keonjhar,Odisha,StyleBaazar,21.6703,85.2108,60590.0,88138.0,manual_gap_fix,kendujhar,1,
 "EXPRESS BAAZAR, CHHATRAPUR",761020,Chhatrapur,Chhatrapur,Odisha,StyleBaazar,19.355167,84.98738,22027.0,32042.0,exact,Chhatrapur,2,16021.0
 EXPRESS BAAZAR KRISHNANAGAR,741101,Krishnanagar,Krishnanagar,West Bengal,StyleBaazar,23.414831,88.494656,153062.0,202098.0,exact,Krishnanagar,1,202098.0
 EXPRESS BAAZAR RAGHUNATHGANJ,742225,Raghunathganj,Raghunathganj,West Bengal,StyleBaazar,23.822014,88.038677,6006.0,7930.0,fuzzy_broad,raghunathchak,1,7930.0
@@ -515,7 +515,7 @@ STYLE BAAZAR KATIHAR,854105,Katihar,Katihar,Bihar,StyleBaazar,25.541176,87.56997
 STYLE BAAZAR JHANJHARPUR,847403,Jhanjharpur,Jhanjharpur,Bihar,StyleBaazar,25.861807,85.299554,30590.0,52526.0,exact,Jhanjharpur,2,26263.0
 STYLE BAAZAR KHAGARIA,851204,Khagaria,Khagaria,Bihar,StyleBaazar,25.201756,85.52006,49406.0,84835.0,exact,Khagaria,5,16967.0
 STYLE BAAZAR GOPALGANJ,841428,Gopalganj,Gopalganj,Bihar,StyleBaazar,26.492448,84.394507,67339.0,115628.0,manual_gap_fix,Gopalganj,1,
-STYLE BAAZAR GHORASAHAN,854303,Ghorasahan,Ghorasahan,Bihar,StyleBaazar,26.725596,85.16128,,68914.0,district_fallback,[East Champaran district est.],1,
+STYLE BAAZAR GHORASAHAN,854303,Ghorasahan,East Champaran,Bihar,StyleBaazar,26.725596,85.16128,,68914.0,district_fallback,[East Champaran district est.],1,
 STYLE BAAZAR MADHEPURA,852113,Madhepura,Madhepura,Bihar,StyleBaazar,25.201756,85.52006,54472.0,93534.0,exact,Madhepura,6,15589.0
 STYLE BAAZAR KISHANGANJ,855107,Kishanganj,Kishanganj,Bihar,StyleBaazar,26.096752,87.94531,105782.0,181639.0,exact,Kishanganj,2,90820.0
 STYLE BAAZAR MOTIHARI,845401,Motihari,Motihari,Bihar,StyleBaazar,26.648436,84.929723,126158.0,216626.0,exact,Motihari,8,27078.0
@@ -549,7 +549,7 @@ STYLE BAAZAR GOALPARA,783121,Goalpara,Goalpara,Assam,StyleBaazar,26.1667,90.6167
 STYLE BAAZAR GOLAGHAT,785702,Golaghat,Golaghat,Assam,StyleBaazar,26.513119,93.97176,41989.0,62984.0,exact,Golaghat,3,20995.0
 STYLE BAAZAR DHEKIAJULI,784110,Dhekiajuli,Sonitpur,Assam,StyleBaazar,26.698535,92.485147,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),1,
 STYLE BAAZAR DIBRUGARH,786001,Dibrugarh,Dibrugarh,Assam,StyleBaazar,27.480588,94.906162,139565.0,209349.0,exact,Dibrugarh,6,34892.0
-STYLE BAAZAR DABOKA TOWN,782440,Daboka Town,Daboka Town,Assam,StyleBaazar,26.633007,93.605265,13118.0,19677.0,manual_gap_fix,Doboka,1,
+STYLE BAAZAR DABOKA TOWN,782440,Doboka,Hojai,Assam,StyleBaazar,26.633007,93.605265,13118.0,19677.0,manual_gap_fix,Doboka,1,
 STYLE BAAZAR JORHAT,785001,Jorhat,Jorhat,Assam,StyleBaazar,26.757898,94.21105,71782.0,107674.0,exact,Jorhat,5,21535.0
 STYLE BAAZAR MANGALDOI,784125,Mangaldoi,Mangaldoi,Assam,StyleBaazar,26.436567,92.030914,25989.0,38984.0,exact,Mangaldoi,2,19492.0
 STYLE BAAZAR LAKHIMPUR,787001,North Lakhimpur,North Lakhimpur,Assam,StyleBaazar,27.237362,94.10649,59814.0,89721.0,exact,North Lakhimpur,2,44860.0
@@ -561,14 +561,14 @@ EXPRESS BAAZAR LAKHIMPUR,787001,North Lakhimpur,North Lakhimpur,Assam,StyleBaaza
 STYLE BAAZAR DHUBRI,783301,Dhubri,Dhubri,Assam,StyleBaazar,26.02028,89.99037,63388.0,95082.0,exact,Dhubri,3,31694.0
 STYLE BAAZAR BADARPUR,788806,Badarpur,Karimganj,Assam,StyleBaazar,24.8667,92.55,13298.0,19947.0,exact,Badarpur,2,9974.0
 STYLE BAAZAR JAGI ROAD,782410,Nagaon,Nagaon,Assam,StyleBaazar,26.948041,94.531003,121628.0,182443.0,exact,Nagaon,6,30407.0
-STYLE BAAZAR TITABOR,785630,Titabar,Titabar,Assam,StyleBaazar,26.15,93.2833,71782.0,107674.0,manual_gap_fix,Jorhat,1,
+STYLE BAAZAR TITABOR,785630,Titabar,Jorhat,Assam,StyleBaazar,26.15,93.2833,71782.0,107674.0,manual_gap_fix,Jorhat,1,
 STYLE BAAZAR JAYANAGAR,781022,Guwahati,Guwahati,Assam,StyleBaazar,26.115451,91.78669,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
-STYLE BAAZAR HIRAPUR,826001,Hirapur,Hirapur,Jharkhand,StyleBaazar,23.861788,86.48181,1162472.0,15119.0,state_median,[Jharkhand median],1,
+STYLE BAAZAR HIRAPUR,826001,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.861788,86.48181,1162472.0,15119.0,state_median,[Jharkhand median],1,
 STYLE BAAZAR HAZARIBAGH,825301,Hazaribagh,Hazaribagh,Jharkhand,StyleBaazar,23.988764,85.359992,142489.0,225905.0,fuzzy,hazaribag,4,56476.0
 STYLE BAAZAR CHAKRADHARPUR,833102,Chakradharpur,Chakradharpur,Jharkhand,StyleBaazar,23.6833,84.85,56531.0,89625.0,fuzzy,chakardharpur,2,44812.0
 STYLE BAAZAR GOVINDPUR,828109,Dhanbad,Dhanbad,Jharkhand,StyleBaazar,23.832046,86.52138,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
 STYLE BAAZAR ADITYAPUR,831013,Jamshedpur,East Singhbhum,Jharkhand,StyleBaazar,22.801006,86.14812,677350.0,1073882.0,exact,Jamshedpur,12,89490.0
-STYLE BAAZAR KODERMA,825409,Jhumri Telaiya,Jhumri Telaiya,Jharkhand,StyleBaazar,24.433552,85.526243,87867.0,139306.0,fuzzy,jhumri tilaiya,1,139306.0
+STYLE BAAZAR KODERMA,825409,Jhumri Telaiya,Koderma,Jharkhand,StyleBaazar,24.433552,85.526243,87867.0,139306.0,fuzzy,jhumri tilaiya,1,139306.0
 STYLE BAAZAR DALTONGANJ,822101,Daltonganj,Daltonganj,Jharkhand,StyleBaazar,23.924201,86.099814,78396.0,124290.0,manual_gap_fix,Medininagar (Daltonganj),3,
 STYLE BAAZAR BOKARO,827004,Bokaro,Bokaro,Jharkhand,StyleBaazar,23.667761,86.146765,39305.0,62315.0,exact,Bokaro,6,10386.0
 STYLE BAAZAR GODDA,814133,Godda,Godda,Jharkhand,StyleBaazar,24.825794,87.213356,48480.0,76861.0,exact,Godda,3,25620.0
@@ -584,7 +584,7 @@ STYLE BAAZAR PAKUAHAT,732138,Pakuahat,Pakuahat,West Bengal,StyleBaazar,25.15883,
 STYLE BAAZAR NALHATI,731220,Birbhum,Birbhum,West Bengal,StyleBaazar,24.29528,87.8421,67864.0,89605.0,manual_gap_fix,Suri,1,
 STYLE BAAZAR NAIHATI,743165,Naihati,Naihati,West Bengal,StyleBaazar,22.889175,88.41841,217900.0,287708.0,exact,Naihati,5,57542.0
 STYLE BAAZAR METIABRUZ,700024,Kolkata,Kolkata,West Bengal,StyleBaazar,22.550129,88.285293,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-STYLE BAAZAR MEMARI,713146,A Memari,A Memari,West Bengal,StyleBaazar,23.17685,88.09513,41451.0,54731.0,fuzzy,memari,1,54731.0
+STYLE BAAZAR MEMARI,713146,Memari,Purba Bardhaman,West Bengal,StyleBaazar,23.17685,88.09513,41451.0,54731.0,fuzzy,memari,1,54731.0
 STYLE BAAZAR LINDSAY,700087,Kolkata,Kolkata,West Bengal,StyleBaazar,22.559951,88.352758,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 STYLE BAAZAR ULUBERIA,711316,Nona,Nona,West Bengal,StyleBaazar,22.5667,88.25,152783.0,201730.0,manual_gap_fix,Barrackpore,1,
 STYLE BAAZAR TUFANGANJ,736159,Tufan Ganj,Tufan Ganj,West Bengal,StyleBaazar,26.311265,89.664958,20998.0,27725.0,fuzzy,tufanganj,1,27725.0
@@ -592,12 +592,12 @@ STYLE BAAZAR SURI,731101,Suri,Suri,West Bengal,StyleBaazar,23.892896,87.531968,6
 STYLE BAAZAR SODEPUR,700110,Sodepur,Sodepur,West Bengal,StyleBaazar,22.696537,88.395768,8900.0,11751.0,fuzzy_broad,serpur,1,11751.0
 STYLE BAAZAR RAIGANJ,733134,Raiganj,Uttar Dinajpur,West Bengal,StyleBaazar,25.585,88.1317,215514.0,284558.0,fuzzy_broad,bidhannagar,1,284558.0
 STYLE BAAZAR SINGUR,712409,Singur,Hooghly,West Bengal,StyleBaazar,22.818459,88.231664,21382.0,28232.0,exact,Singur,4,7058.0
-STYLE BAAZAR SALKIA,711106,Salkia,Salkia,West Bengal,StyleBaazar,22.605394,88.334305,235345.0,310742.0,manual_gap_fix,Uluberia,1,
+STYLE BAAZAR SALKIA,711106,Salkia,Howrah,West Bengal,StyleBaazar,22.605394,88.334305,235345.0,310742.0,manual_gap_fix,Uluberia,1,
 STYLE BAAZAR SERAMPORE,712201,Serampore,Serampore,West Bengal,StyleBaazar,22.752516,88.342481,181842.0,240098.0,exact,Serampore,6,40016.0
 STYLE BAAZAR GARIAHAT,700029,Gariahat,Gariahat,West Bengal,StyleBaazar,22.521086,88.368645,21064.0,27812.0,fuzzy_broad,guriahati,1,27812.0
 STYLE BAAZAR HABRA,743263,Barasat,North 24 Parganas,West Bengal,StyleBaazar,22.831928,87.06039,278435.0,367636.0,exact,Barasat,7,52519.0
 STYLE BAAZAR EGRA,721429,Egra,Paschim Medinipur,West Bengal,StyleBaazar,21.899593,87.53739,30148.0,39806.0,manual_gap_fix,Egra,1,
-STYLE BAAZAR DURGAPUR,713213,Benachity,Benachity,West Bengal,StyleBaazar,22.936925,88.34728,566517.0,11201.0,state_median,[West Bengal median],1,
+STYLE BAAZAR DURGAPUR,713213,Durgapur,Paschim Bardhaman,West Bengal,StyleBaazar,22.936925,88.34728,566517.0,11201.0,state_median,[West Bengal median],1,
 STYLE BAAZAR DINHATA,736135,Dinhata,Cooch Behar,West Bengal,StyleBaazar,26.070601,89.583737,36124.0,47697.0,exact,Dinhata,2,23848.0
 STYLE BAAZAR DHUPGURI,735210,Dhupguri,Dhupguri,West Bengal,StyleBaazar,26.586115,89.012304,44719.0,59045.0,exact,Dhupguri,1,59045.0
 STYLE BAAZAR DHULIYAN,742202,Dhuliyan,Dhuliyan,West Bengal,StyleBaazar,23.825306,88.286358,95706.0,126367.0,fuzzy,dhulian,2,63184.0
@@ -622,7 +622,7 @@ STYLE BAAZAR MALBAZAR,735221,Jalpaiguri,Jalpaiguri,West Bengal,StyleBaazar,26.85
 STYLE BAAZAR MALANCHA,743425,Malancha,South 24 Parganas,West Bengal,StyleBaazar,23.825306,88.286358,41802.0,55194.0,manual_gap_fix,Diamond Harbour,1,
 STYLE BAAZAR CHANCHAL,732123,Chanchal,Chanchal,West Bengal,StyleBaazar,25.39141,88.00944,5570.0,7354.0,exact,Chanchal,3,2451.0
 STYLE BAAZAR CHAKDAH,741222,Chakdah,Chakdah,West Bengal,StyleBaazar,23.087554,88.584432,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
-STYLE BAAZAR BARDHMAN,713101,Bardhman,Bardhman,West Bengal,StyleBaazar,23.230942,87.866805,314265.0,414945.0,corrected,Barddhaman,1,414945.0
+STYLE BAAZAR BARDHMAN,713101,Bardhaman,Paschim Bardhaman,West Bengal,StyleBaazar,23.230942,87.866805,314265.0,414945.0,corrected,Barddhaman,1,414945.0
 STYLE BAAZAR BOLPUR,731204,Bolpur,Bolpur,West Bengal,StyleBaazar,23.667921,87.666101,80210.0,105907.0,exact,Bolpur,2,52954.0
 STYLE BAAZAR BERHAMPORE,742103,Khagra,Khagra,West Bengal,StyleBaazar,24.099489,88.252558,7382.0,9747.0,fuzzy_broad,khatra,1,9747.0
 STYLE BAAZAR ARAMBAGH,712601,Hooghly,Hooghly,West Bengal,StyleBaazar,22.886118,87.784325,179931.0,237575.0,manual_gap_fix,Hugli-Chinsurah,2,
@@ -636,7 +636,7 @@ STYLE BAAZAR BAGUIHATI,700059,Kolkata,Kolkata,West Bengal,StyleBaazar,22.556843,
 STYLE BAAZAR BAGNAN,711303,Bagnan,Howrah,West Bengal,StyleBaazar,22.467589,87.966633,10996.0,14519.0,exact,Bagnan,3,4840.0
 STYLE BAAZAR AMTALA,745503,Khurda,Khurda,Odisha,StyleBaazar,22.620706,88.437706,10823.0,14290.0,exact,Kanyanagar,1,14290.0
 STYLE BAAZAR ALIPURDUAR,736121,Cooch Behar,Cooch Behar,West Bengal,StyleBaazar,26.5,89.5333,77935.0,102903.0,fuzzy_broad,koch bihar,8,12863.0
-STYLE BAAZAR RAMRAJATALA,711104,Ramrajatala,Ramrajatala,West Bengal,StyleBaazar,22.590224,88.294942,235345.0,310742.0,manual_gap_fix,Uluberia,1,
+STYLE BAAZAR RAMRAJATALA,711104,Ramrajatala,Howrah,West Bengal,StyleBaazar,22.590224,88.294942,235345.0,310742.0,manual_gap_fix,Uluberia,1,
 EXPRESS BAAZAR RANAGHAT,741201,Ranaghat,Ranaghat,West Bengal,StyleBaazar,23.174128,88.565592,75365.0,99509.0,exact,Ranaghat,3,33170.0
 Axis Mall,700156,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.576571,88.429634,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 EXPRESS BAAZAR COOCH BEHAR,736101,Cooch Behar,Cooch Behar,West Bengal,StyleBaazar,26.328741,89.4571,77935.0,102903.0,fuzzy_broad,koch bihar,8,12863.0
@@ -684,7 +684,7 @@ V2 Retail Ltd. (HB09),845438,Bettiah,West Champaran,Bihar,V2 Retail,26.807013,84
 V2 Retail Ltd. (HB10),802301,Ara,Bhojpur,Bihar,V2 Retail,25.56286,84.672465,5185.0,8903.0,fuzzy,bara,5,1781.0
 V2 Retail Ltd. (HB11),854301,Purnia,Purnia,Bihar,V2 Retail,25.764585,87.46946,282248.0,484649.0,exact,Purnia,8,60581.0
 V2 Retail Ltd. (HB13),841227,Siwan,Siwan,Bihar,V2 Retail,26.348597,84.37189,135066.0,231922.0,exact,Siwan,10,23192.0
-V2 Retail Ltd. (HB15),803101,Sharif,Sharif,Bihar,V2 Retail,25.204622,85.513849,354462.0,608648.0,manual_gap_fix,Muzaffarpur,1,
+V2 Retail Ltd. (HB15),803101,Patna,Patna,Bihar,V2 Retail,25.204622,85.513849,354462.0,608648.0,manual_gap_fix,Muzaffarpur,1,
 V2 Retail Ltd. (HB16),843302,Sitamarhi,Sitamarhi,Bihar,V2 Retail,26.595442,85.484606,67818.0,116451.0,exact,Sitamarhi,12,9704.0
 V2 Retail Ltd. (HB17),845401,Motihari,East Champaran,Bihar,V2 Retail,26.643848,84.90434,126158.0,216626.0,exact,Motihari,8,27078.0
 V2 Retail Ltd. (HB19),848101,Samastipur,Samastipur,Bihar,V2 Retail,25.865284,85.776719,67925.0,116634.0,exact,Samastipur,9,12959.0
@@ -752,13 +752,13 @@ V2 Retail Ltd. (HH17),136118,Kurukshetra,Kurukshetra,Haryana,V2 Retail,29.974883
 V2 Retail Ltd. (HH20),122001,Gurugram,Gurugram,Haryana,V2 Retail,28.469208,77.038371,886519.0,1359207.0,manual,Gurgaon,20,67960.0
 V2 Retail Ltd. (HH21),122101,Gurugram,Gurugram,Haryana,V2 Retail,28.405171,77.058517,886519.0,1359207.0,manual,Gurgaon,20,67960.0
 V2 Retail Ltd. (HI05),173212,Solan,Solan,Himachal Pradesh,V2 Retail,30.908451,77.09992,39256.0,52678.0,exact,Solan,2,26339.0
-V2 Retail Ltd. (HI06),176001,Birta Kangra,Birta Kangra,Himachal Pradesh,V2 Retail,32.111996,76.30087,,,no_match,,1,
+V2 Retail Ltd. (HI06),176001,Kangra,Kangra,Himachal Pradesh,V2 Retail,32.111996,76.30087,,,no_match,,1,
 V2 Retail Ltd. (HI07),174303,Una,Una,Himachal Pradesh,V2 Retail,31.462467,76.292837,18722.0,25123.0,exact,Una,2,12562.0
 V2 Retail Ltd. (HJ08),831001,Jamshedpur,East Singhbhum,Jharkhand,V2 Retail,22.809388,86.202925,677350.0,1073882.0,exact,Jamshedpur,12,89490.0
 V2 Retail Ltd. (HJ09),834001,Ranchi,Ranchi,Jharkhand,V2 Retail,23.370127,85.325134,1073427.0,1701830.0,exact,Ranchi,19,89570.0
 V2 Retail Ltd. (HJ10),825301,Hazaribagh,Hazaribagh,Jharkhand,V2 Retail,24.0,85.367,142489.0,225905.0,fuzzy,hazaribag,4,56476.0
 V2 Retail Ltd. (HJ11),814112,Deoghar,Deoghar,Jharkhand,V2 Retail,24.491013,86.69478,203123.0,322035.0,exact,Deoghar,2,161018.0
-V2 Retail Ltd. (HJ12),825412,Rajhanwar,Thana Rajhanwar Rajhanwar,Jharkhand,V2 Retail,22.958178,85.52859,8777.0,13915.0,fuzzy_broad,dhanwar,1,13915.0
+V2 Retail Ltd. (HJ12),825412,Rajhanwar,Giridih,Jharkhand,V2 Retail,22.958178,85.52859,8777.0,13915.0,fuzzy_broad,dhanwar,1,13915.0
 V2 Retail Ltd. (HJ14),814101,Dumka,Dumka,Jharkhand,V2 Retail,24.265355,87.248281,47584.0,75440.0,exact,Dumka,4,18860.0
 V2 Retail Ltd. (HJ15),827013,Bokaro,Bokaro,Jharkhand,V2 Retail,23.372522,85.114914,39305.0,62315.0,exact,Bokaro,6,10386.0
 V2 Retail Ltd. (HJ17),831013,Jamshedpur,East Singhbhum,Jharkhand,V2 Retail,22.777553,86.169245,677350.0,1073882.0,exact,Jamshedpur,12,89490.0
@@ -778,7 +778,7 @@ V2 Retail Ltd. (HJ31),828109,Govindpur,Dhanbad,Jharkhand,V2 Retail,23.366533,85.
 V2 Retail Ltd. (HK04),580030,Hubballi,Dharwad,Karnataka,V2 Retail,15.357978,75.12016,,,no_match,,5,
 V2 Retail Ltd. (HK07),586101,Vijayapura,Vijayapura,Karnataka,V2 Retail,16.602427,75.640656,34866.0,50128.0,exact,Vijayapura,3,16709.0
 V2 Retail Ltd. (HK10),585102,Kalaburagi,Kalaburagi,Karnataka,V2 Retail,17.3667,76.8333,,,no_match,,2,
-V2 Retail Ltd. (HK11),580007,Vidyagiri Dharwar,Vidyagiri Dharwar,Karnataka,V2 Retail,15.3544,75.1244,,,no_match,,1,
+V2 Retail Ltd. (HK11),580007,Dharwad,Dharwad,Karnataka,V2 Retail,15.3544,75.1244,,,no_match,,1,
 V2 Retail Ltd. (HK12),590006,Angol Belgaum,Angol Belgaum,Karnataka,V2 Retail,15.822607,74.50336,,,no_match,,1,
 V2 Retail Ltd. (HK13),570023,Mysore,Mysore,Karnataka,V2 Retail,12.294625,76.648704,920550.0,1323509.0,exact,Mysore,5,264702.0
 V2 Retail Ltd. (HK14),587301,Jamkhandi,Jamkhandi,Karnataka,V2 Retail,16.505838,75.290985,68938.0,99115.0,exact,Jamkhandi,1,99115.0
@@ -786,13 +786,13 @@ V2 Retail Ltd. (HK15),584101,Raichur,Raichur,Karnataka,V2 Retail,16.2158,77.3569
 V2 Retail Ltd. (HK16),580023,Hubballi,Dharwad,Karnataka,V2 Retail,15.357445,75.14432,,,no_match,,5,
 V2 Retail Ltd. (HK17),560026,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,12.955781,77.545681,,,no_match,,76,
 V2 Retail Ltd. (HK18),581110,Haveri,Haveri,Karnataka,V2 Retail,14.838641,75.62916,67102.0,96475.0,exact,Haveri,1,96475.0
-V2 Retail Ltd. (HK19),587103,Vidyagiri Bagalkot,Vidyagiri Bagalkot,Karnataka,V2 Retail,16.174392,75.659534,,,no_match,,1,
+V2 Retail Ltd. (HK19),587103,Bagalkot,Bagalkot,Karnataka,V2 Retail,16.174392,75.659534,,,no_match,,1,
 V2 Retail Ltd. (HK20),583231,Koppal,Koppal,Karnataka,V2 Retail,15.552727,76.570201,70698.0,101645.0,exact,Koppal,1,101645.0
 V2 Retail Ltd. (HK21),560016,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,13.0827,77.6054,,,no_match,,76,
 V2 Retail Ltd. (HK22),570001,Mysuru,Mysore,Karnataka,V2 Retail,12.288829,76.649284,,,no_match,,1,
 V2 Retail Ltd. (HK23),583101,Ballari,Ballari,Karnataka,V2 Retail,15.157005,76.946173,7765.0,11164.0,fuzzy_broad,mallar,1,11164.0
 V2 Retail Ltd. (HK24),577101,Chikkamagaluru,Chikkamagaluru,Karnataka,V2 Retail,13.431738,75.915965,118401.0,170229.0,fuzzy,chikmagalur,1,170229.0
-V2 Retail Ltd. (HK25),560061,Bangalore,Balaji Theatre Bangalore,Karnataka,V2 Retail,12.912482,77.540005,499487.0,718131.0,fuzzy,mangalore,1,718131.0
+V2 Retail Ltd. (HK25),560061,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,12.912482,77.540005,499487.0,718131.0,fuzzy,mangalore,1,718131.0
 V2 Retail Ltd. (HK27),590010,Belgaum,Belagavi,Karnataka,V2 Retail,15.878047,74.514732,490045.0,704556.0,exact,Belgaum,3,234852.0
 V2 Retail Ltd. (HK28),585401,Bidar,Bidar,Karnataka,V2 Retail,17.916322,77.523866,216020.0,310580.0,exact,Bidar,2,155290.0
 V2 Retail Ltd. (HL03),388001,Anand,Anand,Gujarat,V2 Retail,22.565157,72.944154,209410.0,287697.0,exact,Anand,4,71924.0
@@ -885,8 +885,8 @@ V2 Retail Ltd. (HO41),752069,Nayagarh,Nayagarh,Odisha,V2 Retail,20.129307,85.121
 V2 Retail Ltd. (HO42),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.348487,85.886895,610189.0,887623.0,exact,Cuttack,16,55476.0
 V2 Retail Ltd. (HO43),765001,Rayagada,Rayagada,Odisha,V2 Retail,19.189283,83.40953,71208.0,103584.0,exact,Rayagada,3,34528.0
 V2 Retail Ltd. (HO44),768028,Bargarh,Bargarh,Odisha,V2 Retail,21.46432,83.53608,80625.0,117283.0,exact,Bargarh,6,19547.0
-V2 Retail Ltd. (HO45),759100,Talcher Angul,Talcher Angul,Odisha,V2 Retail,20.945171,85.20991,43795.0,63707.0,manual_gap_fix,anugul,1,
-V2 Retail Ltd. (HO46),756003,Remuna Balasore,Remuna Balasore,Odisha,V2 Retail,21.293899,86.688064,144373.0,210015.0,manual_gap_fix,Baleshwar,1,
+V2 Retail Ltd. (HO45),759100,Talcher,Angul,Odisha,V2 Retail,20.945171,85.20991,43795.0,63707.0,manual_gap_fix,anugul,1,
+V2 Retail Ltd. (HO46),756003,Balasore,Balasore,Odisha,V2 Retail,21.293899,86.688064,144373.0,210015.0,manual_gap_fix,Baleshwar,1,
 V2 Retail Ltd. (HO49),767002,Balangir,Balangir,Odisha,V2 Retail,20.704376,83.48822,98238.0,142904.0,exact,Balangir,2,71452.0
 V2 Retail Ltd. (HO51),761110,Aska,Ganjam,Odisha,V2 Retail,22.0432,86.6234,21428.0,31171.0,fuzzy,asika,2,15586.0
 V2 Retail Ltd. (HP01),140001,Rupnagar,Rupnagar,Punjab,V2 Retail,30.960594,76.51116,56038.0,73991.0,exact,Rupnagar,2,36996.0
@@ -902,8 +902,8 @@ V2 Retail Ltd. (HP10),144514,Nawanshahr,Nawanshahr,Punjab,V2 Retail,31.053778,76
 V2 Retail Ltd. (HP11),146001,Hoshiarpur,Hoshiarpur,Punjab,V2 Retail,31.525694,75.896703,168653.0,222684.0,exact,Hoshiarpur,2,111342.0
 V2 Retail Ltd. (HP12),144002,Jalandhar,Jalandhar,Punjab,V2 Retail,31.313015,75.562162,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 V2 Retail Ltd. (HP13),143401,Taran,Taran,Punjab,V2 Retail,31.468115,74.933426,,,no_match,,1,
-V2 Retail Ltd. (HP14),152116,Abohar,District Fazilka Abohar,Punjab,V2 Retail,30.146703,74.200861,145302.0,191852.0,exact,Abohar,1,191852.0
-V2 Retail Ltd. (HP16),140406,Sirhind Sirhind,Sirhind Sirhind,Punjab,V2 Retail,31.042658,75.839836,,,no_match,,1,
+V2 Retail Ltd. (HP14),152116,Abohar,Fazilka,Punjab,V2 Retail,30.146703,74.200861,145302.0,191852.0,exact,Abohar,1,191852.0
+V2 Retail Ltd. (HP16),140406,Sirhind,Fatehgarh Sahib,Punjab,V2 Retail,31.042658,75.839836,,,no_match,,1,
 V2 Retail Ltd. (HP17),151001,Bathinda,Bathinda,Punjab,V2 Retail,30.216378,74.934341,285788.0,377345.0,exact,Bathinda,3,125782.0
 V2 Retail Ltd. (HP18),160104,Zirakpur,Zirakpur,Punjab,V2 Retail,30.656299,76.857007,95553.0,126165.0,exact,Zirakpur,8,15771.0
 V2 Retail Ltd. (HR17),311001,Bhilwara,Bhilwara,Rajasthan,V2 Retail,25.35,74.63,359483.0,560879.0,exact,Bhilwara,3,186960.0
@@ -920,7 +920,7 @@ V2 Retail Ltd. (HS02),535003,Vizianagaram,Vizianagaram,Andhra Pradesh,V2 Retail,
 V2 Retail Ltd. (HS03),531001,Ankapali,Ankapali,Andhra Pradesh,V2 Retail,17.6865,82.2932,86519.0,118689.0,fuzzy_broad,anakapalle,1,118689.0
 V2 Retail Ltd. (HS04),530009,Visakhapatnam,Visakhapatnam,Andhra Pradesh,V2 Retail,17.742176,83.237694,,,no_match,,9,
 V2 Retail Ltd. (HS05),522002,Arundelpet Guntur,Arundelpet Guntur,Andhra Pradesh,V2 Retail,16.306862,80.439271,,,no_match,,1,
-V2 Retail Ltd. (HS06),517325,S Pizza Madanapalle,S Pizza Madanapalle,Andhra Pradesh,V2 Retail,13.55394,78.503528,,,no_match,,1,
+V2 Retail Ltd. (HS06),517325,Madanapalle,Chittoor,Andhra Pradesh,V2 Retail,13.55394,78.503528,,,no_match,,1,
 V2 Retail Ltd. (HS07),523001,Ongole,Ongole,Andhra Pradesh,V2 Retail,15.501985,80.04962,204746.0,280876.0,exact,Ongole,4,70219.0
 V2 Retail Ltd. (HT14),247667,Roorkee,Haridwar,Uttarakhand,V2 Retail,29.874272,77.893062,118200.0,187396.0,exact,Roorkee,2,93698.0
 V2 Retail Ltd. (HT16),262308,Khatima Khatima,Khatima Khatima,Uttarakhand,V2 Retail,28.919758,79.96992,,,no_match,,1,
@@ -977,7 +977,7 @@ V2 Retail Ltd. (HW14),700156,Kolkata,Kolkata,West Bengal,V2 Retail,22.571279,88.
 V2 Retail Ltd. (HW15),734001,Siliguri,Darjeeling,West Bengal,V2 Retail,26.718322,88.424994,294546.0,388909.0,manual_gap_fix,Siliguri (M Corp.),11,
 V2 Retail Ltd. (HW16),712101,Chinsurah,Hooghly,West Bengal,V2 Retail,22.889175,88.393328,179931.0,237575.0,fuzzy_broad,hugli-chinsurah,2,118788.0
 V2 Retail Ltd. (HW17),731224,Rampurhat,Birbhum,West Bengal,V2 Retail,24.174253,87.791183,57833.0,76361.0,exact,Rampurhat,5,15272.0
-V2 Retail Ltd. (HW18),713213,Durgapur,Benachity Durgapur,West Bengal,V2 Retail,23.560063,87.276889,566517.0,748010.0,exact,Durgapur,3,249337.0
+V2 Retail Ltd. (HW18),713213,Durgapur,Paschim Bardhaman,West Bengal,V2 Retail,23.560063,87.276889,566517.0,748010.0,exact,Durgapur,3,249337.0
 V2 Retail Ltd. (HW19),721301,Kharagpur,Kharagpur,West Bengal,V2 Retail,22.345084,87.302757,207604.0,274113.0,exact,Kharagpur,5,54823.0
 V2 Retail Ltd. (HW20),713301,Asansol,Paschim Burdwan,West Bengal,V2 Retail,23.684755,86.97232,563917.0,744577.0,exact,Asansol,9,82731.0
 V2 Retail Ltd. (HW21),721101,Medinipur,Paschim Medinipur,West Bengal,V2 Retail,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
@@ -1015,7 +1015,7 @@ V2 Retail Ltd. (U114),273003,Gorakhpur,Gorakhpur,Uttar Pradesh,V2 Retail,26.8035
 V2 Retail Ltd. (U115),201003,Ghaziabad,Ghaziabad,Uttar Pradesh,V2 Retail,28.610477,77.353981,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 V2 Retail Ltd. (U116),262001,Pilibhit,Pilibhit,Uttar Pradesh,V2 Retail,28.64,79.81,127988.0,196231.0,exact,Pilibhit,3,65410.0
 V2 Retail Ltd. (U117),224001,Faizabad,Ayodhya,Uttar Pradesh,V2 Retail,26.72705,83.371574,165228.0,253327.0,exact,Faizabad,4,63332.0
-V2 Retail Ltd. (U118),283135,Shikohabad,District Firozabad Shikohabad,Uttar Pradesh,V2 Retail,27.10759,78.58698,107404.0,164671.0,exact,Shikohabad,1,164671.0
+V2 Retail Ltd. (U118),283135,Shikohabad,Firozabad,Uttar Pradesh,V2 Retail,27.10759,78.58698,107404.0,164671.0,exact,Shikohabad,1,164671.0
 V2 Retail Ltd. (U122),272207,Siddharth Nagar,Siddharth Nagar,Uttar Pradesh,V2 Retail,27.22095,82.859535,25422.0,38977.0,fuzzy,siddharthnagar,2,19488.0
 V2 Retail Ltd. (U123),201009,Ghaziabad,Ghaziabad,Uttar Pradesh,V2 Retail,28.537589,77.386364,1648643.0,2527692.0,manual_gap_fix,Ghaziabad,1,
 V2 Retail Ltd. (U127),208019,Kanpur,Kanpur,Uttar Pradesh,V2 Retail,26.482947,80.271593,2768057.0,4243972.0,exact,Kanpur,13,326459.0
@@ -1242,7 +1242,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - SOLARIS BUSINESS HUB, AHMEDABAD",380013,Ahmedabad,Ahmedabad,Gujarat,Zudio,23.058084,72.539304,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - R SQUARE MALL, VAPI",396191,Vapi,Valsad,Gujarat,Zudio,20.383986,72.902367,163630.0,224802.0,exact,Vapi,2,112401.0
 "ZUDIO - MILANO MULTPLEX BARDOLI, SURAT",394601,Bardoli,Surat,Gujarat,Zudio,21.115974,73.10587,60821.0,83559.0,exact,Bardoli,2,41780.0
-"ZUDIO - SHRI AM'S VARDAN TEXTILE MARKET, SURAT",395010,Dumbhal Surat,Dumbhal Surat,Gujarat,Zudio,21.1645,72.8234,,,no_match,,1,
+"ZUDIO - SHRI AM'S VARDAN TEXTILE MARKET, SURAT",395010,Surat,Surat,Gujarat,Zudio,21.1645,72.8234,,,no_match,,1,
 "ZUDIO - CORNER WALK, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.141272,72.78394,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - HIMALAYA MALL, AHMEDABAD",380006,Ahmedabad,Ahmedabad,Gujarat,Zudio,23.045893,72.539125,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - PRAHLAD NAGAR, AHMEDABAD",380015,Ahmedabad,Ahmedabad,Gujarat,Zudio,23.020013,72.531302,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
@@ -1940,13 +1940,13 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - HATIBAGAN, KOLKATA",700006,Kolkata,Kolkata,West Bengal,Zudio,22.594262,88.378169,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - CHANDANNAGAR, HOOGHLY",712136,Kolkata,Kolkata,West Bengal,Zudio,22.51583,88.38903,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - JOYGACHI, HABRA",743263,Barasat,North 24 Parganas,West Bengal,Zudio,22.846125,88.657745,278435.0,367636.0,exact,Barasat,7,52519.0
-"ZUDIO - GT ROAD, BARDHAMAN",713103,Burdwan,Perbirhata,West Bengal,Zudio,23.229785,87.868607,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
+"ZUDIO - GT ROAD, BARDHAMAN",713103,Durgapur,Paschim Bardhaman,West Bengal,Zudio,23.229785,87.868607,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
 "ZUDIO - RISHRA, HOOGHLY",712248,Kolkata,Kolkata,West Bengal,Zudio,22.716236,88.355868,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - MALANCHA, KHARAGPUR",721304,Kharagpur,Kharagpur,West Bengal,Zudio,22.417548,87.265313,207604.0,274113.0,exact,Kharagpur,5,54823.0
 "ZUDIO - COLLEGE MORE, BALURGHAT",733101,Balurghat,Dakshin Dinajpur,West Bengal,Zudio,25.230343,88.77819,153279.0,202385.0,exact,Balurghat,2,101192.0
 "ZUDIO - KHAGRABARI, COOCH BEHAR",736179,Cooch Behar,Cooch Behar,West Bengal,Zudio,26.357243,89.438225,77935.0,102903.0,fuzzy_broad,koch bihar,8,12863.0
 "ZUDIO - MAITRA BAGAN, BASIRHAT",743412,Kolkata,Kolkata,West Bengal,Zudio,22.663572,88.853348,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO - AMTALA, KOLKATA",743503,Bakrahat,North 24 Parganas,West Bengal,Zudio,22.368913,88.271814,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
+"ZUDIO - AMTALA, KOLKATA",743503,Bakrahat,South 24 Parganas,West Bengal,Zudio,22.368913,88.271814,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
 "ZUDIO - ALCOVE TRIVENI MALL, SERAMPORE",712202,Serampore,Hooghly,West Bengal,Zudio,22.804,88.350579,181842.0,240098.0,exact,Serampore,6,40016.0
 "ZUDIO – JUGBERIA, BARRACKPORE",700110,Kolkata,Kolkata,West Bengal,Zudio,22.773944,88.390039,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - PARADISE BUILDING, KOLKATA",700074,Kolkata,Kolkata,West Bengal,Zudio,22.620457,88.372969,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -1978,8 +1978,8 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 mBaazar - ABHAYAPURI,783384,Abhayapuri,Bongaigaon,Assam,mBaazar,26.332707,90.670708,15847.0,23771.0,exact,Abhayapuri,1,23771.0
 mBaazar - AGARTALA,799001,Agartala,West Tripura,Tripura,mBaazar,23.832685,91.280817,400004.0,661458.0,exact,Agartala,11,60133.0
 mBaazar - Alambazar,700035,Kolkata,Kolkata,West Bengal,mBaazar,22.649118,88.363754,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-mBaazar - Amingaon,781031,Amingaon,Kamrup Amingaon,Assam,mBaazar,26.186125,91.66988,8855.0,13283.0,fuzzy,amin gaon,1,13283.0
-mBaazar - AMTALA,743503,Bakrahat,North 24 Parganas,West Bengal,mBaazar,22.369211,88.271815,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
+mBaazar - Amingaon,781031,Amingaon,Kamrup,Assam,mBaazar,26.186125,91.66988,8855.0,13283.0,fuzzy,amin gaon,1,13283.0
+mBaazar - AMTALA,743503,Bakrahat,South 24 Parganas,West Bengal,mBaazar,22.369211,88.271815,278435.0,367636.0,fuzzy_broad,barasat,3,122545.0
 mBaazar - Anandapur,758015,Anandapur,Keonjhar,Odisha,mBaazar,21.213827,86.12248,39585.0,57583.0,fuzzy,anandpur,1,57583.0
 mBaazar - ANDUL ROAD,711109,Andul,Howrah,West Bengal,mBaazar,22.58441,88.246419,6302.0,8321.0,exact,Andul,2,4160.0
 mBaazar - Arambagh,712601,Arambagh,Hooghly,West Bengal,mBaazar,22.886118,87.784325,66175.0,87375.0,fuzzy,arambag,5,17475.0
@@ -2005,7 +2005,7 @@ mBaazar - BARUIPUR,700144,Kolkata,Kolkata,West Bengal,mBaazar,22.330383,88.44945
 mBaazar - BEHALA,700060,Behala,Kolkata,West Bengal,mBaazar,22.505836,88.319436,9584.0,12654.0,fuzzy_broad,beharia,2,6327.0
 mBaazar - Belgharia,700056,Belgharia,Kolkata,West Bengal,mBaazar,22.660625,88.388834,5858.0,7735.0,exact,Belgharia,1,7735.0
 mBaazar - Belonia,799155,Belonia,South Tripura,Tripura,mBaazar,23.250902,91.45276,19996.0,33066.0,exact,Belonia,2,16533.0
-mBaazar - Benachity,713213,Durgapur,Benachity Durgapur,West Bengal,mBaazar,22.936925,88.34728,566517.0,748010.0,exact,Durgapur,3,249337.0
+mBaazar - Benachity,713213,Durgapur,Paschim Bardhaman,West Bengal,mBaazar,22.936925,88.34728,566517.0,748010.0,exact,Durgapur,3,249337.0
 mBaazar - BERHAMPORE,742103,Berhampore,Murshidabad,West Bengal,mBaazar,24.111225,88.247944,195223.0,257766.0,exact,Berhampore,5,51553.0
 mBaazar - BHADRAK,756100,Bhadrak,Balasore,Odisha,mBaazar,21.057323,86.496346,121338.0,176507.0,exact,Bhadrak,2,88254.0
 mBaazar - Bhagwangola,742135,Bhagwangola,Murshidabad,West Bengal,mBaazar,24.328473,88.304921,195223.0,257766.0,manual_gap_fix,Berhampore,1,
@@ -2019,8 +2019,8 @@ mBaazar - BOKARO,827004,Bokaro,Bokaro,Jharkhand,mBaazar,23.667042,86.147255,3930
 mBaazar - Boko,781123,Boko,Kamrup,Assam,mBaazar,26.438969,91.62093,,13349.0,district_fallback,[Kamrup district est.],1,
 mBaazar - Bongaon,743235,Bongaon,North 24 Parganas,West Bengal,mBaazar,23.045067,88.828586,108864.0,143740.0,exact,Bongaon,4,35935.0
 mBaazar - BRAHMAPUR,760001,Phulbani,Kandhamal,Odisha,mBaazar,19.315514,84.78443,37371.0,54362.0,fuzzy,phulabani,11,4942.0
-mBaazar - BURDWAN,713101,Kalna,Hooghly,West Bengal,mBaazar,23.237595,87.866846,56722.0,74894.0,exact,Kalna,4,18724.0
-mBaazar - BURDWAN BUS STAND,713103,Burdwan,Perbirhata,West Bengal,mBaazar,23.254723,87.875393,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
+mBaazar - BURDWAN,713101,Bardhaman,Paschim Bardhaman,West Bengal,mBaazar,23.237595,87.866846,56722.0,74894.0,exact,Kalna,4,18724.0
+mBaazar - BURDWAN BUS STAND,713103,Durgapur,Paschim Bardhaman,West Bengal,mBaazar,23.254723,87.875393,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
 mBaazar - Chakdaha,741222,Chakdah,Nadia,West Bengal,mBaazar,23.07994,88.535428,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
 mBaazar - Chanchal,732123,Chanchal,Malda,West Bengal,mBaazar,25.391411,88.009436,5570.0,7354.0,exact,Chanchal,3,2451.0
 mBaazar - CHAPAR,783371,Chapar,Dhubri,Assam,mBaazar,26.271751,90.44228,20322.0,30483.0,exact,Chapar,1,30483.0
@@ -2049,9 +2049,9 @@ mBaazar - GARIA,700047,Kolkata,Kolkata,West Bengal,mBaazar,22.466016,88.392849,4
 mBaazar - GARIAHAT,700019,Kolkata,Kolkata,West Bengal,mBaazar,22.518013,88.365866,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - GHATAKPUKUR,743502,Ghatakpukur,North 24 Parganas,West Bengal,mBaazar,23.825306,88.286358,278435.0,367636.0,manual_gap_fix,Barasat,1,
 mBaazar - Ghatal,721212,Ghatal,West Midnapore,West Bengal,mBaazar,22.664837,87.729836,54591.0,72080.0,exact,Ghatal,1,72080.0
-mBaazar - GHATSHILA,832303,Ghatshila,East Singbhum Ghatshila,Jharkhand,mBaazar,22.586143,86.47733,40624.0,64406.0,exact,Ghatshila,1,64406.0
+mBaazar - GHATSHILA,832303,Ghatshila,East Singhbhum,Jharkhand,mBaazar,22.586143,86.47733,40624.0,64406.0,exact,Ghatshila,1,64406.0
 mBaazar - Godda,814133,Godda,Godda,Jharkhand,mBaazar,24.825794,87.213356,48480.0,76861.0,exact,Godda,3,25620.0
-mBaazar - Goreshwar,781366,Goreshwar,Baksa (Btr),Assam,mBaazar,26.165495,91.72779,27839.0,41759.0,manual_gap_fix,Nalbari,1,
+mBaazar - Goreshwar,781366,Goreshwar,Baksa,Assam,mBaazar,26.165495,91.72779,27839.0,41759.0,manual_gap_fix,Nalbari,1,
 mBaazar - Gumla,835207,Gumla,Gumla,Jharkhand,mBaazar,23.041637,84.542274,51264.0,81275.0,exact,Gumla,2,40638.0
 mBaazar - HAILAKANDI,788151,Hailakandi,Hailakandi,Assam,mBaazar,24.680967,92.56482,33637.0,50456.0,exact,Hailakandi,1,50456.0
 mBaazar - HAJO,781102,Hajo,Kamrup,Assam,mBaazar,26.249462,91.52743,15188.0,22782.0,manual_gap_fix,Niz-Hajo,1,
@@ -2105,14 +2105,14 @@ mBaazar - LANKA,782446,Lanka,Nagaon,Assam,mBaazar,25.921194,92.950386,36805.0,55
 "mBaazar - Lanka, Varanasi",221005,Varanasi,Varanasi,Uttar Pradesh,mBaazar,25.277252,83.003821,1198491.0,1837521.0,exact,Varanasi,24,76563.0
 mBaazar - LUCKNOW,256005,Lucknow,Lucknow,Uttar Pradesh,mBaazar,26.771812,80.91877,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 mBaazar - Lumding,782447,Lumding,Nagaon,Assam,mBaazar,25.3,91.7833,31347.0,47021.0,exact,Lumding,1,47021.0
-mBaazar - Mandia Town,781308,Mandia Town,Barpeta Mandia Town,Assam,mBaazar,26.329327,91.0058,8434.0,12651.0,fuzzy_broad,moran town,1,12651.0
+mBaazar - Mandia Town,781308,Mandia,Barpeta,Assam,mBaazar,26.329327,91.0058,8434.0,12651.0,fuzzy_broad,moran town,1,12651.0
 mBaazar - Mankachar,783131,Mankachar,South Salmara,Assam,mBaazar,25.952108,90.0713,26162.0,39243.0,exact,Mankachar,1,39243.0
 mBaazar - MASAURHI,804452,Masaurhi,Patna,Bihar,mBaazar,25.195568,85.505138,59803.0,102688.0,exact,Masaurhi,1,102688.0
 mBaazar - MASLANDAPUR,743289,Maslandapur,North 24 Parganas,West Bengal,mBaazar,22.68797,88.449469,10790.0,14247.0,exact,Maslandapur,2,7124.0
 mBaazar - Mathabhanga,736146,Mathabhanga,Coochbehar,West Bengal,mBaazar,26.340317,89.21556,23890.0,31544.0,exact,Mathabhanga,1,31544.0
-mBaazar - Mazbat,784507,Mazbat,Udalguri Mazbat,Assam,mBaazar,26.791279,92.292076,75540.0,113311.0,manual_gap_fix,Tezpur,1,
+mBaazar - Mazbat,784507,Mazbat,Udalguri,Assam,mBaazar,26.791279,92.292076,75540.0,113311.0,manual_gap_fix,Tezpur,1,
 mBaazar - MEDINIPUR,721101,Medinipur,Paschim Medinipur,West Bengal,mBaazar,22.4309,87.3215,169264.0,223491.0,exact,Medinipur,3,74497.0
-mBaazar - Memari,713146,Memari,Memari,West Bengal,mBaazar,23.17685,88.09513,41451.0,54731.0,exact,Memari,2,27366.0
+mBaazar - Memari,713146,Memari,Purba Bardhaman,West Bengal,mBaazar,23.17685,88.09513,41451.0,54731.0,exact,Memari,2,27366.0
 mBaazar - Mirza,781125,Mirza,Kamrup,Assam,mBaazar,26.1667,90.4167,528563.0,13349.0,district_fallback,[Kamrup district est.],1,
 mBaazar - Moirabari,782126,Moirabari,Morigaon,Assam,mBaazar,26.25219,92.342064,29164.0,43746.0,manual_gap_fix,marigaon,1,
 mBaazar - MOKAMA,803302,Mokama,Patna,Bihar,mBaazar,25.201756,85.52006,60678.0,104190.0,fuzzy_broad,mokameh,2,52095.0
@@ -2124,7 +2124,7 @@ mBaazar - Murarai,731219,Murarai,Birbhum,West Bengal,mBaazar,24.534355,87.852036
 mBaazar - Nabarangpur,764059,Nabarangpur,Nabarangpur,Odisha,mBaazar,19.250029,82.555952,36945.0,53743.0,fuzzy,nabarangapur,3,17914.0
 mBaazar - Naihati,743165,Naihati,North 24 Parganas,West Bengal,mBaazar,22.887286,88.41577,217900.0,287708.0,exact,Naihati,5,57542.0
 mBaazar - Nandigram,721631,Nandigram,Purba Medinipur,West Bengal,mBaazar,22.010227,87.97682,5803.0,7662.0,exact,Nandigram,1,7662.0
-mBaazar - Naxalbari,734429,Naxalbari,Darjeeling Naxalbari,West Bengal,mBaazar,26.683401,88.201195,,33144.0,district_fallback,[Darjeeling district est.],1,
+mBaazar - Naxalbari,734429,Naxalbari,Darjeeling,West Bengal,mBaazar,26.683401,88.201195,,33144.0,district_fallback,[Darjeeling district est.],1,
 mBaazar - New Town,700136,Kolkata,Kolkata,West Bengal,mBaazar,22.633108,88.47034,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - Nilmatha,226002,Lucknow,Lucknow,Uttar Pradesh,mBaazar,26.8469,80.9462,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 mBaazar - Nuapatna,754035,Nuapatna,Cuttack,Odisha,mBaazar,20.462515,85.88274,8057.0,11720.0,exact,Nuapatna,1,11720.0
@@ -2141,7 +2141,7 @@ mBaazar - PURI - GRAND ROAD,752001,Puri,Puri,Odisha,mBaazar,19.804546,85.81959,2
 mBaazar - PURNEA,854301,Purnia,Purnia,Bihar,mBaazar,25.785187,87.496194,282248.0,484649.0,exact,Purnia,8,60581.0
 mBaazar - PURULIA,723101,Purulia,Purulia,West Bengal,mBaazar,23.335881,86.369584,121067.0,159853.0,fuzzy,puruliya,2,79926.0
 mBaazar - Raghunatganj,742225,Raghunatganj,Murshidabad,West Bengal,mBaazar,24.176012,88.280464,,25686.0,district_fallback,[Murshidabad district est.],1,
-mBaazar - Raha,782103,Raha,Nagaon Raha,Assam,mBaazar,26.232061,92.518295,11030.0,16545.0,exact,Raha,1,16545.0
+mBaazar - Raha,782103,Raha,Nagaon,Assam,mBaazar,26.232061,92.518295,11030.0,16545.0,exact,Raha,1,16545.0
 mBaazar - RAHAMA,754140,Rahama,Jagatsinghpur,Odisha,mBaazar,20.321363,86.52085,37458.0,54489.0,manual_gap_fix,jajapur,2,
 mBaazar - RAIGANJ,733134,Raiganj,Uttar Dinajpur,West Bengal,mBaazar,26.258835,88.189986,183612.0,242435.0,exact,Raiganj,4,60609.0
 mBaazar - Raj Khariar,766107,Raj Khariar,Kalahandi,Odisha,mBaazar,20.29369,82.760475,15087.0,21947.0,fuzzy_broad,khariar,1,21947.0
@@ -2158,7 +2158,7 @@ mBaazar - Rengali,768212,Rengali,Sambalpur,Odisha,mBaazar,21.26373,85.02006,1086
 mBaazar - Sainthia,731234,Sainthia,Birbhum,West Bengal,mBaazar,23.948706,87.68236,44601.0,58890.0,exact,Sainthia,1,58890.0
 mBaazar - SAMASTIPUR,848101,Samastipur,Samastipur,Bihar,mBaazar,25.860903,85.780106,67925.0,116634.0,exact,Samastipur,9,12959.0
 mBaazar - SAMBALPUR,768001,Sambalpur,Sambalpur,Odisha,mBaazar,21.465988,83.97841,189366.0,275465.0,exact,Sambalpur,9,30607.0
-mBaazar - Samsi,732139,Samsi,Malda Samsi,West Bengal,mBaazar,25.280426,88.005325,31920.0,42146.0,manual_gap_fix,matla,1,
+mBaazar - Samsi,732139,Samsi,Malda,West Bengal,mBaazar,25.280426,88.005325,31920.0,42146.0,manual_gap_fix,matla,1,
 mBaazar - SEALDAH,700014,Kolkata,Kolkata,West Bengal,mBaazar,22.702127,88.344222,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - Semiliguda,764036,Semiliguda,Koraput,Odisha,mBaazar,18.706564,82.85414,,47000.0,district_fallback,[Koraput district est.],2,
 mBaazar - SERAMPORE,712201,Serampore,Hooghly,West Bengal,mBaazar,22.752516,88.342481,181842.0,240098.0,exact,Serampore,6,40016.0
@@ -2167,14 +2167,14 @@ mBaazar - Silapathar,787057,Silapathar,Dhemaji,Assam,mBaazar,27.59402,94.72353,2
 mBaazar - SILCHAR,788001,Silchar,Cachar,Assam,mBaazar,24.82995,92.800341,178865.0,268299.0,exact,Silchar,8,33537.0
 mBaazar - SILIGURI,734003,Siliguri,Darjeeling,West Bengal,mBaazar,26.731757,88.431893,294546.0,388909.0,manual_gap_fix,Siliguri (M Corp.),11,
 mBaazar - Siliguri SF Road,734005,Siliguri,Darjeeling,West Bengal,mBaazar,26.742957,88.436267,294546.0,388909.0,manual_gap_fix,Siliguri (M Corp.),11,
-mBaazar - Simaluguri,785686,Simaluguri,Sivasagar Simaluguri,Assam,mBaazar,26.91762,94.737915,8286.0,12429.0,exact,Simaluguri,1,12429.0
+mBaazar - Simaluguri,785686,Simaluguri,Sivasagar,Assam,mBaazar,26.91762,94.737915,8286.0,12429.0,exact,Simaluguri,1,12429.0
 mBaazar - Singur,712409,Singur,Hooghly,West Bengal,mBaazar,22.9167,88.1333,21382.0,28232.0,exact,Singur,4,7058.0
 mBaazar - SITAMARHI,843302,Sitamarhi,Sitamarhi,Bihar,mBaazar,26.594631,85.49218,67818.0,116451.0,exact,Sitamarhi,12,9704.0
 mBaazar - Sitapur Road,226021,Lucknow,Lucknow,Uttar Pradesh,mBaazar,26.8124,80.985,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 mBaazar - SIWAN,841226,Siwan,Siwan,Bihar,mBaazar,26.2155,84.362257,135066.0,231922.0,exact,Siwan,10,23192.0
 mBaazar - Sodepur,700110,Kolkata,Kolkata,West Bengal,mBaazar,22.5634,88.3456,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 mBaazar - Sonari,785690,Sonari,Jorhat,Assam,mBaazar,27.026693,95.02137,19810.0,29715.0,exact,Sonari,1,29715.0
-mBaazar - Sujapur,732206,Sujapur,Malda Sujapur,West Bengal,mBaazar,25.066313,88.137955,7773.0,10263.0,fuzzy_broad,sadpur,1,10263.0
+mBaazar - Sujapur,732206,Sujapur,Malda,West Bengal,mBaazar,25.066313,88.137955,7773.0,10263.0,fuzzy_broad,sadpur,1,10263.0
 mBaazar - SULTANPUR,228001,Sultanpur,Sultanpur,Uttar Pradesh,mBaazar,26.261031,82.07221,107640.0,165033.0,exact,Sultanpur,5,33007.0
 mBaazar - Sundargarh,770001,Sundargarh,Sundargarh,Odisha,mBaazar,22.234222,84.840754,45036.0,65512.0,exact,Sundargarh,2,32756.0
 mBaazar - SURI,731101,Suri,Birbhum,West Bengal,mBaazar,23.908964,87.5265,67864.0,89605.0,exact,Suri,4,22401.0
@@ -2182,7 +2182,7 @@ mBaazar - SUTI,742201,Suti,Murshidabad,West Bengal,mBaazar,24.602404,88.04348,62
 mBaazar - Tamulpur,781367,Tamulpur,Tamulpur (Btr),Assam,mBaazar,26.438969,91.62093,67322.0,100984.0,manual_gap_fix,Bongaigaon,1,
 mBaazar - Tangla,784521,Tangla,Udalguri,Assam,mBaazar,26.657125,91.91208,17183.0,25775.0,exact,Tangla,2,12888.0
 mBaazar - TEZPUR,784001,Tezpur,Sonitpur,Assam,mBaazar,26.948025,94.530983,75540.0,113311.0,exact,Tezpur,5,22662.0
-mBaazar - Titabar,785630,Titabor,Jorhat,Assam,mBaazar,26.588146,94.180867,71782.0,107674.0,manual_gap_fix,Jorhat,1,
+mBaazar - Titabar,785630,Titabar,Jorhat,Assam,mBaazar,26.588146,94.180867,71782.0,107674.0,manual_gap_fix,Jorhat,1,
 mBaazar - UDAIPUR,799120,Udaipur,Gomati,Tripura,mBaazar,23.540003,91.49445,32758.0,54170.0,exact,Udaipur,2,27085.0
 mBaazar - ULUBERIA,711315,Uluberia,Howrah,West Bengal,mBaazar,22.936925,88.34728,235345.0,310742.0,exact,Uluberia,2,155371.0
 mBaazar - VARANASI - ASHAPUR,221105,Varanasi,Varanasi,Uttar Pradesh,mBaazar,25.380522,82.90643,1198491.0,1837521.0,manual_gap_fix,Varanasi,1,
@@ -2214,7 +2214,7 @@ V-Mart - Motihari,845401,Motihari,East Champaran,Bihar,Vmart,26.6167,84.8333,126
 V-Mart - Dehri On Sone,821307,Dehri,Rohtas,Bihar,Vmart,24.63592,83.963905,137231.0,235640.0,exact,Dehri,3,78547.0
 V-Mart - Chhapra-Bhagwan Bazar,841301,Chhapra,Saran,Bihar,Vmart,25.9833,84.75,202352.0,347459.0,fuzzy,chapra,4,86865.0
 V-Mart - Arrah,802301,Ara,Bhojpur,Bihar,Vmart,25.559893,84.65011,5185.0,8903.0,fuzzy,bara,5,1781.0
-"V-Mart - Zero Mile, Arrah",802302,Ekawana,Ekawana,Bihar,Vmart,25.546011,84.65923,135066.0,231922.0,manual_gap_fix,Siwan,1,
+"V-Mart - Zero Mile, Arrah",802302,Arrah,Bhojpur,Bihar,Vmart,25.546011,84.65923,135066.0,231922.0,manual_gap_fix,Siwan,1,
 V-Mart - Daud Nagar,824113,Daudnagar,Aurangabad,Bihar,Vmart,24.752935,84.37391,52364.0,89914.0,exact,Daudnagar,1,89914.0
 V-Mart - Bihta,801103,Patna,Patna,Bihar,Vmart,25.609907,85.137764,1684297.0,2892112.0,exact,Patna,48,60252.0
 V-Mart - Aurangabad,824101,Aurangabad,Aurangabad,Bihar,Vmart,24.8167,84.4333,102244.0,175564.0,exact,Aurangabad,5,35113.0
@@ -2264,7 +2264,7 @@ V-Mart - Supaul,852131,Supaul,Supaul,Bihar,Vmart,26.116383,86.59898,65437.0,1123
 V-Mart - Saharsa,852201,Saharsa,Saharsa,Bihar,Vmart,25.85,86.4333,156540.0,268795.0,exact,Saharsa,4,67199.0
 V-Mart - Khagaria,851204,Khagaria,Begusarai,Bihar,Vmart,25.50549,86.466736,49406.0,84835.0,exact,Khagaria,5,16967.0
 V-Mart - Jamui,811307,Jamui,Jamui,Bihar,Vmart,25.17437,86.09512,87357.0,150001.0,exact,Jamui,3,50000.0
-V-Mart - Munger,811201,Maksuspur,Maksuspur,Bihar,Vmart,25.360853,86.46827,354462.0,608648.0,manual_gap_fix,Muzaffarpur,1,
+V-Mart - Munger,811201,Lakhisarai,Lakhisarai,Bihar,Vmart,25.360853,86.46827,354462.0,608648.0,manual_gap_fix,Muzaffarpur,1,
 V-Mart - Jamalpur,811214,Jamalpur,Munger,Bihar,Vmart,25.376354,86.470985,105434.0,181041.0,exact,Jamalpur,3,60347.0
 V-Mart - Madhepura,852113,Madhepura,Madhepura,Bihar,Vmart,25.201756,85.52006,54472.0,93534.0,exact,Madhepura,6,15589.0
 V-Mart - Murliganj,852122,Murliganj,Madhepura,Bihar,Vmart,25.6167,87.5667,28691.0,49265.0,exact,Murliganj,1,49265.0
@@ -2274,7 +2274,7 @@ V-Mart - Bhagalpur - Gurhatta Chowk,812005,Bhagalpur,Bhagalpur,Bihar,Vmart,25.23
 V-Mart - Bhagalpur,812001,Bhagalpur,Bhagalpur,Bihar,Vmart,25.282,87.0105,400146.0,687092.0,exact,Bhagalpur,9,76344.0
 V-Mart - Bhagalpur-Kachehari Road,812001,Bhagalpur,Bhagalpur,Bihar,Vmart,25.243223,86.98313,400146.0,687092.0,exact,Bhagalpur,9,76344.0
 V-Mart - Banka,813102,Banka,Banka,Bihar,Vmart,24.8667,86.6333,45977.0,78947.0,exact,Banka,2,39474.0
-V-Mart - Kahalgoan,813204,Kahalgoan,Kahalgoan,Bihar,Vmart,25.26495,87.23483,400146.0,687092.0,manual_gap_fix,Bhagalpur,1,
+V-Mart - Kahalgoan,813204,Kahalgaon,Bhagalpur,Bihar,Vmart,25.26495,87.23483,400146.0,687092.0,manual_gap_fix,Bhagalpur,1,
 V-Mart - Purnia,854301,Purnia,Purnia,Bihar,Vmart,25.764585,87.46946,282248.0,484649.0,exact,Purnia,8,60581.0
 V-Mart - Rambagh Chowk,854301,Purnia,Purnia,Bihar,Vmart,25.79226,87.49657,282248.0,484649.0,exact,Purnia,8,60581.0
 V-Mart - Katihar-Mirchaibari,854105,Katihar,Purnia,Bihar,Vmart,25.552608,87.555145,240838.0,413544.0,exact,Katihar,6,68924.0
@@ -2304,10 +2304,10 @@ V-Mart - Gandhidham,370201,Gandhidham,Kutch,Gujarat,Vmart,23.0669,69.6417,247992
 V-Mart - Surat,394221,Surat,Surat,Gujarat,Vmart,21.1833,72.8167,4467797.0,6138061.0,exact,Surat,27,227336.0
 V-Mart - Rajkot-Kuvada Road,360003,Rajkot,Rajkot,Gujarat,Vmart,22.303358,70.81824,1323363.0,1818096.0,exact,Rajkot,5,363619.0
 V-Mart - Jamnagar,361008,Jamnagar,Jamnagar,Gujarat,Vmart,22.4722,70.0431,600943.0,825603.0,exact,Jamnagar,3,275201.0
-V-Mart - Jamnagar-Samna Road,361005,Green City,Green City,Gujarat,Vmart,22.1667,71.95,,,no_match,,1,
+V-Mart - Jamnagar-Samna Road,361005,Jamnagar,Jamnagar,Gujarat,Vmart,22.1667,71.95,,,no_match,,1,
 V-Mart - Junagarh,362001,Junagadh,Junagadh,Gujarat,Vmart,22.0667,71.7667,319462.0,438891.0,exact,Junagadh,1,438891.0
 V-Mart - Porbandar,360575,Porbandar,Porbandar,Gujarat,Vmart,21.640594,69.606,152760.0,209869.0,exact,Porbandar,2,104934.0
-V-Mart - Veraval,362265,Railway Station Area,Railway Station Area,Gujarat,Vmart,22.2333,71.6833,,,no_match,,1,
+V-Mart - Veraval,362265,Jamnagar,Jamnagar,Gujarat,Vmart,22.2333,71.6833,,,no_match,,1,
 V-Mart - Corporate Office,122015,Gurugram,Gurugram,Haryana,Vmart,28.48588,77.069658,886519.0,1359207.0,manual,Gurgaon,20,67960.0
 "V-Mart - Faridabad, NIT 1",121001,Faridabad,Faridabad,Haryana,Vmart,28.383575,77.30268,1414050.0,2168015.0,exact,Faridabad,9,240891.0
 V-Mart - Gurugram-Badshahpur,122101,Gurugram,Gurugram,Haryana,Vmart,28.391874,77.048402,886519.0,1359207.0,manual,Gurgaon,20,67960.0
@@ -2435,13 +2435,13 @@ V-Mart - Udaipur-Surajpole,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.58224,73.69
 V-Mart - Agartala,799010,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2798,400004.0,661458.0,exact,Agartala,11,60133.0
 V-Mart - Agartala-Shakuntala Road,799001,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2787,400004.0,661458.0,exact,Agartala,11,60133.0
 V-Mart - Bishalgarh-Sepahjala,799102,Bishalgarh,Bishalgarh,Tripura,Vmart,23.687782,91.3106,21085.0,34867.0,exact,Bishalgarh,1,34867.0
-V-Mart - Udaipur - Tripura,799105,Udaipur Part,Udaipur Part,Tripura,Vmart,23.8267,91.2856,32758.0,54170.0,manual_gap_fix,Udaipur,1,
+V-Mart - Udaipur - Tripura,799105,Udaipur,Gomati,Tripura,Vmart,23.8267,91.2856,32758.0,54170.0,manual_gap_fix,Udaipur,1,
 V-Mart - Belonia-Hall Chowmuhani,799155,Belonia,South Tripura,Tripura,Vmart,23.2167,91.3833,19996.0,33066.0,exact,Belonia,2,16533.0
-V-Mart - Dharmanagar-Station Road,799253,Baruakandi,Baruakandi,Tripura,Vmart,24.388838,92.13897,400004.0,21473.0,state_median,[Tripura median],1,
+V-Mart - Dharmanagar-Station Road,799253,Dharmanagar,North Tripura,Tripura,Vmart,24.388838,92.13897,400004.0,21473.0,state_median,[Tripura median],1,
 V-Mart - Bhangel,201304,Noida,Gautam Buddh Nagar,Uttar Pradesh,Vmart,28.475,77.488,637272.0,977063.0,exact,Noida,11,88824.0
 V-Mart - Ghaziabad-Gandhi Nagar,201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Vmart,28.656851,77.436963,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 V-Mart - Meerut,250002,Meerut,Meerut,Uttar Pradesh,Vmart,28.981808,77.70341,1305429.0,2001478.0,exact,Meerut,4,500370.0
-V-Mart - Muzaffarnagar,251002,South Civil Lines,South Civil Lines,Uttar Pradesh,Vmart,29.0136,77.7088,673446.0,1032524.0,manual_gap_fix,Gorakhpur,1,
+V-Mart - Muzaffarnagar,251002,Muzaffarnagar,Muzaffarnagar,Uttar Pradesh,Vmart,29.0136,77.7088,673446.0,1032524.0,manual_gap_fix,Gorakhpur,1,
 V-Mart - ASJ Mall Grand Plaza - Muzaffarnagar,251001,Muzaffarnagar,Muzaffarnagar,Uttar Pradesh,Vmart,29.47132,77.755936,349909.0,536479.0,manual_gap_fix,Mathura,2,
 V-Mart - Aligarh,202001,Aligarh,Aligarh,Uttar Pradesh,Vmart,27.8974,77.8974,874408.0,1340638.0,exact,Aligarh,5,268128.0
 V-Mart - Aligarh-Ramghat Road,202001,Aligarh,Aligarh,Uttar Pradesh,Vmart,27.900118,78.095713,874408.0,1340638.0,exact,Aligarh,5,268128.0
@@ -2466,7 +2466,7 @@ V-Mart - Rajpura-Agra,282003,Agra,Agra,Uttar Pradesh,Vmart,27.1845,78.0142,15857
 V-Mart - Etah-Gt Road,207001,Etah,Etah,Uttar Pradesh,Vmart,27.559834,78.66321,118517.0,181710.0,exact,Etah,1,181710.0
 V-Mart - Budaun-Jogipura,243601,Budaun,Budaun,Uttar Pradesh,Vmart,28.034903,79.12726,159285.0,244215.0,exact,Budaun,4,61054.0
 V-Mart - Budaun,243601,Budaun,Budaun,Uttar Pradesh,Vmart,28.032568,79.131161,159285.0,244215.0,exact,Budaun,4,61054.0
-V-Mart - Firozabad,283203,Nai Basti,Nai Basti,Uttar Pradesh,Vmart,27.0856,77.6178,673446.0,1032524.0,manual_gap_fix,Gorakhpur,1,
+V-Mart - Firozabad,283203,Agra,Agra,Uttar Pradesh,Vmart,27.0856,77.6178,673446.0,1032524.0,manual_gap_fix,Gorakhpur,1,
 V-Mart - Prem Nagar-Bareilly,243005,Shahjahanpur,Shahjahanpur,Uttar Pradesh,Vmart,28.372793,79.42184,329736.0,505550.0,exact,Shahjahanpur,7,72221.0
 V-Mart - Bareilly,243001,Bareilly,Bareilly,Uttar Pradesh,Vmart,28.357675,79.418695,904797.0,1387231.0,exact,Bareilly,5,277446.0
 V-Mart - Bareilly-Ram Vatika,243005,Shahjahanpur,Shahjahanpur,Uttar Pradesh,Vmart,28.352875,79.43683,329736.0,505550.0,exact,Shahjahanpur,7,72221.0
@@ -2480,7 +2480,7 @@ V Mart - Shahjahanpur-Kachchakatra,242001,Shahjahanpur,Shahjahanpur,Uttar Prades
 V-Mart - Puranpur-Kotwali Road,262122,Puranpur,Puranpur,Uttar Pradesh,Vmart,28.512949,80.147709,40007.0,61339.0,exact,Puranpur,1,61339.0
 V-Mart - Hardoi-Lucknow Road,241001,Hardoi,Hardoi,Uttar Pradesh,Vmart,26.84312,80.92392,197029.0,302084.0,exact,Hardoi,4,75521.0
 V-Mart - Kannauj,209725,Kannauj,Kannauj,Uttar Pradesh,Vmart,26.7656,79.6344,84862.0,130110.0,exact,Kannauj,1,130110.0
-V-Mart - Gola Gokaran Nath,262802,Gola Gokaran Nath,Gola Gokaran Nath,Uttar Pradesh,Vmart,26.9789,80.8267,60172.0,92255.0,exact,Gola Gokaran Nath,1,92255.0
+V-Mart - Gola Gokaran Nath,262802,Lakhimpur,Lakhimpur Kheri,Uttar Pradesh,Vmart,26.9789,80.8267,60172.0,92255.0,exact,Gola Gokaran Nath,1,92255.0
 V-Mart - Auraiya-Kanpur Road,206122,Auraiya,Auraiya,Uttar Pradesh,Vmart,26.457329,79.50695,87736.0,134516.0,exact,Auraiya,1,134516.0
 V-Mart - Bangarmau,209868,Bangarmau,Bangarmau,Uttar Pradesh,Vmart,26.546143,80.48651,44204.0,67773.0,exact,Bangarmau,1,67773.0
 V-Mart - Lakhimpur-Mela Road,262701,Lakhimpur Kheri,Lakhimpur Kheri,Uttar Pradesh,Vmart,27.3667,80.7833,151993.0,233035.0,fuzzy_broad,lakhimpur,5,46607.0
@@ -2490,12 +2490,12 @@ V-Mart - Sitapur Bus stand,261001,Sitapur,Sitapur,Uttar Pradesh,Vmart,27.562638,
 V-Mart - Orai,285001,Orai,Jalaun,Uttar Pradesh,Vmart,25.996157,79.46296,190575.0,292189.0,exact,Orai,1,292189.0
 V-Mart - Sandila-Mohall Ashaf Tola,241204,Sandila,Sandila,Uttar Pradesh,Vmart,27.444613,80.21328,58346.0,89456.0,exact,Sandila,1,89456.0
 V-Mart - Jhansi-Shivpuri Road,284003,Jhansi,Jhansi,Uttar Pradesh,Vmart,25.4358,78.5783,505693.0,775326.0,exact,Jhansi,9,86147.0
-V-Mart - Jhansi,284002,Civil Lines,Civil Lines,Uttar Pradesh,Vmart,25.4486,78.5906,673446.0,1032524.0,manual_gap_fix,Gorakhpur,2,
+V-Mart - Jhansi,284002,Jhansi,Jhansi,Uttar Pradesh,Vmart,25.4486,78.5906,673446.0,1032524.0,manual_gap_fix,Gorakhpur,2,
 "V-Mart - Medical Collage Road, Jhansi",284128,Jhansi,Jhansi,Uttar Pradesh,Vmart,25.462062,78.608597,505693.0,775326.0,exact,Jhansi,9,86147.0
 V-Mart - Kanpur-Kalyanpur,208017,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.491124,80.260098,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur - Keshavpuram,208017,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.49051,80.270401,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Sidhauli,261303,Sidhauli,Sidhauli,Uttar Pradesh,Vmart,27.5156,80.9847,24976.0,38293.0,exact,Sidhauli,1,38293.0
-V-Mart - Kanpur - Kakadeo,208025,Rawat Pur,Rawat Pur,Uttar Pradesh,Vmart,26.8411,79.5894,13439.0,20605.0,fuzzy_broad,rajapur,1,20605.0
+V-Mart - Kanpur - Kakadeo,208025,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.8411,79.5894,13439.0,20605.0,fuzzy_broad,rajapur,1,20605.0
 V-Mart - Kanpur-Gumti,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.466754,80.313918,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.512,80.345,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur-P Road,208004,Purnea,Purnia,Uttar Pradesh,Vmart,26.8489,79.5789,282248.0,484649.0,manual_gap_fix,Purnia,1,
@@ -2506,7 +2506,7 @@ V-Mart - Shuklaganj,209861,Unnao,Unnao,Uttar Pradesh,Vmart,26.7234,80.4512,17765
 V-Mart - Kanpur-Yashoda Nagar,208011,Kanpur,Kanpur,Uttar Pradesh,Vmart,26.4499,80.3319,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Unnao-Shahganj Bazaar,209801,Unnao,Unnao,Uttar Pradesh,Vmart,26.6435,80.4576,177658.0,272384.0,exact,Unnao,4,68096.0
 V-Mart - Lal Bangla-Kanpur,208007,Kanpur,Kanpur,Uttar Pradesh,Vmart,26.4499,80.3319,2768057.0,4243972.0,exact,Kanpur,13,326459.0
-V-Mart - Lucknow-Bkt,226201,Bakshi Ka Talab,Bakshi Ka Talab,Uttar Pradesh,Vmart,26.8367,80.9711,49166.0,75381.0,exact,Bakshi Ka Talab,1,75381.0
+V-Mart - Lucknow-Bkt,226201,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8367,80.9711,49166.0,75381.0,exact,Bakshi Ka Talab,1,75381.0
 V-Mart - Lucknow-Dubagga,226101,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8456,80.9634,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow-Budheshwar,226003,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.85,80.95,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Rajajipuram,226017,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8667,80.9333,2817105.0,4319172.0,exact,Lucknow,58,74468.0
@@ -2565,14 +2565,14 @@ V-Mart - Akbarpur,224122,Akbarpur,Akbarpur,Uttar Pradesh,Vmart,26.8012,82.1312,1
 V-Mart - Balrampur-Utraula,271604,Utraula,Utraula,Uttar Pradesh,Vmart,27.310009,82.41359,32145.0,49285.0,exact,Utraula,1,49285.0
 V-Mart - Basti-Malviya Road,272001,Basti,Basti,Uttar Pradesh,Vmart,26.9124,82.7753,114657.0,175792.0,exact,Basti,4,43948.0
 V-Mart - Siddharthnagar-Hidil Chau,272207,Siddharth Nagar,Siddharth Nagar,Uttar Pradesh,Vmart,26.952,82.5547,25422.0,38977.0,fuzzy,siddharthnagar,2,19488.0
-V-Mart - Machhali Shahar,222143,Machhali Shahar,Machhali Shahar,Uttar Pradesh,Vmart,25.686474,82.407383,26107.0,40027.0,fuzzy,machhlishahr,1,40027.0
+V-Mart - Machhali Shahar,222143,Jaunpur,Jaunpur,Uttar Pradesh,Vmart,25.686474,82.407383,26107.0,40027.0,fuzzy,machhlishahr,1,40027.0
 V-Mart - Khalilabad,272175,Barabanki,Barabanki,Uttar Pradesh,Vmart,26.4667,83.3667,47847.0,73359.0,exact,Khalilabad,3,24453.0
 V-Mart - Shahganj-Jaunpur Road,223101,Jaunpur,Jaunpur,Uttar Pradesh,Vmart,25.7667,82.6667,180362.0,276530.0,exact,Jaunpur,4,69132.0
 V-Mart - Pharenda-Station Road,273155,Pharenda,Gorakhpur,Uttar Pradesh,Vmart,26.6667,83.5,5452.0,8359.0,manual_gap_fix,babugarh,2,
 V-Mart - Nautanwa,273164,Maharajganj,Maharajganj,Uttar Pradesh,Vmart,27.427896,83.42014,33930.0,52021.0,exact,Maharajganj,3,17340.0
 V-Mart - Jaunpur,222002,Jaunpur,Jaunpur,Uttar Pradesh,Vmart,25.747393,82.683392,180362.0,276530.0,exact,Jaunpur,4,69132.0
 V-Mart - Husainabad-Jaunpur,222001,Husainabad,Husainabad,Uttar Pradesh,Vmart,25.727453,82.69267,1168385.0,1791363.0,manual_gap_fix,Allahabad,1,
-"V-Mart - Saraimeer, Azamgarh",276305,Sarai Mir,Sarai Mir,Uttar Pradesh,Vmart,26.027971,82.910446,19055.0,29215.0,exact,Sarai Mir,1,29215.0
+"V-Mart - Saraimeer, Azamgarh",276305,Azamgarh,Azamgarh,Uttar Pradesh,Vmart,26.027971,82.910446,19055.0,29215.0,exact,Sarai Mir,1,29215.0
 V-Mart - Gorakhpur-Gorakhnath Mandir Road,273015,Gorakhpur,Gorakhpur,Uttar Pradesh,Vmart,26.812184,83.350492,673446.0,1032524.0,exact,Gorakhpur,20,51626.0
 V-Mart - Bhadohi-Station Road,221401,Gyanpur,Gyanpur,Uttar Pradesh,Vmart,25.394156,82.56849,12808.0,19637.0,exact,Gyanpur,1,19637.0
 V-Mart - Gorakhpur - Vijay Chowk,273001,Gorakhpur,Gorakhpur,Uttar Pradesh,Vmart,26.7546,83.371925,673446.0,1032524.0,exact,Gorakhpur,20,51626.0
@@ -2639,8 +2639,8 @@ V-Mart - Chanchal,732123,Chanchal,Malda,West Bengal,Vmart,25.3,88.25,5570.0,7354
 V-Mart - Raiganj-Mg Road,733134,Raiganj,Uttar Dinajpur,West Bengal,Vmart,25.5867,88.1134,183612.0,242435.0,exact,Raiganj,4,60609.0
 V-Mart - Dhuliyan,742202,Dhuliyan,Murshidabad,West Bengal,Vmart,24.677317,87.9557,95706.0,126367.0,fuzzy,dhulian,2,63184.0
 V-Mart - Jalpaiguri,735101,Jalpaiguri,Jalpaiguri,West Bengal,Vmart,26.5203,88.7281,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
-"V Mart Retail Ltd, GT Road, Near Madania Mosque, Nazrul Pally, Kantapukur Mor, Burdwan, West Bengal, 713101",713101,Kalna,Hooghly,West Bengal,Vmart,23.2333,87.6667,56722.0,74894.0,exact,Kalna,4,18724.0
-V-Mart - Burdwan,713103,Burdwan,Perbirhata,West Bengal,Vmart,23.2183,87.8092,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
+"V Mart Retail Ltd, GT Road, Near Madania Mosque, Nazrul Pally, Kantapukur Mor, Burdwan, West Bengal, 713101",713101,Bardhaman,Paschim Bardhaman,West Bengal,Vmart,23.2333,87.6667,56722.0,74894.0,exact,Kalna,4,18724.0
+V-Mart - Burdwan,713103,Durgapur,Paschim Bardhaman,West Bengal,Vmart,23.2183,87.8092,314265.0,414945.0,manual_gap_fix,Barddhaman,3,
 V-Mart - Kharagpur,721301,Kharagpur,Kharagpur,West Bengal,Vmart,22.3456,87.3167,207604.0,274113.0,exact,Kharagpur,5,54823.0
 V-Mart - Cooch Behar,736101,Cooch Behar,Cooch Behar,West Bengal,Vmart,26.325,89.44,77935.0,102903.0,fuzzy_broad,koch bihar,8,12863.0
 V-Mart - Krishnanagar-West Bengal,741101,Kolkata,Nadia,West Bengal,Vmart,22.5845,88.4123,4496694.0,5937285.0,exact,Kolkata,73,81333.0
