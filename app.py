@@ -669,89 +669,276 @@ elif page == "📊 Stats by Company":
         st.dataframe(pivot_show, use_container_width=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # PAGE 3 – EXPANSION INSIGHTS
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "💡 Expansion Insights":
     st.title("💡 Expansion Insights for Baazar Kolkata")
 
-    # ── District tab temporarily removed — will be re-added as logistics view ──
-    # tab1, tab2 = st.tabs(["📍 District Opportunities", "🏙️ City Opportunities"])
+    tab_city, tab_dist = st.tabs(["🏙️ City Opportunities", "📍 District Rollup"])
 
-    st.subheader("🏙️ City Opportunities")
-    st.caption("Which cities to target for new BK stores — using competitor data, adjacency, and population/store ratios.")
+    # ── Shared computation ─────────────────────────────────────────────────────
+    focus_df = df[df["state"].isin(FOCUS_STATES)].copy()
 
-    with st.expander("🧮 How scoring works", expanded=False):
-        st.markdown("""
-        #### Opportunity Score
-        | Component | Formula |
-        |-----------|---------|
-        | **Competitor Presence** | Count of all non-BK stores in that city |
-        | **BK Presence** | Count of BK stores in that city × 3 (penalty) |
-        | **Adjacency Bonus** | BK stores within radius (outside this city), capped at your chosen limit |
-        | **PS Score** | Contribution from the Population/Store ratio signal (see below) |
-        | **Total Score** | `Competitor Presence − (BK Presence × 3) + Adjacency Bonus + PS Score` |
+    city_agg = focus_df.groupby(["city","state","district"]).agg(
+        total_stores   = ("store_name","count"),
+        bk_stores      = ("company", lambda x: (x=="Baazar Kolkata").sum()),
+        pop_2026       = ("pop_2026","first"),
+        lat            = ("lat","mean"),
+        lng            = ("lng","mean"),
+    ).reset_index()
 
-        #### Population/Store (PS) Ratio
-        | Component | Formula |
-        |-----------|---------|
-        | **BK PS Ratio** | City pop 2026 est. ÷ BK stores in city |
-        | **BK India Avg PS** | ~142,000 people per BK store (BK's current national average) |
-        | **Recommended BK stores** | `round(BK PS Ratio / BK India Avg PS)` — for cities with no BK: `round(city pop / BK India Avg PS)` |
-        | **New stores needed** | `max(0, Recommended − existing BK stores)` |
-        | **PS Score** | `min(New stores needed × 2, 20)` |
+    comp_stores = focus_df[focus_df["company"]!="Baazar Kolkata"].groupby(["city","state"]).size().reset_index(name="competitor_stores")
+    comp_names  = focus_df[focus_df["company"]!="Baazar Kolkata"].groupby(["city","state"])["company"].apply(
+        lambda x: ", ".join(sorted(x.unique()))
+    ).reset_index(name="competitors_present")
+    top_pins = focus_df.groupby(["city","state"])["pincode"].apply(
+        lambda x: ", ".join(x.value_counts().head(3).index.tolist())
+    ).reset_index(name="top_pincodes")
 
-        For cities with **no BK presence**, ranked by recommended stores (population signal) then competitor stores (market validation).
-        Population source: Census of India 2011, extrapolated to 2026 using state-level urban CAGRs. Cities without a Census match show N/A.
-        """)
+    city_agg = city_agg.merge(comp_stores, on=["city","state"], how="left")
+    city_agg = city_agg.merge(comp_names,  on=["city","state"], how="left")
+    city_agg = city_agg.merge(top_pins,    on=["city","state"], how="left")
+    city_agg["competitor_stores"] = city_agg["competitor_stores"].fillna(0).astype(int)
 
-    sc1, sc2 = st.columns(2)
-    with sc1:
-        radius_km_c = st.slider("Adjacency radius (km)", 50, 500, 200, step=25, key="city_radius")
-    with sc2:
-        adj_cap_c = st.slider("Adjacency cap", 1, 30, 10, key="city_cap")
+    # Deduplicate - keep highest store count per city+state
+    city_agg = city_agg.sort_values("total_stores", ascending=False)
+    city_agg = city_agg.drop_duplicates(subset=["city","state"], keep="first").reset_index(drop=True)
 
-    scores_c, bk_df, _ = compute_scores(df, ["city", "state"], radius_km=radius_km_c, adj_cap=adj_cap_c)
+    # Focus avg PS
+    has_pop = city_agg[city_agg["pop_2026"].notna()]
+    focus_avg_ps = float(has_pop["pop_2026"].sum() / has_pop["total_stores"].sum()) if len(has_pop) > 0 else 100000.0
 
-    # ── PS ratio enrichment ───────────────────────────────────────────────────
-    BK_AVG_PS = 142000
+    city_agg["city_ps"]           = (city_agg["pop_2026"] / city_agg["total_stores"]).round(0)
+    city_agg["stores_needed"]     = (city_agg["pop_2026"] / focus_avg_ps).round(0).fillna(0).clip(lower=1)
+    city_agg["gap_stores"]        = (city_agg["stores_needed"] - city_agg["total_stores"]).clip(lower=0)
+    city_agg["bk_stores_to_open"] = city_agg["gap_stores"].fillna(0).astype(int)
+    city_agg["stores_needed"]     = city_agg["stores_needed"].astype(int)
 
-    city_pop    = df.drop_duplicates(subset=["city","state"])[["city","state","pop_2026"]].copy()
-    city_total  = df.groupby(["city","state"]).size().reset_index(name="total_stores_city")
-    city_bk     = df[df["company"]=="Baazar Kolkata"].groupby(["city","state"]).size().reset_index(name="bk_stores_city")
+    # Adjacency tier
+    bk_locs  = df[df["company"]=="Baazar Kolkata"].dropna(subset=["lat","lng"])
+    bk_lats  = bk_locs["lat"].values
+    bk_lngs  = bk_locs["lng"].values
+    bk_names = bk_locs["city"].values
 
-    ps_df = city_pop.merge(city_total, on=["city","state"], how="left")
-    ps_df = ps_df.merge(city_bk,      on=["city","state"], how="left")
-    ps_df["bk_stores_city"] = ps_df["bk_stores_city"].fillna(0).astype(int)
+    def get_tier_nearest(row):
+        if row["bk_stores"] > 0: return "P0 (BK present)", row["city"], 0
+        if pd.isna(row["lat"]) or pd.isna(row["lng"]): return "P3 (>200km)", None, None
+        dists = haversine_km(row["lat"], row["lng"], bk_lats, bk_lngs)
+        idx = dists.argmin(); d = round(float(dists[idx]))
+        tier = "P1 (<100km)" if d < 100 else ("P2 (100-200km)" if d < 200 else "P3 (>200km)")
+        return tier, bk_names[idx], d
 
-    ps_df["bk_ps_ratio"] = ps_df.apply(
-        lambda r: r["pop_2026"] / r["bk_stores_city"] if r["bk_stores_city"] > 0 and pd.notna(r["pop_2026"]) else None, axis=1
-    )
-    # Correct formula: Recommended = round(BK PS ratio / BK avg PS)
-    # For no-BK cities: use pop / BK_AVG_PS directly (since PS ratio = infinity)
-    ps_df["recommended_bk"] = ps_df.apply(
-        lambda r: max(1, round(r["bk_ps_ratio"] / BK_AVG_PS)) if pd.notna(r["bk_ps_ratio"])
-        else (max(1, round(r["pop_2026"] / BK_AVG_PS)) if pd.notna(r["pop_2026"]) else None),
-        axis=1
-    )
-    ps_df["new_stores_needed"] = ps_df.apply(
-        lambda r: max(0, (r["recommended_bk"] or 0) - r["bk_stores_city"]) if r["recommended_bk"] is not None else None, axis=1
-    )
-    ps_df["ps_score"] = ps_df["new_stores_needed"].apply(
-        lambda x: min(int(x) * 2, 20) if pd.notna(x) else 0
+    city_agg[["tier","nearest_bk","nearest_bk_km"]] = city_agg.apply(
+        lambda r: pd.Series(get_tier_nearest(r)), axis=1
     )
 
-    scores_c = scores_c.merge(
-        ps_df[["city","state","pop_2026","bk_ps_ratio","recommended_bk","new_stores_needed","ps_score"]],
-        on=["city","state"], how="left"
-    )
-    scores_c["ps_score"]          = scores_c["ps_score"].fillna(0).astype(int)
-    scores_c["opportunity_score"] = scores_c["opportunity_score"] + scores_c["ps_score"]
-    scores_c = scores_c.sort_values("opportunity_score", ascending=False).reset_index(drop=True)
+    # ── Tab 1: City Opportunities ──────────────────────────────────────────────
+    with tab_city:
+        st.caption(f"Focus states avg PS ratio: **{int(focus_avg_ps):,}** people per store (Census 2026 est.)")
 
-    render_city_ui(scores_c, bk_df, df, key_prefix="city", default_min=2)
+        with st.expander("🧮 How it works", expanded=False):
+            st.markdown(f"""
+            **Focus States Avg PS Ratio** = Total urban pop (focus states) ÷ Total stores = **{int(focus_avg_ps):,} people/store**
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 4 – MASTER DATA
+            | Metric | Formula |
+            |--------|---------|
+            | **City PS ratio** | City pop ÷ all stores in city (BK + competitors) |
+            | **Stores city should have** | `round(city pop ÷ {int(focus_avg_ps):,})` |
+            | **Gap stores** | `max(0, should have − existing)` → BK fills this gap |
+            | **Tier** | P0 = BK present · P1 = <100km · P2 = 100-200km · P3 = >200km from nearest BK |
+
+            Population: Census of India 2011, extrapolated to 2026 using state-level urban CAGRs.
+            """)
+
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            filter_states = st.multiselect("State", FOCUS_STATES, default=[], key="ins_state",
+                                            placeholder="All focus states")
+        with c2:
+            filter_tier = st.multiselect("Tier", ["P0 (BK present)","P1 (<100km)","P2 (100-200km)","P3 (>200km)"],
+                                          default=["P1 (<100km)"], key="ins_tier")
+        with c3:
+            min_gap = st.slider("Min BK stores to open", 0, 10, 0, key="ins_mingap")
+
+        idf = city_agg.copy()
+        if filter_states: idf = idf[idf["state"].isin(filter_states)]
+        if filter_tier:   idf = idf[idf["tier"].isin(filter_tier)]
+        idf = idf[idf["bk_stores_to_open"] >= min_gap]
+        idf = idf.sort_values("bk_stores_to_open", ascending=False).reset_index(drop=True)
+        idf.index += 1
+
+        # Bar chart top 10
+        top10 = idf.head(10)
+        if not top10.empty:
+            fig = px.bar(top10[::-1], x="bk_stores_to_open", y="city",
+                         orientation="h", color="state",
+                         title="Top 10 Cities — BK Stores to Open",
+                         labels={"bk_stores_to_open":"BK Stores to Open","city":"City"})
+            fig.update_layout(height=380, margin=dict(l=0,r=20,t=40,b=20))
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Table
+        st.subheader(f"📋 City Opportunities ({len(idf)} shown)")
+        display_cols = {
+            "city":"City", "state":"State", "district":"District", "tier":"Tier",
+            "bk_stores_to_open":"BK Stores to Open", "bk_stores":"BK Stores (now)",
+            "total_stores":"Total Stores", "stores_needed":"Stores Should Have",
+            "pop_2026":"Pop 2026 (est.)", "city_ps":"City PS Ratio",
+            "competitor_stores":"Competitor Stores", "competitors_present":"Competitors",
+            "nearest_bk":"Nearest BK City", "nearest_bk_km":"Distance (km)",
+            "top_pincodes":"Top PINs",
+        }
+        show = idf[[c for c in display_cols if c in idf.columns]].rename(columns=display_cols).copy()
+        for col in ["Pop 2026 (est.)","City PS Ratio"]:
+            if col in show.columns:
+                show[col] = show[col].apply(lambda x: int(x) if pd.notna(x) else None)
+
+        def hl_stores(val):
+            if val is None: return ""
+            try:
+                n = int(val)
+                if n >= 5:  return "background-color: #ff9999; color: #000; font-weight: bold"
+                if n >= 2:  return "background-color: #ffe066; color: #000; font-weight: bold"
+                if n == 1:  return "background-color: #d4f0a0; color: #000"
+            except: pass
+            return ""
+
+        try:
+            styled = show.style.map(hl_stores, subset=["BK Stores to Open"])
+        except Exception:
+            styled = show.style.applymap(hl_stores, subset=["BK Stores to Open"])
+
+        st.dataframe(styled, use_container_width=True, height=520,
+                     column_config={
+                         "Pop 2026 (est.)":    st.column_config.NumberColumn(format="%d"),
+                         "City PS Ratio":      st.column_config.NumberColumn(format="%d"),
+                         "BK Stores to Open":  st.column_config.NumberColumn(format="%d"),
+                         "Stores Should Have": st.column_config.NumberColumn(format="%d"),
+                         "Distance (km)":      st.column_config.NumberColumn(format="%d"),
+                     })
+
+        # Map
+        st.subheader("🗺️ Opportunity Map")
+        st.caption("Bubble size = BK stores to open. Red=P1, Orange=P2, Grey=P3. Green = existing BK.")
+        map_df = idf.dropna(subset=["lat","lng"]).copy()
+        if not map_df.empty:
+            m2 = folium.Map(location=[map_df["lat"].mean(), map_df["lng"].mean()],
+                            zoom_start=5, tiles="CartoDB positron")
+            max_val = max(map_df["bk_stores_to_open"].max(), 1)
+            tier_color = {"P0 (BK present)":"#2E7D32","P1 (<100km)":"#E63946",
+                          "P2 (100-200km)":"#FF9800","P3 (>200km)":"#9E9E9E"}
+
+            for _, row in map_df.iterrows():
+                val   = int(row["bk_stores_to_open"]) if pd.notna(row["bk_stores_to_open"]) else 0
+                r_sz  = max(5, int(val / max_val * 30))
+                color = tier_color.get(row["tier"], "#E63946")
+                pop_s = f"{int(row['pop_2026']):,}" if pd.notna(row.get("pop_2026")) else "N/A"
+                ps_s  = f"{int(row['city_ps']):,}" if pd.notna(row.get("city_ps")) else "N/A"
+                popup_html = f"""
+                <div style='font-family:sans-serif;min-width:220px'>
+                  <b>🏙️ {row["city"]}, {row["state"]}</b><br>
+                  <b style='color:{color}'>{row["tier"]}</b><br>
+                  <hr style='margin:4px 0'>
+                  🆕 <b>BK stores to open: {val}</b><br>
+                  🏪 Existing: {int(row["total_stores"])} total (BK: {int(row["bk_stores"])})<br>
+                  👥 Pop 2026: {pop_s}<br>
+                  📐 City PS: {ps_s} vs avg {int(focus_avg_ps):,}<br>
+                  🏪 Competitors: {int(row.get("competitor_stores",0))}<br>
+                  📌 Top PINs: {row.get("top_pincodes","N/A")}<br>
+                  📍 Nearest BK: {row.get("nearest_bk","N/A")} ({row.get("nearest_bk_km","?")} km)
+                </div>"""
+                folium.CircleMarker(
+                    location=[row["lat"], row["lng"]],
+                    radius=r_sz, color=color, fill=True,
+                    fill_color=color, fill_opacity=0.75,
+                    popup=folium.Popup(popup_html, max_width=260),
+                    tooltip=f"{row['city']}: {val} stores to open ({row['tier']})",
+                ).add_to(m2)
+
+            bk_cluster = MarkerCluster(name="BK Existing Stores").add_to(m2)
+            for _, row in bk_locs.iterrows():
+                folium.CircleMarker(
+                    location=[row["lat"], row["lng"]],
+                    radius=6, color="#2E7D32", fill=True, fill_color="#2E7D32", fill_opacity=1.0,
+                    tooltip=f"BK: {row['store_name']}",
+                    popup=folium.Popup(
+                        f"<b style='color:#2E7D32'>{row['store_name']}</b><br>{row['city']}, {row['state']}",
+                        max_width=200),
+                ).add_to(bk_cluster)
+
+            folium.Marker([22.5958, 88.2676],
+                popup=folium.Popup("<b>🏭 BK Central Warehouse</b><br>493 B, GT Road, Howrah", max_width=220),
+                tooltip="BK Central Warehouse",
+                icon=folium.Icon(color="darkblue", icon="home", prefix="fa"),
+            ).add_to(m2)
+            folium.LayerControl().add_to(m2)
+            st_folium(m2, width="100%", height=580, returned_objects=[])
+
+    # ── Tab 2: District Rollup ─────────────────────────────────────────────────
+    with tab_dist:
+        st.caption("Which districts should BK prioritise? Ranked by P1 cities (within 100km of existing BK).")
+
+        with st.expander("🧮 How it works", expanded=False):
+            st.markdown("""
+            Districts ranked by number of P1 cities — cities already within reach of BK's supply chain.
+
+            | Column | Meaning |
+            |--------|---------|
+            | **P1 Cities** | Cities <100km from nearest BK — most actionable |
+            | **P1 BK to Open** | Total new BK stores across P1 cities in this district |
+            | **Total BK to Open** | Across all city tiers in the district |
+            """)
+
+        dist_state_filter = st.multiselect("Filter States", FOCUS_STATES, default=[], key="dist_state",
+                                            placeholder="All focus states")
+
+        dist_df = city_agg.copy()
+        if dist_state_filter: dist_df = dist_df[dist_df["state"].isin(dist_state_filter)]
+
+        dist_df["is_p1"] = dist_df["tier"] == "P1 (<100km)"
+        dist_df["is_p2"] = dist_df["tier"] == "P2 (100-200km)"
+        dist_df["is_p3"] = dist_df["tier"] == "P3 (>200km)"
+
+        dist_sum = dist_df.groupby(["district","state"]).agg(
+            p1_cities        = ("is_p1","sum"),
+            p2_cities        = ("is_p2","sum"),
+            p3_cities        = ("is_p3","sum"),
+            total_bk_to_open = ("bk_stores_to_open","sum"),
+            p1_bk_to_open    = ("bk_stores_to_open", lambda x: int(x[dist_df.loc[x.index,"is_p1"]].sum())),
+            total_stores     = ("total_stores","sum"),
+            bk_stores        = ("bk_stores","sum"),
+            num_cities       = ("city","count"),
+        ).reset_index()
+        dist_sum = dist_sum.sort_values(["p1_cities","total_bk_to_open"], ascending=False).reset_index(drop=True)
+        dist_sum.index += 1
+
+        # Bar chart
+        top_dist = dist_sum.head(15)
+        fig_d = px.bar(top_dist[::-1], x="p1_cities", y="district", orientation="h",
+                       color="state", title="Top Districts by P1 Cities",
+                       labels={"p1_cities":"P1 Cities","district":"District"})
+        fig_d.update_layout(height=420, margin=dict(l=0,r=20,t=40,b=20))
+        st.plotly_chart(fig_d, use_container_width=True)
+
+        st.subheader(f"📋 District Rollup ({len(dist_sum)} shown)")
+        st.dataframe(
+            dist_sum.rename(columns={
+                "district":"District","state":"State",
+                "p1_cities":"P1 Cities","p2_cities":"P2 Cities","p3_cities":"P3 Cities",
+                "total_bk_to_open":"Total BK to Open","p1_bk_to_open":"P1 BK to Open",
+                "total_stores":"Total Stores","bk_stores":"BK Stores","num_cities":"Cities"
+            }),
+            use_container_width=True, height=520,
+            column_config={
+                "P1 Cities":      st.column_config.NumberColumn(format="%d"),
+                "P2 Cities":      st.column_config.NumberColumn(format="%d"),
+                "P3 Cities":      st.column_config.NumberColumn(format="%d"),
+                "Total BK to Open": st.column_config.NumberColumn(format="%d"),
+                "P1 BK to Open":  st.column_config.NumberColumn(format="%d"),
+            }
+        )
+
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "📋 Master Data":
     st.title("📋 Master Data")
