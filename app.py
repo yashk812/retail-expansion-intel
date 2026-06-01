@@ -1150,47 +1150,116 @@ elif page == "🔍 City Explorer":
 
     # ── AI recommendation function ─────────────────────────────────────────────
     def get_ai_recommendation(city, state, data, archetype):
+        """Returns (text, list_of_pins) where pins = [{"area": str, "lat": float, "lng": float}]"""
         if "ai_recs" not in st.session_state:
             st.session_state["ai_recs"] = {}
+        if "ai_pins" not in st.session_state:
+            st.session_state["ai_pins"] = {}
         cache_key = f"{city}_{state}"
         if cache_key in st.session_state["ai_recs"]:
-            return st.session_state["ai_recs"][cache_key]
+            return st.session_state["ai_recs"][cache_key], st.session_state["ai_pins"].get(cache_key, [])
 
         comp_str = ", ".join([f"{k}: {v} stores" for k, v in data["comp_breakdown"].items()])
         pop_str  = f"{int(data['pop']):,}" if data['pop'] else "N/A"
-        prompt = f"""You are a retail expansion analyst for Baazar Kolkata, a value fashion retail chain in India.
+        n_stores = max(data["gap"], 1)
+
+        # ── Call 1: recommendation text + structured area list ─────────────────
+        prompt1 = f"""You are a retail expansion analyst for Baazar Kolkata, a value fashion retail chain in India.
 
 City: {city}, {state}
 Archetype: {archetype}
 Population (2026 est.): {pop_str}
 State PS ratio: {int(data['state_ps']):,} people/store
-Total stores in city: {data['total_stores']} (BK: {data['bk_stores']}, Competitors: {data['total_stores'] - data['bk_stores']})
-Stores city should have (per PS model): {data['stores_needed']}
-New BK stores recommended: {data['gap']}
+Total stores: {data['total_stores']} (BK: {data['bk_stores']}, Competitors: {data['total_stores'] - data['bk_stores']})
+Stores city should have: {data['stores_needed']} | New BK stores recommended: {data['gap']}
 Competitor presence: {comp_str}
-Top pincodes in city: {', '.join(data['top_pins'])}
-Competitor-heavy pincodes: {', '.join(data['comp_pins'])}
+Top pincodes: {', '.join(data['top_pins'])} | Competitor pincodes: {', '.join(data['comp_pins'])}
 
-Based on this data, provide a concise expansion recommendation for Baazar Kolkata in {city}. Include:
-1. A 2-sentence summary of the market opportunity
-2. Exactly {max(data['gap'], 1)} specific area/locality recommendations within {city} where BK should open stores, with a brief reason for each (mention specific areas, markets, or commercial zones in {city})
-3. Key risks or considerations
+Provide:
+1. A 2-sentence market opportunity summary
+2. Exactly {n_stores} specific locality/area recommendations in {city} with brief reasons
+3. Key risks
 
-Format your response with clear sections. Be specific to {city}'s geography and commercial landscape. Keep it under 300 words."""
+Then on a NEW LINE output exactly this JSON (no markdown, no backticks):
+LOCATIONS_JSON: [{{"area": "LocalityName", "pincode": "XXXXXX"}}, ...]
+
+List exactly {n_stores} locations. Use real locality names and pincodes from {city}, {state}. Keep response under 350 words total."""
 
         try:
-            r = requests.post(
+            r1 = requests.post(
                 "https://api.anthropic.com/v1/messages",
                 headers={"Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01"},
-                json={"model":"claude-haiku-4-5-20251001","max_tokens":600,
-                      "messages":[{"role":"user","content":prompt}]},
+                json={"model":"claude-haiku-4-5-20251001","max_tokens":700,
+                      "messages":[{"role":"user","content":prompt1}]},
                 timeout=30
             )
-            text = r.json()["content"][0]["text"]
-            st.session_state["ai_recs"][cache_key] = text
-            return text
+            full_text = r1.json()["content"][0]["text"]
+
+            # Split text from JSON
+            rec_text = full_text
+            locations_raw = []
+            if "LOCATIONS_JSON:" in full_text:
+                parts    = full_text.split("LOCATIONS_JSON:")
+                rec_text = parts[0].strip()
+                json_str = parts[1].strip()
+                try:
+                    locations_raw = json.loads(json_str)
+                except Exception:
+                    locations_raw = []
+
+            st.session_state["ai_recs"][cache_key] = rec_text
+
+            # ── Call 2: geocode each recommended area ──────────────────────────
+            pins = []
+            if locations_raw:
+                areas_list = "
+".join([
+                    f'{i+1}. {loc.get("area","")}, {city}, {state}, India (PIN: {loc.get("pincode","")})'
+                    for i, loc in enumerate(locations_raw)
+                ])
+                prompt2 = f"""Return precise [latitude, longitude] for each location in India.
+Return ONLY valid JSON: {{"1": [lat, lng], "2": [lat, lng], ...}}
+
+{areas_list}"""
+                r2 = requests.post(
+                    "https://api.anthropic.com/v1/messages",
+                    headers={"Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01"},
+                    json={"model":"claude-haiku-4-5-20251001","max_tokens":300,
+                          "messages":[{"role":"user","content":prompt2}]},
+                    timeout=20
+                )
+                coords_text = r2.json()["content"][0]["text"]
+                start = coords_text.find("{"); end = coords_text.rfind("}") + 1
+                coords = json.loads(coords_text[start:end]) if start >= 0 else {}
+
+                for i, loc in enumerate(locations_raw):
+                    key = str(i + 1)
+                    if key in coords:
+                        lat, lng = float(coords[key][0]), float(coords[key][1])
+                        # Validate within India
+                        if 6.5 <= lat <= 37.5 and 67.5 <= lng <= 97.5:
+                            pins.append({"area": loc.get("area", f"Area {i+1}"), "lat": lat, "lng": lng})
+
+            # Fallback: fill remaining slots with competitor pincode centroids
+            if len(pins) < n_stores and data["comp_pins"]:
+                comp_df_p = data["comp_df"].dropna(subset=["lat","lng"])
+                for j, pin in enumerate(data["comp_pins"]):
+                    if len(pins) >= n_stores: break
+                    pin_rows = comp_df_p[comp_df_p["pincode"] == pin]
+                    if not pin_rows.empty:
+                        pins.append({
+                            "area": f"PIN {pin} area",
+                            "lat": pin_rows["lat"].mean(),
+                            "lng": pin_rows["lng"].mean() + 0.003 * (j % 2)
+                        })
+
+            st.session_state["ai_pins"][cache_key] = pins[:n_stores]
+            return rec_text, pins[:n_stores]
+
         except Exception as e:
-            return f"Could not generate recommendation: {e}"
+            st.session_state["ai_recs"][cache_key] = f"Could not generate recommendation: {e}"
+            st.session_state["ai_pins"][cache_key] = []
+            return st.session_state["ai_recs"][cache_key], []
 
     # ── City selector ──────────────────────────────────────────────────────────
     col_sel, col_mode = st.columns([3, 2])
@@ -1337,23 +1406,20 @@ Format your response with clear sections. Be specific to {city}'s geography and 
                 pin_coords = []
                 city_df_pins = data["city_df"]
                 comp_df_pins = data["comp_df"]
-                # Cycle through competitor pincodes to place gap number of pins
-                pins_to_use = (data["comp_pins"] * (data["gap"] // len(data["comp_pins"]) + 1))[:data["gap"]] if data["comp_pins"] else []
-                for i, pin in enumerate(pins_to_use):
-                    pin_rows = comp_df_pins[comp_df_pins["pincode"]==pin].dropna(subset=["lat","lng"])
-                    if not pin_rows.empty:
-                        plat = pin_rows["lat"].mean()
-                        plng = pin_rows["lng"].mean() + 0.003 * (i % 2 == 0)  # slight offset to avoid overlap
-                        folium.Marker(
-                            location=[plat, plng],
-                            tooltip=f"📍 Proposed BK store {i+1} (PIN: {pin})",
-                            popup=folium.Popup(
-                                f"<b style='color:#2E7D32'>📍 Proposed BK Store #{i+1}</b><br>"
-                                f"Area: PIN {pin}<br>Based on competitor concentration",
-                                max_width=220
-                            ),
-                            icon=folium.Icon(color="green", icon="plus", prefix="fa")
-                        ).add_to(m)
+                # Use AI-recommended pins from session state
+                cache_key_map = f"{city}_{state}"
+                ai_pins_map = st.session_state.get("ai_pins", {}).get(cache_key_map, [])
+                for i, pin_info in enumerate(ai_pins_map):
+                    folium.Marker(
+                        location=[pin_info["lat"], pin_info["lng"]],
+                        tooltip=f"📍 Proposed BK #{i+1}: {pin_info['area']}",
+                        popup=folium.Popup(
+                            f"<b style='color:#2E7D32'>📍 Proposed BK Store #{i+1}</b><br>"
+                            f"<b>{pin_info['area']}</b><br>AI-recommended location",
+                            max_width=220
+                        ),
+                        icon=folium.Icon(color="green", icon="plus", prefix="fa")
+                    ).add_to(m)
             st_folium(m, width="100%", height=520,
                       returned_objects=[], key=f"map_{city}_{state}_auto")
 
@@ -1364,13 +1430,17 @@ Format your response with clear sections. Be specific to {city}'s geography and 
         if data["gap"] == 0:
             st.info(f"{city} is already at or above the recommended store count based on the state PS ratio. Focus on quality over quantity here.")
         else:
-            with st.spinner(f"Generating recommendation for {city}..."):
-                rec_text = get_ai_recommendation(city, state, data, arch)
+            with st.spinner(f"Generating recommendation for {city}... (this takes ~10 seconds)"):
+                rec_text, ai_pins = get_ai_recommendation(city, state, data, arch)
             st.markdown(rec_text)
+            if ai_pins:
+                st.caption(f"📍 {len(ai_pins)} proposed store location(s) shown on map above — based on AI recommendations")
             cache_key = f"{city}_{state}"
             if st.button("🔄 Regenerate", key="regen"):
                 if "ai_recs" in st.session_state and cache_key in st.session_state["ai_recs"]:
                     del st.session_state["ai_recs"][cache_key]
+                if "ai_pins" in st.session_state and cache_key in st.session_state["ai_pins"]:
+                    del st.session_state["ai_pins"][cache_key]
                 st.rerun()
 
 elif page == "📋 Master Data":
