@@ -136,6 +136,174 @@ def compute_scores(df, group_cols, radius_km=200, adj_cap=10):
     return scores, bk_df, comp_df
 
 
+def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
+    """City-specific opportunity UI with PS ratio metrics."""
+    bk_core_states = sorted(bk_df["state"].unique().tolist())
+    all_states     = [s for s in FOCUS_STATES if s in scores["state"].values]
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        filter_states = st.multiselect("Filter by State", options=all_states, default=bk_core_states, key=f"{key_prefix}_state")
+    with col2:
+        filter_bk = st.selectbox("BK Presence", ["All", "No BK stores (pure gaps)", "Has some BK stores"], key=f"{key_prefix}_bk")
+    with col3:
+        min_comp = st.slider("Min competitor stores", 1, 50, default_min, key=f"{key_prefix}_min")
+
+    idf = scores[scores["competitor_stores"] >= min_comp].copy()
+    if filter_states:
+        idf = idf[idf["state"].isin(filter_states)]
+    if filter_bk == "No BK stores (pure gaps)":
+        idf = idf[idf["bk_stores"] == 0]
+    elif filter_bk == "Has some BK stores":
+        idf = idf[idf["bk_stores"] > 0]
+
+    idf = idf.head(50).reset_index(drop=True)
+    idf.index += 1
+
+    # ── Bar chart — top 10 by new stores needed (or opp score if no PS data) ──
+    top10 = idf.head(10).copy()
+    chart_col = "new_stores_needed" if top10["new_stores_needed"].notna().any() else "opportunity_score"
+    chart_label = "New BK Stores Needed" if chart_col == "new_stores_needed" else "Opportunity Score"
+    fig_op = px.bar(
+        top10[::-1], x=chart_col, y="city", orientation="h", color="state",
+        title=f"Top 10 Cities — {chart_label}",
+        labels={chart_col: chart_label, "city": "City"},
+    )
+    fig_op.update_layout(height=380, margin=dict(l=0, r=20, t=40, b=20))
+    st.plotly_chart(fig_op, use_container_width=True)
+
+    # ── Table ─────────────────────────────────────────────────────────────────
+    st.subheader(f"📋 City Opportunities ({len(idf)} shown)")
+    display_cols = {
+        "city":               "City",
+        "state":              "State",
+        "competitor_stores":  "Competitor Stores",
+        "bk_stores":          "BK Stores (current)",
+        "new_stores_needed":  "New BK Stores Needed",
+        "recommended_bk":     "Recommended BK Total",
+        "pop_2026":           "Pop 2026 (est.)",
+        "bk_ps_ratio":        "BK PS Ratio",
+        "adjacency_bonus":    "Adj. Bonus",
+        "ps_score":           "PS Score",
+        "opportunity_score":  "Opportunity Score",
+        "competitors_present":"Competitors Present",
+        "top_pincodes":       "Top PIN Codes",
+    }
+    show_df = idf[[c for c in display_cols if c in idf.columns]].rename(columns=display_cols)
+
+    # Format pop and ps ratio
+    if "Pop 2026 (est.)" in show_df.columns:
+        show_df["Pop 2026 (est.)"] = show_df["Pop 2026 (est.)"].apply(
+            lambda x: f"{int(x):,}" if pd.notna(x) else "N/A"
+        )
+    if "BK PS Ratio" in show_df.columns:
+        show_df["BK PS Ratio"] = show_df["BK PS Ratio"].apply(
+            lambda x: f"{int(x):,}" if pd.notna(x) else "N/A"
+        )
+    if "New BK Stores Needed" in show_df.columns:
+        show_df["New BK Stores Needed"] = show_df["New BK Stores Needed"].apply(
+            lambda x: f"{int(x)}" if pd.notna(x) else "N/A"
+        )
+
+    def highlight_row(row):
+        styles = [""] * len(row)
+        cols = list(row.index)
+        ns = row.get("New BK Stores Needed", "N/A")
+        if ns != "N/A" and str(ns).isdigit():
+            n = int(ns)
+            if n >= 5:   bg = "background-color: #ffe0e0"
+            elif n >= 2: bg = "background-color: #fff8cc"
+            else:        bg = ""
+            styles = [bg] * len(row)
+        return styles
+
+    try:
+        styled = show_df.style.apply(highlight_row, axis=1)
+    except Exception:
+        styled = show_df
+    st.dataframe(styled, use_container_width=True, height=520)
+
+    # ── Map ───────────────────────────────────────────────────────────────────
+    st.subheader("🗺️ Opportunity Map")
+    st.caption("Bubble size = New BK Stores Needed (or Opportunity Score if no PS data). Click for details.")
+
+    centers = df.groupby(["city", "state"])[["lat", "lng"]].mean().reset_index()
+    idf_map = idf.drop(columns=["lat","lng"], errors="ignore")
+    map_data = idf_map.merge(centers, on=["city", "state"], how="left").dropna(subset=["lat", "lng"])
+
+    if not map_data.empty:
+        m2 = folium.Map(location=[map_data["lat"].mean(), map_data["lng"].mean()], zoom_start=5, tiles="CartoDB positron")
+
+        size_col = "new_stores_needed" if map_data["new_stores_needed"].notna().any() else "opportunity_score"
+        max_val  = map_data[size_col].max() or 1
+
+        for _, row in map_data.iterrows():
+            val     = row[size_col] if pd.notna(row.get(size_col)) else 0
+            r_size  = max(5, int(val / max_val * 30))
+            opacity = 0.4 + 0.5 * (val / max_val)
+
+            bk_note   = f"BK stores: {int(row['bk_stores'])}" if row["bk_stores"] > 0 else "⚠️ No BK presence"
+            pop_str   = f"{int(row['pop_2026']):,}" if pd.notna(row.get("pop_2026")) else "N/A"
+            ps_str    = f"{int(row['bk_ps_ratio']):,}" if pd.notna(row.get("bk_ps_ratio")) else "N/A"
+            new_str   = f"{int(row['new_stores_needed'])}" if pd.notna(row.get("new_stores_needed")) else "N/A"
+            rec_str   = f"{int(row['recommended_bk'])}" if pd.notna(row.get("recommended_bk")) else "N/A"
+            breakdown = row.get("comp_breakdown", "")
+
+            popup_html = f"""
+            <div style='font-family:sans-serif;min-width:240px'>
+              <b>🏙️ {row["city"]}, {row["state"]}</b><br>
+              <b style='color:#E63946'>Opp Score: {int(row["opportunity_score"])}</b><br>
+              <hr style='margin:4px 0'>
+              🆕 <b>New BK stores needed: {new_str}</b><br>
+              📊 Recommended BK total: {rec_str}<br>
+              {bk_note}<br>
+              👥 Pop 2026 est.: {pop_str}<br>
+              📐 BK PS ratio: {ps_str}<br>
+              <hr style='margin:4px 0'>
+              🏪 Competitor stores: {int(row["competitor_stores"])}<br>
+              {breakdown}<br>
+              📌 Top PINs: {row.get("top_pincodes", "N/A")}
+            </div>"""
+            folium.CircleMarker(
+                location=[row["lat"], row["lng"]],
+                radius=r_size, color="#E63946", fill=True,
+                fill_color="#E63946", fill_opacity=opacity,
+                popup=folium.Popup(popup_html, max_width=260),
+                tooltip=f"{row['city']}: {new_str} new stores needed",
+            ).add_to(m2)
+
+        # BK existing stores
+        bk_cluster = MarkerCluster(name="BK Existing Stores").add_to(m2)
+        for _, row in bk_df.dropna(subset=["lat", "lng"]).iterrows():
+            bk_popup = f"""
+            <div style='font-family:sans-serif;min-width:180px'>
+              <b style='color:#2E7D32'>{row["store_name"]}</b><br>
+              <small>{row["city"]}, {row["district"]}</small><br>
+              <small>{row["state"]} – {row["pincode"]}</small>
+            </div>"""
+            folium.CircleMarker(
+                location=[row["lat"], row["lng"]],
+                radius=6, color="#2E7D32", fill=True,
+                fill_color="#2E7D32", fill_opacity=1.0,
+                tooltip=f"BK: {row['store_name']}",
+                popup=folium.Popup(bk_popup, max_width=220),
+            ).add_to(bk_cluster)
+
+        # Warehouse
+        WH_LAT, WH_LNG = 22.5958, 88.2676
+        folium.Marker(
+            location=[WH_LAT, WH_LNG],
+            popup=folium.Popup("<b>🏭 BK Central Warehouse</b><br>493 B, GT Road, Shibpur, Howrah", max_width=220),
+            tooltip="BK Central Warehouse (Howrah)",
+            icon=folium.Icon(color="darkblue", icon="home", prefix="fa"),
+        ).add_to(m2)
+
+        folium.LayerControl().add_to(m2)
+        st_folium(m2, width="100%", height=580, returned_objects=[])
+    else:
+        st.info("No cities match current filters.")
+
+
 def render_opportunity_ui(scores, bk_df, df, area_col, key_prefix, default_min=3):
     """Render filters, bar chart, table and map for opportunity scores."""
     bk_core_states = sorted(bk_df["state"].unique().tolist())
