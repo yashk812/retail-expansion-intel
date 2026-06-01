@@ -53,7 +53,7 @@ st.sidebar.caption("Baazar Kolkata Competitive Intelligence")
 
 page = st.sidebar.radio(
     "Navigate",
-    ["🗺️ Store Map", "📊 Stats by Company", "💡 Expansion Insights", "📋 Master Data"],
+    ["🗺️ Store Map", "📊 Stats by Company", "💡 Expansion Insights", "🔍 City Explorer", "📋 Master Data"],
     label_visibility="collapsed",
 )
 
@@ -1095,6 +1095,262 @@ elif page == "💡 Expansion Insights":
         )
 
 # ══════════════════════════════════════════════════════════════════════════════
+elif page == "🔍 City Explorer":
+    import requests, time
+
+    st.title("🔍 City Archetype Explorer")
+    st.caption("Deep-dive into representative cities to understand where new BK stores should open.")
+
+    # ── City definitions ───────────────────────────────────────────────────────
+    ARCHETYPE_CITIES = {
+        "🔴 Kolkata, WB":     {"city": "Kolkata",   "state": "West Bengal",  "archetype": "Heavy BK Presence",   "color": "#C62828"},
+        "🔴 Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Heavy BK Presence",   "color": "#C62828"},
+        "🟡 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Avg BK Presence",     "color": "#FF9800"},
+        "🟡 Siliguri, WB":    {"city": "Siliguri",  "state": "West Bengal",  "archetype": "Avg BK Presence",     "color": "#FF9800"},
+        "🟢 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "Low / No BK",         "color": "#2E7D32"},
+        "🟢 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "Low / No BK",         "color": "#2E7D32"},
+    }
+    COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
+    ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
+
+    # ── Compute PS gaps for all 6 cities ──────────────────────────────────────
+    @st.cache_data
+    def get_city_stats():
+        focus = df[df["state"].isin(FOCUS_STATES)].copy()
+        towns_df = pd.read_csv("census_towns_2026.csv") if os.path.exists("census_towns_2026.csv") else pd.DataFrame()
+        state_urban_pop = towns_df[towns_df["state_std"].isin(FOCUS_STATES)].groupby("state_std").agg(
+            state_urban_pop_2026=("pop_2026","sum")
+        ).reset_index().rename(columns={"state_std":"state"})
+        state_total_stores = focus.groupby("state").size().reset_index(name="state_total_stores")
+        sps = state_urban_pop.merge(state_total_stores, on="state", how="left")
+        sps["state_ps"] = sps["state_urban_pop_2026"] / sps["state_total_stores"]
+        return dict(zip(sps["state"], sps["state_ps"]))
+
+    state_ps_map = get_city_stats()
+
+    def get_city_data(city, state):
+        city_df = df[(df["city"]==city) & (df["state"]==state)].copy()
+        bk_df   = city_df[city_df["company"]=="Baazar Kolkata"]
+        comp_df = city_df[city_df["company"]!="Baazar Kolkata"]
+        pop = city_df["pop_2026"].iloc[0] if len(city_df) else None
+        total_stores = len(city_df)
+        bk_stores    = len(bk_df)
+        sps          = state_ps_map.get(state, 100000)
+        stores_needed = round(pop / sps) if pop else 0
+        gap = max(0, stores_needed - total_stores)
+        comp_breakdown = {c: len(city_df[city_df["company"]==c]) for c in COMPETITORS if len(city_df[city_df["company"]==c]) > 0}
+        top_pins = city_df["pincode"].value_counts().head(5).index.tolist()
+        comp_pins = comp_df["pincode"].value_counts().head(5).index.tolist()
+        return {
+            "city_df": city_df, "bk_df": bk_df, "comp_df": comp_df,
+            "pop": pop, "total_stores": total_stores, "bk_stores": bk_stores,
+            "gap": gap, "stores_needed": stores_needed, "state_ps": sps,
+            "comp_breakdown": comp_breakdown, "top_pins": top_pins, "comp_pins": comp_pins,
+        }
+
+    # ── AI recommendation function ─────────────────────────────────────────────
+    def get_ai_recommendation(city, state, data, archetype):
+        if "ai_recs" not in st.session_state:
+            st.session_state["ai_recs"] = {}
+        cache_key = f"{city}_{state}"
+        if cache_key in st.session_state["ai_recs"]:
+            return st.session_state["ai_recs"][cache_key]
+
+        comp_str = ", ".join([f"{k}: {v} stores" for k, v in data["comp_breakdown"].items()])
+        pop_str  = f"{int(data['pop']):,}" if data['pop'] else "N/A"
+        prompt = f"""You are a retail expansion analyst for Baazar Kolkata, a value fashion retail chain in India.
+
+City: {city}, {state}
+Archetype: {archetype}
+Population (2026 est.): {pop_str}
+State PS ratio: {int(data['state_ps']):,} people/store
+Total stores in city: {data['total_stores']} (BK: {data['bk_stores']}, Competitors: {data['total_stores'] - data['bk_stores']})
+Stores city should have (per PS model): {data['stores_needed']}
+New BK stores recommended: {data['gap']}
+Competitor presence: {comp_str}
+Top pincodes in city: {', '.join(data['top_pins'])}
+Competitor-heavy pincodes: {', '.join(data['comp_pins'])}
+
+Based on this data, provide a concise expansion recommendation for Baazar Kolkata in {city}. Include:
+1. A 2-sentence summary of the market opportunity
+2. Exactly {max(data['gap'], 1)} specific area/locality recommendations within {city} where BK should open stores, with a brief reason for each (mention specific areas, markets, or commercial zones in {city})
+3. Key risks or considerations
+
+Format your response with clear sections. Be specific to {city}'s geography and commercial landscape. Keep it under 300 words."""
+
+        try:
+            r = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={"Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01"},
+                json={"model":"claude-haiku-4-5-20251001","max_tokens":600,
+                      "messages":[{"role":"user","content":prompt}]},
+                timeout=30
+            )
+            text = r.json()["content"][0]["text"]
+            st.session_state["ai_recs"][cache_key] = text
+            return text
+        except Exception as e:
+            return f"Could not generate recommendation: {e}"
+
+    # ── City selector ──────────────────────────────────────────────────────────
+    col_sel, col_mode = st.columns([3, 2])
+    with col_sel:
+        selected_label = st.selectbox(
+            "Select a city archetype",
+            list(ARCHETYPE_CITIES.keys()),
+            help="Cities chosen to represent different BK penetration levels"
+        )
+    with col_mode:
+        mode = st.radio("Mode", ["🤖 Auto Recommend", "✏️ Manual Pin Drop"], horizontal=True)
+
+    cfg  = ARCHETYPE_CITIES[selected_label]
+    city = cfg["city"]; state = cfg["state"]; arch = cfg["archetype"]
+    data = get_city_data(city, state)
+
+    st.markdown(f"**{city}, {state}** &nbsp;|&nbsp; <span style='color:{cfg['color']}'>{arch}</span>", unsafe_allow_html=True)
+    st.markdown("---")
+
+    # ── KPI row ────────────────────────────────────────────────────────────────
+    k1, k2, k3, k4, k5 = st.columns(5)
+    k1.metric("BK Stores",           data["bk_stores"])
+    k2.metric("Competitor Stores",   data["total_stores"] - data["bk_stores"])
+    k3.metric("Population 2026",     f"{int(data['pop']):,}" if data['pop'] else "N/A")
+    k4.metric("Stores Should Have",  data["stores_needed"])
+    k5.metric("New BK Stores Needed",data["gap"], delta_color="inverse")
+
+    st.markdown("---")
+
+    # ── Main layout: map left, panel right ────────────────────────────────────
+    map_col, panel_col = st.columns([3, 1])
+
+    with panel_col:
+        st.subheader("🏪 Competitor Breakdown")
+        if data["comp_breakdown"]:
+            comp_fig = px.bar(
+                x=list(data["comp_breakdown"].values()),
+                y=list(data["comp_breakdown"].keys()),
+                orientation="h",
+                color=list(data["comp_breakdown"].keys()),
+                color_discrete_map={k: COMPANY_COLORS.get(k,"#888") for k in data["comp_breakdown"]},
+            )
+            comp_fig.update_layout(
+                height=250, showlegend=False,
+                margin=dict(l=0,r=0,t=10,b=0),
+                yaxis_title=None, xaxis_title="Stores"
+            )
+            st.plotly_chart(comp_fig, use_container_width=True)
+        else:
+            st.info("No competitor stores in this city.")
+
+        st.subheader("📌 Top Pincodes")
+        for pin in data["top_pins"]:
+            pin_stores = data["city_df"][data["city_df"]["pincode"]==pin]
+            bk_count   = len(pin_stores[pin_stores["company"]=="Baazar Kolkata"])
+            comp_count = len(pin_stores[pin_stores["company"]!="Baazar Kolkata"])
+            st.markdown(f"**{pin}** — 🔴 {bk_count} BK · ⚫ {comp_count} comp")
+
+        if mode == "✏️ Manual Pin Drop":
+            st.subheader("📍 Dropped Pins")
+            key_pins = f"dropped_pins_{city}_{state}"
+            if key_pins not in st.session_state:
+                st.session_state[key_pins] = []
+            pins = st.session_state[key_pins]
+            if pins:
+                for i, p in enumerate(pins):
+                    st.markdown(f"{i+1}. `{p['lat']:.4f}, {p['lng']:.4f}`")
+                if st.button("🗑️ Clear all pins"):
+                    st.session_state[key_pins] = []
+                    st.rerun()
+            else:
+                st.caption("Click on the map to drop pins")
+
+    with map_col:
+        city_stores = data["city_df"].dropna(subset=["lat","lng"])
+        if not city_stores.empty:
+            center_lat = city_stores["lat"].mean()
+            center_lng = city_stores["lng"].mean()
+        else:
+            center_lat, center_lng = 22.5, 88.3
+
+        m = folium.Map(location=[center_lat, center_lng], zoom_start=13, tiles="CartoDB positron")
+
+        # Competitor stores — all same dark colour with company in tooltip
+        for _, row in data["comp_df"].dropna(subset=["lat","lng"]).iterrows():
+            folium.CircleMarker(
+                location=[row["lat"], row["lng"]],
+                radius=8, color="#37474F", fill=True,
+                fill_color="#546E7A", fill_opacity=0.85,
+                tooltip=f"⚫ {row['company']}: {row['store_name']}",
+                popup=folium.Popup(
+                    f"<b>{row['store_name']}</b><br>{row['company']}<br>PIN: {row['pincode']}",
+                    max_width=200
+                )
+            ).add_to(m)
+
+        # BK stores — bright red
+        for _, row in data["bk_df"].dropna(subset=["lat","lng"]).iterrows():
+            folium.CircleMarker(
+                location=[row["lat"], row["lng"]],
+                radius=10, color="#C62828", fill=True,
+                fill_color="#E53935", fill_opacity=1.0,
+                tooltip=f"🔴 BK: {row['store_name']}",
+                popup=folium.Popup(
+                    f"<b style='color:#C62828'>{row['store_name']}</b><br>Baazar Kolkata<br>PIN: {row['pincode']}",
+                    max_width=200
+                )
+            ).add_to(m)
+
+        # Manual pin drop mode
+        key_pins = f"dropped_pins_{city}_{state}"
+        if key_pins not in st.session_state:
+            st.session_state[key_pins] = []
+
+        if mode == "✏️ Manual Pin Drop":
+            for i, p in enumerate(st.session_state[key_pins]):
+                folium.Marker(
+                    location=[p["lat"], p["lng"]],
+                    tooltip=f"📍 Proposed store {i+1}",
+                    icon=folium.Icon(color="green", icon="plus", prefix="fa")
+                ).add_to(m)
+
+            map_data = st_folium(m, width="100%", height=520,
+                                  returned_objects=["last_clicked"], key=f"map_{city}_{state}_manual")
+            if map_data and map_data.get("last_clicked"):
+                lc = map_data["last_clicked"]
+                new_pin = {"lat": lc["lat"], "lng": lc["lng"]}
+                if new_pin not in st.session_state[key_pins]:
+                    st.session_state[key_pins].append(new_pin)
+                    st.rerun()
+
+            # Download map as HTML
+            if st.session_state[key_pins]:
+                map_html = m._repr_html_()
+                st.download_button(
+                    "⬇️ Download map as HTML",
+                    data=map_html,
+                    file_name=f"{city}_store_plan.html",
+                    mime="text/html"
+                )
+        else:
+            st_folium(m, width="100%", height=520,
+                      returned_objects=[], key=f"map_{city}_{state}_auto")
+
+    # ── Auto recommendation ────────────────────────────────────────────────────
+    if mode == "🤖 Auto Recommend":
+        st.markdown("---")
+        st.subheader("🤖 AI Expansion Recommendation")
+        if data["gap"] == 0:
+            st.info(f"{city} is already at or above the recommended store count based on the state PS ratio. Focus on quality over quantity here.")
+        else:
+            with st.spinner(f"Generating recommendation for {city}..."):
+                rec_text = get_ai_recommendation(city, state, data, arch)
+            st.markdown(rec_text)
+            cache_key = f"{city}_{state}"
+            if st.button("🔄 Regenerate", key="regen"):
+                if "ai_recs" in st.session_state and cache_key in st.session_state["ai_recs"]:
+                    del st.session_state["ai_recs"][cache_key]
+                st.rerun()
+
 elif page == "📋 Master Data":
     st.title("📋 Master Data")
     st.caption(f"Full store dataset — {len(df):,} rows. Filter and inspect.")
