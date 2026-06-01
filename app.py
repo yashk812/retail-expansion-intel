@@ -205,23 +205,22 @@ def render_city_ui(scores, bk_df, df, key_prefix, default_min=2):
             lambda x: f"{int(x)}" if pd.notna(x) else "N/A"
         )
 
-    def highlight_row(row):
-        styles = [""] * len(row)
-        cols = list(row.index)
-        ns = row.get("New BK Stores Needed", "N/A")
-        if ns != "N/A" and str(ns).isdigit():
-            n = int(ns)
-            if n >= 5:   bg = "background-color: #ffe0e0"
-            elif n >= 2: bg = "background-color: #fff8cc"
-            else:        bg = ""
-            styles = [bg] * len(row)
-        return styles
+    def highlight_new_stores(val):
+        if val == "N/A" or not str(val).isdigit():
+            return ""
+        n = int(val)
+        if n >= 5:   return "background-color: #ff9999; color: #000; font-weight: bold"
+        elif n >= 2: return "background-color: #ffe066; color: #000; font-weight: bold"
+        elif n == 1: return "background-color: #d4f0a0; color: #000"
+        return ""
 
     try:
-        styled = show_df.style.apply(highlight_row, axis=1)
+        styled = show_df.style.map(highlight_new_stores, subset=["New BK Stores Needed"])
     except Exception:
-        styled = show_df
-    st.dataframe(styled, use_container_width=True, height=520)
+        try:
+            styled = show_df.style.applymap(highlight_new_stores, subset=["New BK Stores Needed"])
+        except Exception:
+            styled = show_df
 
     # ── Map ───────────────────────────────────────────────────────────────────
     st.subheader("🗺️ Opportunity Map")
