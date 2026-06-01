@@ -198,7 +198,7 @@ Citykart Jhalwa,211012,Prayagraj,Prayagraj,Uttar Pradesh,CityKart,25.436092,81.7
 Citykart Jharsuguda,768201,Jharsuguda,Jharsuguda,Odisha,CityKart,21.86507,84.02427,97730.0,142165.0,exact,Jharsuguda,6,23694.0
 Citykart Jodhpur,342008,Jodhpur,Jodhpur,Rajasthan,CityKart,26.271336,72.994965,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
 Citykart Jogbani,854328,Jogbani,Purnia,Bihar,CityKart,26.399873,87.264708,39281.0,67450.0,fuzzy,jogabani,1,67450.0
-CityKart Jorhat,785001,Jorhat,Jorhat,Assam,CityKart,26.757898,94.21105,71782.0,107674.0,exact,Jorhat,5,21535.0
+CityKart Jorhat,785001,Jorhat,Jorhat,Assam,CityKart,26.757898,94.21105,71782.0,146920.0,corrected,Jorhat (MB + OG),5,21535.0
 Citykart Kacchi Dargah Patna,803201,Fatuha,Patna,Bihar,CityKart,25.537338,85.28371,,313469.0,district_fallback,[Patna district est.],2,
 Citykart Kanpur,208006,Kanpur,Kanpur Nagar,Uttar Pradesh,CityKart,26.435627,80.308952,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 CityKart Kapashera,110037,Delhi,South West Delhi,Delhi,CityKart,28.535715,77.091238,,,no_match,,4,
@@ -243,7 +243,7 @@ CityKart Muzzafarpur,842002,Muzaffarpur,Vaishali,Bihar,CityKart,26.146269,85.388
 CityKart Naharlagun,791110,Naharlagun,Papum Pare,Arunachal Pradesh,CityKart,27.10226,93.69177,36158.0,57326.0,exact,Naharlagun,3,19109.0
 Citykart Naini,211008,Prayagraj,Prayagraj,Uttar Pradesh,CityKart,25.411428,81.861032,1168385.0,1791363.0,corrected,Allahabad,12,149280.0
 CityKart Narkatiaganj,845455,Narkatiaganj,West Champaran,Bihar,CityKart,27.081294,84.400702,49507.0,85009.0,exact,Narkatiaganj,1,85009.0
-Citykart Naugachhia,853204,Naugachhia,Munger,Bihar,CityKart,25.386848,87.097782,400146.0,687092.0,exact,Bhagalpur,9,76344.0
+Citykart Naugachhia,853204,Naugachhia,Munger,Bihar,CityKart,25.386848,87.097782,400146.0,84257.0,corrected,Naugachhia,9,76344.0
 Citykart Nautanwa,273164,Maharajganj,Maharajganj,Uttar Pradesh,CityKart,27.242912,83.57356,33930.0,52021.0,exact,Maharajganj,3,17340.0
 Citykart Navratan Hatta Purnia,854301,Purnia,Purnia,Bihar,CityKart,25.77765,87.478,282248.0,484649.0,exact,Purnia,8,60581.0
 Citykart Nawada,805110,Nawada,Nawada,Bihar,CityKart,24.880335,85.54026,98029.0,168326.0,exact,Nawada,4,42082.0
@@ -550,7 +550,7 @@ STYLE BAAZAR GOLAGHAT,785702,Golaghat,Golaghat,Assam,StyleBaazar,26.513119,93.97
 STYLE BAAZAR DHEKIAJULI,784110,Dhekiajuli,Sonitpur,Assam,StyleBaazar,26.698535,92.485147,528563.0,32369.0,corrected,Dhekiajuli,1,
 STYLE BAAZAR DIBRUGARH,786001,Dibrugarh,Dibrugarh,Assam,StyleBaazar,27.480588,94.906162,139565.0,209349.0,exact,Dibrugarh,6,34892.0
 STYLE BAAZAR DABOKA TOWN,782440,Doboka,Hojai,Assam,StyleBaazar,26.633007,93.605265,13118.0,19677.0,manual_gap_fix,Doboka,1,
-STYLE BAAZAR JORHAT,785001,Jorhat,Jorhat,Assam,StyleBaazar,26.757898,94.21105,71782.0,107674.0,exact,Jorhat,5,21535.0
+STYLE BAAZAR JORHAT,785001,Jorhat,Jorhat,Assam,StyleBaazar,26.757898,94.21105,71782.0,146920.0,corrected,Jorhat (MB + OG),5,21535.0
 STYLE BAAZAR MANGALDOI,784125,Mangaldoi,Darrang,Assam,StyleBaazar,26.436567,92.030914,25989.0,38984.0,exact,Mangaldoi,2,19492.0
 STYLE BAAZAR LAKHIMPUR,787001,North Lakhimpur,North Lakhimpur,Assam,StyleBaazar,27.237362,94.10649,59814.0,89721.0,exact,North Lakhimpur,2,44860.0
 STYLE BAAZAR KOKRAJHAR,783370,Kokrajhar,Kokrajhar,Assam,StyleBaazar,26.40118,90.247952,528563.0,51204.0,corrected,Kokrajhar,1,
@@ -828,7 +828,7 @@ V2 Retail Ltd. (HM50),473001,Guna,Guna,Madhya Pradesh,V2 Retail,24.702778,77.482
 V2 Retail Ltd. (HN10),781008,Guwahati,Kamrup Metropolitan,Assam,V2 Retail,26.178352,91.752288,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
 V2 Retail Ltd. (HN11),788001,Silchar,Cachar,Assam,V2 Retail,24.824146,92.800606,178865.0,268299.0,exact,Silchar,8,33537.0
 V2 Retail Ltd. (HN13),781314,Barpeta,Barpeta,Assam,V2 Retail,26.329327,91.0058,42649.0,63974.0,corrected,Barpeta,5,12795.0
-V2 Retail Ltd. (HN14),785001,Jorhat,Jorhat,Assam,V2 Retail,26.757898,94.21105,71782.0,107674.0,exact,Jorhat,5,21535.0
+V2 Retail Ltd. (HN14),785001,Jorhat,Jorhat,Assam,V2 Retail,26.757898,94.21105,71782.0,146920.0,corrected,Jorhat (MB + OG),5,21535.0
 V2 Retail Ltd. (HN15),781012,Guwahati,Kamrup Metro,Assam,V2 Retail,26.155268,91.67112,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
 V2 Retail Ltd. (HN21),799001,Agartala,West Tripura,Tripura,V2 Retail,23.829922,91.280754,400004.0,661458.0,exact,Agartala,11,60133.0
 V2 Retail Ltd. (HN22),788001,Silchar,Cachar,Assam,V2 Retail,24.826072,92.800349,178865.0,268299.0,exact,Silchar,8,33537.0
@@ -2072,7 +2072,7 @@ mBaazar - JAYNAGAR,847226,Madhubani,Madhubani,Bihar,mBaazar,25.201756,85.52006,7
 mBaazar - Jharsuguda,768201,Jharsuguda,Jharsuguda,Odisha,mBaazar,21.86507,84.02427,97730.0,142165.0,exact,Jharsuguda,6,23694.0
 mBaazar - JIAGANJ,742123,Jiaganj,Murshidabad,West Bengal,mBaazar,23.825306,88.286358,11261.0,14869.0,fuzzy_broad,jagtaj,1,14869.0
 mBaazar - Jirania,799045,Jirania,West Tripura,Tripura,mBaazar,23.818855,91.44719,400004.0,53360.0,district_fallback,[West Tripura district est.],1,
-mBaazar - JORHAT,785001,Jorhat,Jorhat,Assam,mBaazar,26.760107,94.214876,71782.0,107674.0,exact,Jorhat,5,21535.0
+mBaazar - JORHAT,785001,Jorhat,Jorhat,Assam,mBaazar,26.760107,94.214876,71782.0,146920.0,corrected,Jorhat (MB + OG),5,21535.0
 mBaazar - Kailashahar,799277,Kailashahar,Unakoti,Tripura,mBaazar,24.318699,91.999051,22405.0,37050.0,fuzzy,kailasahar,1,37050.0
 mBaazar - Kalgachia,781319,Barpeta,Barpeta,Assam,mBaazar,26.3938,90.86303,27839.0,63974.0,corrected,Barpeta,1,
 mBaazar - Kanchanpur,799270,Kanchanpur,West Tripura,Tripura,mBaazar,24.040052,92.197045,15341.0,25368.0,exact,Kanchanpur,1,25368.0
@@ -2200,7 +2200,7 @@ V-Mart - Morigaon,782105,Morigaon,Morigaon,Assam,Vmart,26.0548,92.8636,29164.0,4
 V-Mart - Dhekiajuli-Tezpur Road,784110,Dhekiajuli,Sonitpur,Assam,Vmart,26.622608,92.7967,21579.0,32369.0,corrected,Dhekiajuli,1,32369.0
 V-Mart - Nagaon,782001,Nagaon,Nagaon,Assam,Vmart,26.348057,92.68379,121628.0,182443.0,exact,Nagaon,6,30407.0
 V-Mart -Golaghat,785702,Golaghat,Golaghat,Assam,Vmart,26.513119,93.97176,41989.0,62984.0,exact,Golaghat,3,20995.0
-V-Mart - Jorhat,785001,Jorhat,Jorhat,Assam,Vmart,26.7509,94.2037,71782.0,107674.0,exact,Jorhat,5,21535.0
+V-Mart - Jorhat,785001,Jorhat,Jorhat,Assam,Vmart,26.7509,94.2037,71782.0,146920.0,corrected,Jorhat (MB + OG),5,21535.0
 V-Mart - Sivasagar-Boarding Road,785640,Sivasagar,Sivasagar,Assam,Vmart,26.986383,94.63568,50781.0,76172.0,fuzzy_broad,sivasagar,3,25391.0
 "V-Mart - Hijuguri, Tinsukia - Tinsukia-Station Road",786125,Tinsukia,Tinsukia,Assam,Vmart,27.488546,95.35567,116322.0,174484.0,exact,Tinsukia,3,58161.0
 V-Mart - Bettiah,845438,Bettiah,West Champaran,Bihar,Vmart,26.8089,84.4975,132209.0,227017.0,exact,Bettiah,4,56754.0
@@ -2607,7 +2607,7 @@ V-Mart - Deoria-Ramnath Nagar,274001,Deoria,Deoria,Uttar Pradesh,Vmart,26.2167,8
 V-Mart - Mughalsarai,232101,Mughalsarai,Chandauli,Uttar Pradesh,Vmart,25.287977,83.107763,109650.0,168115.0,exact,Mughalsarai,2,84058.0
 V-Mart - Padrauna,274304,Padrauna,Kushinagar,Uttar Pradesh,Vmart,26.741,83.669,49723.0,76235.0,exact,Padrauna,4,19059.0
 "V-Mart - Padrauna, Subhash Chowk",274304,Padrauna,Kushinagar,Uttar Pradesh,Vmart,26.741,83.669,49723.0,76235.0,exact,Padrauna,4,19059.0
-V-Mart - Mau,275102,Sahadatpura,Ballia,Uttar Pradesh,Vmart,25.950068,83.562675,705478.0,1081636.0,fuzzy_broad,saharanpur,1,1081636.0
+V-Mart - Mau,275102,Sahadatpura,Ballia,Uttar Pradesh,Vmart,25.950068,83.562675,705478.0,42387.0,district_avg,[Ballia avg],1,1081636.0
 V-Mart - Ghazipur-Kashimabad,233230,Mohammadabad,Ghazipur,Uttar Pradesh,Vmart,26.3456,81.2345,38328.0,58764.0,exact,Mohammadabad,1,58764.0
 V-Mart - Gazipur,233001,Ghazipur,Ghazipur,Uttar Pradesh,Vmart,25.583,83.57,121020.0,185547.0,exact,Ghazipur,2,92774.0
 V-Mart - Ghazipur - Mahuabagh,233001,Ghazipur,Ghazipur,Uttar Pradesh,Vmart,25.583,83.57,121020.0,185547.0,exact,Ghazipur,2,92774.0
