@@ -1,6 +1,6 @@
 store_name,pincode,city,district,state,company,lat,lng,pop_2011,pop_2026,match_type,census_town,total_stores_in_city,ps_ratio_2026
 Baazar Kolkata - Agartala Central Road,799001,Agartala,West Tripura,Tripura,Baazar Kolkata,23.828545,91.282472,400004.0,661458.0,exact,Agartala,11,60133.0
-Baazar Kolkata - Agartala Durga Chowmuhani,799002,Agartala,West Tripura,Tripura,Baazar Kolkata,23.815947,91.254322,400004.0,661458.0,exact,Agartala,11,60133.0
+Baazar Kolkata - Agartala Durga Chowmuhani,799002,Agartala,West Tripura,Tripura,Baazar Kolkata,23.8314,91.2869,400004.0,661458.0,exact,Agartala,11,60133.0
 Baazar Kolkata - Agartala Post Office Chowmuhani,799001,Agartala,West Tripura,Tripura,Baazar Kolkata,23.829922,91.280754,400004.0,661458.0,exact,Agartala,11,60133.0
 Baazar Kolkata - Alipurduar Falakata,735211,Falakata,Alipurduar,West Bengal,Baazar Kolkata,26.51987,89.20204,25218.0,33297.0,exact,Mal,2,16648.0
 Baazar Kolkata - Amtala,743398,Amtala,South 24 Parganas,West Bengal,Baazar Kolkata,22.174924,88.209736,8765.0,11573.0,exact,Amtala,1,11573.0
@@ -178,7 +178,7 @@ Citykart Dumrao,802119,Buxar,Buxar,Bihar,CityKart,25.576039,83.982199,102861.0,1
 Citykart Durg,491001,Raipur,Durg,Chhattisgarh,CityKart,21.192108,81.28222,1027264.0,1595789.0,manual,Raipur,1,1595789.0
 Citykart Dwarka Mor,110059,New Delhi,New Delhi,Delhi,CityKart,28.623836,77.0604,,,no_match,,34,
 Citykart Etawah,206001,Etawah,Etawah,Uttar Pradesh,CityKart,26.78104,79.01948,256838.0,393783.0,exact,Etawah,3,131261.0
-CityKart Gaya,823001,Gaya,Gaya,Bihar,CityKart,24.979031,84.971025,474093.0,814067.0,exact,Gaya,6,135678.0
+CityKart Gaya,823001,Gaya,Gaya,Bihar,CityKart,24.7833,85.0,474093.0,814067.0,exact,Gaya,6,135678.0
 CityKart Ghaziabad,201001,Ghaziabad,Ghaziabad,Uttar Pradesh,CityKart,28.655672,77.433706,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 Citykart Giridih,815301,Giridih,Giridih,Jharkhand,CityKart,24.183,86.3,114533.0,181583.0,exact,Giridih,3,60528.0
 Citykart Goalpara,783101,Goalpara,Goalpara,Assam,CityKart,26.17587,90.620102,53430.0,80145.0,corrected,Goalpara,2,40072.0
@@ -721,7 +721,7 @@ V2 Retail Ltd. (HB57),841226,Siwan,Siwan,Bihar,V2 Retail,26.225502,84.35656,1350
 V2 Retail Ltd. (HB58),847226,Madhubani,Madhubani,Bihar,V2 Retail,25.609907,85.137764,75736.0,130047.0,exact,Madhubani,2,65024.0
 V2 Retail Ltd. (HB59),842001,Muzaffarpur,Vaishali,Bihar,V2 Retail,26.105052,85.371034,354462.0,608648.0,exact,Muzaffarpur,13,46819.0
 V2 Retail Ltd. (HB60),852113,Madhepura,Madhepura,Bihar,V2 Retail,25.909668,86.78614,54472.0,93534.0,exact,Madhepura,6,15589.0
-V2 Retail Ltd. (HB62),823001,Gaya,Gaya,Bihar,V2 Retail,24.63298,84.618546,474093.0,814067.0,exact,Gaya,6,135678.0
+V2 Retail Ltd. (HB62),823001,Gaya,Gaya,Bihar,V2 Retail,24.795,85.0026,474093.0,814067.0,exact,Gaya,6,135678.0
 V2 Retail Ltd. (HB63),800020,Patna,Patna,Bihar,V2 Retail,25.5941,85.1376,1684297.0,2892112.0,corrected,Patna,48,60252.0
 V2 Retail Ltd. (HB64),846004,Darbhanga,Darbhanga,Bihar,V2 Retail,26.151094,85.89374,296039.0,508330.0,exact,Darbhanga,8,63541.0
 V2 Retail Ltd. (HB65),800025,Patna,Patna,Bihar,V2 Retail,25.615167,85.082096,1684297.0,2892112.0,corrected,Patna,48,60252.0
@@ -856,7 +856,7 @@ V2 Retail Ltd. (HN48),784509,Udalguri,Udalguri,Assam,V2 Retail,26.747456,92.0968
 V2 Retail Ltd. (HN60),797112,Dimapur,Dimapur,Nagaland,V2 Retail,25.90906,93.7261,122834.0,162186.0,exact,Dimapur,4,40546.0
 V2 Retail Ltd. (HN80),795003,Imphal,Imphal West,Manipur,V2 Retail,24.751098,93.92838,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),1,
 V2 Retail Ltd. (HO08),760001,Phulbani,Kandhamal,Odisha,V2 Retail,19.311511,84.790892,37371.0,54362.0,fuzzy,phulabani,11,4942.0
-V2 Retail Ltd. (HO09),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.510513,85.915001,610189.0,887623.0,exact,Cuttack,16,55476.0
+V2 Retail Ltd. (HO09),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.4656,85.9016,610189.0,887623.0,exact,Cuttack,16,55476.0
 V2 Retail Ltd. (HO10),751013,Bhubaneswar,Khordha,Odisha,V2 Retail,20.29886,85.80587,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 V2 Retail Ltd. (HO11),764001,Jeypore,Koraput,Odisha,V2 Retail,18.863352,82.579133,84830.0,123400.0,fuzzy_broad,jeypur,2,61700.0
 V2 Retail Ltd. (HO12),751019,Bhubaneswar,Khordha,Odisha,V2 Retail,20.330077,85.807458,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
@@ -882,7 +882,7 @@ V2 Retail Ltd. (HO38),757001,Baripada,Mayurbhanj,Odisha,V2 Retail,21.934996,86.7
 V2 Retail Ltd. (HO39),768025,Bargarh,Bargarh,Odisha,V2 Retail,21.678336,84.046095,80625.0,117283.0,exact,Bargarh,6,19547.0
 V2 Retail Ltd. (HO40),768201,Jharsuguda,Jharsuguda,Odisha,V2 Retail,21.848752,84.013183,97730.0,142165.0,exact,Jharsuguda,6,23694.0
 V2 Retail Ltd. (HO41),752069,Nayagarh,Nayagarh,Odisha,V2 Retail,20.129307,85.121244,17030.0,24773.0,corrected,Nayagarh,2,12386.0
-V2 Retail Ltd. (HO42),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.348487,85.886895,610189.0,887623.0,exact,Cuttack,16,55476.0
+V2 Retail Ltd. (HO42),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.4682,85.8792,610189.0,887623.0,exact,Cuttack,16,55476.0
 V2 Retail Ltd. (HO43),765001,Rayagada,Rayagada,Odisha,V2 Retail,19.189283,83.40953,71208.0,103584.0,exact,Rayagada,3,34528.0
 V2 Retail Ltd. (HO44),768028,Bargarh,Bargarh,Odisha,V2 Retail,21.46432,83.53608,80625.0,117283.0,exact,Bargarh,6,19547.0
 V2 Retail Ltd. (HO45),759100,Talcher,Angul,Odisha,V2 Retail,20.945171,85.20991,43795.0,59410.0,corrected,Talcher,1,
@@ -2432,7 +2432,7 @@ V-Mart - Udaipur,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.7127,451100.0
 V-Mart - Udaipur-Hiran Mangri,313002,Udaipur,Udaipur,Rajasthan,Vmart,24.574552,73.723307,451100.0,703823.0,exact,Udaipur,10,70382.0
 V-Mart - Udaipur-Surajpole,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.58224,73.69663,451100.0,703823.0,exact,Udaipur,10,70382.0
 "V-Mart - Agartala, Nagarjala",799003,Agartala,West Tripura,Tripura,Vmart,23.8431,91.2761,400004.0,661458.0,exact,Agartala,11,60133.0
-V-Mart - Agartala,799010,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2798,400004.0,661458.0,exact,Agartala,11,60133.0
+V-Mart - Agartala,799010,Agartala,West Tripura,Tripura,Vmart,23.8275,91.2812,400004.0,661458.0,exact,Agartala,11,60133.0
 V-Mart - Agartala-Shakuntala Road,799001,Agartala,West Tripura,Tripura,Vmart,23.8103,91.2787,400004.0,661458.0,exact,Agartala,11,60133.0
 V-Mart - Bishalgarh-Sepahjala,799102,Bishalgarh,Sepahijala,Tripura,Vmart,23.687782,91.3106,21085.0,34867.0,exact,Bishalgarh,1,34867.0
 V-Mart - Udaipur - Tripura,799105,Udaipur,Gomati,Tripura,Vmart,23.8267,91.2856,32758.0,54170.0,manual_gap_fix,Udaipur,1,
@@ -2497,7 +2497,7 @@ V-Mart - Kanpur - Keshavpuram,208017,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.
 V-Mart - Sidhauli,261303,Sidhauli,Hardoi,Uttar Pradesh,Vmart,27.5156,80.9847,24976.0,38293.0,exact,Sidhauli,1,38293.0
 V-Mart - Kanpur - Kakadeo,208025,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.4775,80.286,13439.0,20605.0,fuzzy_broad,rajapur,1,20605.0
 V-Mart - Kanpur-Gumti,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.466754,80.313918,2768057.0,4243972.0,exact,Kanpur,13,326459.0
-V-Mart - Kanpur,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.512,80.345,2768057.0,4243972.0,exact,Kanpur,13,326459.0
+V-Mart - Kanpur,208012,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.4735,80.3506,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V-Mart - Kanpur-P Road,208004,Purnea,Purnia,Bihar,Vmart,26.8489,79.5789,282248.0,484649.0,corrected,Purnia,1,
 V-Mart - Saket Nagar,208014,Kanpur,Kanpur Nagar,Uttar Pradesh,Vmart,26.4315,80.3147,2768057.0,4243972.0,manual_gap_fix,Kanpur,1,
 V-Mart - Kanpur-Barra,208027,Barra,Banda,Uttar Pradesh,Vmart,26.8567,79.5945,10803.0,16563.0,fuzzy_broad,barha,1,16563.0

@@ -1183,7 +1183,8 @@ Provide:
 Then on a NEW LINE output exactly this JSON (no markdown, no backticks):
 LOCATIONS_JSON: [{{"area": "LocalityName", "pincode": "XXXXXX"}}, ...]
 
-List exactly {n_stores} locations. Use real locality names and pincodes from {city}, {state}. Keep response under 350 words total."""
+List exactly {n_stores} locations. Use real locality names and accurate pincodes from {city}, {state}.
+IMPORTANT: Verify coordinates are within the actual city boundaries of {city}. Keep response under 350 words total."""
 
         try:
             r1 = requests.post(
@@ -1239,7 +1240,11 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
                         lat, lng = float(coords[key][0]), float(coords[key][1])
                         # Validate within India
                         if 6.5 <= lat <= 37.5 and 67.5 <= lng <= 97.5:
-                            pins.append({"area": loc.get("area", f"Area {i+1}"), "lat": lat, "lng": lng})
+                            pins.append({
+                                "area": loc.get("area", f"Area {i+1}"),
+                                "pincode": loc.get("pincode", "—"),
+                                "lat": lat, "lng": lng
+                            })
 
             # Fallback: fill remaining slots with competitor pincode centroids
             if len(pins) < n_stores and data["comp_pins"]:
@@ -1250,6 +1255,7 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
                     if not pin_rows.empty:
                         pins.append({
                             "area": f"PIN {pin} area",
+                            "pincode": pin,
                             "lat": pin_rows["lat"].mean(),
                             "lng": pin_rows["lng"].mean() + 0.003 * (j % 2)
                         })
@@ -1445,7 +1451,7 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
         ai_pins_t = st.session_state.get("ai_pins", {}).get(f"{city}_{state}", [])
         for pin_info in ai_pins_t:
             pin_rows.append({
-                "Pincode":                "—",
+                "Pincode":                pin_info.get("pincode", "—"),
                 "Type":                   "📍 AI Recommended",
                 "BK Stores":              0,
                 "Comp Stores":            0,
