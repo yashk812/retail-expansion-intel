@@ -1112,6 +1112,7 @@ elif page == "🔍 City Explorer":
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
     ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
+    MAPBOX_TOKEN = st.secrets.get("MAPBOX_TOKEN", os.environ.get("MAPBOX_TOKEN", ""))
 
     # ── Compute PS gaps for all 6 cities ──────────────────────────────────────
     @st.cache_data
