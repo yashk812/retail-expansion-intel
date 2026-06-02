@@ -1174,11 +1174,16 @@ State PS ratio: {int(data['state_ps']):,} people/store
 Total stores: {data['total_stores']} (BK: {data['bk_stores']}, Competitors: {data['total_stores'] - data['bk_stores']})
 Stores city should have: {data['stores_needed']} | New BK stores recommended: {data['gap']}
 Competitor presence: {comp_str}
-Top pincodes: {', '.join(data['top_pins'])} | Competitor pincodes: {', '.join(data['comp_pins'])}
+Top pincodes in city (by store density): {', '.join(data['top_pins'])}
+Competitor store pincodes: {', '.join(data['comp_pins'])}
+
+IMPORTANT — use the competitor pincodes above as primary signals for where demand exists.
+Prioritise recommending locations in or adjacent to those pincodes.
+If a competitor pincode has multiple stores, that area has proven retail demand — recommend BK opens nearby.
 
 Provide:
-1. A 2-sentence market opportunity summary
-2. Exactly {n_stores} specific locality/area recommendations in {city} with brief reasons
+1. A 2-sentence market opportunity summary (mention which pincodes/areas have highest competitor density)
+2. Exactly {n_stores} specific locality/area recommendations in {city} with brief reasons — anchor each recommendation to one of the competitor pincodes above where possible
 3. Key risks
 
 Then on a NEW LINE output exactly this JSON (no markdown, no backticks):
