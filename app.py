@@ -1211,41 +1211,45 @@ IMPORTANT: Verify coordinates are within the actual city boundaries of {city}. K
 
             st.session_state["ai_recs"][cache_key] = rec_text
 
-            # ── Call 2: geocode each recommended area ──────────────────────────
+            # ── Call 2: geocode via Mapbox with city proximity bias ────────────
+            import urllib.parse
             pins = []
+            # Get city centroid for proximity bias
+            city_df_mb = df[(df["city"]==city) & (df["state"]==state)].dropna(subset=["lat","lng"])
+            prox = ""
+            if not city_df_mb.empty:
+                clat = city_df_mb["lat"].mean()
+                clng = city_df_mb["lng"].mean()
+                prox = f"&proximity={clng:.4f},{clat:.4f}"
+
             if locations_raw:
-                areas_list = "\n".join([
-                    f'{i+1}. {loc.get("area","")}, {city}, {state}, India (PIN: {loc.get("pincode","")})'
-                    for i, loc in enumerate(locations_raw)
-                ])
-
-                prompt2 = (
-                    "Return precise [latitude, longitude] for each location in India.\n"
-                    "Return ONLY valid JSON: {\"1\": [lat, lng], \"2\": [lat, lng], ...}\n\n"
-                    + areas_list
-                )
-                r2 = requests.post(
-                    "https://api.anthropic.com/v1/messages",
-                    headers={"Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01"},
-                    json={"model":"claude-haiku-4-5-20251001","max_tokens":300,
-                          "messages":[{"role":"user","content":prompt2}]},
-                    timeout=20
-                )
-                coords_text = r2.json()["content"][0]["text"]
-                start = coords_text.find("{"); end = coords_text.rfind("}") + 1
-                coords = json.loads(coords_text[start:end]) if start >= 0 else {}
-
                 for i, loc in enumerate(locations_raw):
-                    key = str(i + 1)
-                    if key in coords:
-                        lat, lng = float(coords[key][0]), float(coords[key][1])
-                        # Validate within India
-                        if 6.5 <= lat <= 37.5 and 67.5 <= lng <= 97.5:
-                            pins.append({
-                                "area": loc.get("area", f"Area {i+1}"),
-                                "pincode": loc.get("pincode", "—"),
-                                "lat": lat, "lng": lng
-                            })
+                    area    = loc.get("area", "")
+                    pincode = loc.get("pincode", "")
+                    query   = f"{area}, {city}, {state}, India"
+                    if pincode and pincode not in ("—", ""):
+                        query += f" {pincode}"
+                    encoded = urllib.parse.quote(query)
+                    mb_url  = (
+                        f"https://api.mapbox.com/geocoding/v5/mapbox.places/{encoded}.json"
+                        f"?country=IN&limit=1{prox}&access_token={MAPBOX_TOKEN}"
+                    )
+                    try:
+                        mb_r    = requests.get(mb_url, timeout=10)
+                        mb_data = mb_r.json()
+                        if mb_data.get("features"):
+                            lng_mb, lat_mb = mb_data["features"][0]["geometry"]["coordinates"]
+                            lat_mb = float(lat_mb); lng_mb = float(lng_mb)
+                            # Validate within India
+                            if 6.5 <= lat_mb <= 37.5 and 67.5 <= lng_mb <= 97.5:
+                                pins.append({
+                                    "area":    area,
+                                    "pincode": pincode if pincode else "—",
+                                    "lat":     lat_mb,
+                                    "lng":     lng_mb,
+                                })
+                    except Exception:
+                        pass  # fallback below handles gaps
 
             # Fallback: fill remaining slots with competitor pincode centroids
             if len(pins) < n_stores and data["comp_pins"]:
