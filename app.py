@@ -1182,10 +1182,15 @@ Provide:
 3. Key risks
 
 Then on a NEW LINE output exactly this JSON (no markdown, no backticks):
-LOCATIONS_JSON: [{{"area": "LocalityName", "pincode": "XXXXXX"}}, ...]
+LOCATIONS_JSON: [{{"area": "ShortName", "full_address": "Locality, {city}, {state}, India PINCODE", "pincode": "XXXXXX"}}, ...]
 
-List exactly {n_stores} locations. Use real locality names and accurate pincodes from {city}, {state}.
-IMPORTANT: Verify coordinates are within the actual city boundaries of {city}. Keep response under 350 words total."""
+Rules for LOCATIONS_JSON:
+- List exactly {n_stores} locations
+- "area": short display name (e.g. "Hirapur Chowk")
+- "full_address": complete geocodable string — be specific, include neighbourhood + city + state + India + 6-digit pincode
+- "pincode": correct 6-digit PIN for that locality
+- All locations must be within {city} city limits
+Keep response under 400 words total."""
 
         try:
             r1 = requests.post(
@@ -1224,11 +1229,16 @@ IMPORTANT: Verify coordinates are within the actual city boundaries of {city}. K
 
             if locations_raw:
                 for i, loc in enumerate(locations_raw):
-                    area    = loc.get("area", "")
-                    pincode = loc.get("pincode", "")
-                    query   = f"{area}, {city}, {state}, India"
-                    if pincode and pincode not in ("—", ""):
-                        query += f" {pincode}"
+                    area         = loc.get("area", "")
+                    pincode      = loc.get("pincode", "")
+                    full_address = loc.get("full_address", "")
+                    # Use full_address if available, else fall back to area+city+state+pin
+                    if full_address:
+                        query = full_address
+                    else:
+                        query = f"{area}, {city}, {state}, India"
+                        if pincode and pincode not in ("—", ""):
+                            query += f" {pincode}"
                     encoded = urllib.parse.quote(query)
                     mb_url  = (
                         f"https://api.mapbox.com/geocoding/v5/mapbox.places/{encoded}.json"
