@@ -1284,7 +1284,8 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
     k1, k2, k3, k4, k5 = st.columns(5)
     k1.metric("BK Stores",           data["bk_stores"])
     k2.metric("Competitor Stores",   data["total_stores"] - data["bk_stores"])
-    k3.metric("Population 2026",     f"{int(data['pop']):,}" if data['pop'] else "N/A")
+    k3.metric("Population 2026",     f"{int(data['pop']):,}" if data['pop'] else "N/A",
+              help=f"State PS Ratio ({state}): {int(data['state_ps']):,} people/store")
     k4.metric("Stores Should Have",  data["stores_needed"])
     k5.metric("New BK Stores Needed",data["gap"], delta_color="inverse")
 
@@ -1320,13 +1321,6 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
         else:
             st.info("No competitor stores in this city.")
 
-        st.subheader("📌 Top Pincodes")
-        for pin in data["top_pins"]:
-            pin_stores = data["city_df"][data["city_df"]["pincode"]==pin]
-            bk_count   = len(pin_stores[pin_stores["company"]=="Baazar Kolkata"])
-            comp_count = len(pin_stores[pin_stores["company"]!="Baazar Kolkata"])
-            st.markdown(f"**{pin}** — 🔴 {bk_count} BK · ⚫ {comp_count} comp")
-
         if mode == "✏️ Manual Pin Drop":
             st.subheader("📍 Dropped Pins")
             key_pins = f"dropped_pins_{city}_{state}"
@@ -1352,12 +1346,12 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
 
         m = folium.Map(location=[center_lat, center_lng], zoom_start=13, tiles="CartoDB positron")
 
-        # Competitor stores — all same dark colour with company in tooltip
+        # Competitor stores — neutral grey, clearly distinct from chart company colours
         for _, row in data["comp_df"].dropna(subset=["lat","lng"]).iterrows():
             folium.CircleMarker(
                 location=[row["lat"], row["lng"]],
-                radius=8, color="#37474F", fill=True,
-                fill_color="#546E7A", fill_opacity=0.85,
+                radius=8, color="#212121", fill=True,
+                fill_color="#616161", fill_opacity=0.85,
                 tooltip=f"⚫ {row['company']}: {row['store_name']}",
                 popup=folium.Popup(
                     f"<b>{row['store_name']}</b><br>{row['company']}<br>PIN: {row['pincode']}",
@@ -1410,12 +1404,8 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
                     mime="text/html"
                 )
         else:
-            # Add proposed store pins from AI recommendation (pincode centroids)
-            if data["gap"] > 0 and data["comp_pins"]:
-                pin_coords = []
-                city_df_pins = data["city_df"]
-                comp_df_pins = data["comp_df"]
-                # Use AI-recommended pins from session state
+            # Add proposed store pins from AI recommendation
+            if data["gap"] > 0:
                 cache_key_map = f"{city}_{state}"
                 ai_pins_map = st.session_state.get("ai_pins", {}).get(cache_key_map, [])
                 for i, pin_info in enumerate(ai_pins_map):
@@ -1431,6 +1421,56 @@ List exactly {n_stores} locations. Use real locality names and pincodes from {ci
                     ).add_to(m)
             st_folium(m, width="100%", height=520,
                       returned_objects=[], key=f"map_{city}_{state}_auto")
+
+    # ── Pincode reference table (below map, full width) ───────────────────────
+    st.markdown("---")
+    st.subheader("📌 Pincode Reference")
+
+    pin_rows = []
+    for pin in data["top_pins"]:
+        pin_stores = data["city_df"][data["city_df"]["pincode"]==pin]
+        bk_c   = int((pin_stores["company"]=="Baazar Kolkata").sum())
+        comp_c = int((pin_stores["company"]!="Baazar Kolkata").sum())
+        comps  = ", ".join(sorted(pin_stores[pin_stores["company"]!="Baazar Kolkata"]["company"].unique()))
+        pin_rows.append({
+            "Pincode":                pin,
+            "Type":                   "🔴 BK Present" if bk_c > 0 else "⚫ Competitors Only",
+            "BK Stores":              bk_c,
+            "Comp Stores":            comp_c,
+            "Companies":              comps,
+            "Recommended / Proposed": "",
+        })
+
+    if mode == "🤖 Auto Recommend":
+        ai_pins_t = st.session_state.get("ai_pins", {}).get(f"{city}_{state}", [])
+        for pin_info in ai_pins_t:
+            pin_rows.append({
+                "Pincode":                "—",
+                "Type":                   "📍 AI Recommended",
+                "BK Stores":              0,
+                "Comp Stores":            0,
+                "Companies":              "",
+                "Recommended / Proposed": pin_info["area"],
+            })
+    elif mode == "✏️ Manual Pin Drop":
+        dropped = st.session_state.get(f"dropped_pins_{city}_{state}", [])
+        for p in dropped:
+            pin_rows.append({
+                "Pincode":                "—",
+                "Type":                   "✏️ Manually Dropped",
+                "BK Stores":              0,
+                "Comp Stores":            0,
+                "Companies":              "",
+                "Recommended / Proposed": f"{p['lat']:.4f}°N, {p['lng']:.4f}°E",
+            })
+
+    if pin_rows:
+        pin_df = pd.DataFrame(pin_rows)
+        st.dataframe(pin_df, use_container_width=True, hide_index=True,
+                     column_config={
+                         "BK Stores":   st.column_config.NumberColumn(format="%d"),
+                         "Comp Stores": st.column_config.NumberColumn(format="%d"),
+                     })
 
     # ── Auto recommendation ────────────────────────────────────────────────────
     if mode == "🤖 Auto Recommend":
