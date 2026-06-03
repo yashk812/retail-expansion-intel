@@ -1112,12 +1112,12 @@ elif page == "🔍 City Explorer":
 
     # ── City definitions ───────────────────────────────────────────────────────
     ARCHETYPE_CITIES = {
-        "🔴 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "No BK — 8 stores needed",   "color": "#C62828"},
-        "🟠 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "No BK — 3 stores needed",   "color": "#E65100"},
-        "🟡 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 3 stores needed",   "color": "#F9A825"},
-        "🟡 Rourkela, OD":    {"city": "Rourkela",  "state": "Odisha",       "archetype": "No BK — 3 stores needed",   "color": "#F9A825"},
-        "🔵 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Existing Market (3 BK)",     "color": "#1565C0"},
-        "⚫ Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Saturated Market (5 BK)",    "color": "#424242"},
+        "🔴 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "No BK — 4 new BK stores (50% of 8 gap)",   "color": "#C62828"},
+        "🟠 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "No BK — 2 new BK stores (50% of 3 gap)",   "color": "#E65100"},
+        "🟡 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 3 new BK stores (80% of 3 gap)",   "color": "#F9A825"},
+        "🟡 Rourkela, OD":    {"city": "Rourkela",  "state": "Odisha",       "archetype": "No BK — 3 new BK stores (80% of 3 gap)",   "color": "#F9A825"},
+        "🔵 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Existing Market (3 BK, saturated)",          "color": "#1565C0"},
+        "⚫ Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Existing Market (5 BK, saturated)",          "color": "#424242"},
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
     ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
@@ -1139,6 +1139,7 @@ elif page == "🔍 City Explorer":
     state_ps_map = get_city_stats()
 
     def get_city_data(city, state):
+        import math
         city_df = df[(df["city"]==city) & (df["state"]==state)].copy()
         bk_df   = city_df[city_df["company"]=="Baazar Kolkata"]
         comp_df = city_df[city_df["company"]!="Baazar Kolkata"]
@@ -1147,14 +1148,19 @@ elif page == "🔍 City Explorer":
         bk_stores    = len(bk_df)
         sps          = state_ps_map.get(state, 100000)
         stores_needed = round(pop / sps) if pop else 0
-        gap = max(0, stores_needed - total_stores)
+        total_gap = max(0, stores_needed - total_stores)
+        # BK share: existing BK state = 80%, new state = 50%, round up
+        bk_existing_states = set(df[df["company"]=="Baazar Kolkata"]["state"].unique())
+        bk_share_pct = 0.8 if state in bk_existing_states else 0.5
+        bk_gap = math.ceil(total_gap * bk_share_pct) if total_gap > 0 else 0
         comp_breakdown = {c: len(city_df[city_df["company"]==c]) for c in COMPETITORS if len(city_df[city_df["company"]==c]) > 0}
         top_pins = city_df["pincode"].value_counts().head(5).index.tolist()
         comp_pins = comp_df["pincode"].value_counts().head(10).index.tolist()
         return {
             "city_df": city_df, "bk_df": bk_df, "comp_df": comp_df,
             "pop": pop, "total_stores": total_stores, "bk_stores": bk_stores,
-            "gap": gap, "stores_needed": stores_needed, "state_ps": sps,
+            "gap": bk_gap, "total_gap": total_gap, "bk_share_pct": bk_share_pct,
+            "stores_needed": stores_needed, "state_ps": sps,
             "comp_breakdown": comp_breakdown, "top_pins": top_pins, "comp_pins": comp_pins,
         }
 
@@ -1321,8 +1327,11 @@ Keep response under 400 words total."""
     k2.metric("Competitor Stores",   data["total_stores"] - data["bk_stores"])
     k3.metric("Population 2026",     f"{int(data['pop']):,}" if data['pop'] else "N/A",
               help=f"State PS Ratio ({state}): {int(data['state_ps']):,} people/store")
-    k4.metric("Stores Should Have",  data["stores_needed"])
-    k5.metric("New BK Stores Needed",data["gap"], delta_color="inverse")
+    k4.metric("Stores Should Have",  data["stores_needed"],
+              help=f"Total market gap: {data['total_gap']} stores")
+    share_label = "80% — existing BK state" if data["bk_share_pct"] == 0.8 else "50% — new state for BK"
+    k5.metric("New BK Stores",       data["gap"],
+              help=f"BK fills {share_label} of total gap ({data['total_gap']})")
 
     st.markdown("---")
 
