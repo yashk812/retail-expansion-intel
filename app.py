@@ -1465,6 +1465,14 @@ Keep response under 400 words total."""
                     ).add_to(m)
             st_folium(m, width="100%", height=520,
                       returned_objects=[], key=f"map_{city}_{state}_auto")
+            # Download map as HTML (auto mode)
+            map_html = m._repr_html_()
+            st.download_button(
+                "⬇️ Download map as HTML",
+                data=map_html,
+                file_name=f"{city}_expansion_plan.html",
+                mime="text/html"
+            )
 
     # ── Pincode reference table (below map, full width) ───────────────────────
     st.markdown("---")
