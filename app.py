@@ -681,12 +681,13 @@ elif page == "💡 Expansion Insights":
     # ── Shared computation ─────────────────────────────────────────────────────
     focus_df = df[df["state"].isin(FOCUS_STATES)].copy()
 
-    city_agg = focus_df.groupby(["city","state","district"]).agg(
+    city_agg = focus_df.groupby(["city","state"]).agg(
         total_stores   = ("store_name","count"),
         bk_stores      = ("company", lambda x: (x=="Baazar Kolkata").sum()),
         pop_2026       = ("pop_2026","first"),
         lat            = ("lat","mean"),
         lng            = ("lng","mean"),
+        district       = ("district", lambda x: x.mode()[0] if len(x) > 0 else ""),
     ).reset_index()
 
     comp_stores = focus_df[focus_df["company"]!="Baazar Kolkata"].groupby(["city","state"]).size().reset_index(name="competitor_stores")
@@ -701,10 +702,6 @@ elif page == "💡 Expansion Insights":
     city_agg = city_agg.merge(comp_names,  on=["city","state"], how="left")
     city_agg = city_agg.merge(top_pins,    on=["city","state"], how="left")
     city_agg["competitor_stores"] = city_agg["competitor_stores"].fillna(0).astype(int)
-
-    # Deduplicate - keep highest store count per city+state
-    city_agg = city_agg.sort_values("total_stores", ascending=False)
-    city_agg = city_agg.drop_duplicates(subset=["city","state"], keep="first").reset_index(drop=True)
 
     # ── State PS ratios ───────────────────────────────────────────────────────
     # State PS = total state urban pop (census) / total stores in that state
@@ -730,8 +727,18 @@ elif page == "💡 Expansion Insights":
 
     city_agg["stores_needed"]     = (city_agg["pop_2026"] / city_agg["state_ps"]).round(0).fillna(0).clip(lower=1)
     city_agg["gap_stores"]        = (city_agg["stores_needed"] - city_agg["total_stores"]).clip(lower=0)
-    city_agg["bk_stores_to_open"] = city_agg["gap_stores"].fillna(0).astype(int)
+
+    # BK share of gap: existing state (BK present) = 80%, new state = 50%, round up
+    import math
+    bk_states = set(focus_df[focus_df["company"]=="Baazar Kolkata"]["state"].unique())
+    def bk_share(row):
+        gap = row["gap_stores"]
+        if pd.isna(gap) or gap == 0: return 0
+        share = 0.8 if row["state"] in bk_states else 0.5
+        return math.ceil(gap * share)
+    city_agg["bk_stores_to_open"] = city_agg.apply(bk_share, axis=1)
     city_agg["stores_needed"]     = city_agg["stores_needed"].astype(int)
+    city_agg["gap_stores"]        = city_agg["gap_stores"].fillna(0).astype(int)
 
     # Adjacency tier
     bk_locs  = df[df["company"]=="Baazar Kolkata"].dropna(subset=["lat","lng"])
@@ -763,7 +770,8 @@ elif page == "💡 Expansion Insights":
             |--------|---------|
             | **City PS ratio** | City pop ÷ all stores in city (BK + competitors) |
             | **Stores city should have** | `round(city pop ÷ state PS ratio)` |
-            | **Gap stores** | `max(0, should have − existing)` → BK fills this gap |
+            | **Gap stores** | `max(0, should have − existing)` — total market gap |
+            | **BK stores to open** | Existing BK state → 80% of gap (rounded up) · New state → 50% of gap (rounded up) |
             | **Tier** | P0 = BK present · P1 = <100km · P2 = 100-200km · P3 = >200km from nearest BK |
 
             Population: Census of India 2011, extrapolated to 2026 using state-level urban CAGRs.
@@ -835,7 +843,7 @@ elif page == "💡 Expansion Insights":
         st.subheader(f"📋 City Opportunities ({len(idf)} shown)")
         display_cols = {
             "city":"City", "state":"State", "district":"District", "tier":"Tier",
-            "bk_stores_to_open":"BK Stores to Open", "bk_stores":"BK Stores (now)",
+            "bk_stores_to_open":"BK Stores to Open", "gap_stores":"Total Gap", "bk_stores":"BK Stores (now)",
             "total_stores":"Total Stores", "stores_needed":"Stores Should Have",
             "pop_2026":"Pop 2026 (est.)", "city_ps":"City PS Ratio",
             "competitor_stores":"Competitor Stores", "competitors_present":"Competitors",
@@ -868,6 +876,7 @@ elif page == "💡 Expansion Insights":
                          "City PS Ratio":      st.column_config.NumberColumn(format="%d"),
                          "State PS Ratio":     st.column_config.NumberColumn(format="%d"),
                          "BK Stores to Open":  st.column_config.NumberColumn(format="%d"),
+                         "Total Gap":          st.column_config.NumberColumn(format="%d"),
                          "Stores Should Have": st.column_config.NumberColumn(format="%d"),
                          "Distance (km)":      st.column_config.NumberColumn(format="%d"),
                      })
