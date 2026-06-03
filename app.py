@@ -739,6 +739,7 @@ elif page == "💡 Expansion Insights":
     city_agg["bk_stores_to_open"] = city_agg.apply(bk_share, axis=1)
     city_agg["stores_needed"]     = city_agg["stores_needed"].astype(int)
     city_agg["gap_stores"]        = city_agg["gap_stores"].fillna(0).astype(int)
+    city_agg["bk_share_pct"]     = city_agg["state"].apply(lambda s: "80%" if s in bk_states else "50%")
 
     # Adjacency tier
     bk_locs  = df[df["company"]=="Baazar Kolkata"].dropna(subset=["lat","lng"])
@@ -821,11 +822,13 @@ elif page == "💡 Expansion Insights":
             cols_ss = st.columns(min(len(state_summary_data), 4))
             for i, (_, sr) in enumerate(state_summary_data.iterrows()):
                 with cols_ss[i % len(cols_ss)]:
+                    bk_pct = "80%" if sr["state"] in bk_states else "50%"
                     st.metric(
                         label=f"🏙️ {sr['state']}",
                         value=f"{int(sr['proposed_stores'])} new BK stores",
                         delta=f"{int(sr['num_cities'])} cities | PS {int(sr['state_ps']):,}",
                         delta_color="off",
+                        help=f"BK share: {bk_pct} of total demand gap"
                     )
 
         # Bar chart top 10
@@ -843,7 +846,7 @@ elif page == "💡 Expansion Insights":
         st.subheader(f"📋 City Opportunities ({len(idf)} shown)")
         display_cols = {
             "city":"City", "state":"State", "district":"District", "tier":"Tier",
-            "bk_stores_to_open":"BK Stores to Open", "gap_stores":"Total Gap", "bk_stores":"BK Stores (now)",
+            "bk_stores_to_open":"BK Stores to Open", "gap_stores":"Total Gap", "bk_share_pct":"BK Share %", "bk_stores":"BK Stores (now)",
             "total_stores":"Total Stores", "stores_needed":"Stores Should Have",
             "pop_2026":"Pop 2026 (est.)", "city_ps":"City PS Ratio",
             "competitor_stores":"Competitor Stores", "competitors_present":"Competitors",
@@ -903,7 +906,7 @@ elif page == "💡 Expansion Insights":
                   <b>🏙️ {row["city"]}, {row["state"]}</b><br>
                   <b style='color:{color}'>{row["tier"]}</b><br>
                   <hr style='margin:4px 0'>
-                  🆕 <b>BK stores to open: {val}</b><br>
+                  🆕 <b>BK stores to open: {val}</b> (Total gap: {int(row.get("gap_stores",0))}, BK share: {row.get("bk_share_pct","?")})<br>
                   🏪 Existing: {int(row["total_stores"])} total (BK: {int(row["bk_stores"])})<br>
                   👥 Pop 2026: {pop_s}<br>
                   📐 City PS: {ps_s} | State PS: {int(row["state_ps"]):,}<br>
@@ -947,7 +950,10 @@ elif page == "💡 Expansion Insights":
         # BK existing stores per state
         bk_by_state  = focus_df[focus_df["company"]=="Baazar Kolkata"].groupby("state").size().reset_index(name="bk_stores_current")
         # Proposed new BK stores from city_agg
-        prop_by_state = city_agg.groupby("state")["bk_stores_to_open"].sum().reset_index(name="bk_stores_proposed")
+        prop_by_state = city_agg.groupby("state").agg(
+            bk_stores_proposed=("bk_stores_to_open","sum"),
+            total_gap=("gap_stores","sum"),
+        ).reset_index()
         # Competitor counts per company per state
         comp_counts = {}
         for comp in COMPETITORS:
@@ -958,7 +964,11 @@ elif page == "💡 Expansion Insights":
         state_tab_df = state_tab_df.merge(prop_by_state, on="state", how="left")
         state_tab_df["bk_stores_current"]  = state_tab_df["bk_stores_current"].fillna(0).astype(int)
         state_tab_df["bk_stores_proposed"] = state_tab_df["bk_stores_proposed"].fillna(0).astype(int)
+        state_tab_df["total_gap"]          = state_tab_df["total_gap"].fillna(0).astype(int)
         state_tab_df["bk_total_proposed"]  = state_tab_df["bk_stores_current"] + state_tab_df["bk_stores_proposed"]
+        state_tab_df["bk_share"]           = state_tab_df["bk_stores_current"].apply(
+            lambda x: "80%" if x > 0 else "50%"
+        )
         state_tab_df["status"] = state_tab_df["bk_stores_current"].apply(
             lambda x: "🟢 Existing Market" if x > 0 else "🔵 New Market"
         )
@@ -998,6 +1008,8 @@ elif page == "💡 Expansion Insights":
             "state":                  "State",
             "status":                 "Status",
             "bk_stores_current":      "BK Stores (now)",
+            "total_gap":              "Total Demand Gap",
+            "bk_share":               "BK Share %",
             "bk_stores_proposed":     "New BK Stores Proposed",
             "bk_total_proposed":      "BK Total (after)",
             "state_urban_pop_2026":   "Urban Pop 2026 (est.)",
@@ -1033,6 +1045,7 @@ elif page == "💡 Expansion Insights":
                          "Urban Pop 2026 (est.)":    st.column_config.NumberColumn(format="%d"),
                          "State PS Ratio":           st.column_config.NumberColumn(format="%d"),
                          "BK Stores (now)":          st.column_config.NumberColumn(format="%d"),
+                         "Total Demand Gap":         st.column_config.NumberColumn(format="%d"),
                          "New BK Stores Proposed":   st.column_config.NumberColumn(format="%d"),
                          "BK Total (after)":         st.column_config.NumberColumn(format="%d"),
                          "Total Competitor Stores":  st.column_config.NumberColumn(format="%d"),
