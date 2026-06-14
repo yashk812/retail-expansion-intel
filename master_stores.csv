@@ -65,7 +65,7 @@ Baazar Kolkata - Jajpur Road,755019,Jajpur,Jajpur,Odisha,Baazar Kolkata,20.95505
 Baazar Kolkata - Jalpaiguri,735101,Jalpaiguri,Jalpaiguri,West Bengal,Baazar Kolkata,26.524776,88.72397,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
 Baazar Kolkata - Jeypore,764001,Jeypore,Koraput,Odisha,Baazar Kolkata,18.863352,82.579133,84830.0,123400.0,fuzzy_broad,jeypur,2,61700.0
 Baazar Kolkata - Kalyani,741235,Kalyani,Nadia,West Bengal,Baazar Kolkata,22.978121,88.436708,100575.0,132796.0,exact,Kalyani,1,132796.0
-Baazar Kolkata - Kalyani Chakdah,741222,Kalyani,Nadia,West Bengal,Baazar Kolkata,22.97569,88.43504,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
+Baazar Kolkata - Kalyani Chakdah,741222,Kalyani,Nadia,West Bengal,Baazar Kolkata,23.066299,88.575857,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
 Baazar Kolkata - Kanchrapara,743145,Kanchrapara,North 24 Parganas,West Bengal,Baazar Kolkata,22.8919,88.5498,129576.0,171088.0,exact,Kanchrapara,6,28515.0
 Baazar Kolkata - Katwa,713130,Katwa,Birbhum,West Bengal,Baazar Kolkata,23.646555,88.12822,81615.0,107762.0,exact,Katwa,2,53881.0
 Baazar Kolkata - Katwa Station Bazar Road,713130,Katwa,Birbhum,West Bengal,Baazar Kolkata,23.643269,88.127048,81615.0,107762.0,exact,Katwa,2,53881.0
@@ -126,7 +126,7 @@ Baazar Kolkata - Tamluk,721636,Tamluk,Purba Medinipur,West Bengal,Baazar Kolkata
 "Baazar Kolkata - Triveni Mall, Serampore",712202,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.728477,88.352938,181842.0,240098.0,corrected,Serampore,6,40016.0
 Baazar Kolkata - Uluberia,711316,Uluberia,Howrah,West Bengal,Baazar Kolkata,22.4717,88.1077,235345.0,310742.0,exact,Uluberia,2,155371.0
 Baazar Kolkata - Uttar Dinajpur Islampur,733202,Islampur,Uttar Dinajpur,West Bengal,Baazar Kolkata,26.2587,88.1736,54340.0,71749.0,corrected,Islampur,1,71749.0
-Citykart Adil nagar Lucknow,226001,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.889515,80.953765,2817105.0,4319172.0,exact,Lucknow,58,74468.0
+Citykart Adil nagar Lucknow,226001,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.853705,80.948419,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 Citykart Agartala,799001,Agartala,West Tripura,Tripura,CityKart,23.829033,91.276726,400004.0,661458.0,exact,Agartala,11,60133.0
 Citykart Alambagh Lucknow,226005,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.815468,80.905066,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 Citykart Ambikapur,497001,Ambikapur,Surguja,Chhattisgarh,CityKart,23.12756,83.1891,121071.0,188076.0,exact,Ambikapur,3,62692.0
@@ -137,7 +137,7 @@ CityKart Aurangabad,824101,Aurangabad,Aurangabad,Bihar,CityKart,24.752936,84.373
 Citykart Aurangabad OLD GT Road,824101,Aurangabad,Aurangabad,Bihar,CityKart,24.738832,84.3844,102244.0,175564.0,exact,Aurangabad,5,35113.0
 Citykart Azamgarh,276001,Azamgarh,Azamgarh,Uttar Pradesh,CityKart,26.072219,83.185554,110983.0,170159.0,exact,Azamgarh,9,18907.0
 Citykart Bahraich,271801,Bahraich,Bahraich,Uttar Pradesh,CityKart,27.572239,81.600924,186223.0,285516.0,exact,Bahraich,5,57103.0
-Citykart Bakshi ka Talab Lucknow,227202,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.906414,80.939049,2817105.0,4319172.0,exact,Lucknow,58,74468.0
+Citykart Bakshi ka Talab Lucknow,227202,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.846694,80.946166,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 Citykart Balaganj Lucknow,226003,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.856763,81.008496,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 Citykart Balrampur,271201,Balrampur,Balrampur,Uttar Pradesh,CityKart,27.431701,82.183037,82488.0,126470.0,exact,Balrampur,3,42157.0
 Citykart Balua chowk Motihari,845401,Motihari,East Champaran,Bihar,CityKart,26.647759,84.901711,126158.0,216626.0,exact,Motihari,8,27078.0
@@ -290,12 +290,12 @@ Citykart Sultanpur District Hospital,228001,Sultanpur,Sultanpur,Uttar Pradesh,Ci
 Citykart Supaul,852131,Supaul,Supaul,Bihar,CityKart,26.116382,86.598983,65437.0,112362.0,exact,Supaul,6,18727.0
 Citykart Susuwahi,221011,Varanasi,Varanasi,Uttar Pradesh,CityKart,25.257171,82.980296,1198491.0,1837521.0,exact,Varanasi,24,76563.0
 Citykart Telibagh Lucknow,226002,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.78478,80.983929,2817105.0,4319172.0,exact,Lucknow,58,74468.0
-Citykart Tinsukia,786125,Tinsukia,Tinsukia,Assam,CityKart,27.523222,95.324404,116322.0,174484.0,exact,Tinsukia,3,58161.0
+Citykart Tinsukia,786125,Tinsukia,Tinsukia,Assam,CityKart,27.499146,95.367784,116322.0,174484.0,exact,Tinsukia,3,58161.0
 Citykart Udaipur,313002,Udaipur,Udaipur,Rajasthan,CityKart,24.561511,73.718219,451100.0,703823.0,exact,Udaipur,10,70382.0
 Citykart Udhampur,182101,Udhampur,Udhampur,Jammu and Kashmir,CityKart,32.923113,75.136264,84015.0,124741.0,exact,Udhampur,3,41580.0
 Citykart Unnao,209801,Unnao,Unnao,Uttar Pradesh,CityKart,26.543592,80.48243,177658.0,272384.0,exact,Unnao,4,68096.0
 Citykart Vrindavan Park Lucknow,226014,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.768415,80.945495,2817105.0,4319172.0,exact,Lucknow,58,74468.0
-YOUSTA-AMRAVATHI ROAD-GUNTUR,522001,Guntur,Guntur,Andhra Pradesh,Yousta,16.529534,80.466982,670073.0,919226.0,exact,Guntur,3,306409.0
+YOUSTA-AMRAVATHI ROAD-GUNTUR,522001,Guntur,Guntur,Andhra Pradesh,Yousta,16.289314,80.460464,670073.0,919226.0,exact,Guntur,3,306409.0
 YOUSTA-RAM NAGAR-ONGOLE,523001,Ongole,Prakasam,Andhra Pradesh,Yousta,15.500136,80.049415,204746.0,280876.0,exact,Ongole,4,70219.0
 YOUSTA-PVP SQUARE MALL-VIJAYWADA,520010,Vijayawada,Krishna,Andhra Pradesh,Yousta,16.500941,80.645214,,,no_match,,6,
 YOUSTA- ACHARYA NAGAR-VIJAYWADA,520010,Vijayawada,Krishna,Andhra Pradesh,Yousta,16.498955,80.65108,,,no_match,,6,
@@ -311,14 +311,14 @@ YOUSTA-SURYA TI MALL-BHILAI,490020,Bhilai,Durg,Chhattisgarh,Yousta,22.088428,82.
 YOUSTA-DWARKA,110075,Dwarka,Dwarka,Delhi,Yousta,28.5355,77.0521,,,no_match,,3,
 YOUSTA-MAPUSA-GOA,403507,Mapusa,North Goa,Goa,Yousta,15.595582,73.815021,39989.0,60159.0,exact,Mapusa,1,60159.0
 YOUSTA-PORVORIM-GOA,403501,Panaji,North Goa,Goa,Yousta,15.299323,74.123995,70991.0,106798.0,manual,Panaji,2,53399.0
-YOUSTA-AVADH KONTINA-SURAT,395007,Surat,Surat,Gujarat,Yousta,21.142529,72.786905,4467797.0,6138061.0,exact,Surat,27,227336.0
-YOUSTA-AASHIRWAD HIGH STREET MALL-SURAT,395007,Surat,Surat,Gujarat,Yousta,21.154893,72.773707,4467797.0,6138061.0,exact,Surat,27,227336.0
+YOUSTA-AVADH KONTINA-SURAT,395007,Surat,Surat,Gujarat,Yousta,21.159761,72.795912,4467797.0,6138061.0,exact,Surat,27,227336.0
+YOUSTA-AASHIRWAD HIGH STREET MALL-SURAT,395007,Surat,Surat,Gujarat,Yousta,21.159761,72.795912,4467797.0,6138061.0,exact,Surat,27,227336.0
 YOUSTA-RELIANCE REJOICE-JAMNAGAR,361140,Jamnagar,Jamnagar,Gujarat,Yousta,22.470276,70.07109,600943.0,825603.0,exact,Jamnagar,3,275201.0
 YOUSTA-THE BARODA CROSSWAY-VADODARA,390001,Vadodara,Vadodara,Gujarat,Yousta,22.288652,73.16945,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 YOUSTA-RELIANCE MALL-VADODARA,390020,Vadodara,Vadodara,Gujarat,Yousta,22.290342,73.164584,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 YOUSTA-UDHANA-SURAT,395002,Surat,Surat,Gujarat,Yousta,21.170411,72.850621,4467797.0,6138061.0,exact,Surat,27,227336.0
 YOSUTA-SOLARIS BUSINESS HUB AHMEDABAD,380013,Ahmedabad,Gandhinagar,Gujarat,Yousta,23.0225,72.5714,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
-YOSUTA-VR Mall SURAT,395007,Surat,Surat,Gujarat,Yousta,21.140466,72.753561,4467797.0,6138061.0,exact,Surat,27,227336.0
+YOSUTA-VR Mall SURAT,395007,Surat,Surat,Gujarat,Yousta,21.159761,72.795912,4467797.0,6138061.0,exact,Surat,27,227336.0
 "YOUSTA-AMBIENCE MALL, GURGAON",122002,Gurugram,Gurugram,Haryana,Yousta,28.464655,77.02957,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 YOUSTA-NUCLEUS MALL-RANCHI,834001,Ranchi,Ranchi,Jharkhand,Yousta,23.372122,85.338243,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
 YOUSTA-BISTUPUR-JAMSHEDPUR,831001,Jamshedpur,East Singhbhum,Jharkhand,Yousta,22.799003,86.178181,677350.0,1073882.0,exact,Jamshedpur,12,89490.0
@@ -327,12 +327,12 @@ YOUSTA-MORABADI,834008,Ranchi,Ranchi,Jharkhand,Yousta,23.394925,85.335123,107342
 YOUSTA-HRBR LAYOUT-BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.9716,77.6412,,,no_match,,76,
 YOUSTA-VIDYARANAYAPURA-BENGALURU,560097,Bengaluru,Bangalore Urban,Karnataka,Yousta,13.068498,77.55969,,,no_match,,76,
 YOSUTA-M5 MALL ELECTRONIC CITY PHASE II,560100,Bengaluru,Bangalore Urban,Karnataka,Yousta,13.0827,77.5906,,,no_match,,76,
-YOSUTA-BEGUR-BENGALURU,560068,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.835784,77.625087,,,no_match,,76,
+YOSUTA-BEGUR-BENGALURU,560068,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.889268,77.63991,,,no_match,,76,
 YOSUTA-BEARYS CITY CENTRE-SHIMOGA,577201,Shivamogga,Shivamogga,Karnataka,Yousta,13.933809,75.57313,322650.0,463886.0,corrected,Shimoga,2,231943.0
 YOSUTA-DEVANAGERE,577002,Davangere,Davangere,Karnataka,Yousta,14.454627,75.913147,434971.0,625374.0,fuzzy,davanagere,2,312687.0
 YOUSTA-RMZ GALLERIA MALL-BENGALURU,560064,Bengaluru,Bangalore Urban,Karnataka,Yousta,13.094364,77.594957,,,no_match,,76,
 YOUSTA-VIJAYA BANK LAYOUT-BENGALURU,560076,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.879609,77.612393,,,no_match,,76,
-YOUSTA-CITY CENTRE MALL-PUNE,575001,Mangaluru,Dakshina Kannada,Karnataka,Yousta,13.000698,74.8258,499487.0,718131.0,corrected,Mangalore,4,179533.0
+YOUSTA-CITY CENTRE MALL-PUNE,575001,Mangaluru,Dakshina Kannada,Karnataka,Yousta,12.856303,74.836092,499487.0,718131.0,corrected,Mangalore,4,179533.0
 YOUSTA-VIJAYPURA-BIJAPUR,586101,Vijayapura,Vijayapura,Karnataka,Yousta,16.83955,75.713666,34866.0,50128.0,exact,Vijayapura,3,16709.0
 YOUSTA-YELAHANKA-BENGALURU,560064,Bengaluru,Bangalore Urban,Karnataka,Yousta,13.101291,77.570602,,,no_match,,76,
 YOUSTA-KORAMANGALA-BENGALURU,560034,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.936391,77.616582,,,no_match,,76,
@@ -345,12 +345,12 @@ YOUSTA-NEXUS FIZZA MALL (FORUM MALL)-MANGALURU,575001,Mangaluru,Dakshina Kannada
 YOUSTA-VR MALL-BENGALURU,560048,Bengaluru,Bangalore Urban,Karnataka,Yousta,12.99534,77.696592,,,no_match,,76,
 YOUSTA-POLAYATHODU JUNCTION-KOLLAM,691021,Kollam,Kollam,Kerala,Yousta,8.875887,76.616051,348657.0,430777.0,exact,Kollam,3,143592.0
 YOUSTA-SANKRANTI-ETTUMANOOR,686016,Kottayam,Kottayam,Kerala,Yousta,9.633762,76.543384,55374.0,68416.0,exact,Kottayam,5,13683.0
-YOUSTA-SHOBHA CITY MALL-THRISSUR,680553,Thrissur,Thrissur,Kerala,Yousta,9.359848,76.587944,315957.0,390375.0,exact,Thrissur,8,48797.0
-YOUSTA-KALOOR (Cochin),682017,Kochi,Ernakulam,Kerala,Yousta,9.966457,76.2428,,,no_match,,15,
+YOUSTA-SHOBHA CITY MALL-THRISSUR,680553,Thrissur,Thrissur,Kerala,Yousta,10.551854,76.175476,315957.0,390375.0,exact,Thrissur,8,48797.0
+YOUSTA-KALOOR (Cochin),682017,Kochi,Ernakulam,Kerala,Yousta,9.993038,76.297146,,,no_match,,15,
 YOUSTA-FORUM CENTRE-EDAPPAL,679576,Edappal,Malappuram,Kerala,Yousta,10.805083,76.18745,32550.0,40217.0,exact,Edappal,2,20108.0
 YOUSTA-OASIS CENTRE-VAIKOM,686141,Vaikom,Kottayam,Kerala,Yousta,9.653661,76.551519,23234.0,28706.0,exact,Vaikom,1,28706.0
 YOUSTA-THODUPHUZHA,685584,Thodupuzha,Idukki,Kerala,Yousta,9.896105,76.707499,52045.0,64303.0,exact,Thodupuzha,2,32152.0
-YOUSTA- ELAMTHURUTHIYIL,686004,Kottayam,Kottayam,Kerala,Yousta,9.560174,76.756362,55374.0,68416.0,exact,Kottayam,5,13683.0
+YOUSTA- ELAMTHURUTHIYIL,686004,Kottayam,Kottayam,Kerala,Yousta,9.598601,76.528309,55374.0,68416.0,exact,Kottayam,5,13683.0
 YOUSTA-THRIPPUNITHURA,682301,Kochi,Ernakulam,Kerala,Yousta,9.933402,76.33738,,,no_match,,15,
 YOUSTA-PALASIA-INDORE,452001,Indore,Indore,Madhya Pradesh,Yousta,22.722861,75.886953,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
 YOSUTA-SAMADARIYA MALL-JABALPUR,482002,Jabalpur,Jabalpur,Madhya Pradesh,Yousta,23.166429,79.933027,9285.0,13928.0,fuzzy_broad,gcf jabalpur,6,2321.0
@@ -358,7 +358,7 @@ YOUSTA-ISHWARI WESTEND-INDORE,452012,Indore,Indore,Madhya Pradesh,Yousta,22.6679
 YOUSTA-HIGH STREET APOLLO-INDORE,452011,Indore,Indore,Madhya Pradesh,Yousta,22.739518,75.881287,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
 YOUSTA-AMBERNATH-THANE,421501,Kalyan,Thane,Maharashtra,Yousta,19.2403,73.1305,,,no_match,,3,
 YOUSTA-LONI KALBHOR-PUNE,412201,Pune,Ahmednagar,Maharashtra,Yousta,18.488438,74.06147,3124458.0,4192758.0,exact,Pune,46,91147.0
-YOUSTA-NALASOPARA-MUMBAI,401203,Palghar,Palghar,Maharashtra,Yousta,19.089788,72.827545,68930.0,92498.0,exact,Palghar,5,18500.0
+YOUSTA-NALASOPARA-MUMBAI,401203,Palghar,Palghar,Maharashtra,Yousta,19.416676,72.79837,68930.0,92498.0,exact,Palghar,5,18500.0
 YOUSTA-ELPRO CITY SQUARE MALL-PUNE,411033,Pune,Ahmednagar,Maharashtra,Yousta,18.627237,73.78216,3124458.0,4192758.0,exact,Pune,46,91147.0
 YOUSTA-AMANORA MALL-PUNE,411028,Pune,Ahmednagar,Maharashtra,Yousta,18.518132,73.935248,3124458.0,4192758.0,exact,Pune,46,91147.0
 YOUSTA-NEW PANVEL-NAVI MUMBAI,410206,Navi Mumbai,Raigad,Maharashtra,Yousta,19.030146,73.02022,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
@@ -374,8 +374,8 @@ YOUSTA-JALGAON,425001,Jalgaon,Jalgaon,Maharashtra,Yousta,20.993801,75.57462,4602
 YOUSTA-SANGLI,416416,Sangli,Sangli,Maharashtra,Yousta,16.8497,74.588,34321.0,46056.0,fuzzy_broad,sangole,2,23028.0
 YOUSTA-LE SKYLARK-PUNE,411052,Pune,Ahmednagar,Maharashtra,Yousta,18.483561,73.809755,3124458.0,4192758.0,exact,Pune,46,91147.0
 YOUSTA-ROURKELA,769015,Rourkela,Sundargarh,Odisha,Yousta,22.243149,84.82838,320040.0,465552.0,fuzzy,raurkela,3,155184.0
-YOUSTA- AMBALA-CHANDIGARH HYW-ZIRAKPUR,140603,Zirakpur,Mohali,Punjab,Yousta,30.73958,76.78427,95553.0,126165.0,exact,Zirakpur,8,15771.0
-YOUSTA-WESTEND MALL (WAVE MALL)-LUDHIANA,141001,Ludhiana,Ludhiana,Punjab,Yousta,30.901,75.8573,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
+YOUSTA- AMBALA-CHANDIGARH HYW-ZIRAKPUR,140603,Zirakpur,Mohali,Punjab,Yousta,30.64255,76.817336,95553.0,126165.0,exact,Zirakpur,8,15771.0
+YOUSTA-WESTEND MALL (WAVE MALL)-LUDHIANA,141001,Ludhiana,Ludhiana,Punjab,Yousta,30.905888,75.835965,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 YOUSTA-DALHOUSIE-PATHANKOT,145001,Pathankot,Pathankot,Punjab,Yousta,32.273178,75.653354,156306.0,206381.0,exact,Pathankot,5,41276.0
 YOUSTA-JALANDHAR,144001,Jalandhar,Jalandhar,Punjab,Yousta,31.314713,75.58295,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 YOUSTA-AMBEDKAR CIRCLE- ALWAR,301001,Alwar,Alwar,Rajasthan,Yousta,27.5673,75.6493,322568.0,503283.0,exact,Alwar,1,503283.0
@@ -386,7 +386,7 @@ YOUSTA -TRICHY,620013,Tiruchirappalli,Tiruchirappalli,Tamil Nadu,Yousta,10.7905,
 YOUSTA-AEROHUB MALL- CHENNAI,600027,Chennai,Chennai,Tamil Nadu,Yousta,13.0827,80.2707,4646732.0,6153484.0,exact,Chennai,26,236672.0
 YOUSTA-VENGIKKAL-TIRUVANNAMALAI,606601,Tiruvannamalai,Tiruvannamalai,Tamil Nadu,Yousta,12.250337,79.071011,145278.0,192386.0,exact,Tiruvannamalai,1,192386.0
 YOSUTA-PROZONE MALL- COIMBATORE,641035,Coimbatore,Coimbatore,Tamil Nadu,Yousta,11.085279,77.016602,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
-YOSUTA-CROWN PLAZA-VELACHERI,600042,Chennai,Chennai,Tamil Nadu,Yousta,12.933528,80.203902,4646732.0,6153484.0,exact,Chennai,26,236672.0
+YOSUTA-CROWN PLAZA-VELACHERI,600042,Chennai,Chennai,Tamil Nadu,Yousta,12.97554,80.220644,4646732.0,6153484.0,exact,Chennai,26,236672.0
 YOSUTA-EXPRESS AVENUE-CHENNAI,600014,Chennai,Chennai,Tamil Nadu,Yousta,13.057486,80.260947,4646732.0,6153484.0,exact,Chennai,26,236672.0
 YOSUTA-V SQUARE AMBATTUR,600037,Chennai,Chennai,Tamil Nadu,Yousta,13.084051,80.170173,4646732.0,6153484.0,exact,Chennai,26,236672.0
 YOUSTA-BESANT NAGAR -CHENNAI,600020,Chennai,Chennai,Tamil Nadu,Yousta,13.001579,80.260853,4646732.0,6153484.0,exact,Chennai,26,236672.0
@@ -397,14 +397,14 @@ YOUSTA-SARATH CITY CAPITAL MALL-HYDERABAD,500084,Hyderabad,Hyderabad,Telangana,Y
 YOUSTA-L&T PREMIA MALL-HYDERABAD,500085,Hyderabad,Hyderabad,Telangana,Yousta,17.436005,78.401426,,,no_match,,71,
 YOUSTA-KOMPALLY-HYDERABAD,500014,Hyderabad,Hyderabad,Telangana,Yousta,17.528187,78.414635,,,no_match,,71,
 YOUSTA-NAGOLE-HYDERABAD,500068,Hyderabad,Hyderabad,Telangana,Yousta,17.326958,78.605286,,,no_match,,71,
-YOUTSA-CROWN MALL-LUCKNOW,226001,Lucknow,Lucknow,Uttar Pradesh,Yousta,26.874661,81.024044,2817105.0,4319172.0,exact,Lucknow,58,74468.0
+YOUTSA-CROWN MALL-LUCKNOW,226001,Lucknow,Lucknow,Uttar Pradesh,Yousta,26.853705,80.948419,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 YOUSTA-KAPOORTALA-LUCKNOW,226024,Lucknow,Lucknow,Uttar Pradesh,Yousta,26.882823,80.947168,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 YOUSTA-CIVIL LINES-PRAYAGRAJ,211001,Prayagraj,Prayagraj,Uttar Pradesh,Yousta,25.45894,81.835709,1168385.0,1791363.0,corrected,Allahabad,12,149280.0
 YOUSTA-AGRA,282002,Agra,Agra,Uttar Pradesh,Yousta,27.191105,77.97598,1585704.0,2431194.0,corrected,Agra,15,162080.0
 YOUSTA-INDIA EXPO - GREATER NOIDA,201310,Greater Noida,Greater Noida,Uttar Pradesh,Yousta,28.457285,77.4993,102054.0,156469.0,exact,Greater Noida,8,19559.0
-YOUSTA-RAJ NAGAR EXTENSION-GHAZIABAD,201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Yousta,28.702955,77.43367,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
-YOUSTA-MALL OF DEHRADUN-DEHRADUN,240001,Dehradun,Dehradun,Uttarakhand,Yousta,30.071225,78.276852,574840.0,911361.0,exact,Dehradun,12,75947.0
-YOUSTA-CHAKRATA ROAD-DEHRADUN,248001,Dehradun,Dehradun,Uttarakhand,Yousta,30.345949,77.950673,574840.0,911361.0,exact,Dehradun,12,75947.0
+YOUSTA-RAJ NAGAR EXTENSION-GHAZIABAD,201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Yousta,28.66437,77.438643,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
+YOUSTA-MALL OF DEHRADUN-DEHRADUN,240001,Dehradun,Dehradun,Uttarakhand,Yousta,30.316495,78.032192,574840.0,911361.0,exact,Dehradun,12,75947.0
+YOUSTA-CHAKRATA ROAD-DEHRADUN,248001,Dehradun,Dehradun,Uttarakhand,Yousta,30.334582,78.053781,574840.0,911361.0,exact,Dehradun,12,75947.0
 YOUSTA-AVANI RIVERSIDE MALL-HOWRAH,711102,Howrah,Howrah,West Bengal,Yousta,22.56534,88.319777,1077075.0,1422134.0,corrected,Haora,16,
 YOUSTA-PRM CITY MALL-MALDA,732103,Malda,Malda,West Bengal,Yousta,24.981017,88.134495,31920.0,42146.0,fuzzy_broad,matla,6,7024.0
 YOUSTA-SALKIA-HOWRAH,711106,Howrah,Howrah,West Bengal,Yousta,22.598167,88.341558,1077075.0,1422134.0,corrected,Haora,16,
@@ -412,7 +412,7 @@ YOUSTA-MADHYAMGRAM-KOLKATA,700129,Kolkata,North 24 Parganas,West Bengal,Yousta,2
 YOUSTA-VEGA CIRCLE MALL-SILIGURI,734004,Siliguri,Darjeeling,West Bengal,Yousta,26.751223,88.43226,294546.0,388909.0,corrected,Siliguri (M Corp.),11,
 YOUSTA-GOWALA PATTI-COOCH BEHAR,736101,Cooch Behar,Cooch Behar,West Bengal,Yousta,26.325,89.44,77935.0,102903.0,corrected,Koch Bihar,8,12863.0
 YOSUTA-THAKURPUKUR-BEHALA,700063,Kolkata,Kolkata,West Bengal,Yousta,22.4683,88.3143,41802.0,55194.0,exact,Diamond Harbour,4,13798.0
-SB-AXIS MALL (02),700107,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.5597,88.4708,4496694.0,5937285.0,exact,Kolkata,73,81333.0
+SB-AXIS MALL (02),700107,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.54094,88.368135,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 EB-BALASORE,756001,Balasore,Balasore,Odisha,StyleBaazar,21.498885,86.931274,144373.0,210015.0,corrected,Baleshwar,1,
 SB-RAI BARELI ROAD,226029,Lucknow,Lucknow,Uttar Pradesh,StyleBaazar,26.896278,80.96004,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 SB-BAGHAJATIN,700047,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.4652,88.378639,1077075.0,11201.0,state_median,[West Bengal median],1,
@@ -474,7 +474,7 @@ EXPRESS BAAZAR RAMPURHAT,731224,Rampurhat,Birbhum,West Bengal,StyleBaazar,23.808
 EXPRESS BAAZAR BRAHMAPUR,760001,Phulbani,Kandhamal,Odisha,StyleBaazar,19.310761,84.791008,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 EXPRESS BAAZAR KANCHRAPARA,743145,Kanchrapara,North 24 Parganas,West Bengal,StyleBaazar,22.8919,88.5498,129576.0,171088.0,exact,Kanchrapara,6,28515.0
 STYLE BAAZAR CUTTACK (03),753001,Cuttack,Cuttack,Odisha,StyleBaazar,20.481817,85.87235,610189.0,887623.0,exact,Cuttack,16,55476.0
-STYLE BAAZAR DHENKENAL,759001,Dhenkanal,Dhenkanal,Odisha,StyleBaazar,20.640307,85.617236,67414.0,98065.0,exact,Dhenkanal,4,24516.0
+STYLE BAAZAR DHENKENAL,759001,Dhenkanal,Dhenkanal,Odisha,StyleBaazar,20.650346,85.597222,67414.0,98065.0,exact,Dhenkanal,4,24516.0
 STYLE BAAZAR GUNUPUR,765022,Phulbani,Kandhamal,Odisha,StyleBaazar,19.6833,84.0167,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 STYLE BAAZAR KHANDAGIRI,751030,Khurda,Khurda,Odisha,StyleBaazar,20.253935,85.787916,46205.0,67213.0,fuzzy_broad,khordha,1,67213.0
 STYLE BAAZAR KHURDA,752055,Puri,Puri,Odisha,StyleBaazar,20.186739,85.620577,200564.0,291754.0,exact,Puri,5,58351.0
@@ -503,11 +503,11 @@ STYLE BAAZAR SUNABEDA,764036,Semiliguda,Koraput,Odisha,StyleBaazar,19.2667,84.33
 STYLE BAAZAR UDAIPUR,799120,Gomati,Gomati,Tripura,StyleBaazar,23.540003,91.49445,32758.0,21473.0,state_median,[Tripura median],1,
 STYLE BAAZAR AGARTALA,799001,Agartala,Agartala,Tripura,StyleBaazar,23.829965,91.282487,400004.0,661458.0,exact,Agartala,11,60133.0
 STYLE BAAZAR ITANAGAR,791111,Itanagar,Itanagar,Arunachal Pradesh,StyleBaazar,27.09938,93.62692,59490.0,94316.0,exact,Itanagar,4,23579.0
-STYLE BAAZAR RAMNAGAR,845106,Motihari,East Champaran,Bihar,StyleBaazar,27.165321,84.323166,48411.0,83127.0,exact,Ramnagar,1,83127.0
+STYLE BAAZAR RAMNAGAR,845106,Motihari,East Champaran,Bihar,StyleBaazar,26.643848,84.904034,48411.0,83127.0,exact,Ramnagar,1,83127.0
 STYLE BAAZAR MADHUBANI,847211,Sitamarhi,Sitamarhi,Bihar,StyleBaazar,26.349949,86.071823,67818.0,116451.0,exact,Sitamarhi,12,9704.0
 STYLE BAAZAR DARBHANGA,846004,Darbhanga,Darbhanga,Bihar,StyleBaazar,26.157405,85.900438,296039.0,508330.0,exact,Darbhanga,8,63541.0
 STYLE BAAZAR BHIKHANA PAHARI,800004,Patna,Patna,Bihar,StyleBaazar,25.615081,85.167872,1684297.0,2892112.0,corrected,Patna,48,60252.0
-STYLE BAAZAR FORBESGANJ,854318,Katihar,Katihar,Bihar,StyleBaazar,26.301403,87.260365,240838.0,413544.0,exact,Katihar,6,68924.0
+STYLE BAAZAR FORBESGANJ,854318,Katihar,Katihar,Bihar,StyleBaazar,25.639543,87.741884,240838.0,413544.0,exact,Katihar,6,68924.0
 STYLE BAAZAR ALAMNAGAR,852210,Supaul,Supaul,Bihar,StyleBaazar,26.117449,86.601064,65437.0,112362.0,exact,Supaul,6,18727.0
 STYLE BAAZAR SUPAUL,852131,Supaul,Supaul,Bihar,StyleBaazar,26.116383,86.59898,65437.0,112362.0,exact,Supaul,6,18727.0
 STYLE BAAZAR CHAKIA,845412,Chakia,Buxar,Bihar,StyleBaazar,26.15,84.95,20686.0,35520.0,exact,Chakia,1,35520.0
@@ -518,7 +518,7 @@ STYLE BAAZAR GOPALGANJ,841428,Gopalganj,Gopalganj,Bihar,StyleBaazar,26.492448,84
 STYLE BAAZAR GHORASAHAN,854303,Ghorasahan,East Champaran,Bihar,StyleBaazar,26.725596,85.16128,,68914.0,district_fallback,[East Champaran district est.],1,
 STYLE BAAZAR MADHEPURA,852113,Madhepura,Madhepura,Bihar,StyleBaazar,25.910406,86.786459,54472.0,93534.0,exact,Madhepura,6,15589.0
 STYLE BAAZAR KISHANGANJ,855107,Kishanganj,Kishanganj,Bihar,StyleBaazar,26.096752,87.94531,105782.0,181639.0,corrected,Kishanganj,2,90820.0
-STYLE BAAZAR MOTIHARI,845401,Motihari,Motihari,Bihar,StyleBaazar,26.648436,84.929723,126158.0,216626.0,exact,Motihari,8,27078.0
+STYLE BAAZAR MOTIHARI,845401,Motihari,Motihari,Bihar,StyleBaazar,26.646962,84.908894,126158.0,216626.0,exact,Motihari,8,27078.0
 STYLE BAAZAR PUPRI,843320,Pupri,Sitamarhi,Bihar,StyleBaazar,26.487885,85.71787,67818.0,40888.0,district_avg,[Sitamarhi avg],1,
 STYLE BAAZAR PIRO,802207,Piro,Bhojpur,Bihar,StyleBaazar,25.201756,85.52006,33785.0,58012.0,exact,Piro,1,58012.0
 STYLE BAAZAR PHULWARI SHARIFF,801505,Phulwari Sharif,Patna,Bihar,StyleBaazar,25.577944,85.07075,81740.0,140356.0,exact,Phulwari Sharif,1,140356.0
@@ -578,7 +578,7 @@ STYLE BAAZAR PAKUR,816107,Pakur,Pakur,Jharkhand,StyleBaazar,24.636851,87.849484,
 STYLE BAAZAR RAMGARH,829122,Ramgarh,Ramgarh,Jharkhand,StyleBaazar,23.630568,85.51712,88781.0,140755.0,manual_gap_fix,Ramgarh Cantonment,3,
 STYLE BAAZAR RANCHI,834008,Ranchi,Ranchi,Jharkhand,StyleBaazar,23.367311,85.324944,1162472.0,1701830.0,corrected,Ranchi,1,
 STYLE BAAZAR RATUA,732205,Ratua,Malda,West Bengal,StyleBaazar,26.768371,88.379503,31920.0,24661.0,district_avg,[Malda avg],1,
-STYLE BAAZAR RANAGHAT,741201,Dibrugarh,Dibrugarh,Assam,StyleBaazar,23.174318,88.568106,139565.0,209349.0,exact,Dibrugarh,6,34892.0
+STYLE BAAZAR RANAGHAT,741201,Dibrugarh,Dibrugarh,Assam,StyleBaazar,27.470545,94.912463,139565.0,209349.0,exact,Dibrugarh,6,34892.0
 STYLE BAAZAR RAGHUNATHGANJ,742225,Basudebpur,Murshidabad,West Bengal,StyleBaazar,24.46032,88.06094,13091.0,17285.0,exact,Basudebpur,1,17285.0
 STYLE BAAZAR PAKUAHAT,732138,Pakuahat,Birbhum,West Bengal,StyleBaazar,25.15883,88.351808,6473.0,8547.0,fuzzy_broad,panuhat,1,8547.0
 STYLE BAAZAR NALHATI,731220,Nalhati,Birbhum,West Bengal,StyleBaazar,24.3012,87.8713,67864.0,89605.0,manual_gap_fix,Suri,1,
@@ -730,7 +730,7 @@ V2 Retail Ltd. (HC01),492001,Raipur,Durg,Chhattisgarh,V2 Retail,21.217051,81.656
 V2 Retail Ltd. (HC02),497001,Ambikapur,Surguja,Chhattisgarh,V2 Retail,23.12756,83.1891,121071.0,188076.0,exact,Ambikapur,3,62692.0
 V2 Retail Ltd. (HC03),495001,Bilaspur,Bilaspur,Chhattisgarh,V2 Retail,22.079811,82.144787,16129.0,25055.0,fuzzy_broad,bijapur,7,3579.0
 V2 Retail Ltd. (HC07),493445,Mahasamund,Mahasamund,Chhattisgarh,V2 Retail,21.10351,82.093027,54413.0,84527.0,exact,Mahasamund,1,84527.0
-V2 Retail Ltd. (HD22),110037,Delhi,South West Delhi,Delhi,V2 Retail,28.526324,77.084937,,,no_match,,4,
+V2 Retail Ltd. (HD22),110037,Delhi,South West Delhi,Delhi,V2 Retail,28.544148,77.115981,,,no_match,,4,
 V2 Retail Ltd. (HD24),110094,Bhajanpura,New Delhi,Delhi,V2 Retail,28.700226,77.259026,,,no_match,,2,
 V2 Retail Ltd. (HD25),110034,Ranibagh,North West Delhi,Delhi,V2 Retail,28.625855,77.087227,,,no_match,,2,
 V2 Retail Ltd. (HD26),110037,Delhi,South West Delhi,Delhi,V2 Retail,28.54976,77.131044,,,no_match,,4,
@@ -739,7 +739,7 @@ V2 Retail Ltd. (HD28),110045,New Delhi,New Delhi,Delhi,V2 Retail,28.603271,77.08
 V2 Retail Ltd. (HD29),110043,Najafgarh,South West Delhi,Delhi,V2 Retail,28.607001,76.985215,,,no_match,,2,
 V2 Retail Ltd. (HD30),110086,Delhi,West Delhi,Delhi,V2 Retail,28.634522,77.069007,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
 V2 Retail Ltd. (HD31),110084,Burari,North Delhi,Delhi,V2 Retail,28.769798,77.182639,146190.0,197042.0,exact,Burari,3,65681.0
-V2 Retail Ltd. (HD32),110086,Delhi,West Delhi,Delhi,V2 Retail,28.735119,77.00566,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
+V2 Retail Ltd. (HD32),110086,Delhi,West Delhi,Delhi,V2 Retail,28.701985,77.078869,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
 V2 Retail Ltd. (HD34),110059,New Delhi,New Delhi,Delhi,V2 Retail,28.620113,77.042245,,,no_match,,34,
 V2 Retail Ltd. (HG10),403001,Panaji,North Goa,Goa,V2 Retail,15.499877,73.832286,70991.0,106798.0,exact,Panaji,1,106798.0
 V2 Retail Ltd. (HG11),403504,Bicholim,North Goa,Goa,V2 Retail,15.591179,73.946279,16986.0,25554.0,exact,Bicholim,3,8518.0
@@ -788,7 +788,7 @@ V2 Retail Ltd. (HK17),560026,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,12.95
 V2 Retail Ltd. (HK18),581110,Haveri,Haveri,Karnataka,V2 Retail,14.838641,75.62916,67102.0,96475.0,exact,Haveri,1,96475.0
 V2 Retail Ltd. (HK19),587103,Bagalkot,Bagalkot,Karnataka,V2 Retail,16.174392,75.659534,,,no_match,,1,
 V2 Retail Ltd. (HK20),583231,Koppal,Koppal,Karnataka,V2 Retail,15.552727,76.570201,70698.0,101645.0,exact,Koppal,1,101645.0
-V2 Retail Ltd. (HK21),560016,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,13.0827,77.6054,,,no_match,,76,
+V2 Retail Ltd. (HK21),560016,Bengaluru,Bangalore Urban,Karnataka,V2 Retail,13.016593,77.680397,,,no_match,,76,
 V2 Retail Ltd. (HK22),570001,Mysuru,Mysore,Karnataka,V2 Retail,12.288829,76.649284,,,no_match,,1,
 V2 Retail Ltd. (HK23),583101,Ballari,Ballari,Karnataka,V2 Retail,15.157005,76.946173,7765.0,11164.0,fuzzy_broad,mallar,1,11164.0
 V2 Retail Ltd. (HK24),577101,Chikkamagaluru,Chikkamagaluru,Karnataka,V2 Retail,13.431738,75.915965,118401.0,170229.0,fuzzy,chikmagalur,1,170229.0
@@ -801,15 +801,15 @@ V2 Retail Ltd. (HL05),384265,Patan,Patan,Gujarat,V2 Retail,23.851343,72.12237,13
 V2 Retail Ltd. (HL06),394210,Surat,Surat,Gujarat,V2 Retail,21.155353,72.832233,4467797.0,6138061.0,exact,Surat,27,227336.0
 V2 Retail Ltd. (HL08),394601,Bardoli,Surat,Gujarat,V2 Retail,21.143068,73.09867,60821.0,83559.0,exact,Bardoli,2,41780.0
 V2 Retail Ltd. (HM21),482001,Jabalpur,Jabalpur,Madhya Pradesh,V2 Retail,23.168877,79.932144,9285.0,13928.0,fuzzy_broad,gcf jabalpur,6,2321.0
-V2 Retail Ltd. (HM22),486001,Rewa,Rewa,Madhya Pradesh,V2 Retail,24.512482,81.431389,235654.0,353483.0,exact,Rewa,5,70697.0
+V2 Retail Ltd. (HM22),486001,Rewa,Rewa,Madhya Pradesh,V2 Retail,24.536248,81.303695,235654.0,353483.0,exact,Rewa,5,70697.0
 V2 Retail Ltd. (HM23),461331,Harda,Harda,Madhya Pradesh,V2 Retail,22.342615,77.089704,74268.0,111403.0,exact,Harda,1,111403.0
 V2 Retail Ltd. (HM24),462042,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.171522,77.41855,1798218.0,2697340.0,exact,Bhopal,12,224778.0
-V2 Retail Ltd. (HM25),462018,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.30314,77.39854,1798218.0,2697340.0,exact,Bhopal,12,224778.0
+V2 Retail Ltd. (HM25),462018,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.259933,77.412615,1798218.0,2697340.0,exact,Bhopal,12,224778.0
 V2 Retail Ltd. (HM26),450331,Khargone,Khargone,Madhya Pradesh,V2 Retail,22.686586,75.902969,116150.0,174226.0,exact,Khargone,3,58075.0
-V2 Retail Ltd. (HM28),480001,Chhindwara,Chhindwara,Madhya Pradesh,V2 Retail,22.0667,78.6333,175052.0,262579.0,exact,Chhindwara,3,87526.0
+V2 Retail Ltd. (HM28),480001,Chhindwara,Chhindwara,Madhya Pradesh,V2 Retail,22.057437,78.938173,175052.0,262579.0,exact,Chhindwara,3,87526.0
 V2 Retail Ltd. (HM29),461001,Hoshangabad,Hoshangabad,Madhya Pradesh,V2 Retail,22.738072,75.835674,117988.0,176983.0,exact,Hoshangabad,1,176983.0
 V2 Retail Ltd. (HM30),483501,Katni,Katni,Madhya Pradesh,V2 Retail,23.903328,80.81242,19040.0,28560.0,fuzzy_broad,katangi,1,28560.0
-V2 Retail Ltd. (HM31),474002,Gwalior,Gwalior,Madhya Pradesh,V2 Retail,26.13598,78.21271,1054420.0,1581638.0,exact,Gwalior,7,225948.0
+V2 Retail Ltd. (HM31),474002,Gwalior,Gwalior,Madhya Pradesh,V2 Retail,26.20997,78.182093,1054420.0,1581638.0,exact,Gwalior,7,225948.0
 V2 Retail Ltd. (HM32),487001,Narsinghpur,Narsinghpur,Madhya Pradesh,V2 Retail,22.948505,79.192764,59966.0,89949.0,fuzzy_broad,narsimhapur,1,89949.0
 V2 Retail Ltd. (HM33),460001,Betul,Betul,Madhya Pradesh,V2 Retail,21.906494,77.903457,103330.0,154996.0,exact,Betul,1,154996.0
 V2 Retail Ltd. (HM35),462026,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.1734,77.4165,1798218.0,2697340.0,exact,Bhopal,12,224778.0
@@ -818,7 +818,7 @@ V2 Retail Ltd. (HM37),455001,Dewas,Dewas,Madhya Pradesh,V2 Retail,22.968109,76.0
 V2 Retail Ltd. (HM38),466001,Sehore,Sehore,Madhya Pradesh,V2 Retail,23.200047,77.081345,109118.0,163678.0,exact,Sehore,2,81839.0
 V2 Retail Ltd. (HM39),470004,Sagar,Sagar,Madhya Pradesh,V2 Retail,23.862495,78.7851,274556.0,411836.0,exact,Sagar,2,205918.0
 V2 Retail Ltd. (HM41),482001,Jabalpur,Jabalpur,Madhya Pradesh,V2 Retail,23.153004,79.913168,9285.0,13928.0,fuzzy_broad,gcf jabalpur,6,2321.0
-V2 Retail Ltd. (HM42),485002,Satna,Satna,Madhya Pradesh,V2 Retail,24.348637,80.60148,282977.0,424468.0,exact,Satna,3,141489.0
+V2 Retail Ltd. (HM42),485002,Satna,Satna,Madhya Pradesh,V2 Retail,24.600507,80.832243,282977.0,424468.0,exact,Satna,3,141489.0
 V2 Retail Ltd. (HM44),456006,Ujjain,Ujjain,Madhya Pradesh,V2 Retail,23.180586,75.788483,515215.0,772826.0,exact,Ujjain,2,386413.0
 V2 Retail Ltd. (HM46),486886,Singrauli,Singrauli,Madhya Pradesh,V2 Retail,24.5341,82.6697,220257.0,330387.0,exact,Singrauli,2,165194.0
 V2 Retail Ltd. (HM47),462022,Bhopal,Bhopal,Madhya Pradesh,V2 Retail,23.250584,77.501811,1798218.0,2697340.0,exact,Bhopal,12,224778.0
@@ -845,7 +845,7 @@ V2 Retail Ltd. (HN34),783301,Dhubri,Dhubri,Assam,V2 Retail,26.017,89.983,63388.0
 V2 Retail Ltd. (HN35),782435,Hojai,Hojai,Assam,V2 Retail,26.005837,92.856275,36638.0,54957.0,exact,Hojai,1,54957.0
 V2 Retail Ltd. (HN36),782001,Nagaon,Nagaon,Assam,V2 Retail,26.354266,92.696724,121628.0,182443.0,exact,Nagaon,6,30407.0
 V2 Retail Ltd. (HN39),784176,Biswanath Chariali,Biswanath,Assam,V2 Retail,26.727024,93.147029,19145.0,28718.0,exact,Biswanath Chariali,2,14359.0
-V2 Retail Ltd. (HN40),783121,Goalpara,Goalpara,Assam,V2 Retail,26.147707,90.612895,53430.0,80145.0,corrected,Goalpara,2,40072.0
+V2 Retail Ltd. (HN40),783121,Goalpara,Goalpara,Assam,V2 Retail,26.163901,90.625346,53430.0,80145.0,corrected,Goalpara,2,40072.0
 V2 Retail Ltd. (HN42),787001,Lakhimpur,Lakhimpur,Assam,V2 Retail,27.237362,94.10649,15633.0,23450.0,fuzzy,lakhipur,1,23450.0
 V2 Retail Ltd. (HN43),795001,Imphal,Imphal West,Manipur,V2 Retail,24.807528,93.936104,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),4,
 V2 Retail Ltd. (HN44),785621,Golaghat,Golaghat,Assam,V2 Retail,26.523569,93.972538,41989.0,62984.0,exact,Golaghat,3,20995.0
@@ -857,7 +857,7 @@ V2 Retail Ltd. (HN60),797112,Dimapur,Dimapur,Nagaland,V2 Retail,25.90906,93.7261
 V2 Retail Ltd. (HN80),795003,Imphal,Imphal West,Manipur,V2 Retail,24.751098,93.92838,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),1,
 V2 Retail Ltd. (HO08),760001,Phulbani,Kandhamal,Odisha,V2 Retail,19.311511,84.790892,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 V2 Retail Ltd. (HO09),753012,Cuttack,Cuttack,Odisha,V2 Retail,20.4656,85.9016,610189.0,887623.0,exact,Cuttack,16,55476.0
-V2 Retail Ltd. (HO10),751013,Bhubaneswar,Khordha,Odisha,V2 Retail,20.29886,85.80587,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
+V2 Retail Ltd. (HO10),751013,Bhubaneswar,Khordha,Odisha,V2 Retail,20.3081,85.825586,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 V2 Retail Ltd. (HO11),764001,Jeypore,Koraput,Odisha,V2 Retail,18.863352,82.579133,84830.0,123400.0,fuzzy_broad,jeypur,2,61700.0
 V2 Retail Ltd. (HO12),751019,Bhubaneswar,Khordha,Odisha,V2 Retail,20.330077,85.807458,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 V2 Retail Ltd. (HO13),751024,Bhubaneswar,Khordha,Odisha,V2 Retail,20.363914,85.797414,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
@@ -891,8 +891,8 @@ V2 Retail Ltd. (HO49),767002,Balangir,Balangir,Odisha,V2 Retail,20.704376,83.488
 V2 Retail Ltd. (HO51),761110,Aska,Ganjam,Odisha,V2 Retail,22.0432,86.6234,21428.0,31171.0,fuzzy,asika,2,15586.0
 V2 Retail Ltd. (HP01),140001,Rupnagar,Rupnagar,Punjab,V2 Retail,30.960594,76.51116,56038.0,73991.0,exact,Rupnagar,2,36996.0
 V2 Retail Ltd. (HP02),143521,Gurdaspur,Gurdaspur,Punjab,V2 Retail,32.034251,75.396248,77928.0,102894.0,exact,Gurdaspur,3,34298.0
-V2 Retail Ltd. (HP03),145001,Pathankot,Pathankot,Punjab,V2 Retail,32.290867,75.755183,156306.0,206381.0,exact,Pathankot,5,41276.0
-V2 Retail Ltd. (HP04),141008,Ludhiana,Ludhiana,Punjab,V2 Retail,31.227337,75.50963,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
+V2 Retail Ltd. (HP03),145001,Pathankot,Pathankot,Punjab,V2 Retail,32.273335,75.652207,156306.0,206381.0,exact,Pathankot,5,41276.0
+V2 Retail Ltd. (HP04),141008,Ludhiana,Ludhiana,Punjab,V2 Retail,30.957965,75.748778,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 V2 Retail Ltd. (HP05),140603,Zirakpur,Mohali,Punjab,V2 Retail,30.628692,76.823735,95553.0,126165.0,exact,Zirakpur,8,15771.0
 V2 Retail Ltd. (HP06),143505,Batala,Batala,Punjab,V2 Retail,31.333054,75.57695,158621.0,209438.0,exact,Batala,2,104719.0
 V2 Retail Ltd. (HP07),140307,Mohali,Mohali,Punjab,V2 Retail,30.69562,76.676316,,,no_match,,4,
@@ -905,7 +905,7 @@ V2 Retail Ltd. (HP13),143401,Tarn Taran,Tarn Taran,Punjab,V2 Retail,31.468115,74
 V2 Retail Ltd. (HP14),152116,Abohar,Fazilka,Punjab,V2 Retail,30.146703,74.200861,145302.0,191852.0,exact,Abohar,1,191852.0
 V2 Retail Ltd. (HP16),140406,Sirhind,Fatehgarh Sahib,Punjab,V2 Retail,31.042658,75.839836,,,no_match,,1,
 V2 Retail Ltd. (HP17),151001,Bathinda,Bathinda,Punjab,V2 Retail,30.216378,74.934341,285788.0,377345.0,exact,Bathinda,3,125782.0
-V2 Retail Ltd. (HP18),160104,Zirakpur,Zirakpur,Punjab,V2 Retail,30.656299,76.857007,95553.0,126165.0,exact,Zirakpur,8,15771.0
+V2 Retail Ltd. (HP18),160104,Zirakpur,Zirakpur,Punjab,V2 Retail,30.64255,76.817336,95553.0,126165.0,exact,Zirakpur,8,15771.0
 V2 Retail Ltd. (HR17),311001,Bhilwara,Bhilwara,Rajasthan,V2 Retail,25.35,74.63,359483.0,560879.0,exact,Bhilwara,3,186960.0
 V2 Retail Ltd. (HR18),305801,Beawar,Ajmer,Rajasthan,V2 Retail,26.469336,74.63997,151152.0,235833.0,exact,Beawar,2,117916.0
 V2 Retail Ltd. (HR19),312001,Chittorgarh,Chittorgarh,Rajasthan,V2 Retail,24.888468,74.623604,116406.0,181621.0,fuzzy,chittaurgarh,3,60540.0
@@ -914,7 +914,7 @@ V2 Retail Ltd. (HR22),302020,Jaipur,Jaipur,Rajasthan,V2 Retail,26.8567,75.7832,4
 V2 Retail Ltd. (HR24),333001,Jhunjhunu,Jhunjhunu,Rajasthan,V2 Retail,28.121105,75.411581,118473.0,184846.0,fuzzy,jhunjhunun,3,61615.0
 V2 Retail Ltd. (HR25),334001,Bikaner,Bikaner,Rajasthan,V2 Retail,28.013423,73.309792,644406.0,1005427.0,exact,Bikaner,2,502714.0
 V2 Retail Ltd. (HR26),341001,Nagaur,Nagaur,Rajasthan,V2 Retail,27.196728,73.73548,105218.0,164165.0,exact,Nagaur,2,82082.0
-V2 Retail Ltd. (HR28),305001,Ajmer,Ajmer,Rajasthan,V2 Retail,26.488388,74.6289,542321.0,846150.0,exact,Ajmer,3,282050.0
+V2 Retail Ltd. (HR28),305001,Ajmer,Ajmer,Rajasthan,V2 Retail,26.467571,74.634187,542321.0,846150.0,exact,Ajmer,3,282050.0
 V2 Retail Ltd. (HS01),530026,Visakhapatnam,Visakhapatnam,Andhra Pradesh,V2 Retail,17.681458,83.213326,,,no_match,,9,
 V2 Retail Ltd. (HS02),535003,Vizianagaram,Vizianagaram,Andhra Pradesh,V2 Retail,18.103102,83.393326,228720.0,313765.0,exact,Vizianagaram,4,78441.0
 V2 Retail Ltd. (HS03),531001,Anakapalle,Visakhapatnam,Andhra Pradesh,V2 Retail,17.6865,82.2932,86519.0,118689.0,fuzzy_broad,anakapalle,1,118689.0
@@ -925,7 +925,7 @@ V2 Retail Ltd. (HS07),523001,Ongole,Prakasam,Andhra Pradesh,V2 Retail,15.501985,
 V2 Retail Ltd. (HT14),247667,Roorkee,Haridwar,Uttarakhand,V2 Retail,29.874272,77.893062,118200.0,187396.0,exact,Roorkee,2,93698.0
 V2 Retail Ltd. (HT16),262308,Khatima,Udham Singh Nagar,Uttarakhand,V2 Retail,28.919758,79.96992,,,no_match,,1,
 V2 Retail Ltd. (HT17),263129,Haldwani,Nainital,Uttarakhand,V2 Retail,29.226034,79.496835,,,no_match,,2,
-V2 Retail Ltd. (HT18),248001,Dehradun,Dehradun,Uttarakhand,V2 Retail,30.467376,77.769011,574840.0,911361.0,exact,Dehradun,12,75947.0
+V2 Retail Ltd. (HT18),248001,Dehradun,Dehradun,Uttarakhand,V2 Retail,30.334582,78.053781,574840.0,911361.0,exact,Dehradun,12,75947.0
 V2 Retail Ltd. (HT19),248171,Dehradun,Dehradun,Uttarakhand,V2 Retail,30.299692,77.996185,574840.0,911361.0,exact,Dehradun,12,75947.0
 V2 Retail Ltd. (HT20),246149,Kotdwar,Pauri Garhwal,Uttarakhand,V2 Retail,29.745253,78.519844,33035.0,52374.0,fuzzy,kotdwara,1,52374.0
 V2 Retail Ltd. (HT21),248005,Dehradun,Dehradun,Uttarakhand,V2 Retail,30.299369,78.074618,574840.0,911361.0,exact,Dehradun,12,75947.0
@@ -943,7 +943,7 @@ V2 Retail Ltd. (HU54),274304,Padrauna,Kushinagar,Uttar Pradesh,V2 Retail,26.741,
 V2 Retail Ltd. (HU55),221005,Varanasi,Varanasi,Uttar Pradesh,V2 Retail,25.27935,82.993401,1198491.0,1837521.0,exact,Varanasi,24,76563.0
 V2 Retail Ltd. (HU57),226021,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.925333,80.942654,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V2 Retail Ltd. (HU58),276001,Azamgarh,Azamgarh,Uttar Pradesh,V2 Retail,26.072814,83.188523,110983.0,170159.0,exact,Azamgarh,9,18907.0
-V2 Retail Ltd. (HU59),272001,Basti,Basti,Uttar Pradesh,V2 Retail,26.807343,82.7158,114657.0,175792.0,exact,Basti,4,43948.0
+V2 Retail Ltd. (HU59),272001,Basti,Basti,Uttar Pradesh,V2 Retail,26.813984,82.762989,114657.0,175792.0,exact,Basti,4,43948.0
 V2 Retail Ltd. (HU61),229001,Raebareli,Raebareli,Uttar Pradesh,V2 Retail,26.217045,81.245499,191316.0,293325.0,fuzzy,rae bareli,5,58665.0
 V2 Retail Ltd. (HU64),271201,Balrampur,Balrampur,Uttar Pradesh,V2 Retail,27.428787,82.18543,82488.0,126470.0,exact,Balrampur,3,42157.0
 V2 Retail Ltd. (HU65),211002,Prayagraj,Prayagraj,Uttar Pradesh,V2 Retail,25.43732,81.834206,1168385.0,1791363.0,corrected,Allahabad,12,149280.0
@@ -961,7 +961,7 @@ V2 Retail Ltd. (HU82),272175,Barabanki,Barabanki,Uttar Pradesh,V2 Retail,26.7726
 V2 Retail Ltd. (HU83),226005,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.81584,80.904199,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V2 Retail Ltd. (HU84),273015,Gorakhpur,Gorakhpur,Uttar Pradesh,V2 Retail,26.771479,83.358493,673446.0,1032524.0,exact,Gorakhpur,20,51626.0
 V2 Retail Ltd. (HU86),261001,Sitapur,Sitapur,Uttar Pradesh,V2 Retail,27.564342,80.671646,177234.0,271734.0,exact,Sitapur,3,90578.0
-V2 Retail Ltd. (HU88),241001,Hardoi,Hardoi,Uttar Pradesh,V2 Retail,27.37116,80.207416,197029.0,302084.0,exact,Hardoi,4,75521.0
+V2 Retail Ltd. (HU88),241001,Hardoi,Hardoi,Uttar Pradesh,V2 Retail,27.396507,80.125048,197029.0,302084.0,exact,Hardoi,4,75521.0
 V2 Retail Ltd. (HU90),244901,Rampur,Rampur,Uttar Pradesh,V2 Retail,28.789675,79.021348,325313.0,498768.0,exact,Rampur,2,249384.0
 V2 Retail Ltd. (HU91),243601,Budaun,Budaun,Uttar Pradesh,V2 Retail,28.031518,79.134426,159285.0,244215.0,exact,Budaun,4,61054.0
 V2 Retail Ltd. (HU92),243122,Bareilly,Bareilly,Uttar Pradesh,V2 Retail,28.372555,79.429043,904797.0,1387231.0,exact,Bareilly,5,277446.0
@@ -971,7 +971,7 @@ V2 Retail Ltd. (HU95),226021,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.8124,80.
 V2 Retail Ltd. (HU96),226012,Lucknow,Lucknow,Uttar Pradesh,V2 Retail,26.774538,80.906045,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V2 Retail Ltd. (HU97),246731,Bijnor,Bijnor,Uttar Pradesh,V2 Retail,29.502029,78.20303,93297.0,143043.0,exact,Bijnor,3,47681.0
 V2 Retail Ltd. (HU99),282007,Agra,Agra,Uttar Pradesh,V2 Retail,27.200937,78.007387,1585704.0,2431194.0,corrected,Agra,15,162080.0
-V2 Retail Ltd. (HV01),394210,Surat,Surat,Gujarat,V2 Retail,21.140809,72.884309,4467797.0,6138061.0,exact,Surat,27,227336.0
+V2 Retail Ltd. (HV01),394210,Surat,Surat,Gujarat,V2 Retail,21.166596,72.847292,4467797.0,6138061.0,exact,Surat,27,227336.0
 V2 Retail Ltd. (HW13),732101,Malda,Malda,West Bengal,V2 Retail,25.0,88.14,31920.0,42146.0,fuzzy_broad,matla,6,7024.0
 V2 Retail Ltd. (HW14),700156,Kolkata,North 24 Parganas,West Bengal,V2 Retail,22.571279,88.502545,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 V2 Retail Ltd. (HW15),734001,Siliguri,Darjeeling,West Bengal,V2 Retail,26.718322,88.424994,294546.0,388909.0,corrected,Siliguri (M Corp.),11,
@@ -999,7 +999,7 @@ V2 Retail Ltd. (HX50),416121,Ichalkaranji,Sangli,Maharashtra,V2 Retail,16.834735
 V2 Retail Ltd. (HX51),413501,Dharashiv,Dharashiv,Maharashtra,V2 Retail,18.230581,76.04588,,,no_match,,2,
 V2 Retail Ltd. (HX52),413102,Baramati,Baramati,Maharashtra,V2 Retail,18.543184,73.832954,54415.0,73020.0,exact,Baramati,2,36510.0
 V2 Retail Ltd. (HY01),506001,Warangal,Warangal,Telangana,V2 Retail,17.993012,79.591744,,,no_match,,4,
-V2 Retail Ltd. (HY02),505001,Karimnagar,Karimnagar,Telangana,V2 Retail,18.4386,78.6348,,,no_match,,3,
+V2 Retail Ltd. (HY02),505001,Karimnagar,Karimnagar,Telangana,V2 Retail,18.435534,79.143564,,,no_match,,3,
 V2 Retail Ltd. (U100),282002,Agra,Agra,Uttar Pradesh,V2 Retail,27.200859,78.007922,1585704.0,2431194.0,corrected,Agra,15,162080.0
 V2 Retail Ltd. (U101),201102,Loni,Ghaziabad,Uttar Pradesh,V2 Retail,28.746619,77.317537,516082.0,791255.0,exact,Loni,1,791255.0
 V2 Retail Ltd. (U102),230001,Pratapgarh,Pratapgarh,Uttar Pradesh,V2 Retail,25.897,81.945,15071.0,23107.0,fuzzy_broad,pratapgarh city,5,4621.0
@@ -1017,7 +1017,7 @@ V2 Retail Ltd. (U116),262001,Pilibhit,Pilibhit,Uttar Pradesh,V2 Retail,28.64,79.
 V2 Retail Ltd. (U117),224001,Faizabad,Ayodhya,Uttar Pradesh,V2 Retail,26.772265,82.162694,165228.0,253327.0,exact,Faizabad,4,63332.0
 V2 Retail Ltd. (U118),283135,Shikohabad,Firozabad,Uttar Pradesh,V2 Retail,27.10759,78.58698,107404.0,164671.0,exact,Shikohabad,1,164671.0
 V2 Retail Ltd. (U122),272207,Siddharth Nagar,Siddharth Nagar,Uttar Pradesh,V2 Retail,27.22095,82.859535,25422.0,38977.0,fuzzy,siddharthnagar,2,19488.0
-V2 Retail Ltd. (U123),201009,Ghaziabad,Ghaziabad,Uttar Pradesh,V2 Retail,28.537589,77.386364,1648643.0,2527692.0,manual_gap_fix,Ghaziabad,1,
+V2 Retail Ltd. (U123),201009,Ghaziabad,Ghaziabad,Uttar Pradesh,V2 Retail,28.639897,77.452987,1648643.0,2527692.0,manual_gap_fix,Ghaziabad,1,
 V2 Retail Ltd. (U127),208019,Kanpur,Kanpur Nagar,Uttar Pradesh,V2 Retail,26.482947,80.271593,2768057.0,4243972.0,exact,Kanpur,13,326459.0
 V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.569171,505693.0,775326.0,corrected,Jhansi,9,86147.0
 "Zudio - Karkambadi Road, Tirupati",517507,Tirupati,Tirupati,Andhra Pradesh,Zudio,13.646589,79.442387,287482.0,394376.0,exact,Tirupati,4,98594.0
@@ -1026,14 +1026,14 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "Zudio - KSR Prime, Visakhapatnam",530018,Visakhapatnam,Visakhapatnam,Andhra Pradesh,Zudio,17.764332,83.320175,,,no_match,,9,
 "Zudio - Abhiram Ts Imperio, Visakhapatnam",530046,Visakhapatnam,Visakhapatnam,Andhra Pradesh,Zudio,17.687981,83.166177,,,no_match,,9,
 "ZUDIO - SURYA CENTRAL MALL, VISAKHAPATNAM",530016,Visakhapatnam,Visakhapatnam,Andhra Pradesh,Zudio,17.726822,83.303246,,,no_match,,9,
-"ZUDIO - RENIGUNTA ROAD, TIRUPATI",517501,Tirupati,Tirupati,Andhra Pradesh,Zudio,13.637359,79.50384,287482.0,394376.0,exact,Tirupati,4,98594.0
+"ZUDIO - RENIGUNTA ROAD, TIRUPATI",517501,Tirupati,Tirupati,Andhra Pradesh,Zudio,13.624461,79.431005,287482.0,394376.0,exact,Tirupati,4,98594.0
 "Zudio - Rudrampeta, Anantapur",515004,Anantapur,Anantapur,Andhra Pradesh,Zudio,14.682927,77.555379,261004.0,358053.0,exact,Anantapur,2,179026.0
 "Zudio - Gandhipuram, Rajahmahendravaram",533103,Rajahmundry,East Godavari,Andhra Pradesh,Zudio,17.012344,81.794945,341831.0,468934.0,exact,Rajahmundry,1,468934.0
 "Zudio - Court Road, Anantapur",515001,Anantapur,Anantapur,Andhra Pradesh,Zudio,14.674549,77.593209,261004.0,358053.0,exact,Anantapur,2,179026.0
 "ZUDIO - Sidhartha Nagar, Kakinada",533002,Kakinada,Kakinada,Andhra Pradesh,Zudio,16.984913,82.241165,312538.0,428749.0,exact,Kakinada,3,142916.0
 "Zudio - JP Road, Bhimavaram",534202,Bhimavaram,West Godavari,Andhra Pradesh,Zudio,16.54458,81.517535,146961.0,201605.0,exact,Bhimavaram,1,201605.0
 "Zudio - Ring Road, Guntur",522006,Guntur,Guntur,Andhra Pradesh,Zudio,16.318205,80.4189,670073.0,919226.0,exact,Guntur,3,306409.0
-"Zudio - Tadepalli, Vijayawada",522501,Vijayawada,Krishna,Andhra Pradesh,Zudio,16.51357,80.62605,,,no_match,,6,
+"Zudio - Tadepalli, Vijayawada",522501,Vijayawada,Krishna,Andhra Pradesh,Zudio,16.506174,80.648015,,,no_match,,6,
 "Zudio - Kalyanamandapm, Pithapuram",533450,Pithapuram,East Godavari,Andhra Pradesh,Zudio,17.116112,82.25309,54859.0,75257.0,exact,Pithapuram,1,75257.0
 "Zudio - Gollapudi, Vijayawada",521225,Vijayawada,Krishna,Andhra Pradesh,Zudio,16.45,80.75,,,no_match,,6,
 "Zudio - VRK One, Adoni",518302,Adoni,Kurnool,Andhra Pradesh,Zudio,15.6733,77.1167,184625.0,253274.0,exact,Adoni,1,253274.0
@@ -1074,7 +1074,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "Zudio - Nazirpatty, Silchar",788001,Silchar,Cachar,Assam,Zudio,24.830418,92.810064,178865.0,268299.0,exact,Silchar,8,33537.0
 "Zudio - Prime Shopping Complex, Guwahati",781018,Guwahati,Kamrup Metro,Assam,Zudio,26.148009,91.74086,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
 "Zudio - Tarapur, Silchar",788001,Silchar,Cachar,Assam,Zudio,24.82995,92.800341,178865.0,268299.0,exact,Silchar,8,33537.0
-"Zudio - Lokhra, Guwahati",781034,Guwahati,Kamrup Metro,Assam,Zudio,26.112042,91.74752,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
+"Zudio - Lokhra, Guwahati",781034,Guwahati,Kamrup Metro,Assam,Zudio,26.140123,91.751448,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
 "ZUDIO - VIP Road, Guwahati",781022,Guwahati,Kamrup Metropolitan,Assam,Zudio,26.138863,91.811083,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
 "Zudio - Krishna Complex, Tezpur",784001,Tezpur,Sonitpur,Assam,Zudio,26.622608,92.7967,75540.0,113311.0,exact,Tezpur,5,22662.0
 "Zudio - Beltola Tiniali, Guwahati",781028,Guwahati,Kamrup Metropolitan,Assam,Zudio,26.11753,91.811104,528563.0,792848.0,manual_gap_fix,Guwahati (M Corp. + OG),20,
@@ -1102,8 +1102,8 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - TELIPARA, BILASPUR",495001,Bilaspur,Bilaspur,Chhattisgarh,Zudio,22.077074,82.15218,16129.0,25055.0,fuzzy_broad,bijapur,7,3579.0
 "ZUDIO - PANDRI, RAIPUR",492004,Raipur,Durg,Chhattisgarh,Zudio,21.243176,81.63432,1027264.0,1595789.0,exact,Raipur,10,159579.0
 "ZUDIO - SURYA TREASURE ISLAND MALL, BHILAI",490020,Bhilai,Durg,Chhattisgarh,Zudio,21.212383,81.37318,618611.0,960972.0,manual_gap_fix,Bhilai Nagar (M Corp. + OG),2,
-"ZUDIO - CITY MALL 36, BILASPUR",495001,Bilaspur,Bilaspur,Chhattisgarh,Zudio,22.094788,82.122583,16129.0,25055.0,fuzzy_broad,bijapur,7,3579.0
-"ZUDIO - CURRENCY TOWER, VIP CHOWK",492001,Raipur,Durg,Chhattisgarh,Zudio,21.238668,81.679323,1027264.0,1595789.0,exact,Raipur,10,159579.0
+"ZUDIO - CITY MALL 36, BILASPUR",495001,Bilaspur,Bilaspur,Chhattisgarh,Zudio,22.079655,82.140915,16129.0,25055.0,fuzzy_broad,bijapur,7,3579.0
+"ZUDIO - CURRENCY TOWER, VIP CHOWK",492001,Raipur,Durg,Chhattisgarh,Zudio,21.232989,81.658299,1027264.0,1595789.0,exact,Raipur,10,159579.0
 "ZUDIO - ONYX EMPORIUM, RAIPUR",492001,Raipur,Durg,Chhattisgarh,Zudio,21.246836,81.66004,1027264.0,1595789.0,exact,Raipur,10,159579.0
 "ZUDIO - BASANT COMPLEX, AMBIKAPUR",497001,Ambikapur,Surguja,Chhattisgarh,Zudio,23.122229,83.19968,121071.0,188076.0,exact,Ambikapur,3,62692.0
 "ZUDIO - CITY CENTER MALL, RAIPUR",492001,Raipur,Durg,Chhattisgarh,Zudio,21.246836,81.660041,1027264.0,1595789.0,exact,Raipur,10,159579.0
@@ -1120,8 +1120,8 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - GHITORNI METRO STATION, DELHI",110030,Delhi,West Delhi,Delhi,Zudio,28.52627,77.190269,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
 "ZUDIO - MAYUR VIHAR, DELHI",110091,Delhi,West Delhi,Delhi,Zudio,28.588234,77.307569,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
 "ZUDIO - MODEL TOWN, DELHI",110009,Delhi,West Delhi,Delhi,Zudio,28.708098,77.193394,169122.0,227951.0,fuzzy_broad,deoli,8,28494.0
-"ZUDIO - JAHANGIRPURI, DELHI",110033,Azadpur,North West Delhi,Delhi,Zudio,28.729983,77.157982,,,no_match,,2,
-"ZUDIO - AZADPUR METRO, DELHI",110033,Azadpur,North West Delhi,Delhi,Zudio,28.662751,77.280591,,,no_match,,2,
+"ZUDIO - JAHANGIRPURI, DELHI",110033,Azadpur,North West Delhi,Delhi,Zudio,28.714696,77.177046,,,no_match,,2,
+"ZUDIO - AZADPUR METRO, DELHI",110033,Azadpur,North West Delhi,Delhi,Zudio,28.714696,77.177046,,,no_match,,2,
 "ZUDIO – R CUBE MONAD MALL, DELHI",110027,New Delhi,New Delhi,Delhi,Zudio,28.638058,77.11996,,,no_match,,34,
 "ZUDIO - ROHINI SECTOR 23, DELHI",110085,New Delhi,Central Delhi,Delhi,Zudio,28.729845,77.083532,,,no_match,,34,
 "ZUDIO - KRISHNA NAGAR, DELHI",110051,East Delhi,East Delhi,Delhi,Zudio,28.565672,77.23326,,,no_match,,1,
@@ -1148,7 +1148,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - INFINITY SK MALL, NEW DELHI",110092,New Delhi,Central Delhi,Delhi,Zudio,28.65201,77.306778,,,no_match,,34,
 "ZUDIO - NAJAFGARH, NEW DELHI",110043,Najafgarh,South West Delhi,Delhi,Zudio,28.440065,77.143326,,,no_match,,2,
 "ZUDIO - TRI NAGAR, DELHI",110031,New Delhi,New Delhi,Delhi,Zudio,28.644783,77.168817,,,no_match,,34,
-"ZUDIO - RAJOURI GARDEN, NEW DELHI",100027,New Delhi,New Delhi,Delhi,Zudio,28.57799,77.195883,,,no_match,,34,
+"ZUDIO - RAJOURI GARDEN, NEW DELHI",100027,New Delhi,New Delhi,Delhi,Zudio,28.61393,77.208828,,,no_match,,34,
 "ZUDIO - NARELA, DELHI",110040,Narela,North West Delhi,Delhi,Zudio,28.585385,77.089422,,,no_match,,3,
 "ZUDIO - CENTRE MALL, DELHI",110088,New Delhi,New Delhi,Delhi,Zudio,28.702915,77.158255,,,no_match,,34,
 "ZUDIO - RAM NAGAR, DELHI",110032,New Delhi,Central Delhi,Delhi,Zudio,28.689596,77.299411,,,no_match,,34,
@@ -1159,7 +1159,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - MAPUSA, VALPOI ROAD",403505,Bicholim,North Goa,Goa,Zudio,15.591179,73.94628,16986.0,25554.0,exact,Bicholim,3,8518.0
 "ZUDIO - VASCO 1930, VASCO DA GAMA",403802,Vasco Da Gama,South Goa,Goa,Zudio,15.398257,73.815794,,,no_match,,1,
 "ZUDIO - SHANTILAL RETAIL PARK, IJORSHI",403711,Mormugao,South Goa,Goa,Zudio,15.394807,73.853495,94393.0,142004.0,exact,Mormugao,1,142004.0
-"ZUDIO - SHETYE MAJESTIC, BICHOLIM",403504,Bicholim,North Goa,Goa,Zudio,15.399287,74.004686,16986.0,25554.0,exact,Bicholim,3,8518.0
+"ZUDIO - SHETYE MAJESTIC, BICHOLIM",403504,Bicholim,North Goa,Goa,Zudio,15.589104,73.949682,16986.0,25554.0,exact,Bicholim,3,8518.0
 "ZUDIO - CD DIVA, MARGAO",403601,Margao,South Goa,Goa,Zudio,15.286971,73.983244,87650.0,131860.0,exact,Margao,2,65930.0
 "ZUDIO - THE EMINENCE, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.201053,72.793916,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - HOMELAND CITY MALL, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.1458,72.8194,4467797.0,6138061.0,exact,Surat,27,227336.0
@@ -1168,7 +1168,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - ONE PLUS BUSINESS PARK, AHMEDABAD",382330,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.079464,72.668157,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - SKY GATEWAY, VADODARA",390025,Vadodara,Vadodara,Gujarat,Zudio,22.300178,73.237635,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - SHUBHAM K MART, SURAT",395004,Surat,Surat,Gujarat,Zudio,21.229834,72.80639,4467797.0,6138061.0,exact,Surat,27,227336.0
-"ZUDIO - SARTHANA BUSINESS HUB, SURAT",395006,Surat,Surat,Gujarat,Zudio,21.229918,72.90018,4467797.0,6138061.0,exact,Surat,27,227336.0
+"ZUDIO - SARTHANA BUSINESS HUB, SURAT",395006,Surat,Surat,Gujarat,Zudio,21.217319,72.866472,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - SAROVAR PLATINUM, AHMEDABAD",380002,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.006136,72.593094,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - S9 IMPERIAL, PALANPUR",385001,Palanpur,Banaskantha,Gujarat,Zudio,24.178694,72.419724,141592.0,194525.0,exact,Palanpur,1,194525.0
 "ZUDIO - THE CAPITAL 3, AHMEDABAD",380009,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.039846,72.554843,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
@@ -1177,7 +1177,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO – PLOT NO 99, VAPI",396195,Vapi,Valsad,Gujarat,Zudio,20.368522,72.919859,163630.0,224802.0,exact,Vapi,2,112401.0
 "ZUDIO - MALBAR PRIME, AHMEDABAD",382450,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.047826,72.676923,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - UNITY CORNER, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.1458,72.8194,4467797.0,6138061.0,exact,Surat,27,227336.0
-"ZUDIO - SUPREME SQUARE, AHMEDABAD",380038,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.053541,72.657916,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
+"ZUDIO - SUPREME SQUARE, AHMEDABAD",380038,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.022505,72.571362,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - NIZAMPURA, VADODARA",390024,Vadodara,Vadodara,Gujarat,Zudio,22.326536,73.175841,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - KANHA CENTRAL, VADODARA",390005,Vadodara,Vadodara,Gujarat,Zudio,22.309908,73.175338,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - ELLORA BUSINESS CENTER, VADODARA",390023,Vadodara,Vadodara,Gujarat,Zudio,22.325539,73.15623,1752371.0,2407486.0,exact,Vadodara,18,133749.0
@@ -1193,16 +1193,16 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - PAVITRA LANDMARK, VADODARA",390007,Vadodara,Vadodara,Gujarat,Zudio,22.3089,73.1945,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - S&D ENCLAVE, BILIMORA",396325,Bilimora,Navsari,Gujarat,Zudio,20.764791,72.991025,53187.0,73071.0,exact,Bilimora,1,73071.0
 "ZUDIO - KRISHNA HOUSE, GUJARAT",388001,Anand,Anand,Gujarat,Zudio,22.5585,72.9382,209410.0,287697.0,exact,Anand,4,71924.0
-"ZUDIO – GAURAV PATH ROAD, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.189726,72.771853,4467797.0,6138061.0,exact,Surat,27,227336.0
+"ZUDIO – GAURAV PATH ROAD, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.192785,72.799809,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - RK WORLD TOWER, RAJKOT",360006,Rajkot,Rajkot,Gujarat,Zudio,22.319472,70.768451,1323363.0,1818096.0,exact,Rajkot,5,363619.0
-"ZUDIO - PALANPUR, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.201424,72.78232,4467797.0,6138061.0,exact,Surat,27,227336.0
-"ZUDIO - SIDDHESHWAR HAVELOCK, VADODARA",390008,Vadodara,Vadodara,Gujarat,Zudio,22.33829,73.209561,1752371.0,2407486.0,exact,Vadodara,18,133749.0
+"ZUDIO - PALANPUR, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.192785,72.799809,4467797.0,6138061.0,exact,Surat,27,227336.0
+"ZUDIO - SIDDHESHWAR HAVELOCK, VADODARA",390008,Vadodara,Vadodara,Gujarat,Zudio,22.321631,73.192486,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - PANTHEON HIGH STREET, BHUJ",370001,Bhuj,Kutch,Gujarat,Zudio,23.249277,69.672295,148834.0,204475.0,exact,Bhuj,1,204475.0
 "ZUDIO - CANAL ROAD, SURAT",395005,Surat,Surat,Gujarat,Zudio,21.209328,72.77015,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - MAHEK IT PARK, SURAT",395003,Surat,Surat,Gujarat,Zudio,21.21477,72.82252,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - CINEZZA MULTIPLEX, SURAT",394101,Surat,Surat,Gujarat,Zudio,21.1458,72.8479,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - SIGNATURE MALL, MEHSANA",384002,Mehsana,Mehsana,Gujarat,Zudio,23.58426,72.373462,190753.0,262065.0,fuzzy_broad,mahesana,2,131032.0
-"ZUDIO - HARSHITAM LANDMARK, ANAND",388001,Anand,Anand,Gujarat,Zudio,23.061065,72.671759,209410.0,287697.0,exact,Anand,4,71924.0
+"ZUDIO - HARSHITAM LANDMARK, ANAND",388001,Anand,Anand,Gujarat,Zudio,22.56986,72.963773,209410.0,287697.0,exact,Anand,4,71924.0
 "ZUDIO - PEARL MEMORIES, VADODARA",390010,Vadodara,Vadodara,Gujarat,Zudio,22.256088,73.21336,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - R K PRIME, RAJKOT",360004,Rajkot,Rajkot,Gujarat,Zudio,22.250106,70.792291,1323363.0,1818096.0,exact,Rajkot,5,363619.0
 "ZUDIO - THE BARODA CROSSWAY, VADODARA",390001,Vadodara,Vadodara,Gujarat,Zudio,22.300948,73.194382,1752371.0,2407486.0,exact,Vadodara,18,133749.0
@@ -1213,10 +1213,10 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - WARD 12B, GANDHIDHAM",370201,Gandhidham,Kutch,Gujarat,Zudio,23.249277,69.672295,247992.0,340703.0,exact,Gandhidham,2,170352.0
 "ZUDIO - SATYMEV ELITE, AHMEDABAD",380058,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.03614,72.46179,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - HIMALAYA MALL, BHAVNAGAR",364001,Bhavnagar,Bhavnagar,Gujarat,Zudio,21.750783,72.131122,605882.0,832388.0,exact,Bhavnagar,1,832388.0
-"ZUDIO – AANGAN PARTY, AHMEDABAD",480015,Ahmedabad,Gandhinagar,Gujarat,Zudio,21.9674,75.8519,,,no_match,,1,
+"ZUDIO – AANGAN PARTY, AHMEDABAD",480015,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.022505,72.571362,,,no_match,,1,
 "ZUDIO - SANGAM SAPPHIRE, AHMEDABAD",380060,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.074777,72.510778,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - NEO ATLANTIC, JAMNAGAR",361008,Jamnagar,Jamnagar,Gujarat,Zudio,22.470276,70.07109,600943.0,825603.0,exact,Jamnagar,3,275201.0
-"ZUDIO - IMPERIAL SQUARE MALL, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.164297,72.779038,4467797.0,6138061.0,exact,Surat,27,227336.0
+"ZUDIO - IMPERIAL SQUARE MALL, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.192785,72.799809,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - ISCON MALL, AHMEDABAD",380015,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.026169,72.525586,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - ARVED TRANSCUBE PLAZA, AHMEDABAD",382480,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.074625,72.572302,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - DIAMOND SQUARE, AHMEDABAD",380024,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.037643,72.630728,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
@@ -1224,7 +1224,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO – NORTH PLAZA MOTERA,AHMEDABAD",380005,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.100722,72.592051,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - NILAMBER TRIUMPH ROAD, VADODARA",391140,Vadodara,Vadodara,Gujarat,Zudio,22.299917,73.201195,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO – TRINITY, SURAT",395009,Surat,Surat,Gujarat,Zudio,21.191205,72.787627,4467797.0,6138061.0,exact,Surat,27,227336.0
-"ZUDIO - LOTUS AND LILY, AHMEDABAD",380008,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.061065,72.671759,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
+"ZUDIO - LOTUS AND LILY, AHMEDABAD",380008,Ahmedabad,Gandhinagar,Gujarat,Zudio,22.99845,72.611194,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - CITY GOLD, RAJKOT",360001,Rajkot,Rajkot,Gujarat,Zudio,22.298247,70.803149,1323363.0,1818096.0,exact,Rajkot,5,363619.0
 "ZUDIO - TURQUOISE 3 ROAD, AHMEDABAD",380058,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.011479,72.45197,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - MASTER AVENUE, AHMEDABAD",382421,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.024553,72.58957,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
@@ -1239,18 +1239,18 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO – UK CENTRE, RAJKOT",360003,Rajkot,Rajkot,Gujarat,Zudio,22.42549,70.899984,1323363.0,1818096.0,exact,Rajkot,5,363619.0
 "ZUDIO - CENTER SQUARE MALL, VADODARA",390023,Vadodara,Vadodara,Gujarat,Zudio,22.320252,73.168294,1752371.0,2407486.0,exact,Vadodara,18,133749.0
 "ZUDIO - KRISHNA CROSSROAD, ANAND",388001,Anand,Anand,Gujarat,Zudio,22.56396,72.944495,209410.0,287697.0,exact,Anand,4,71924.0
-"ZUDIO - SOLARIS BUSINESS HUB, AHMEDABAD",380013,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.058084,72.539304,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
+"ZUDIO - SOLARIS BUSINESS HUB, AHMEDABAD",380013,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.059938,72.561246,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - R SQUARE MALL, VAPI",396191,Vapi,Valsad,Gujarat,Zudio,20.383986,72.902367,163630.0,224802.0,exact,Vapi,2,112401.0
 "ZUDIO - MILANO MULTPLEX BARDOLI, SURAT",394601,Bardoli,Surat,Gujarat,Zudio,21.115974,73.10587,60821.0,83559.0,exact,Bardoli,2,41780.0
 "ZUDIO - SHRI AM'S VARDAN TEXTILE MARKET, SURAT",395010,Surat,Surat,Gujarat,Zudio,21.1645,72.8234,,,no_match,,1,
-"ZUDIO - CORNER WALK, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.141272,72.78394,4467797.0,6138061.0,exact,Surat,27,227336.0
+"ZUDIO - CORNER WALK, SURAT",395007,Surat,Surat,Gujarat,Zudio,21.159761,72.795912,4467797.0,6138061.0,exact,Surat,27,227336.0
 "ZUDIO - HIMALAYA MALL, AHMEDABAD",380006,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.045893,72.539125,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - PRAHLAD NAGAR, AHMEDABAD",380015,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.020013,72.531302,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
-"ZUDIO - AMARKUNJ BUSINESS CENTER, AHMEDABAD",382424,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.913885,72.360506,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
+"ZUDIO - AMARKUNJ BUSINESS CENTER, AHMEDABAD",382424,Ahmedabad,Gandhinagar,Gujarat,Zudio,23.109244,72.584825,5577940.0,7663226.0,fuzzy,ahmadabad,29,264249.0
 "ZUDIO - TRI STAR, SECTOR 92, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.438059,77.068201,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "ZUDIO - SANT SURDAS METRO STATION, FARIDABAD",121006,Faridabad,Faridabad,Haryana,Zudio,28.366951,77.326178,1414050.0,2168015.0,exact,Faridabad,9,240891.0
-"ZUDIO - ORRIS MARKET 89, GURUGRAM",122505,Gurugram,Gurugram,Haryana,Zudio,28.420023,77.36614,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
-"ZUDIO - URBAN ESTATE, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.448931,76.969815,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
+"ZUDIO - ORRIS MARKET 89, GURUGRAM",122505,Gurugram,Gurugram,Haryana,Zudio,28.431704,76.895155,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
+"ZUDIO - URBAN ESTATE, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.455473,77.021902,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "ZUDIO - THANESAR, KURUKSHETRA",136118,Kurukshetra,Kurukshetra,Haryana,Zudio,29.9667,76.7667,,,no_match,,2,
 "ZUDIO - ENTERTAINLAND MALL, GURUGRAM",122004,Gurugram,Gurugram,Haryana,Zudio,28.467069,77.065389,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "ZUDIO - AMB SELFIE STREET, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.464655,77.02957,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
@@ -1265,7 +1265,7 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - DINCO HOUSE, REWARI",123401,Rewari,Rewari,Haryana,Zudio,28.200336,76.623946,143021.0,219279.0,exact,Rewari,1,219279.0
 "ZUDIO - MODEL TOWN, KARNAL",132001,Karnal,Karnal,Haryana,Zudio,29.686854,76.990853,302140.0,463240.0,exact,Karnal,1,463240.0
 "ZUDIO - RAILWAY ROAD, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.46294,77.031119,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
-"ZUDIO - ELAN MIRACLE, GURUGRAM",122004,Gurugram,Gurugram,Haryana,Zudio,28.492711,76.999067,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
+"ZUDIO - ELAN MIRACLE, GURUGRAM",122004,Gurugram,Gurugram,Haryana,Zudio,28.425116,77.004626,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "ZUDIO - MODEL TOWN, AMBALA",134003,Ambala,Ambala,Haryana,Zudio,30.379654,76.77142,195153.0,299208.0,exact,Ambala,4,74802.0
 "ZUDIO - YAMUNA NAGAR, HARYANA",135001,Yamuna Nagar,Yamuna Nagar,Haryana,Zudio,30.133956,77.286623,217071.0,332812.0,fuzzy,yamunanagar,1,332812.0
 "ZUDIO - MALL 51, GURUGRAM",122018,Gurugram,Gurugram,Haryana,Zudio,28.418057,77.052318,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
@@ -1280,8 +1280,8 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO - SECTOR 28 METRO STATION, FARIDABAD",121008,Faridabad,Faridabad,Haryana,Zudio,28.430234,77.315573,1414050.0,2168015.0,exact,Faridabad,9,240891.0
 "ZUDIO - SATYA THE HIVE, GURUGRAM",122505,Gurugram,Gurugram,Haryana,Zudio,28.376819,76.913816,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "ZUDIO - GALAXY ROAD SEC-15, GURUGRAM",122001,Gurugram,Gurugram,Haryana,Zudio,28.45322,77.03748,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
-"ZUDIO - JAGADHARI ROAD, AMBALA",133001,Ambala,Ambala,Haryana,Zudio,28.364299,77.087759,195153.0,299208.0,exact,Ambala,4,74802.0
-"ZUDIO - OMAXSUN, FARIDABAD",121004,Faridabad,Faridabad,Haryana,Zudio,28.387161,77.354288,1414050.0,2168015.0,exact,Faridabad,9,240891.0
+"ZUDIO - JAGADHARI ROAD, AMBALA",133001,Ambala,Ambala,Haryana,Zudio,30.352594,76.837499,195153.0,299208.0,exact,Ambala,4,74802.0
+"ZUDIO - OMAXSUN, FARIDABAD",121004,Faridabad,Faridabad,Haryana,Zudio,28.408912,77.317789,1414050.0,2168015.0,exact,Faridabad,9,240891.0
 "ZUDIO - G SQUARE MALL, SOLAN",173212,Solan,Solan,Himachal Pradesh,Zudio,30.909783,77.101928,39256.0,52678.0,exact,Solan,2,26339.0
 "ZUDIO - MAXON TOWER, PALAMPUR",176061,Palampur,Palampur,Himachal Pradesh,Zudio,32.223271,76.322346,3543.0,4754.0,exact,Palampur,2,2377.0
 "ZUDIO - CITY CENTER, UNA",174303,Una,Una,Himachal Pradesh,Zudio,32.215378,76.318634,18722.0,25123.0,exact,Una,2,12562.0
@@ -1310,18 +1310,18 @@ V2 Retail Ltd. (U131),284001,Jhansi,Jhansi,Uttar Pradesh,V2 Retail,25.44151,78.5
 "ZUDIO – VIDYARANYAPURAM, MYSURU",570008,Mysore,Mysuru,Karnataka,Zudio,12.280125,76.64684,920550.0,1323509.0,exact,Mysore,5,264702.0
 "ZUDIO - U MALL, GADAGA, BETAGIRI",582101,Gadag,Gadag,Karnataka,Zudio,15.4167,75.6333,,,no_match,,1,
 "ZUDIO - OLD GUDDADAHALLI, BENGALURU",560026,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.913822,77.605608,,,no_match,,76,
-"ZUDIO - SBR TEJAS, BENGALURU",560049,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.053416,77.761761,,,no_match,,76,
+"ZUDIO - SBR TEJAS, BENGALURU",560049,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.022294,77.713206,,,no_match,,76,
 "ZUDIO - SHIRUR PARK, HUBBALLI",580023,Hubballi,Hubballi-Dharwad,Karnataka,Zudio,15.36393,75.12748,,,no_match,,5,
 "ZUDIO - THE HUB SNN RAJ SERENITY, BENGALURU",560068,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.858262,77.611804,,,no_match,,76,
 "ZUDIO - NS TOWERS, BENGALURU",560078,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.893682,77.567831,,,no_match,,76,
 "ZUDIO - KENGERI, BENGALURU",560060,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.0449,77.5941,,,no_match,,76,
 "ZUDIO - SAI PRATAP COMPLEX, GULBARGA",585102,Kalaburagi,Kalaburagi,Karnataka,Zudio,17.3667,76.8333,,,no_match,,2,
-"ZUDIO - KAPALI THEATER, MAJESTIC, BENGALURU",560009,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.947915,77.702468,,,no_match,,76,
+"ZUDIO - KAPALI THEATER, MAJESTIC, BENGALURU",560009,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.977029,77.577305,,,no_match,,76,
 "ZUDIO - MAGADI MAIN ROAD, BENGALURU",560091,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.990215,77.503531,,,no_match,,76,
 ZUDIO – BHARTIYA MALL,560064,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.087569,77.635298,,,no_match,,76,
 "ZUDIO - KUMBALGOD, BENGALURU",560074,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.878209,77.44552,,,no_match,,76,
 "ZUDIO - SINDOL CENTRE, BIDAR",585403,Bidar,Bidar,Karnataka,Zudio,17.9389,77.5305,216020.0,310580.0,exact,Bidar,2,155290.0
-"ZUDIO - GOPALAN ARCADE MALL, BENGALURU",560026,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.93539,77.512594,,,no_match,,76,
+"ZUDIO - GOPALAN ARCADE MALL, BENGALURU",560026,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.956522,77.548353,,,no_match,,76,
 "ZUDIO - SAMPIGEHALLI, BENGALURU",560064,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.061139,77.633208,,,no_match,,76,
 "ZUDIO - BAGALKOT, VIDYAGIRI",587102,Bagalkot,Bagalkot,Karnataka,Zudio,16.154178,75.645752,111933.0,160930.0,exact,Bagalkot,1,160930.0
 "ZUDIO - GARUDA MALL, YELAHANKA",560064,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.101291,77.570602,,,no_match,,76,
@@ -1337,7 +1337,7 @@ ZUDIO - MALL OF MANDYA,571401,Mandya,Mandya,Karnataka,Zudio,12.524247,76.89473,1
 "ZUDIO - JNANA GANGA NAGAR, BENGALURU",560056,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.951053,77.48646,,,no_match,,76,
 "ZUDIO - RAYASANDRA, BENGALURU",560099,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.889153,77.63954,,,no_match,,76,
 "ZUDIO - JAYANAGAR 7TH BLOCK, BENGALURU",560082,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.022149,77.637407,,,no_match,,76,
-"ZUDIO – SKS-7, BENGALURU",560008,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.9716,77.5909,,,no_match,,76,
+"ZUDIO – SKS-7, BENGALURU",560008,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.981994,77.625613,,,no_match,,76,
 "ZUDIO - VR BENGALURU, BENGALURU",560048,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.99534,77.696592,,,no_match,,76,
 "ZUDIO - AASHVI, BENGALURU",560066,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.960283,77.742042,,,no_match,,76,
 "ZUDIO – MANOMAY 55, MYSURU",570012,Mysore,Mysuru,Karnataka,Zudio,12.324627,76.619474,920550.0,1323509.0,exact,Mysore,5,264702.0
@@ -1353,7 +1353,7 @@ ZUDIO - MALL OF MANDYA,571401,Mandya,Mandya,Karnataka,Zudio,12.524247,76.89473,1
 "ZUDIO - TOSHANI EMPORIA AVENUE, DAVANAGERE",577002,Davangere,Davangere,Karnataka,Zudio,14.467341,75.91683,434971.0,625374.0,fuzzy,davanagere,2,312687.0
 "ZUDIO - NANDI COMPLEX, BENGALURU",560072,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.0457,77.6181,,,no_match,,76,
 "ZUDIO - VARTHUR ROAD, BENGALURU",560037,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.9789,77.6245,,,no_match,,76,
-"ZUDIO - HM VIBHA TOWERS, BENGALURU",560001,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.933456,77.623276,,,no_match,,76,
+"ZUDIO - HM VIBHA TOWERS, BENGALURU",560001,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.976594,77.599271,,,no_match,,76,
 "ZUDIO – MANTRI SQUARE, BENGALURU",560003,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.996012,77.57143,,,no_match,,76,
 "ZUDIO - EXCEL MISCHIEF MALL, MANGALURU",575001,Mangaluru,Dakshina Kannada,Karnataka,Zudio,12.870449,74.8419,499487.0,718131.0,corrected,Mangalore,4,179533.0
 "ZUDIO - JUPITER MANTRI MALL, BENGALURU",560047,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.942483,77.6227,,,no_match,,76,
@@ -1378,7 +1378,7 @@ ZUDIO - SAIBYA SQUARE,560068,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.897338
 ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.02639,77.622939,,,no_match,,76,
 "ZUDIO - NEXUS SHANTINIKETAN MALL, BENGALURU",560048,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.989183,77.728182,,,no_match,,76,
 "ZUDIO - VIDYARANYAPURA, BENGALURU",560097,Bengaluru,Bangalore Urban,Karnataka,Zudio,13.071013,77.560279,,,no_match,,76,
-"ZUDIO - SARJAPUR, BENGALURU",560035,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.853694,77.782435,,,no_match,,76,
+"ZUDIO - SARJAPUR, BENGALURU",560035,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.904802,77.682107,,,no_match,,76,
 "ZUDIO – JP NAGAR, BENGALURU",560068,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.884823,77.595829,,,no_match,,76,
 "ZUDIO - HSR LAYOUT, BENGALURU",560102,Bengaluru,Bangalore Urban,Karnataka,Zudio,12.919643,77.66742,,,no_match,,76,
 "ZUDIO – BLV EMPORIUM, KARUNGAPALLY",690518,Kollam,Kollam,Kerala,Zudio,8.887204,76.59058,348657.0,430777.0,exact,Kollam,3,143592.0
@@ -1387,7 +1387,7 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - TK COMPLEX, KOLIYAKODE",695589,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.630136,76.900804,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
 "ZUDIO - EAST FORT, THRISSUR",680005,Thrissur,Thrissur,Kerala,Zudio,10.520179,76.22269,315957.0,390375.0,exact,Thrissur,8,48797.0
 "ZUDIO – MARIA ARCADE, KOCHI",682503,Kochi,Ernakulam,Kerala,Zudio,10.030652,76.22197,,,no_match,,15,
-"ZUDIO - MAMCO TOWER, THAMARASSERY",673573,Kozhikode,Kozhikode,Kerala,Zudio,10.976763,76.222023,550440.0,680086.0,exact,Kozhikode,6,113348.0
+"ZUDIO - MAMCO TOWER, THAMARASSERY",673573,Kozhikode,Kozhikode,Kerala,Zudio,11.40529,75.963741,550440.0,680086.0,exact,Kozhikode,6,113348.0
 "ZUDIO - MANAYATH COMPLEX, MANNARKKAD",678762,Mannarkkad,Palakkad,Kerala,Zudio,10.988647,76.451414,34839.0,43045.0,fuzzy,mannarkad-i,1,43045.0
 "ZUDIO - KOLLAM, KERALA",691004,Kollam,Kollam,Kerala,Zudio,8.887204,76.59058,348657.0,430777.0,exact,Kollam,3,143592.0
 "ZUDIO - EDAPPALLY, KOCHI",682024,Kochi,Ernakulam,Kerala,Zudio,10.01727,76.302968,,,no_match,,15,
@@ -1395,9 +1395,9 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - PALAKKAD - PONNANI RD, OTTAPALAM",679104,Palakkad,Palakkad,Kerala,Zudio,10.773972,76.362273,130955.0,161799.0,exact,Palakkad,5,32360.0
 "ZUDIO - ANGAMALY, KOCHI",683572,Kochi,Ernakulam,Kerala,Zudio,10.037007,76.315101,,,no_match,,15,
 "ZUDIO – PAYYANUR, KANNUR",670307,Kannur,Kannur,Kerala,Zudio,11.248378,75.835435,56823.0,70207.0,exact,Kannur,2,35104.0
-"ZUDIO - LULU MALL, THIRUVANANTHAPURAM",695029,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.511108,76.89676,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
-"ZUDIO - SHERMAN-CONFIDENT TOWER, KOCHI",682025,Kochi,Ernakulam,Kerala,Zudio,8.426194,76.961705,,,no_match,,15,
-"ZUDIO - THE HIVE PLAZA, KOTTAYAM",686001,Kottayam,Kottayam,Kerala,Zudio,9.762492,76.566272,55374.0,68416.0,exact,Kottayam,5,13683.0
+"ZUDIO - LULU MALL, THIRUVANANTHAPURAM",695029,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.505573,76.915328,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
+"ZUDIO - SHERMAN-CONFIDENT TOWER, KOCHI",682025,Kochi,Ernakulam,Kerala,Zudio,10.000406,76.310176,,,no_match,,15,
+"ZUDIO - THE HIVE PLAZA, KOTTAYAM",686001,Kottayam,Kottayam,Kerala,Zudio,9.593306,76.517029,55374.0,68416.0,exact,Kottayam,5,13683.0
 "ZUDIO - MG ROAD, KOCHI",682016,Kochi,Ernakulam,Kerala,Zudio,9.961046,76.290103,,,no_match,,15,
 "ZUDIO - PALAKKADAN SQUARE, KOTHAMANGALAM",686691,Kothamangalam,Kothamangalam,Kerala,Zudio,10.064633,76.614204,38837.0,47984.0,exact,Kothamangalam,1,47984.0
 "ZUDIO - SK TOWER, NELLANAD",695607,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.523662,76.985752,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
@@ -1419,24 +1419,24 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - PRESTIGE TMS SQUARE MALL, KOCHI",682024,Kochi,Ernakulam,Kerala,Zudio,10.028677,76.304812,,,no_match,,15,
 "ZUDIO - HI LITE MALL, KOZHIKODE",673014,Kozhikode,Kozhikode,Kerala,Zudio,11.248566,75.833356,550440.0,680086.0,exact,Kozhikode,6,113348.0
 "ZUDIO - KAKKANAD, KOCHI",682037,Kochi,Ernakulam,Kerala,Zudio,9.933561,76.261422,,,no_match,,15,
-"ZUDIO - CHERYL HILL PARK, KOCHI",682021,Kochi,Ernakulam,Kerala,Zudio,10.080282,76.446129,,,no_match,,15,
+"ZUDIO - CHERYL HILL PARK, KOCHI",682021,Kochi,Ernakulam,Kerala,Zudio,10.047943,76.369517,,,no_match,,15,
 "ZUDIO - MALL OF TRAVANCORE, THIRUVANANTHAPURAM",695024,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.490289,76.9248,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
 "ZUDIO - DREAM MALL, THODUPUZHA",685584,Thodupuzha,Idukki,Kerala,Zudio,9.981411,76.787011,52045.0,64303.0,exact,Thodupuzha,2,32152.0
 "ZUDIO - SOBHA CITY MALL, THRISSUR",680553,Thrissur,Thrissur,Kerala,Zudio,10.564862,76.169876,315957.0,390375.0,exact,Thrissur,8,48797.0
 "ZUDIO - KIZHAKKETHALA DOWN HILL, MALAPPURAM",676519,Malappuram,Malappuram,Kerala,Zudio,11.047144,76.071686,101386.0,125266.0,exact,Malappuram,3,41755.0
 "ZUDIO - CARNIVAL HISTREET MALL, KOCHI",682301,Kochi,Ernakulam,Kerala,Zudio,9.957,76.354672,,,no_match,,15,
-"ZUDIO - WHITE FIELD TOWER, THRISSUR",680001,Thrissur,Thrissur,Kerala,Zudio,10.535085,76.201416,315957.0,390375.0,exact,Thrissur,8,48797.0
+"ZUDIO - WHITE FIELD TOWER, THRISSUR",680001,Thrissur,Thrissur,Kerala,Zudio,10.519258,76.214596,315957.0,390375.0,exact,Thrissur,8,48797.0
 "ZUDIO - CENTRAL JUNCTION, ADOOR",691523,Adoor,Pathanamthitta,Kerala,Zudio,9.153478,76.73425,29171.0,36042.0,exact,Adoor,1,36042.0
 "ZUDIO - M.G ROAD, THIRUVANANTHAPURAM",695001,Thiruvananthapuram,Thiruvananthapuram,Kerala,Zudio,8.495991,76.95045,743691.0,918854.0,exact,Thiruvananthapuram,9,102095.0
 "ZUDIO - COLLEGE ROAD, PALAKKAD",678001,Palakkad,Palakkad,Kerala,Zudio,10.769738,76.656537,130955.0,161799.0,exact,Palakkad,5,32360.0
 "ZUDIO - MATTEERTHA, KOTTAYAM",686001,Kottayam,Kottayam,Kerala,Zudio,9.654355,76.551264,55374.0,68416.0,exact,Kottayam,5,13683.0
 "ZUDIO - BRIDGE TOWER, PALAKKAD",678001,Palakkad,Palakkad,Kerala,Zudio,10.766771,76.653498,130955.0,161799.0,exact,Palakkad,5,32360.0
-"ZUDIO - FRIDGE HOUSE, KOCHI",682020,Kochi,Ernakulam,Kerala,Zudio,11.269336,75.78219,,,no_match,,15,
+"ZUDIO - FRIDGE HOUSE, KOCHI",682020,Kochi,Ernakulam,Kerala,Zudio,9.965986,76.302937,,,no_match,,15,
 "ZUDIO - MALL OF GARUDA, PATTAMBI",679306,Palakkad,Palakkad,Kerala,Zudio,10.761898,76.658424,130955.0,161799.0,exact,Palakkad,5,32360.0
 "ZUDIO - CORONATION CINEMA, KOZHIKODE",673004,Kozhikode,Kozhikode,Kerala,Zudio,11.254869,75.783946,550440.0,680086.0,exact,Kozhikode,6,113348.0
 "ZUDIO - VAIKATH ENCLAVE, ALAPPUZHA",688001,Alappuzha,Alappuzha,Kerala,Zudio,9.498085,76.341889,240991.0,297752.0,exact,Alappuzha,1,297752.0
 "ZUDIO - NANNAMMUKKU, MALAPPURAM",679591,Malappuram,Malappuram,Kerala,Zudio,11.042905,76.08052,101386.0,125266.0,exact,Malappuram,3,41755.0
-"ZUDIO - ARAKKAL VENTURES, THRISSUR",680022,Thrissur,Thrissur,Kerala,Zudio,10.383518,76.258628,315957.0,390375.0,exact,Thrissur,8,48797.0
+"ZUDIO - ARAKKAL VENTURES, THRISSUR",680022,Thrissur,Thrissur,Kerala,Zudio,10.542119,76.212257,315957.0,390375.0,exact,Thrissur,8,48797.0
 "ZUDIO - ROYAL GALLERY, SULTAN BATHERY",673592,Wayanad,Wayanad,Kerala,Zudio,11.662892,76.257065,40039.0,49469.0,fuzzy_broad,mayyanad,1,49469.0
 "ZUDIO - CS ARCADE, VENGARA",676304,Vengara,Malappuram,Kerala,Zudio,11.042905,76.08052,48600.0,60047.0,exact,Vengara,1,60047.0
 "ZUDIO - PERINTALMANNA, KERALA",679322,Perintalmanna,Malappuram,Kerala,Zudio,10.988763,76.225629,49723.0,61434.0,fuzzy,perinthalmanna,1,61434.0
@@ -1453,7 +1453,7 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - KHARGONE, MADHYA PRADESH",451001,Khargone,Khargone,Madhya Pradesh,Zudio,21.830549,75.626101,116150.0,174226.0,exact,Khargone,3,58075.0
 "ZUDIO - MALVIYA NAGAR, BHOPAL",462003,Bhopal,Bhopal,Madhya Pradesh,Zudio,23.236034,77.400835,1798218.0,2697340.0,exact,Bhopal,12,224778.0
 "ZUDIO – LANDMARK BY SATGURU, INDORE",452010,Indore,Indore,Madhya Pradesh,Zudio,22.752911,75.904366,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
-"ZUDIO - RAJ BUSINESS PARK 1, BHOPAL",462023,Bhopal,Bhopal,Madhya Pradesh,Zudio,23.270499,77.458703,1798218.0,2697340.0,exact,Bhopal,12,224778.0
+"ZUDIO - RAJ BUSINESS PARK 1, BHOPAL",462023,Bhopal,Bhopal,Madhya Pradesh,Zudio,23.249917,77.441512,1798218.0,2697340.0,exact,Bhopal,12,224778.0
 "ZUDIO - CHETAKPURI, GWALIOR",474009,Gwalior,Gwalior,Madhya Pradesh,Zudio,26.2267,78.1683,1054420.0,1581638.0,exact,Gwalior,7,225948.0
 "ZUDIO - ZAMINDAAR COMPLEX, REWA",486001,Rewa,Rewa,Madhya Pradesh,Zudio,24.54253,81.31506,235654.0,353483.0,exact,Rewa,5,70697.0
 "ZUDIO - MOTI MAHAL, GWALIOR",474009,Gwalior,Gwalior,Madhya Pradesh,Zudio,26.20026,78.16256,1054420.0,1581638.0,exact,Gwalior,7,225948.0
@@ -1468,26 +1468,26 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - OLD PALASIYA, INDORE",452001,Indore,Indore,Madhya Pradesh,Zudio,22.717824,75.884135,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
 "ZUDIO - RAMSAROJ PLAZA, SAGAR",470004,Sagar,Sagar,Madhya Pradesh,Zudio,23.857261,78.785092,274556.0,411836.0,exact,Sagar,2,205918.0
 "ZUDIO - PHOENIX CITADEL MALL, INDORE",452016,Indore,Indore,Madhya Pradesh,Zudio,22.737352,75.90889,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
-"ZUDIO - SB PARK, INDORE",452012,Indore,Indore,Madhya Pradesh,Zudio,22.807346,75.53341,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
+"ZUDIO - SB PARK, INDORE",452012,Indore,Indore,Madhya Pradesh,Zudio,22.657401,75.835965,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
 "ZUDIO - KESHAR TOWERS, GWALIOR",474002,Gwalior,Gwalior,Madhya Pradesh,Zudio,26.215969,78.183762,1054420.0,1581638.0,exact,Gwalior,7,225948.0
 "ZUDIO - MALHAR MEGA MALL, INDORE",452010,Indore,Indore,Madhya Pradesh,Zudio,22.755467,75.888323,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
-"ZUDIO - CAPITAL MALL, BHOPAL",462004,Bhopal,Bhopal,Madhya Pradesh,Zudio,23.172517,77.477516,1798218.0,2697340.0,exact,Bhopal,12,224778.0
-"ZUDIO - AMAR BUSINESS ZONE, PUNE",411007,Pune,Ahmednagar,Maharashtra,Zudio,18.563965,73.77377,3124458.0,4192758.0,exact,Pune,46,91147.0
+"ZUDIO - CAPITAL MALL, BHOPAL",462004,Bhopal,Bhopal,Madhya Pradesh,Zudio,23.235242,77.422862,1798218.0,2697340.0,exact,Bhopal,12,224778.0
+"ZUDIO - AMAR BUSINESS ZONE, PUNE",411007,Pune,Ahmednagar,Maharashtra,Zudio,18.554173,73.819616,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - KALE BUILDING, PUNE",411030,Pune,Ahmednagar,Maharashtra,Zudio,18.514688,73.850165,3124458.0,4192758.0,exact,Pune,46,91147.0
-"ZUDIO - KADBI CHOWK, NAGPUR",440004,Nagpur,Nagpur,Maharashtra,Zudio,21.111063,79.080575,2405665.0,3228199.0,exact,Nagpur,9,358689.0
+"ZUDIO - KADBI CHOWK, NAGPUR",440004,Nagpur,Nagpur,Maharashtra,Zudio,21.1458,79.088155,2405665.0,3228199.0,exact,Nagpur,9,358689.0
 "ZUDIO - MAHAVIR ASTHA, NAVI MUMBAI",410210,Navi Mumbai,Raigad,Maharashtra,Zudio,19.039252,73.063962,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - YASHPRABHA CHS, MUMBAI",400092,Mumbai,Mumbai,Maharashtra,Zudio,19.224859,72.847788,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - BRIJWASI EXCELLENTIA, MUMBAI",400063,Mumbai,Mumbai,Maharashtra,Zudio,19.160426,72.850883,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - CELLO PLATINA, PUNE",411005,Pune,Ahmednagar,Maharashtra,Zudio,18.528979,73.843787,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - KUMAR PACIFIC MALL, PUNE",411042,Pune,Ahmednagar,Maharashtra,Zudio,18.501944,73.874507,3124458.0,4192758.0,exact,Pune,46,91147.0
-"ZUDIO - PRABHAT PLAZA, THANE",400601,Thane,Thane,Maharashtra,Zudio,19.219035,73.093683,1841488.0,2471121.0,exact,Thane,9,274569.0
+"ZUDIO - PRABHAT PLAZA, THANE",400601,Thane,Thane,Maharashtra,Zudio,19.20105,72.978535,1841488.0,2471121.0,exact,Thane,9,274569.0
 "ZUDIO - 93 AVENUE, PUNE",411022,Pune,Ahmednagar,Maharashtra,Zudio,18.506002,73.906831,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - VIPL, NAGPUR",440022,Nagpur,Nagpur,Maharashtra,Zudio,21.119565,79.055177,2405665.0,3228199.0,exact,Nagpur,9,358689.0
 "ZUDIO - CRYSTAL POINT MALL, MUMBAI",400058,Mumbai,Mumbai,Maharashtra,Zudio,19.170934,72.835687,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
-"ZUDIO - SHIVAJI PARK, KOLHAPUR",416001,Kolhapur,Kolhapur,Maharashtra,Zudio,16.705,73.7597,549236.0,737028.0,exact,Kolhapur,2,368514.0
+"ZUDIO - SHIVAJI PARK, KOLHAPUR",416001,Kolhapur,Kolhapur,Maharashtra,Zudio,16.597504,74.100504,549236.0,737028.0,exact,Kolhapur,2,368514.0
 "ZUDIO - SEASONS MALL, PUNE",411028,Pune,Ahmednagar,Maharashtra,Zudio,18.518485,73.930887,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO – EMERALD PLAZA, THANE",400610,Thane,Thane,Maharashtra,Zudio,19.196,72.9766,1841488.0,2471121.0,exact,Thane,9,274569.0
-"ZUDIO - TANIA HORIZON, NALASOPARA",401203,Palghar,Palghar,Maharashtra,Zudio,19.273347,72.96229,68930.0,92498.0,exact,Palghar,5,18500.0
+"ZUDIO - TANIA HORIZON, NALASOPARA",401203,Palghar,Palghar,Maharashtra,Zudio,19.416676,72.79837,68930.0,92498.0,exact,Palghar,5,18500.0
 "ZUDIO - MIDC, PIMPRI CHINCHWAD",411019,Pune,Ahmednagar,Maharashtra,Zudio,18.640394,73.79388,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - WAGHOLI, PUNE",412207,Pune,Ahmednagar,Maharashtra,Zudio,18.574359,73.986769,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - GRAND GALLERIA, MUMBAI",401303,Mumbai,Mumbai,Maharashtra,Zudio,19.468234,72.808578,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
@@ -1503,8 +1503,8 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - GADIA, PUNE",411040,Pune,Ahmednagar,Maharashtra,Zudio,18.485193,73.90044,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - WAKAD, MAHARASHTRA",411057,Pune,Ahmednagar,Maharashtra,Zudio,18.6081,73.9549,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - SOLAPUR, MAHARASHTRA",413001,Solapur,Solapur,Maharashtra,Zudio,17.630778,75.92586,951558.0,1276910.0,exact,Solapur,2,638455.0
-"ZUDIO - KORUM MALL, THANE",400606,Thane,Thane,Maharashtra,Zudio,19.069547,72.905443,1841488.0,2471121.0,exact,Thane,9,274569.0
-"ZUDIO - PROZONE MALL, CHHATRAPATI SAMBHAJINAGAR",431210,Chhatrapati Sambhajinagar,Chhatrapati Sambhajinagar,Maharashtra,Zudio,19.839805,75.233333,1175116.0,1576906.0,exact,Aurangabad,1,1576906.0
+"ZUDIO - KORUM MALL, THANE",400606,Thane,Thane,Maharashtra,Zudio,19.210868,72.96082,1841488.0,2471121.0,exact,Thane,9,274569.0
+"ZUDIO - PROZONE MALL, CHHATRAPATI SAMBHAJINAGAR",431210,Chhatrapati Sambhajinagar,Chhatrapati Sambhajinagar,Maharashtra,Zudio,19.875754,75.33932,1175116.0,1576906.0,exact,Aurangabad,1,1576906.0
 "ZUDIO – GHANSOLI, NAVI MUMBAI",400701,Navi Mumbai,Raigad,Maharashtra,Zudio,19.118499,73.000868,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - FAIRMOUNT, NAVI MUMBAI",400705,Navi Mumbai,Raigad,Maharashtra,Zudio,19.069026,72.998931,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - LE SKYLARK, PUNE",411052,Pune,Ahmednagar,Maharashtra,Zudio,18.485124,73.81104,3124458.0,4192758.0,exact,Pune,46,91147.0
@@ -1513,13 +1513,13 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO - PHOENIX MARKET CITY MALL, MUMBAI",400070,Mumbai,Mumbai,Maharashtra,Zudio,19.052211,72.927599,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - PRAJAPATI OPAL, PANVEL",410206,Navi Mumbai,Raigad,Maharashtra,Zudio,19.030146,73.02022,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - METRO MALL, KALYAN",421306,Kalyan,Thane,Maharashtra,Zudio,19.201469,73.103632,,,no_match,,3,
-"ZUDIO - SAI PARADISE, PIMPRI-CHINCHWAD",411033,Pune,Ahmednagar,Maharashtra,Zudio,18.808613,73.5734,3124458.0,4192758.0,exact,Pune,46,91147.0
+"ZUDIO - SAI PARADISE, PIMPRI-CHINCHWAD",411033,Pune,Ahmednagar,Maharashtra,Zudio,18.61873,73.75367,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - CFC BUILDING, VASAI",401208,Mumbai,Mumbai,Maharashtra,Zudio,19.100277,72.88155,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - KALIKA PLAZA, NASHIK",422002,Nashik,Nashik,Maharashtra,Zudio,19.999112,73.781824,1486053.0,1994157.0,exact,Nashik,9,221573.0
 "ZUDIO - AERO MALL, PUNE",411032,Pune,Ahmednagar,Maharashtra,Zudio,18.592915,73.921365,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - MAYURESH SQUARE, NAVI MUMBAI",400614,Navi Mumbai,Raigad,Maharashtra,Zudio,19.017033,73.044196,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - SPIRE 1, PUNE",411004,Pune,Ahmednagar,Maharashtra,Zudio,18.502042,73.827494,3124458.0,4192758.0,exact,Pune,46,91147.0
-"ZUDIO - KONARK BUSINESS CENTRE, ULHASNAGAR",421003,Thane,Thane,Maharashtra,Zudio,19.105141,72.894262,1841488.0,2471121.0,exact,Thane,9,274569.0
+"ZUDIO - KONARK BUSINESS CENTRE, ULHASNAGAR",421003,Thane,Thane,Maharashtra,Zudio,19.212295,72.977166,1841488.0,2471121.0,exact,Thane,9,274569.0
 "ZUDIO - HIGHWAY CENTER MALL, PUNE",412210,Pune,Ahmednagar,Maharashtra,Zudio,18.6298,73.7997,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO – AMANORA MALL, PUNE",411028,Pune,Ahmednagar,Maharashtra,Zudio,18.500478,73.951922,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - COCO MANSION, THANE",400615,Thane,Thane,Maharashtra,Zudio,19.267268,72.966378,1841488.0,2471121.0,exact,Thane,9,274569.0
@@ -1530,17 +1530,17 @@ ZUDIO - KALYAN NAGAR BENGALURU,560043,Bengaluru,Bangalore Urban,Karnataka,Zudio,
 "ZUDIO, GOLDEN COURT, PUNE",411027,Pune,Ahmednagar,Maharashtra,Zudio,18.462784,73.91419,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - ASHOK TOWER, NASHIK",422013,Nashik,Nashik,Maharashtra,Zudio,20.012359,73.744952,1486053.0,1994157.0,exact,Nashik,9,221573.0
 "ZUDIO - MALAD, MUMBAI",400064,Mumbai,Mumbai,Maharashtra,Zudio,19.188995,72.83567,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
-"ZUDIO - KOREGAON PARK, PUNE",411001,Pune,Ahmednagar,Maharashtra,Zudio,18.53917,73.900214,3124458.0,4192758.0,exact,Pune,46,91147.0
+"ZUDIO - KOREGAON PARK, PUNE",411001,Pune,Ahmednagar,Maharashtra,Zudio,18.529603,73.876015,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - BRIJ ARCADE, SANGLI",416416,Sangli,Sangli,Maharashtra,Zudio,16.869027,74.579199,34321.0,46056.0,fuzzy_broad,sangole,2,23028.0
 "ZUDIO - HAWARE'S CENTURION MALL, NAVI MUMBAI",400706,Navi Mumbai,Raigad,Maharashtra,Zudio,19.029667,73.023793,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - ASMITA SUPER MARKET, MIRA ROAD",401107,Mumbai,Mumbai,Maharashtra,Zudio,19.285921,72.85867,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - DER DEUTSCHE PARKZ, MUMBAI",400078,Mumbai,Mumbai,Maharashtra,Zudio,19.158951,72.943739,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - SUMER LIFE, MUMBAI",400072,Mumbai,Mumbai,Maharashtra,Zudio,19.0876,72.8365,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
-"ZUDIO - MIRAJ ARCADE, KOLHAPUR",416001,Kolhapur,Kolhapur,Maharashtra,Zudio,16.703262,74.236,549236.0,737028.0,exact,Kolhapur,2,368514.0
+"ZUDIO - MIRAJ ARCADE, KOLHAPUR",416001,Kolhapur,Kolhapur,Maharashtra,Zudio,16.597504,74.100504,549236.0,737028.0,exact,Kolhapur,2,368514.0
 "ZUDIO - PIMPLE NILAKH, CHINCHWAD",411027,Pune,Ahmednagar,Maharashtra,Zudio,18.5789,73.9234,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - JAYANTI NAGARI, NAGPUR",440034,Nagpur,Nagpur,Maharashtra,Zudio,21.080211,79.118061,2405665.0,3228199.0,exact,Nagpur,9,358689.0
 "ZUDIO - VEN BUSINESS SQUARE, PUNE",411021,Pune,Ahmednagar,Maharashtra,Zudio,18.548482,73.791163,3124458.0,4192758.0,exact,Pune,46,91147.0
-"ZUDIO - BOOKER KOLSHET ROAD, THANE",400607,Thane,Thane,Maharashtra,Zudio,19.689999,73.466385,1841488.0,2471121.0,exact,Thane,9,274569.0
+"ZUDIO - BOOKER KOLSHET ROAD, THANE",400607,Thane,Thane,Maharashtra,Zudio,19.239283,72.987392,1841488.0,2471121.0,exact,Thane,9,274569.0
 "ZUDIO – POONAM ESTATE, MIRA BHAYANDAR",401107,Mumbai,Mumbai,Maharashtra,Zudio,19.27981,72.86545,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - BOISAR, MUMBAI",401501,Boisar,Palghar,Maharashtra,Zudio,19.077534,72.846914,36151.0,48512.0,exact,Boisar,1,48512.0
 ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.958781,3124458.0,4192758.0,exact,Pune,46,91147.0
@@ -1553,7 +1553,7 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - ASMITA BUSINESS CENTER, NASHIK",422012,Nashik,Nashik,Maharashtra,Zudio,19.9822,73.811364,1486053.0,1994157.0,exact,Nashik,9,221573.0
 "ZUDIO - THE EXCHANGE, NASHIK",422214,Nashik,Nashik,Maharashtra,Zudio,19.951567,73.769138,1486053.0,1994157.0,exact,Nashik,9,221573.0
 "ZUDIO - BURKULE HALL, NASHIK",422010,Nashik,Nashik,Maharashtra,Zudio,19.966079,73.75029,1486053.0,1994157.0,exact,Nashik,9,221573.0
-"ZUDIO - SHIV SOLITARE GARMENT HUB, MUMBAI",400060,Mumbai,Mumbai,Maharashtra,Zudio,19.0645,72.8234,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
+"ZUDIO - SHIV SOLITARE GARMENT HUB, MUMBAI",400060,Mumbai,Mumbai,Maharashtra,Zudio,19.136793,72.857909,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - M SQUARE IT PARK, THANE",400604,Thane,Thane,Maharashtra,Zudio,19.203491,72.94962,1841488.0,2471121.0,exact,Thane,9,274569.0
 "ZUDIO - SADOBA WAREHOUSE, JALGAON",425001,Jalgaon,Jalgaon,Maharashtra,Zudio,20.993801,75.57462,460228.0,617587.0,exact,Jalgaon,2,308794.0
 "ZUDIO - BPHE SOCIETY'S BIZ BAY ONE, AHILYANAGAR",414001,Ahmednagar,Ahmednagar,Maharashtra,Zudio,19.076952,74.724785,350859.0,470823.0,fuzzy_broad,ahmadnagar,1,470823.0
@@ -1581,7 +1581,7 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - FIONA, DOMBIVLI",421202,Mumbai,Mumbai,Maharashtra,Zudio,19.06937,72.905523,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - JANKI LEGACY, MIRA ROAD - MUMBAI",401107,Mumbai,Mumbai,Maharashtra,Zudio,19.299924,72.87347,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - SECOND AVENUE, MUMBAI",400093,Mumbai,Mumbai,Maharashtra,Zudio,19.124905,72.86485,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
-"ZUDIO - MEDICAL CHOWK, NAGPUR",440009,Nagpur,Nagpur,Maharashtra,Zudio,21.178669,79.150244,2405665.0,3228199.0,exact,Nagpur,9,358689.0
+"ZUDIO - MEDICAL CHOWK, NAGPUR",440009,Nagpur,Nagpur,Maharashtra,Zudio,21.133287,79.107161,2405665.0,3228199.0,exact,Nagpur,9,358689.0
 "ZUDIO - YASHWANT ORCHID, NALASOPARA",401209,Mumbai,Mumbai,Maharashtra,Zudio,19.098427,72.84591,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - ONE LUXURIA, NAVI MUMBAI",400709,Navi Mumbai,Raigad,Maharashtra,Zudio,19.11186,73.007139,1120547.0,1503679.0,exact,Navi Mumbai,13,115668.0
 "ZUDIO - SALUNKE VIHAR, PUNE",411048,Pune,Ahmednagar,Maharashtra,Zudio,18.481562,73.898853,3124458.0,4192758.0,exact,Pune,46,91147.0
@@ -1591,7 +1591,7 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - SUNRISE PLAZA, VASAI",401202,Mumbai,Mumbai,Maharashtra,Zudio,19.077793,72.87872,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - REGENCY ANTILIA, ULHASNAGAR",421103,Mumbai,Mumbai,Maharashtra,Zudio,19.245437,73.165154,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - SKYSTAR GHODAWAT, GOREGAON",400104,Mumbai,Mumbai,Maharashtra,Zudio,19.153564,72.834891,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
-"ZUDIO - TECH WEB CENTER, MUMBAI",400102,Mumbai,Mumbai,Maharashtra,Zudio,19.111284,72.860303,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
+"ZUDIO - TECH WEB CENTER, MUMBAI",400102,Mumbai,Mumbai,Maharashtra,Zudio,19.141896,72.834424,7576.0,10166.0,fuzzy_broad,murmadi,31,328.0
 "ZUDIO - LANDGE BHOSARI, PUNE",411039,Pune,Ahmednagar,Maharashtra,Zudio,18.514638,73.854783,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO - KP ARENA, SHEGAON",444203,Shegaon,Shegaon,Maharashtra,Zudio,20.792078,76.686918,59672.0,80075.0,exact,Shegaon,1,80075.0
 "ZUDIO – ONE PLACE, PUNE",411005,Pune,Ahmednagar,Maharashtra,Zudio,18.526716,73.842088,3124458.0,4192758.0,exact,Pune,46,91147.0
@@ -1609,7 +1609,7 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - SK CAPITAL, BULDANA",443001,Buldana,Buldana,Maharashtra,Zudio,20.545328,76.17693,67431.0,90487.0,exact,Buldana,1,90487.0
 "ZUDIO - AG LANDMARK, PUNE",411057,Pune,Ahmednagar,Maharashtra,Zudio,18.586772,73.79076,3124458.0,4192758.0,exact,Pune,46,91147.0
 "ZUDIO – SAMAVED ARCADE, NALLASOPARA",401203,Palghar,Palghar,Maharashtra,Zudio,19.430362,72.810882,68930.0,92498.0,exact,Palghar,5,18500.0
-"ZUDIO - PHUNI MALL, IMPHAL",795001,Imphal,Imphal West,Manipur,Zudio,24.775166,93.91346,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),4,
+"ZUDIO - PHUNI MALL, IMPHAL",795001,Imphal,Imphal West,Manipur,Zudio,24.813982,93.939393,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),4,
 "ZUDIO- THANGAL BAZAR, IMPHAL",795001,Imphal,Imphal West,Manipur,Zudio,24.807528,93.936104,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),4,
 "ZUDIO - VATLE COMPLEX, CHURACHANDPUR",795006,Churachandpur,Churachandpur,Manipur,Zudio,24.335127,93.695012,,8901.0,district_fallback,[Churachandpur district est.],2,
 "ZUDIO - LAITUMKHRAH, SHILLONG",793003,Shillong,Shillong,Meghalaya,Zudio,25.567259,91.90517,143229.0,218959.0,exact,Shillong,2,109480.0
@@ -1630,20 +1630,20 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - DN REGALIA MALL, BHUBANESHWAR",751019,Bhubaneswar,Khordha,Odisha,Zudio,20.236725,85.75912,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 "ZUDIO - EPARI PLAZA, BRAHMAPUR",760002,Brahmapur,Ganjam,Odisha,Zudio,19.315514,84.78443,356598.0,518732.0,corrected,Brahmapur,1,518732.0
 "ZUDIO - PNR CENTRE, BHUBANESWAR",751019,Bhubaneswar,Khordha,Odisha,Zudio,20.238884,85.789128,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
-"ZUDIO - FORTUNE TOWER, SAMBALPUR",768002,Sambalpur,Sambalpur,Odisha,Zudio,21.50316,84.001384,189366.0,275465.0,exact,Sambalpur,9,30607.0
+"ZUDIO - FORTUNE TOWER, SAMBALPUR",768002,Sambalpur,Sambalpur,Odisha,Zudio,21.472618,83.970457,189366.0,275465.0,exact,Sambalpur,9,30607.0
 "ZUDIO - RUPALI SQUARE, BHUBANESWAR",751007,Bhubaneswar,Bhubaneswar,Odisha,Zudio,20.288387,85.84595,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 "ZUDIO - PANTHANIVAS, BHUBANESWAR",751014,Bhubaneswar,Bhubaneswar,Odisha,Zudio,20.245142,85.841196,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 "ZUDIO - PLUTONE MALL, ROURKELA",769015,Rourkela,Sundargarh,Odisha,Zudio,22.224966,84.86361,320040.0,465552.0,fuzzy,raurkela,3,155184.0
 "ZUDIO - MARWARI PARA, JHARSUGUDA",768201,Jharsuguda,Jharsuguda,Odisha,Zudio,21.848752,84.013183,97730.0,142165.0,exact,Jharsuguda,6,23694.0
 "ZUDIO - RAPTANI BHAVAN, BHUBANESWAR",751015,Bhubaneswar,Bhubaneswar,Odisha,Zudio,20.29246,85.813813,885363.0,1287911.0,exact,Bhubaneswar,18,71551.0
 "ZUDIO - HASAN TOWERS, PUDUCHERRY",605009,Pondicherry,Pondicherry,Puducherry,Zudio,11.944608,79.801766,244377.0,367639.0,fuzzy_broad,puducherry,1,367639.0
-"ZUDIO - KHAJURLA, JALANDHAR",144411,Jalandhar,Jalandhar,Punjab,Zudio,31.633,75.5797,862886.0,1139326.0,exact,Jalandhar,10,113933.0
+"ZUDIO - KHAJURLA, JALANDHAR",144411,Jalandhar,Jalandhar,Punjab,Zudio,31.266869,75.702257,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO - SHIVALIK ENCLAVE, NAWANSHAHR",144514,Nawanshahr,Nawanshahr,Punjab,Zudio,30.913177,75.78825,46024.0,60769.0,exact,Nawanshahr,2,30384.0
-"ZUDIO - PUTLIGARH, AMRITSAR",143001,Amritsar,Amritsar,Punjab,Zudio,31.630007,74.834323,1132383.0,1495161.0,exact,Amritsar,5,299032.0
+"ZUDIO - PUTLIGARH, AMRITSAR",143001,Amritsar,Amritsar,Punjab,Zudio,31.642764,74.856561,1132383.0,1495161.0,exact,Amritsar,5,299032.0
 "ZUDIO - APPLES HEIGHT, ZIRAKPUR",140603,Zirakpur,Mohali,Punjab,Zudio,30.639162,76.820242,95553.0,126165.0,exact,Zirakpur,8,15771.0
 "ZUDIO - RISHI VIHAR, AMRITSAR",143001,Amritsar,Amritsar,Punjab,Zudio,31.634,74.8723,1132383.0,1495161.0,exact,Amritsar,5,299032.0
 "ZUDIO - 9TH AVENUE, MOHALI",140307,Mohali,Mohali,Punjab,Zudio,30.69562,76.676316,,,no_match,,4,
-"ZUDIO - SUSHMA CAPITAL, ZIRAKPUR",160104,Zirakpur,Zirakpur,Punjab,Zudio,31.339352,75.600044,95553.0,126165.0,exact,Zirakpur,8,15771.0
+"ZUDIO - SUSHMA CAPITAL, ZIRAKPUR",160104,Zirakpur,Zirakpur,Punjab,Zudio,30.64255,76.817336,95553.0,126165.0,exact,Zirakpur,8,15771.0
 "ZUDIO - PAKHOWAL ROAD, LUDHIANA",142022,Ludhiana,Ludhiana,Punjab,Zudio,30.873439,75.814955,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO - CENTRAL STREET, MOHALI",160062,Mohali,Mohali,Punjab,Zudio,30.70471,76.717865,,,no_match,,4,
 "ZUDIO - DOWNTOWN 44, PATHANKOT",145023,Pathankot,Pathankot,Punjab,Zudio,32.287556,75.59753,156306.0,206381.0,exact,Pathankot,5,41276.0
@@ -1652,12 +1652,12 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - LOVELY MARBLES, JALANDHAR",144002,Jalandhar,Jalandhar,Punjab,Zudio,31.317394,75.556407,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO - AMAN NAGAR, JALANDHAR",144004,Jalandhar,Jalandhar,Punjab,Zudio,31.34982,75.586814,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO - SCOTTICA SQUARE, DUGGRI, LUDHIANA",141013,Ludhiana,Ludhiana,Punjab,Zudio,30.868791,75.84121,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
-"ZUDIO - ANANDA CITY, BHATINDA",151001,Bathinda,Bathinda,Punjab,Zudio,30.17325,74.928584,285788.0,377345.0,exact,Bathinda,3,125782.0
-"ZUDIO – LUDHIANA WALK, LUDHIANA",141007,Ludhiana,Ludhiana,Punjab,Zudio,31.042658,75.839836,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
+"ZUDIO - ANANDA CITY, BHATINDA",151001,Bathinda,Bathinda,Punjab,Zudio,30.211767,74.932568,285788.0,377345.0,exact,Bathinda,3,125782.0
+"ZUDIO – LUDHIANA WALK, LUDHIANA",141007,Ludhiana,Ludhiana,Punjab,Zudio,30.966137,75.923098,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO – AMAYRA CENTRUM, MOHALI",140301,Mohali,Mohali,Punjab,Zudio,30.70471,76.717865,,,no_match,,4,
 "ZUDIO - SAIR SAPATA, RAJPURA",140401,Rajpura,Rajpura,Punjab,Zudio,31.602253,74.88608,92301.0,121871.0,exact,Rajpura,1,121871.0
 "ZUDIO - DAYA COMPLEX, BATALA",143505,Batala,Batala,Punjab,Zudio,31.831053,75.21362,158621.0,209438.0,exact,Batala,2,104719.0
-"ZUDIO - POOJA CENTRAL, ZIRAKPUR",140603,Zirakpur,Mohali,Punjab,Zudio,31.719057,75.706635,95553.0,126165.0,exact,Zirakpur,8,15771.0
+"ZUDIO - POOJA CENTRAL, ZIRAKPUR",140603,Zirakpur,Mohali,Punjab,Zudio,30.64255,76.817336,95553.0,126165.0,exact,Zirakpur,8,15771.0
 "ZUDIO - KANHA BLISS, FAZILKA",152123,Fazilka,Fazilka,Punjab,Zudio,30.401623,74.02582,76492.0,100997.0,exact,Fazilka,1,100997.0
 "ZUDIO - GT ROAD, BATHINDA",151001,Bathinda,Bathinda,Punjab,Zudio,30.212202,74.944595,285788.0,377345.0,exact,Bathinda,3,125782.0
 "ZUDIO- AMRITSAR, MUKUT HOUSE",143001,Amritsar,Amritsar,Punjab,Zudio,31.642914,74.862406,1132383.0,1495161.0,exact,Amritsar,5,299032.0
@@ -1665,14 +1665,14 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - RAJKAMAL SQUARE, PATIALA",147001,Patiala,Patiala,Punjab,Zudio,31.365532,75.41242,446246.0,589208.0,exact,Patiala,2,294604.0
 "ZUDIO - SWARN WALIA PLAZA, LUDHIANA",141001,Ludhiana,Ludhiana,Punjab,Zudio,30.902983,75.829271,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO – OXFORD STREET, ZIRAKPUR",140603,Zirakpur,Mohali,Punjab,Zudio,30.639871,76.824295,95553.0,126165.0,exact,Zirakpur,8,15771.0
-"ZUDIO - NEXUS SHOPPING MALL, AMRITSAR",143001,Amritsar,Amritsar,Punjab,Zudio,31.619379,74.907984,1132383.0,1495161.0,exact,Amritsar,5,299032.0
-"ZUDIO - CURO HIGH STREET, JALANDHAR",144022,Jalandhar,Jalandhar,Punjab,Zudio,31.277648,75.587026,862886.0,1139326.0,exact,Jalandhar,10,113933.0
-"ZUDIO - DALHOUSIE ROAD, PATHANKOT",145001,Pathankot,Pathankot,Punjab,Zudio,32.274949,75.679965,156306.0,206381.0,exact,Pathankot,5,41276.0
+"ZUDIO - NEXUS SHOPPING MALL, AMRITSAR",143001,Amritsar,Amritsar,Punjab,Zudio,31.642764,74.856561,1132383.0,1495161.0,exact,Amritsar,5,299032.0
+"ZUDIO - CURO HIGH STREET, JALANDHAR",144022,Jalandhar,Jalandhar,Punjab,Zudio,31.326015,75.576183,862886.0,1139326.0,exact,Jalandhar,10,113933.0
+"ZUDIO - DALHOUSIE ROAD, PATHANKOT",145001,Pathankot,Pathankot,Punjab,Zudio,32.273335,75.652207,156306.0,206381.0,exact,Pathankot,5,41276.0
 "ZUDIO - CIVIL LINES, JALANDHAR",144004,Jalandhar,Jalandhar,Punjab,Zudio,31.314361,75.591683,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO – EATON PLAZA, BARNALA",148107,Barnala,Barnala,Punjab,Zudio,30.326809,75.50271,116449.0,153755.0,exact,Barnala,1,153755.0
 "ZUDIO - SATYA SAI DEVELOPERS, JALANDHAR",144003,Jalandhar,Jalandhar,Punjab,Zudio,31.305383,75.578693,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO - SAFFRON HIGH STREET, KAPURTHALA",144601,Kapurthala,Kapurthala,Punjab,Zudio,31.381712,75.387942,98916.0,130605.0,exact,Kapurthala,2,65302.0
-"ZUDIO - ELYSIAN TOWER, LUDHIANA",141006,Ludhiana,Ludhiana,Punjab,Zudio,30.90408,75.935211,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
+"ZUDIO - ELYSIAN TOWER, LUDHIANA",141006,Ludhiana,Ludhiana,Punjab,Zudio,30.859005,75.861621,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO - SFS TOWER, GURDASPUR",143521,Gurdaspur,Gurdaspur,Punjab,Zudio,32.037781,75.398842,77928.0,102894.0,exact,Gurdaspur,3,34298.0
 "ZUDIO - SARABHA NAGAR, LUDHIANA",141002,Ludhiana,Ludhiana,Punjab,Zudio,30.894739,75.833682,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO - SPECTRA MALL, PATIALA",147001,Patiala,Patiala,Punjab,Zudio,30.484683,76.595368,446246.0,589208.0,exact,Patiala,2,294604.0
@@ -1682,14 +1682,14 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - MODEL TOWN, LUDHIANA",141002,Ludhiana,Ludhiana,Punjab,Zudio,30.88589,75.839091,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
 "ZUDIO - LAJPAT NAGAR, JALANDHAR",144001,Jalandhar,Jalandhar,Punjab,Zudio,31.310141,75.582843,862886.0,1139326.0,exact,Jalandhar,10,113933.0
 "ZUDIO - CITY MALL, RANI BAZAR, BIKANER",334001,Bikaner,Bikaner,Rajasthan,Zudio,28.01453,73.31607,644406.0,1005427.0,exact,Bikaner,2,502714.0
-"ZUDIO- HALDIYA TOWER, JAIPUR",302171,Jaipur,Jaipur,Rajasthan,Zudio,26.855088,75.824067,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
+"ZUDIO- HALDIYA TOWER, JAIPUR",302171,Jaipur,Jaipur,Rajasthan,Zudio,26.912434,75.787271,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 "ZUDIO- PALIKA CICLE, JAIPUR",302019,Jaipur,Jaipur,Rajasthan,Zudio,26.889992,75.77754,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
-"ZUDIO - CITI PULSE MALL, JAIPUR",302005,Jaipur,Jaipur,Rajasthan,Zudio,26.942769,75.762221,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
+"ZUDIO - CITI PULSE MALL, JAIPUR",302005,Jaipur,Jaipur,Rajasthan,Zudio,26.900462,75.799643,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 "ZUDIO - RADHE SEETA TOWER, CHITTORGARH",312001,Chittorgarh,Chittorgarh,Rajasthan,Zudio,24.88212,74.631546,116406.0,181621.0,fuzzy,chittaurgarh,3,60540.0
 "ZUDIO - SARAF HOUSE - MI ROAD, JAIPUR",302001,Jaipur,Jaipur,Rajasthan,Zudio,26.922871,75.807741,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 "ZUDIO - PRATAP NAGAR, JODHPUR",342003,Jodhpur,Jodhpur,Rajasthan,Zudio,26.2785,72.99871,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
 "ZUDIO - GANDHI PATH, JAIPUR",302021,Jaipur,Jaipur,Rajasthan,Zudio,26.91104,75.73854,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
-"ZUDIO - ENERGYPOLIS TOWER, JAIPUR",302017,Jaipur,Jaipur,Rajasthan,Zudio,26.747864,75.872553,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
+"ZUDIO - ENERGYPOLIS TOWER, JAIPUR",302017,Jaipur,Jaipur,Rajasthan,Zudio,26.84376,75.817539,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 "ZUDIO - ASHOK NAGAR, JODHPUR",342008,Jodhpur,Jodhpur,Rajasthan,Zudio,26.270288,72.986676,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
 "ZUDIO - SURAJPOLE, PALI",306401,Pali,Pali,Rajasthan,Zudio,25.775362,73.334092,230075.0,358972.0,exact,Pali,1,358972.0
 "ZUDIO - MITTAL MALL, AJMER",305001,Ajmer,Ajmer,Rajasthan,Zudio,26.462941,74.633456,542321.0,846150.0,exact,Ajmer,3,282050.0
@@ -1725,20 +1725,20 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - TADONG, GANGTOK",737102,Gangtok,East Sikkim,Sikkim,Zudio,27.33032,88.60639,100286.0,183761.0,exact,Gangtok,3,61254.0
 "ZUDIO - SIMVO COMMERCIAL COMPLEX, GANGTOK",737102,Gangtok,East Sikkim,Sikkim,Zudio,27.33032,88.60639,100286.0,183761.0,exact,Gangtok,3,61254.0
 "ZUDIO - KISHAN BAZAR, NAMCHI",737126,Namchi,Namchi,Sikkim,Zudio,27.164877,88.361472,12190.0,22337.0,exact,Namchi,1,22337.0
-"ZUDIO – KANGEYAM ROAD, TIRUPPUR",641604,Tiruppur,Tiruppur,Tamil Nadu,Zudio,11.005255,77.56109,444352.0,588438.0,exact,Tiruppur,3,196146.0
+"ZUDIO – KANGEYAM ROAD, TIRUPPUR",641604,Tiruppur,Tiruppur,Tamil Nadu,Zudio,11.104195,77.369002,444352.0,588438.0,exact,Tiruppur,3,196146.0
 "ZUDIO - KILPAUK, CHENNAI",600010,Chennai,Chennai,Tamil Nadu,Zudio,13.084343,80.244719,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - KALLIMADAI, COIMBATORE",641005,Coimbatore,Coimbatore,Tamil Nadu,Zudio,10.999094,77.026602,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
 "ZUDIO - DHARAPURAM, TIRUPPUR",638656,Tiruppur,Tiruppur,Tamil Nadu,Zudio,10.989273,76.967511,444352.0,588438.0,exact,Tiruppur,3,196146.0
 "ZUDIO - ADYAR, CHENNAI",600020,Chennai,Chennai,Tamil Nadu,Zudio,12.996788,80.258917,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - RBN TOWERS, CHENNAI",600062,Chennai,Chennai,Tamil Nadu,Zudio,13.120566,80.09775,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - VELLORE, TAMIL NADU",632006,Vellore,Vellore,Tamil Nadu,Zudio,12.9352,79.1288,185803.0,246052.0,exact,Vellore,1,246052.0
-"ZUDIO - UDHAYAM ARCADE, TIRUPPUR",641605,Tiruppur,Tiruppur,Tamil Nadu,Zudio,11.3621,77.3267,444352.0,588438.0,exact,Tiruppur,3,196146.0
+"ZUDIO - UDHAYAM ARCADE, TIRUPPUR",641605,Tiruppur,Tiruppur,Tamil Nadu,Zudio,11.041128,77.343928,444352.0,588438.0,exact,Tiruppur,3,196146.0
 "ZUDIO - SAI NAGAR, CHENNAI",600116,Chennai,Chennai,Tamil Nadu,Zudio,13.0844,80.1747,4646732.0,6153484.0,exact,Chennai,26,236672.0
-"ZUDIO - IYYAPAN SQUARE, MADURAI",625002,Madurai,Madurai,Tamil Nadu,Zudio,9.918035,78.11834,1017865.0,1347918.0,exact,Madurai,4,336980.0
+"ZUDIO - IYYAPAN SQUARE, MADURAI",625002,Madurai,Madurai,Tamil Nadu,Zudio,9.938065,78.130787,1017865.0,1347918.0,exact,Madurai,4,336980.0
 "ZUDIO - JJ COMPLEX, THIRUVALLUR",602003,Thiruvallur,Thiruvallur,Tamil Nadu,Zudio,13.134425,79.90885,56074.0,74257.0,exact,Thiruvallur,1,74257.0
 "ZUDIO - AMINJIKARAI, CHENNAI",600029,Chennai,Chennai,Tamil Nadu,Zudio,13.073725,80.22275,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO – SELVAM ENCLAVE, GOBICHETTIPALAYAM",638476,Gobichettipalayam,Erode,Tamil Nadu,Zudio,11.45988,77.341943,59523.0,78824.0,exact,Gobichettipalayam,1,78824.0
-"ZUDIO - KRISHNA TOWERS, KARAYANCHAVADI, POONAMALLEE",600056,Chennai,Chennai,Tamil Nadu,Zudio,13.136248,79.925535,4646732.0,6153484.0,exact,Chennai,26,236672.0
+"ZUDIO - KRISHNA TOWERS, KARAYANCHAVADI, POONAMALLEE",600056,Chennai,Chennai,Tamil Nadu,Zudio,13.045008,80.115683,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - MR SHOPPING, MADURAI",625020,Madurai,Madurai,Tamil Nadu,Zudio,9.936329,78.147961,1017865.0,1347918.0,exact,Madurai,4,336980.0
 "ZUDIO - ANNANAGAR, CHENNAI",600040,Chennai,Chennai,Tamil Nadu,Zudio,13.082212,80.199477,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - MAYFAIR COMPLEX, CHENNAI",600017,Chennai,Chennai,Tamil Nadu,Zudio,13.045522,80.241122,4646732.0,6153484.0,exact,Chennai,26,236672.0
@@ -1752,14 +1752,14 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - T-NAGAR, CHENNAI",600017,Chennai,Chennai,Tamil Nadu,Zudio,13.046309,80.24252,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - SPENCER PLAZA, CHENNAI",600002,Chennai,Chennai,Tamil Nadu,Zudio,13.061558,80.261188,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - AMBATTUR, CHENNAI",600053,Chennai,Chennai,Tamil Nadu,Zudio,13.111464,80.152771,4646732.0,6153484.0,exact,Chennai,26,236672.0
-"ZUDIO - ALTIN SQUARE, COIMBATORE",641029,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.302721,76.93828,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
+"ZUDIO - ALTIN SQUARE, COIMBATORE",641029,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.074451,76.958545,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
 "ZUDIO - V TOWER, COIMBATORE",641012,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.017087,76.963337,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
 "ZUDIO – VIVIRA MALL, CHENNAI",600130,Chennai,Chennai,Tamil Nadu,Zudio,12.998194,80.254946,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - GS COMPLEX, ERODE",638011,Erode,Erode,Tamil Nadu,Zudio,11.334491,77.705908,157101.0,208043.0,exact,Erode,1,208043.0
 "ZUDIO - SD TOWERS, TIRUCHIRAPPALLI",620019,Tiruchirappalli,Tiruchirappalli,Tamil Nadu,Zudio,10.830009,78.696664,847387.0,1122161.0,exact,Tiruchirappalli,3,374054.0
 "ZUDIO - GUDUVANCHERY, CHENNAI",603202,Chennai,Chennai,Tamil Nadu,Zudio,12.83515,80.050777,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - CHINNA CHOKIKULAM, MADURAI",625002,Madurai,Madurai,Tamil Nadu,Zudio,9.933364,78.133255,1017865.0,1347918.0,exact,Madurai,4,336980.0
-"ZUDIO - FUN REPUBLIC, COIMBATORE",641004,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.050148,77.058641,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
+"ZUDIO - FUN REPUBLIC, COIMBATORE",641004,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.036176,77.014154,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
 "ZUDIO - CITY CENTRE MALL, CHENNAI",600004,Chennai,Chennai,Tamil Nadu,Zudio,13.043111,80.270624,4646732.0,6153484.0,exact,Chennai,26,236672.0
 "ZUDIO - ONDIPUDUR, COIMBATORE",641402,Coimbatore,Coimbatore,Tamil Nadu,Zudio,11.027023,77.127283,1050721.0,1391428.0,exact,Coimbatore,6,231905.0
 "ZUDIO - NU TECH ZARINA TOWERS, CHENNAI",600024,Chennai,Chennai,Tamil Nadu,Zudio,13.050513,80.2427,4646732.0,6153484.0,exact,Chennai,26,236672.0
@@ -1798,7 +1798,7 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - SANATH NAGAR, HYDERABAD",500018,Hyderabad,Hyderabad,Telangana,Zudio,17.45437,78.43726,,,no_match,,71,
 "ZUDIO – SPRING FIELDS COLONY, HYDERABAD",500015,Hyderabad,Hyderabad,Telangana,Zudio,17.499127,78.476852,,,no_match,,71,
 "ZUDIO - SN MALL, KARIMNAGAR",505001,Karimnagar,Karimnagar,Telangana,Zudio,18.43385,79.134735,,,no_match,,3,
-"ZUDIO - CCPL RAMACHANDRA MALL, HYDERABAD",500047,Hyderabad,Hyderabad,Telangana,Zudio,17.349102,78.49706,,,no_match,,71,
+"ZUDIO - CCPL RAMACHANDRA MALL, HYDERABAD",500047,Hyderabad,Hyderabad,Telangana,Zudio,17.451218,78.534851,,,no_match,,71,
 "ZUDIO - NACHARAM, HYDERABAD",500076,Hyderabad,Hyderabad,Telangana,Zudio,17.423792,78.546851,,,no_match,,71,
 "ZUDIO - RAMCHANDRAPURAM, HYDERABAD",502032,Hyderabad,Hyderabad,Telangana,Zudio,17.361362,78.474525,,,no_match,,71,
 "ZUDIO - ODEAN MALL, HYDERABAD",500020,Hyderabad,Hyderabad,Telangana,Zudio,17.402932,78.495298,,,no_match,,71,
@@ -1813,16 +1813,16 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - ASHOKA GARDEN, HYDERABAD",500011,Hyderabad,Hyderabad,Telangana,Zudio,17.46647,78.479813,,,no_match,,71,
 "ZUDIO - ATTAPUR, HYDERABAD",500048,Hyderabad,Hyderabad,Telangana,Zudio,17.365633,78.435134,,,no_match,,71,
 "ZUDIO - RAMANTHAPUR, HYDERABAD",500013,Hyderabad,Hyderabad,Telangana,Zudio,17.406272,78.392126,,,no_match,,71,
-"ZUDIO - KLK ESTATE, HYDERABAD",500001,Hyderabad,Hyderabad,Telangana,Zudio,17.329674,78.575477,,,no_match,,71,
+"ZUDIO - KLK ESTATE, HYDERABAD",500001,Hyderabad,Hyderabad,Telangana,Zudio,17.387436,78.472173,,,no_match,,71,
 "ZUDIO – P.G ROAD, HYDERABAD",500010,Hyderabad,Hyderabad,Telangana,Zudio,17.440094,78.48477,,,no_match,,71,
-"ZUDIO - L&T AMEERPET METRO STATION, HYDERABAD",500038,Hyderabad,Hyderabad,Telangana,Zudio,17.458988,78.367608,,,no_match,,71,
-"ZUDIO - IRRUM MANZIL MALL, HYDERABAD",500004,Hyderabad,Hyderabad,Telangana,Zudio,17.361362,78.474525,,,no_match,,71,
+"ZUDIO - L&T AMEERPET METRO STATION, HYDERABAD",500038,Hyderabad,Hyderabad,Telangana,Zudio,17.444061,78.440386,,,no_match,,71,
+"ZUDIO - IRRUM MANZIL MALL, HYDERABAD",500004,Hyderabad,Hyderabad,Telangana,Zudio,17.406956,78.461082,,,no_match,,71,
 "ZUDIO - A2A CENTRAL, HYDERABAD",500037,Hyderabad,Hyderabad,Telangana,Zudio,17.486683,78.450219,,,no_match,,71,
 "ZUDIO - KOTHAPET, HYDERABABD",500035,Hyderabad,Hyderabad,Telangana,Zudio,17.437214,78.574165,,,no_match,,71,
 "ZUDIO - SARATH CITY CAPITAL MALL, KONDAPUR",500084,Hyderabad,Hyderabad,Telangana,Zudio,17.453555,78.367298,,,no_match,,71,
 "ZUDIO - SWATHI PLAZA, HYDERABAD",500049,Hyderabad,Hyderabad,Telangana,Zudio,17.49487,78.34518,,,no_match,,71,
 "ZUDIO - PVR NEXUS MALL, HYDERABAD",500072,Hyderabad,Hyderabad,Telangana,Zudio,17.492798,78.40409,,,no_match,,71,
-"ZUDIO - ALLIANCE BAY, SECUNDERABAD",500003,Hyderabad,Hyderabad,Telangana,Zudio,17.361362,78.474525,,,no_match,,71,
+"ZUDIO - ALLIANCE BAY, SECUNDERABAD",500003,Hyderabad,Hyderabad,Telangana,Zudio,17.436926,78.489401,,,no_match,,71,
 "ZUDIO - KISHANPURA, WARANGAL",506001,Warangal,Warangal,Telangana,Zudio,18.012426,79.56104,,,no_match,,4,
 "ZUDIO - GSR PRIDE, HYDERABAD",500015,Hyderabad,Hyderabad,Telangana,Zudio,17.48449,78.488655,,,no_match,,71,
 "ZUDIO - PRISM MALL, HYDERABAD",500032,Hyderabad,Hyderabad,Telangana,Zudio,17.440592,78.36093,,,no_match,,71,
@@ -1840,21 +1840,21 @@ ZUDIO - ASHWAKASH SPACES,412201,Pune,Ahmednagar,Maharashtra,Zudio,18.497653,73.9
 "ZUDIO - BANJARA HILLS, HYDERABAD",500034,Hyderabad,Hyderabad,Telangana,Zudio,17.42077,78.436741,,,no_match,,71,
 "ZUDIO - JAINS BALAJI BIG TOWN, HYDERABAD",500047,Hyderabad,Hyderabad,Telangana,Zudio,17.449963,78.53575,,,no_match,,71,
 "ZUDIO - AMRUTHA VALLEY APARTMENTS, HYDERABAD",500034,Hyderabad,Hyderabad,Telangana,Zudio,17.408134,78.447016,,,no_match,,71,
-"ZUDIO - SATTVA NECKLACE MALL, HYDERABAD",500080,Hyderabad,Hyderabad,Telangana,Zudio,17.4401,78.5778,,,no_match,,71,
+"ZUDIO - SATTVA NECKLACE MALL, HYDERABAD",500080,Hyderabad,Hyderabad,Telangana,Zudio,17.418509,78.491228,,,no_match,,71,
 "ZUDIO - TAPADIYA MARUTI INFINITY, HYDERABAD",500032,Hyderabad,Hyderabad,Telangana,Zudio,17.428733,78.32512,,,no_match,,71,
 "ZUDIO - SHUKLAGANJ, UNNAO",209861,Unnao,Unnao,Uttar Pradesh,Zudio,26.535184,80.469364,177658.0,272384.0,exact,Unnao,4,68096.0
 "ZUDIO - BUDAUN CITY MALL, BUDAUN",243601,Budaun,Budaun,Uttar Pradesh,Zudio,28.032398,79.125568,159285.0,244215.0,exact,Budaun,4,61054.0
-"ZUDIO - AU FAMILY HUB, GHAZIABAD",201002,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.648947,77.492448,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
+"ZUDIO - AU FAMILY HUB, GHAZIABAD",201002,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.680593,77.458724,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 "ZUDIO - ARADHYAM SHOPPING MALL, UTTAR PRADESH",201005,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.65782,77.411012,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 "ZUDIO - KB MART, GREATER NOIDA",201310,Greater Noida,Greater Noida,Uttar Pradesh,Zudio,28.458091,77.50454,102054.0,156469.0,exact,Greater Noida,8,19559.0
 "ZUDIO - AAA MALL, ETAWAH",206001,Etawah,Etawah,Uttar Pradesh,Zudio,26.77376,79.028502,256838.0,393783.0,exact,Etawah,3,131261.0
 "ZUDIO - GT ROAD, ALIGARH",202001,Aligarh,Aligarh,Uttar Pradesh,Zudio,27.894799,78.062219,874408.0,1340638.0,exact,Aligarh,5,268128.0
 "ZUDIO - CENTRAL 50, SECTOR 50, NOIDA",201303,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.598791,77.404886,637272.0,977063.0,exact,Noida,11,88824.0
 "ZUDIO - PVS MALL, MEERUT",250004,Meerut,Meerut,Uttar Pradesh,Zudio,28.953416,77.731939,1305429.0,2001478.0,exact,Meerut,4,500370.0
-"ZUDIO - EDM MALL, GHAZIABAD",201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.641355,77.316947,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
+"ZUDIO - EDM MALL, GHAZIABAD",201001,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.66437,77.438643,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 "ZUDIO – HINDON METRO, GHAZIABAD",201003,Ghaziabad,Ghaziabad,Uttar Pradesh,Zudio,28.673521,77.406671,1648643.0,2527692.0,exact,Ghaziabad,17,148688.0
 "ZUDIO - SURAJ KUND, MEERUT",250002,Meerut,Meerut,Uttar Pradesh,Zudio,28.976382,77.716458,1305429.0,2001478.0,exact,Meerut,4,500370.0
-"ZUDIO - KESHAV IT PARK, NOIDA",201305,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.533402,77.387188,637272.0,977063.0,exact,Noida,11,88824.0
+"ZUDIO - KESHAV IT PARK, NOIDA",201305,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.555254,77.40708,637272.0,977063.0,exact,Noida,11,88824.0
 "ZUDIO - ARTHA MART, NOIDA",201306,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.607769,77.425228,637272.0,977063.0,exact,Noida,11,88824.0
 "ZUDIO - ANUPAM CENTERIO, AGRA",282007,Agra,Agra,Uttar Pradesh,Zudio,27.1771,78.0081,1585704.0,2431194.0,corrected,Agra,15,162080.0
 "ZUDIO - SEVEN STAR INSOFT, NOIDA",201309,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.614769,77.377004,637272.0,977063.0,exact,Noida,11,88824.0
@@ -1905,7 +1905,7 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - INDIRA NAGAR, LUCKNOW",226016,Lucknow,Lucknow,Uttar Pradesh,Zudio,26.872381,80.980216,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 "ZUDIO - SILVER PALACE, AGRA",282007,Agra,Agra,Uttar Pradesh,Zudio,27.212454,77.94976,1585704.0,2431194.0,corrected,Agra,15,162080.0
 "ZUDIO - CENTRAL MARKET, NOIDA",201301,Noida,Gautam Budh Nagar,Uttar Pradesh,Zudio,28.586464,77.398619,637272.0,977063.0,exact,Noida,11,88824.0
-"ZUDIO - RAJAPUR KOTHI, LAKHIMPUR",262701,Lakhimpur Kheri,Lakhimpur Kheri,Uttar Pradesh,Zudio,27.90413,80.79713,151993.0,233035.0,fuzzy_broad,lakhimpur,5,46607.0
+"ZUDIO - RAJAPUR KOTHI, LAKHIMPUR",262701,Lakhimpur Kheri,Lakhimpur Kheri,Uttar Pradesh,Zudio,27.94624,80.778716,151993.0,233035.0,fuzzy_broad,lakhimpur,5,46607.0
 "ZUDIO - DELHI ROAD, SAHARANPUR",247001,Saharanpur,Saharanpur,Uttar Pradesh,Zudio,29.933762,77.534511,705478.0,1081636.0,exact,Saharanpur,3,360545.0
 "ZUDIO - ITHUM GALLERIA MALL, NOIDA",201310,Greater Noida,Greater Noida,Uttar Pradesh,Zudio,28.477333,77.52279,102054.0,156469.0,exact,Greater Noida,8,19559.0
 "ZUDIO- CIVIL LINES, GORAKHPUR",273001,Gorakhpur,Gorakhpur,Uttar Pradesh,Zudio,26.753256,83.377141,673446.0,1032524.0,exact,Gorakhpur,20,51626.0
@@ -1923,10 +1923,10 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - CHAMRI, HAPUR",245101,Hapur,Meerut,Uttar Pradesh,Zudio,28.73015,77.778824,262983.0,403204.0,exact,Hapur,1,403204.0
 "ZUDIO – RANIPUR, HARIDWAR",249401,Haridwar,Haridwar,Uttarakhand,Zudio,29.934392,78.136107,231338.0,366767.0,fuzzy,hardwar,2,183384.0
 "ZUDIO - SHOPPERS STREET, RUDRAPUR",263153,Rudrapur,Udham Singh Nagar,Uttarakhand,Zudio,28.967013,79.415037,154554.0,245033.0,exact,Rudrapur,4,61258.0
-"ZUDIO - CHAKRATA ROAD, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.70262,77.86835,574840.0,911361.0,exact,Dehradun,12,75947.0
-"ZUDIO - NAINITAL ROAD, HALDWANI",263139,Haldwani,Nainital,Uttarakhand,Zudio,29.39191,79.454414,,,no_match,,2,
-"ZUDIO - RAJPUR ROAD, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.096859,78.286611,574840.0,911361.0,exact,Dehradun,12,75947.0
-"ZUDIO - ARAGHAR CHOWK, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,29.938986,78.14364,574840.0,911361.0,exact,Dehradun,12,75947.0
+"ZUDIO - CHAKRATA ROAD, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.334582,78.053781,574840.0,911361.0,exact,Dehradun,12,75947.0
+"ZUDIO - NAINITAL ROAD, HALDWANI",263139,Haldwani,Nainital,Uttarakhand,Zudio,29.218264,79.512977,,,no_match,,2,
+"ZUDIO - RAJPUR ROAD, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.334582,78.053781,574840.0,911361.0,exact,Dehradun,12,75947.0
+"ZUDIO - ARAGHAR CHOWK, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.334582,78.053781,574840.0,911361.0,exact,Dehradun,12,75947.0
 "ZUDIO- CROSSROADS MALL, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.328862,78.046378,574840.0,911361.0,exact,Dehradun,12,75947.0
 "ZUDIO - THE METROPOLIS MALL, RUDRAPUR",263153,Rudrapur,Udham Singh Nagar,Uttarakhand,Zudio,28.978626,79.39826,154554.0,245033.0,exact,Rudrapur,4,61258.0
 "ZUDIO - HARIDWAR BYPASS ROAD, DEHRADUN",248001,Dehradun,Dehradun,Uttarakhand,Zudio,30.302126,78.04732,574840.0,911361.0,exact,Dehradun,12,75947.0
@@ -1940,7 +1940,7 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - HATIBAGAN, KOLKATA",700006,Kolkata,North 24 Parganas,West Bengal,Zudio,22.594262,88.378169,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - CHANDANNAGAR, HOOGHLY",712136,Kolkata,North 24 Parganas,West Bengal,Zudio,22.51583,88.38903,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - JOYGACHI, HABRA",743263,Habra,North 24 Parganas,West Bengal,Zudio,22.8298,88.6529,278435.0,367636.0,exact,Barasat,7,52519.0
-"ZUDIO - GT ROAD, BARDHAMAN",713103,Durgapur,Paschim Bardhaman,West Bengal,Zudio,23.229785,87.868607,314265.0,748010.0,corrected,Durgapur,3,
+"ZUDIO - GT ROAD, BARDHAMAN",713103,Durgapur,Paschim Bardhaman,West Bengal,Zudio,23.520444,87.311923,314265.0,748010.0,corrected,Durgapur,3,
 "ZUDIO - RISHRA, HOOGHLY",712248,Kolkata,North 24 Parganas,West Bengal,Zudio,22.716236,88.355868,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - MALANCHA, KHARAGPUR",721304,Kharagpur,Kharagpur,West Bengal,Zudio,22.344512,87.28791,207604.0,274113.0,exact,Kharagpur,5,54823.0
 "ZUDIO - COLLEGE MORE, BALURGHAT",733101,Balurghat,Dakshin Dinajpur,West Bengal,Zudio,25.230343,88.77819,153279.0,202385.0,exact,Balurghat,2,101192.0
@@ -1960,7 +1960,7 @@ ZUDIO - BARELI (WS CON),243001,Bareilly,Bareilly,Uttar Pradesh,Zudio,28.336515,7
 "ZUDIO - SHIBPUR, HOWRAH",711102,Howrah,Howrah,West Bengal,Zudio,22.573471,88.328349,1077075.0,1422134.0,corrected,Haora,16,
 "ZUDIO - COSMOS CIRCLE, JALPAIGURI",735101,Jalpaiguri,Jalpaiguri,West Bengal,Zudio,26.525357,88.719634,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
 "ZUDIO - MARTIN IMPALA, KOLKATA",700048,Kolkata,North 24 Parganas,West Bengal,Zudio,22.608993,88.397766,4496694.0,5937285.0,exact,Kolkata,73,81333.0
-"ZUDIO – TRADIUM MALL, SILIGURI",734001,Siliguri,Darjeeling,West Bengal,Zudio,26.750501,88.435507,294546.0,388909.0,corrected,Siliguri (M Corp.),11,
+"ZUDIO – TRADIUM MALL, SILIGURI",734001,Siliguri,Darjeeling,West Bengal,Zudio,26.723277,88.425848,294546.0,388909.0,corrected,Siliguri (M Corp.),11,
 "ZUDIO - SEVOKE ROAD, SILIGURI",734001,Siliguri,Darjeeling,West Bengal,Zudio,26.718322,88.424994,294546.0,388909.0,corrected,Siliguri (M Corp.),11,
 "ZUDIO - AXIS MALL, KOLKATA",700156,Kolkata,North 24 Parganas,West Bengal,Zudio,22.580734,88.4591,4496694.0,5937285.0,exact,Kolkata,73,81333.0
 "ZUDIO - RAJARHAT, KOLKATA",700136,Kolkata,North 24 Parganas,West Bengal,Zudio,22.623641,88.441093,4496694.0,5937285.0,exact,Kolkata,73,81333.0
@@ -2020,7 +2020,7 @@ mBaazar - Boko,781123,Boko,Kamrup,Assam,mBaazar,26.438969,91.62093,,13349.0,dist
 mBaazar - Bongaon,743235,Bongaon,North 24 Parganas,West Bengal,mBaazar,23.0525,88.828,108864.0,143740.0,exact,Bongaon,4,35935.0
 mBaazar - BRAHMAPUR,760001,Phulbani,Kandhamal,Odisha,mBaazar,19.315514,84.78443,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 mBaazar - BURDWAN,713101,Bardhaman,Purba Bardhaman,West Bengal,mBaazar,23.2324,87.8615,56722.0,74894.0,exact,Kalna,4,18724.0
-mBaazar - BURDWAN BUS STAND,713103,Durgapur,Paschim Bardhaman,West Bengal,mBaazar,23.254723,87.875393,314265.0,748010.0,corrected,Durgapur,3,
+mBaazar - BURDWAN BUS STAND,713103,Durgapur,Paschim Bardhaman,West Bengal,mBaazar,23.520444,87.311923,314265.0,748010.0,corrected,Durgapur,3,
 mBaazar - Chakdaha,741222,Kalyani,Nadia,West Bengal,mBaazar,23.07994,88.535428,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
 mBaazar - Chanchal,732123,Chanchal,Malda,West Bengal,mBaazar,25.391411,88.009436,5570.0,7354.0,exact,Chanchal,3,2451.0
 mBaazar - CHAPAR,783371,Chapar,Dhubri,Assam,mBaazar,26.271751,90.44228,20322.0,30483.0,exact,Chapar,1,30483.0
@@ -2121,7 +2121,7 @@ mBaazar - MOTIHARI,845401,Motihari,East Champaran,Bihar,mBaazar,26.646962,84.908
 mBaazar - Moyna,721629,Moyna,Purba Medinipur,West Bengal,mBaazar,22.246075,87.794326,65306.0,31303.0,district_avg,[Purba Medinipur avg],1,
 mBaazar - Mukalmua,781126,Mukalmua,Nalbari,Assam,mBaazar,26.271363,91.350371,27839.0,11281.0,district_avg,[Nalbari avg],1,
 mBaazar - Murarai,731219,Murarai,Birbhum,West Bengal,mBaazar,24.534355,87.852036,5770.0,7619.0,exact,Murarai,1,7619.0
-mBaazar - Nabarangpur,764059,Nabarangpur,Nabarangpur,Odisha,mBaazar,19.250029,82.555952,36945.0,53743.0,fuzzy,nabarangapur,3,17914.0
+mBaazar - Nabarangpur,764059,Nabarangpur,Nabarangpur,Odisha,mBaazar,19.227716,82.549088,36945.0,53743.0,fuzzy,nabarangapur,3,17914.0
 mBaazar - Naihati,743165,Naihati,North 24 Parganas,West Bengal,mBaazar,22.887286,88.41577,217900.0,287708.0,exact,Naihati,5,57542.0
 mBaazar - Nandigram,721631,Nandigram,Purba Medinipur,West Bengal,mBaazar,22.010227,87.97682,5803.0,7662.0,exact,Nandigram,1,7662.0
 mBaazar - Naxalbari,734429,Naxalbari,Darjeeling,West Bengal,mBaazar,26.683401,88.201195,,30000.0,district_avg,[Darjeeling avg],1,
@@ -2269,27 +2269,27 @@ V-Mart - Jamalpur,811214,Jamalpur,Jamalpur,Bihar,Vmart,25.376354,86.470985,10543
 V-Mart - Madhepura,852113,Madhepura,Madhepura,Bihar,Vmart,25.920261,86.792237,54472.0,93534.0,exact,Madhepura,6,15589.0
 V-Mart - Murliganj,852122,Murliganj,Madhepura,Bihar,Vmart,25.6167,87.5667,28691.0,49265.0,exact,Murliganj,1,49265.0
 V-Mart - Chhapra,841301,Chhapra,Saran,Bihar,Vmart,25.9833,84.75,202352.0,347459.0,fuzzy,chapra,4,86865.0
-V-Mart - Forbesganj-Sadar Road,854318,Katihar,Katihar,Bihar,Vmart,26.133728,87.46471,240838.0,413544.0,exact,Katihar,6,68924.0
+V-Mart - Forbesganj-Sadar Road,854318,Katihar,Katihar,Bihar,Vmart,25.639543,87.741884,240838.0,413544.0,exact,Katihar,6,68924.0
 V-Mart - Bhagalpur - Gurhatta Chowk,812005,Bhagalpur,Bhagalpur,Bihar,Vmart,25.239887,86.97526,354462.0,687092.0,corrected,Bhagalpur,1,
 V-Mart - Bhagalpur,812001,Bhagalpur,Bhagalpur,Bihar,Vmart,25.246159,86.979615,400146.0,687092.0,corrected,Bhagalpur,9,76344.0
 V-Mart - Bhagalpur-Kachehari Road,812001,Bhagalpur,Bhagalpur,Bihar,Vmart,25.243223,86.98313,400146.0,687092.0,corrected,Bhagalpur,9,76344.0
 V-Mart - Banka,813102,Banka,Banka,Bihar,Vmart,24.8667,86.6333,45977.0,78947.0,exact,Banka,2,39474.0
 V-Mart - Kahalgoan,813204,Kahalgaon,Bhagalpur,Bihar,Vmart,25.26495,87.23483,400146.0,103461.0,district_avg,[Bhagalpur avg],1,
 V-Mart - Purnia,854301,Purnia,Purnia,Bihar,Vmart,25.764585,87.46946,282248.0,484649.0,exact,Purnia,8,60581.0
-V-Mart - Rambagh Chowk,854301,Purnia,Purnia,Bihar,Vmart,25.79226,87.49657,282248.0,484649.0,exact,Purnia,8,60581.0
+V-Mart - Rambagh Chowk,854301,Purnia,Purnia,Bihar,Vmart,25.776968,87.46535,282248.0,484649.0,exact,Purnia,8,60581.0
 V-Mart - Katihar-Mirchaibari,854105,Katihar,Katihar,Bihar,Vmart,25.552608,87.555145,240838.0,413544.0,exact,Katihar,6,68924.0
 V-Mart - Katihar-New Market,854105,Katihar,Katihar,Bihar,Vmart,25.544678,87.56836,240838.0,413544.0,exact,Katihar,6,68924.0
 V-Mart - Kishanganj,855107,Kishanganj,Kishanganj,Bihar,Vmart,26.104525,87.94945,67818.0,181639.0,corrected,Kishanganj,2,
 V-Mart - Chandigarh,160101,Chandigarh,Chandigarh,Chandigarh,Vmart,30.713167,76.8347,970602.0,1460167.0,exact,Chandigarh,1,1460167.0
 V-Mart - Bilaspur,495001,Bilaspur,Bilaspur,Chhattisgarh,Vmart,22.079802,82.15734,16129.0,25055.0,fuzzy_broad,bijapur,7,3579.0
 V-Mart - Raipur-City Center Mall,492002,Raipur,Durg,Chhattisgarh,Vmart,21.2458,81.6296,1027264.0,1595789.0,exact,Raipur,10,159579.0
-V-Mart - Colors Mall-Raipur,492001,Raipur,Durg,Chhattisgarh,Vmart,21.22445,81.63744,1027264.0,1595789.0,exact,Raipur,10,159579.0
+V-Mart - Colors Mall-Raipur,492001,Raipur,Durg,Chhattisgarh,Vmart,21.232989,81.658299,1027264.0,1595789.0,exact,Raipur,10,159579.0
 V-Mart - Lajpat Nagar,110024,New Delhi,New Delhi,Delhi,Vmart,28.5672,77.2505,,,no_match,,34,
 V-Mart - Laxmi Nagar,110092,New Delhi,Central Delhi,Delhi,Vmart,28.58,77.25,,,no_match,,34,
-V-Mart - Mahipalpur,110037,Delhi,South West Delhi,Delhi,Vmart,28.5356,77.2531,,,no_match,,4,
+V-Mart - Mahipalpur,110037,Delhi,South West Delhi,Delhi,Vmart,28.544148,77.115981,,,no_match,,4,
 V-Mart - Mahavir Enclave,110045,New Delhi,New Delhi,Delhi,Vmart,28.55,77.1833,,,no_match,,34,
 V-Mart - Delhi-Dwarka,110075,Dwarka,Dwarka,Delhi,Vmart,28.5355,77.0521,,,no_match,,3,
-V-Mart - Delhi-Burari,110084,Burari,North Delhi,Delhi,Vmart,28.7306,77.0808,146190.0,197042.0,exact,Burari,3,65681.0
+V-Mart - Delhi-Burari,110084,Burari,North Delhi,Delhi,Vmart,28.758263,77.194602,146190.0,197042.0,exact,Burari,3,65681.0
 V-Mart - Nangloi,110041,Delhi,West Delhi,Delhi,Vmart,28.68128,77.06731,205596.0,277112.0,fuzzy_broad,nangloi jat,1,277112.0
 V-Mart - Delhi-Narela,110040,Narela,North West Delhi,Delhi,Vmart,28.8156,77.0469,,,no_match,,3,
 "V-Mart - Patan, Bus Stand",384265,Patan,Patan,Gujarat,Vmart,23.853036,72.130417,133737.0,183734.0,exact,Patan,2,91867.0
@@ -2304,24 +2304,24 @@ V-Mart - Gandhidham,370201,Gandhidham,Kutch,Gujarat,Vmart,23.0669,69.6417,247992
 V-Mart - Surat,394221,Surat,Surat,Gujarat,Vmart,21.1833,72.8167,4467797.0,6138061.0,exact,Surat,27,227336.0
 V-Mart - Rajkot-Kuvada Road,360003,Rajkot,Rajkot,Gujarat,Vmart,22.303358,70.81824,1323363.0,1818096.0,exact,Rajkot,5,363619.0
 V-Mart - Jamnagar,361008,Jamnagar,Jamnagar,Gujarat,Vmart,22.4722,70.0431,600943.0,825603.0,exact,Jamnagar,3,275201.0
-V-Mart - Jamnagar-Samna Road,361005,Jamnagar,Jamnagar,Gujarat,Vmart,22.1667,71.95,,,no_match,,1,
+V-Mart - Jamnagar-Samna Road,361005,Jamnagar,Jamnagar,Gujarat,Vmart,22.433831,70.089018,,,no_match,,1,
 V-Mart - Junagarh,362001,Junagadh,Junagadh,Gujarat,Vmart,22.0667,71.7667,319462.0,438891.0,exact,Junagadh,1,438891.0
 V-Mart - Porbandar,360575,Porbandar,Porbandar,Gujarat,Vmart,21.640594,69.606,152760.0,209869.0,exact,Porbandar,2,104934.0
-V-Mart - Veraval,362265,Jamnagar,Jamnagar,Gujarat,Vmart,22.2333,71.6833,,,no_match,,1,
+V-Mart - Veraval,362265,Jamnagar,Jamnagar,Gujarat,Vmart,22.470702,70.05773,,,no_match,,1,
 V-Mart - Corporate Office,122015,Gurugram,Gurugram,Haryana,Vmart,28.48588,77.069658,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 "V-Mart - Faridabad, NIT 1",121001,Faridabad,Faridabad,Haryana,Vmart,28.383575,77.30268,1414050.0,2168015.0,exact,Faridabad,9,240891.0
 V-Mart - Gurugram-Badshahpur,122101,Gurugram,Gurugram,Haryana,Vmart,28.391874,77.048402,886519.0,1359207.0,corrected,Gurgaon,20,67960.0
 V-Mart - Palwal-Agra Chowk,121102,Palwal,Palwal,Haryana,Vmart,27.8333,77.3333,131926.0,202268.0,exact,Palwal,1,202268.0
-V-Mart - Ambala,134003,Ambala,Ambala,Haryana,Vmart,30.2372,76.6536,195153.0,299208.0,exact,Ambala,4,74802.0
+V-Mart - Ambala,134003,Ambala,Ambala,Haryana,Vmart,30.375201,76.782122,195153.0,299208.0,exact,Ambala,4,74802.0
 V-Mart - Palampur-City Mall,176061,Palampur,Palampur,Himachal Pradesh,Vmart,32.1697,76.3853,3543.0,4754.0,exact,Palampur,2,2377.0
 V-Mart - Kathua,184101,Kathua,Kathua,Jammu and Kashmir,Vmart,32.4292,75.397,59866.0,88886.0,exact,Kathua,2,44443.0
-V-Mart - Jammu-Kunjwani,180010,Jammu,Jammu,Jammu and Kashmir,Vmart,32.6753,74.792,576198.0,855510.0,exact,Jammu,9,95057.0
+V-Mart - Jammu-Kunjwani,180010,Jammu,Jammu,Jammu and Kashmir,Vmart,32.663368,74.882875,576198.0,855510.0,exact,Jammu,9,95057.0
 V-Mart - Jammu Bahu Plaza,180004,Jammu,Jammu,Jammu and Kashmir,Vmart,32.699345,74.864642,576198.0,855510.0,exact,Jammu,9,95057.0
 V-Mart - Jammu,180001,Jammu,Jammu,Jammu and Kashmir,Vmart,32.7273,74.8479,576198.0,855510.0,exact,Jammu,9,95057.0
 V-Mart - Kachi Chawni,180001,Jammu,Jammu,Jammu and Kashmir,Vmart,32.7273,74.8479,576198.0,855510.0,exact,Jammu,9,95057.0
 V-Mart - Jammu-Talab Tillo,180002,Jammu,Jammu,Jammu and Kashmir,Vmart,32.7345,74.8635,576198.0,855510.0,exact,Jammu,9,95057.0
 V-Mart - Jammu-Janipur,180007,Jammu,Jammu,Jammu and Kashmir,Vmart,32.692,74.892,,,no_match,,2,
-V-Mart - Udhampur,182101,Udhampur,Udhampur,Jammu and Kashmir,Vmart,32.7698,75.5139,84015.0,124741.0,exact,Udhampur,3,41580.0
+V-Mart - Udhampur,182101,Udhampur,Udhampur,Jammu and Kashmir,Vmart,32.915985,75.141617,84015.0,124741.0,exact,Udhampur,3,41580.0
 V-Mart - Anantnag-Bijbehara,192124,Bijbehara,Anantnag,Jammu and Kashmir,Vmart,34.07475,74.82129,22789.0,33836.0,exact,Bijbehara,1,33836.0
 V-Mart - Srinagar-Chanpora,190015,Srinagar,Srinagar,Jammu and Kashmir,Vmart,34.035725,74.8219,,,no_match,,1,
 V-Mart - Srinagar,190001,Srinagar,Srinagar,Jammu and Kashmir,Vmart,34.0833,75.35,,,no_match,,1,
@@ -2341,15 +2341,15 @@ V-Mart - Ramgarh,829103,Ramgarh,Ramgarh,Jharkhand,Vmart,23.622692,85.51765,88781
 V-Mart - Ranchi,834001,Ranchi,Ranchi,Jharkhand,Vmart,23.350301,85.326452,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
 V-Mart - Ranchi-Bariatu Road,834009,Ranchi,Ranchi,Jharkhand,Vmart,23.3645,85.3362,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
 V-Mart - Birsa Chowk-Ranchi,834002,Argora,Ranchi,Jharkhand,Vmart,23.323482,85.307616,3890.0,6167.0,fuzzy_broad,barora,2,3084.0
-V Mart - Ranchi-Station Road,834001,Ranchi,Ranchi,Jharkhand,Vmart,23.3441,85.3096,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
+V Mart - Ranchi-Station Road,834001,Ranchi,Ranchi,Jharkhand,Vmart,23.378035,85.318791,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
 "V-Mart - Ranchi, Lowadih",834010,Ranchi,Ranchi,Jharkhand,Vmart,23.360363,85.360756,1073427.0,1701830.0,corrected,Ranchi,19,89570.0
 V-Mart - Khunti-Subhash Chowk,835210,Khunti,Khunti,Jharkhand,Vmart,22.8333,84.8333,36390.0,57693.0,exact,Khunti,2,28846.0
 V-Mart - Phusro,829144,Phusro,Bokaro,Jharkhand,Vmart,23.8333,85.3333,89178.0,141384.0,exact,Phusro,1,141384.0
 V-Mart - Giridih,815301,Giridih,Giridih,Jharkhand,Vmart,24.183,86.3,114533.0,181583.0,exact,Giridih,3,60528.0
 V-Mart - Deoghar,814112,Deoghar,Deoghar,Jharkhand,Vmart,24.493408,86.69274,203123.0,322035.0,corrected,Deoghar,2,161018.0
-V-Mart - Bokaro Mall,827003,Bokaro,Bokaro,Jharkhand,Vmart,23.7957,85.2689,39305.0,62315.0,exact,Bokaro,6,10386.0
+V-Mart - Bokaro Mall,827003,Bokaro,Bokaro,Jharkhand,Vmart,23.659194,86.152283,39305.0,62315.0,exact,Bokaro,6,10386.0
 V-Mart - Deoghar,814122,Deoghar,Deoghar,Jharkhand,Vmart,24.493408,86.69274,142489.0,322035.0,corrected,Deoghar,1,
-V-Mart - Chaas,827013,Bokaro,Bokaro,Jharkhand,Vmart,23.8333,85.0833,39305.0,62315.0,exact,Bokaro,6,10386.0
+V-Mart - Chaas,827013,Bokaro,Bokaro,Jharkhand,Vmart,23.669296,86.151112,39305.0,62315.0,exact,Bokaro,6,10386.0
 V-Mart - Madhupur,815353,Madhupur,Deoghar,Jharkhand,Vmart,24.95,85.4,55238.0,87575.0,exact,Madhupur,1,87575.0
 V-Mart - Dhanbad-Binodbihari Chowk,826013,Dhanbad,Dhanbad,Jharkhand,Vmart,23.7968,86.434,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
 V-Mart - Hirapur,826001,Dhanbad,Dhanbad,Jharkhand,Vmart,23.802227,86.435275,1162472.0,1843003.0,exact,Dhanbad,9,204778.0
@@ -2363,17 +2363,17 @@ V-Mart - Shivpuri,473551,Shivpuri,Shivpuri,Madhya Pradesh,Vmart,25.428022,77.658
 V-Mart - Guna-Bus Stand Road,473001,Guna,Guna,Madhya Pradesh,Vmart,24.6525,77.3214,180935.0,271404.0,exact,Guna,3,90468.0
 V-Mart - Vidisha-Station Road,464001,Vidisha,Vidisha,Madhya Pradesh,Vmart,23.524174,77.812126,14349.0,21524.0,fuzzy_broad,bilpura,1,21524.0
 V-Mart - Satna-Station Road,485001,Satna,Satna,Madhya Pradesh,Vmart,24.5797,80.7822,282977.0,424468.0,exact,Satna,3,141489.0
-V-Mart - Bhopal-Karond,462001,Bhopal,Bhopal,Madhya Pradesh,Vmart,23.1935,77.7521,28010.0,42015.0,fuzzy_broad,aron,1,42015.0
+V-Mart - Bhopal-Karond,462001,Bhopal,Bhopal,Madhya Pradesh,Vmart,23.269608,77.3956,28010.0,42015.0,fuzzy_broad,aron,1,42015.0
 V-Mart - Berasia,462021,Bhopal,Bhopal,Madhya Pradesh,Vmart,23.1815,77.4131,1798218.0,2697340.0,exact,Bhopal,12,224778.0
 V-Mart - Bhopal-Bairagarh,462030,Bairagarh,Bhopal,Madhya Pradesh,Vmart,23.1547,77.5893,8918.0,13377.0,fuzzy_broad,barigarh,1,13377.0
-V-Mart - Bhopal,462023,Bhopal,Bhopal,Madhya Pradesh,Vmart,23.250873,77.469879,1798218.0,2697340.0,exact,Bhopal,12,224778.0
-V-Mart - Rewa,486001,Rewa,Rewa,Madhya Pradesh,Vmart,24.5373,81.4947,235654.0,353483.0,exact,Rewa,5,70697.0
+V-Mart - Bhopal,462023,Bhopal,Bhopal,Madhya Pradesh,Vmart,23.249917,77.441512,1798218.0,2697340.0,exact,Bhopal,12,224778.0
+V-Mart - Rewa,486001,Rewa,Rewa,Madhya Pradesh,Vmart,24.536248,81.303695,235654.0,353483.0,exact,Rewa,5,70697.0
 V-Mart - Ujjain,456001,Ujjain,Ujjain,Madhya Pradesh,Vmart,23.1815,75.7766,515215.0,772826.0,exact,Ujjain,2,386413.0
 V-Mart - Ratlam Station Road,457001,Ratlam,Ratlam,Madhya Pradesh,Vmart,23.337441,75.051203,264914.0,397373.0,exact,Ratlam,1,397373.0
 "V-Mart - Dewas, AB Road",455001,Dewas,Dewas,Madhya Pradesh,Vmart,22.96634,76.049676,289550.0,434327.0,exact,Dewas,3,144776.0
 V-Mart - Jabalpur-Damohnaka,482002,Jabalpur,Jabalpur,Madhya Pradesh,Vmart,23.191711,79.91766,9285.0,13928.0,fuzzy_broad,gcf jabalpur,6,2321.0
 V-Mart - Indore- Rajwada,452007,Indore,Indore,Madhya Pradesh,Vmart,22.716688,75.853516,,,no_match,,1,
-V-Mart - Indore-Sapna Sangeeta,452014,Indore,Indore,Madhya Pradesh,Vmart,22.5721,75.8656,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
+V-Mart - Indore-Sapna Sangeeta,452014,Indore,Indore,Madhya Pradesh,Vmart,22.691802,75.86211,21323.0,31985.0,fuzzy_broad,dindori,14,2285.0
 V-Mart - Waidhan-Vidhyanagar Road,486886,Singrauli,Singrauli,Madhya Pradesh,Vmart,24.5341,82.6697,220257.0,330387.0,exact,Singrauli,2,165194.0
 V-Mart - Churachandpur,795006,Churachandpur,Churachandpur,Manipur,Vmart,24.340755,93.697365,,8901.0,district_fallback,[Churachandpur district est.],2,
 V-Mart - Imphal,795001,Imphal,Imphal West,Manipur,Vmart,24.807528,93.936104,193459.0,281419.0,manual_gap_fix,Imphal (MCI + OG),4,
@@ -2395,10 +2395,10 @@ V-Mart - Bhubaneswar-Patia,751024,Bhubaneswar,Khordha,Odisha,Vmart,20.351941,85.
 V-Mart - Urban Bank Road,760001,Phulbani,Kandhamal,Odisha,Vmart,19.3167,84.7833,37371.0,54362.0,fuzzy,phulabani,11,4942.0
 V-Mart - Puri,752002,Bhubaneswar,Khordha,Odisha,Vmart,20.2556,85.8844,885363.0,1287911.0,locality_merged,Bhubaneswar,1,
 V-Mart - Zirakpur-Bus Stand,140603,Zirakpur,Mohali,Punjab,Vmart,30.6411,76.8076,95553.0,126165.0,exact,Zirakpur,8,15771.0
-V-Mart - Ludhiana-Haibowal Road,141001,Ludhiana,Ludhiana,Punjab,Vmart,30.917719,75.88183,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
-V-Mart - Jalandhar,144001,Jalandhar,Jalandhar,Punjab,Vmart,31.726,75.5762,862886.0,1139326.0,exact,Jalandhar,10,113933.0
-V-Mart - Gurdaspur,143521,Gurdaspur,Gurdaspur,Punjab,Vmart,32.1765,75.4234,77928.0,102894.0,exact,Gurdaspur,3,34298.0
-V-Mart - Pathankot,145001,Pathankot,Pathankot,Punjab,Vmart,32.1724,75.6411,156306.0,206381.0,exact,Pathankot,5,41276.0
+V-Mart - Ludhiana-Haibowal Road,141001,Ludhiana,Ludhiana,Punjab,Vmart,30.905888,75.835965,1618879.0,2137514.0,exact,Ludhiana,12,178126.0
+V-Mart - Jalandhar,144001,Jalandhar,Jalandhar,Punjab,Vmart,31.32711,75.591709,862886.0,1139326.0,exact,Jalandhar,10,113933.0
+V-Mart - Gurdaspur,143521,Gurdaspur,Gurdaspur,Punjab,Vmart,32.041392,75.403086,77928.0,102894.0,exact,Gurdaspur,3,34298.0
+V-Mart - Pathankot,145001,Pathankot,Pathankot,Punjab,Vmart,32.273335,75.652207,156306.0,206381.0,exact,Pathankot,5,41276.0
 V-Mart - Bharatpur,321001,Bharatpur,Bharatpur,Rajasthan,Vmart,27.1767,78.0804,252838.0,394487.0,exact,Bharatpur,1,394487.0
 V-Mart - Jhunjhunu,333001,Jhunjhunu,Jhunjhunu,Rajasthan,Vmart,28.115032,75.38973,118473.0,184846.0,fuzzy,jhunjhunun,3,61615.0
 V-Mart - Jaipur-Subhash Chowk,302002,Jaipur,Jaipur,Rajasthan,Vmart,26.920341,75.81248,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
@@ -2406,7 +2406,7 @@ V-Mart - Jaipur-Murlipura,302039,Jaipur,Jaipur,Rajasthan,Vmart,26.97015,75.76376
 V-Mart - Jaipur-Jhotwara,302012,Jaipur,Jaipur,Rajasthan,Vmart,26.9015,75.8267,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 V-Mart - Jaipur-Barkat Nagar,302015,Kanakpura,Kota,Rajasthan,Vmart,26.868622,75.794822,13848.0,21606.0,fuzzy_broad,khanpur,2,10803.0
 V-Mart - Jaipur-Sirsi Road,302015,Kanakpura,Kota,Rajasthan,Vmart,26.9667,75.8167,13848.0,21606.0,fuzzy_broad,khanpur,2,10803.0
-V-Mart - Jaipur-Nsr,302019,Jaipur,Jaipur,Rajasthan,Vmart,26.9289,75.7206,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
+V-Mart - Jaipur-Nsr,302019,Jaipur,Jaipur,Rajasthan,Vmart,26.888139,75.761065,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 V-Mart - Jaipur-Chitrakoot,302021,Jaipur,Jaipur,Rajasthan,Vmart,26.901934,75.73885,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 V-Mart - Jaipur-Mansarovar,302020,Jaipur,Jaipur,Rajasthan,Vmart,26.847184,75.767973,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
 V-Mart - Jaipur-Pratap Nagar,302011,Jaipur,Jaipur,Rajasthan,Vmart,26.9289,75.7856,451100.0,703823.0,fuzzy_broad,udaipur,28,25137.0
@@ -2423,8 +2423,8 @@ V-Mart - Kota,324009,Kota,Kota,Rajasthan,Vmart,25.158392,75.832462,,,no_match,,1
 V-Mart - Kota-Rangbari,324005,Kota,Kota,Rajasthan,Vmart,25.142935,75.83788,1001694.0,1562881.0,exact,Kota,4,390720.0
 V-Mart - Kota - Vivekanand Nagar,324005,Kota,Kota,Rajasthan,Vmart,25.131641,75.82277,1001694.0,1562881.0,exact,Kota,4,390720.0
 V-Mart - Bhilwara-Rajendra Marg,311001,Bhilwara,Bhilwara,Rajasthan,Vmart,25.35,74.63,359483.0,560879.0,exact,Bhilwara,3,186960.0
-V-Mart - Chittorgarh-Udaipur Road,312001,Chittorgarh,Chittorgarh,Rajasthan,Vmart,24.8845,75.1365,116406.0,181621.0,fuzzy,chittaurgarh,3,60540.0
-"V-Mart - Surya Colony, Jodhpur - Jodhpur-Pali Road",342001,Jodhpur,Jodhpur,Rajasthan,Vmart,26.2389,73.0243,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
+V-Mart - Chittorgarh-Udaipur Road,312001,Chittorgarh,Chittorgarh,Rajasthan,Vmart,24.892081,74.628332,116406.0,181621.0,fuzzy,chittaurgarh,3,60540.0
+"V-Mart - Surya Colony, Jodhpur - Jodhpur-Pali Road",342001,Jodhpur,Jodhpur,Rajasthan,Vmart,26.293031,73.022817,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
 V-Mart - Jodhpur,342003,Jodhpur,Jodhpur,Rajasthan,Vmart,26.2785,72.99871,1056191.0,1647909.0,exact,Jodhpur,9,183101.0
 V-Mart - Rajsamand-Kankroli,313324,Kankroli,Rajsamand,Rajasthan,Vmart,25.05148,73.89423,,,no_match,,1,
 V-Mart - Udaipur-Fatehpura,313001,Udaipur,Udaipur,Rajasthan,Vmart,24.5705,73.7127,451100.0,703823.0,exact,Udaipur,10,70382.0
@@ -2525,14 +2525,14 @@ V-Mart - Vikas Nagar,226022,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8467,80.9462,
 V-Mart - Durgapuri - Lucknow,226004,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8489,80.9145,2817105.0,4319172.0,manual_gap_fix,Lucknow,1,
 V-Mart - Lucknow-Sarojini Nagar,226008,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8567,80.9234,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow-Qaisarbagh,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.85011,80.931373,2817105.0,4319172.0,exact,Lucknow,58,74468.0
-V-Mart - Hussainganj,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.84312,80.92392,2817105.0,4319172.0,exact,Lucknow,58,74468.0
+V-Mart - Hussainganj,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.853705,80.948419,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow-Khurram Nagar,226012,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8467,80.9462,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8467,80.9462,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow-Bijnor Road,226002,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8469,80.9462,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Telibagh,226029,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8467,80.9462,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Lucknow-Patrakarpuram,226010,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.8,80.9333,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Chinhat-Lucknow,227105,Chinhat,Lucknow,Uttar Pradesh,Vmart,26.9145,80.9856,23537.0,36087.0,fuzzy_broad,chhata,1,36087.0
-V-Mart - Lucknow-Arjunganj,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.806623,80.99156,2817105.0,4319172.0,exact,Lucknow,58,74468.0
+V-Mart - Lucknow-Arjunganj,226001,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.853705,80.948419,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 "V-Mart - Lucknow, Deva Road",226028,Lucknow,Lucknow,Uttar Pradesh,Vmart,26.881629,81.041179,2817105.0,4319172.0,exact,Lucknow,58,74468.0
 V-Mart - Awadh Avenue Mall,225001,Khalilabad,Sant Kabir Nagar,Uttar Pradesh,Vmart,26.897,81.2,,,no_match,,3,
 V-Mart - Barabanki,225001,Khalilabad,Sant Kabir Nagar,Uttar Pradesh,Vmart,26.897,81.2,,,no_match,,3,
@@ -2546,7 +2546,7 @@ V-Mart - Gonda,271001,Gonda,Gonda,Uttar Pradesh,Vmart,27.13323,81.962629,114046.
 V-Mart - Gonda-Station Road,271002,Gonda,Gonda,Uttar Pradesh,Vmart,27.150064,81.95581,1198491.0,174855.0,corrected,Gonda,1,
 V-Mart - Jagdishpur-Bus Stand,227808,Jagdishpur,Sant Kabir Nagar,Uttar Pradesh,Vmart,26.126062,81.758,12223.0,18740.0,fuzzy_broad,jangipur,1,18740.0
 V-Mart - Gauriganj,227409,Sultanpur,Sultanpur,Uttar Pradesh,Vmart,26.208114,81.697888,107640.0,165033.0,exact,Sultanpur,5,33007.0
-V-Mart - Faizabad,224001,Faizabad,Ayodhya,Uttar Pradesh,Vmart,26.7939,82.1909,165228.0,253327.0,exact,Faizabad,4,63332.0
+V-Mart - Faizabad,224001,Faizabad,Ayodhya,Uttar Pradesh,Vmart,26.772975,82.145793,165228.0,253327.0,exact,Faizabad,4,63332.0
 V-Mart - Karwi-Chitrakoot,210205,Chitrakoot,Chitrakoot,Uttar Pradesh,Vmart,24.4667,80.8667,57402.0,88008.0,manual_gap_fix,Chitrakoot Dham (Karwi),1,
 V-Mart - Faizabad-Naka,224123,Ayodhya,Ayodhya,Uttar Pradesh,Vmart,26.8095,82.1431,55890.0,85690.0,exact,Ayodhya,1,85690.0
 V-Mart - Amethi-Durgapur Road,227405,Amethi,Amethi,Uttar Pradesh,Vmart,26.2156,81.7234,13849.0,21233.0,exact,Amethi,1,21233.0
@@ -2617,21 +2617,21 @@ V-Mart - Ballia-New Town,277001,Ballia,Ballia,Uttar Pradesh,Vmart,25.76,84.15,10
 V-Mart - Balia,277001,Ballia,Ballia,Uttar Pradesh,Vmart,25.76,84.15,104424.0,160102.0,exact,Ballia,6,26684.0
 V-Mart - Renukoot,231217,Renukoot,Sonbhadra,Uttar Pradesh,Vmart,24.3,82.7333,20076.0,30780.0,exact,Renukoot,3,10260.0
 V-Mart - Roorkee Ramnagar,247667,Roorkee,Haridwar,Uttarakhand,Vmart,29.8698,77.7865,118200.0,187396.0,exact,Roorkee,2,93698.0
-V-Mart - Haridwar-Shivalik Nagar,249403,Haridwar,Haridwar,Uttarakhand,Vmart,29.9845,79.0234,17260.0,26463.0,fuzzy_broad,bharwari,1,26463.0
+V-Mart - Haridwar-Shivalik Nagar,249403,Haridwar,Haridwar,Uttarakhand,Vmart,29.949838,78.076604,17260.0,26463.0,fuzzy_broad,bharwari,1,26463.0
 V-Mart - Haridwar,249407,Haridwar,Haridwar,Uttarakhand,Vmart,29.9456,78.1642,231338.0,366767.0,fuzzy,hardwar,2,183384.0
 V-Mart - Kotdwar-Devi Road,246149,Kotdwar,Pauri Garhwal,Uttarakhand,Vmart,29.745253,78.519844,14394.0,22069.0,fuzzy_broad,kotwa,1,22069.0
 V-Mart - Kashipur,244713,Kashipur,Udham Singh Nagar,Uttarakhand,Vmart,29.2145,78.9456,121623.0,192823.0,exact,Kashipur,1,192823.0
 V-Mart - Rishikesh-Haridwar Road,249201,Rishikesh,Dehradun,Uttarakhand,Vmart,30.101989,78.292397,70499.0,111770.0,exact,Rishikesh,2,55885.0
 V-Mart - Rishikesh-Dehradun Road,249201,Rishikesh,Dehradun,Uttarakhand,Vmart,30.320742,78.04099,70499.0,111770.0,exact,Rishikesh,2,55885.0
 V-Mart - Majra-Dehradun,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.305087,78.016635,574840.0,911361.0,manual_gap_fix,Dehradun,4,
-V-Mart - Dehradun-Haridwar Road,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.1934,78.147,574840.0,911361.0,manual_gap_fix,Dehradun,4,
-V-Mart - Dehradun,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.70262,77.86835,574840.0,911361.0,manual_gap_fix,Dehradun,4,
+V-Mart - Dehradun-Haridwar Road,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.334582,78.053781,574840.0,911361.0,manual_gap_fix,Dehradun,4,
+V-Mart - Dehradun,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.334582,78.053781,574840.0,911361.0,manual_gap_fix,Dehradun,4,
 V-Mart - Dalanwala-Dehradun,248001,Dehradun,Dehradun,Uttarakhand,Vmart,30.31838,78.080222,574840.0,911361.0,manual_gap_fix,Dehradun,4,
-V-Mart - Sahastradhara Road-Dehradun,248013,Dehradun,Dehradun,Uttarakhand,Vmart,30.1833,77.9667,574840.0,911361.0,exact,Dehradun,12,75947.0
+V-Mart - Sahastradhara Road-Dehradun,248013,Dehradun,Dehradun,Uttarakhand,Vmart,30.358402,78.096569,574840.0,911361.0,exact,Dehradun,12,75947.0
 V-Mart - Dehradun-Rajpur Road,248195,Jakhan,Pauri Garhwal,Uttarakhand,Vmart,30.362686,78.063776,,,no_match,,1,
 V-Mart - Dehradun-Vikas Nagar,248198,Dehradun,Dehradun,Uttarakhand,Vmart,30.470746,77.77444,574840.0,911361.0,exact,Dehradun,12,75947.0
-V-Mart - Rudrapur,263153,Rudrapur,Udham Singh Nagar,Uttarakhand,Vmart,29.0239,79.4504,154554.0,245033.0,exact,Rudrapur,4,61258.0
-V-Mart - Haldwani,263139,Haldwani,Nainital,Uttarakhand,Vmart,29.190237,79.522865,201461.0,319400.0,manual_gap_fix,Haldwani-cum-Kathgodam,1,
+V-Mart - Rudrapur,263153,Rudrapur,Udham Singh Nagar,Uttarakhand,Vmart,28.987508,79.414121,154554.0,245033.0,exact,Rudrapur,4,61258.0
+V-Mart - Haldwani,263139,Haldwani,Nainital,Uttarakhand,Vmart,29.218264,79.512977,201461.0,319400.0,manual_gap_fix,Haldwani-cum-Kathgodam,1,
 "V-Mart - Srinagar, Srikot",246174,Srinagar,Pauri Garhwal,Uttarakhand,Vmart,30.221636,78.78975,,,no_match,,1,
 "V-Mart – Pithoragarh, Siltham Chowk",262501,Siltham,Almora,Uttarakhand,Vmart,29.591601,80.219685,,,no_match,,1,
 "V Mart - Asansol, Sentrum Mall",713305,Asansol,Paschim Bardhaman,West Bengal,Vmart,23.703704,86.94832,563917.0,744577.0,exact,Asansol,9,82731.0
@@ -2640,7 +2640,7 @@ V-Mart - Raiganj-Mg Road,733134,Raiganj,Uttar Dinajpur,West Bengal,Vmart,25.6188
 V-Mart - Dhuliyan,742202,Suti,Murshidabad,West Bengal,Vmart,24.3897,88.095,95706.0,126367.0,fuzzy,dhulian,2,63184.0
 V-Mart - Jalpaiguri,735101,Jalpaiguri,Jalpaiguri,West Bengal,Vmart,26.5203,88.7281,107341.0,141729.0,exact,Jalpaiguri,5,28346.0
 "V Mart Retail Ltd, GT Road, Near Madania Mosque, Nazrul Pally, Kantapukur Mor, Burdwan, West Bengal, 713101",713101,Bardhaman,Purba Bardhaman,West Bengal,Vmart,23.2324,87.8615,56722.0,74894.0,exact,Kalna,4,18724.0
-V-Mart - Burdwan,713103,Durgapur,Paschim Bardhaman,West Bengal,Vmart,23.2183,87.8092,314265.0,748010.0,corrected,Durgapur,3,
+V-Mart - Burdwan,713103,Durgapur,Paschim Bardhaman,West Bengal,Vmart,23.520444,87.311923,314265.0,748010.0,corrected,Durgapur,3,
 V-Mart - Kharagpur,721301,Kharagpur,Kharagpur,West Bengal,Vmart,22.3456,87.3167,207604.0,274113.0,exact,Kharagpur,5,54823.0
 V-Mart - Cooch Behar,736101,Cooch Behar,Cooch Behar,West Bengal,Vmart,26.325,89.44,77935.0,102903.0,corrected,Koch Bihar,8,12863.0
 V-Mart - Krishnanagar-West Bengal,741101,Krishnanagar,Nadia,West Bengal,Vmart,23.4006,88.4973,153062.0,202098.0,corrected,Krishnanagar,73,81333.0
@@ -2648,7 +2648,7 @@ V-Mart - Shantipur,741404,Santipur,Nadia,West Bengal,Vmart,23.259698,88.436506,1
 V-Mart - Tamluk-Maniktala,721636,Tamluk,Purba Medinipur,West Bengal,Vmart,22.2833,87.7667,65306.0,86228.0,exact,Tamluk,2,43114.0
 V-Mart - Bandel,712123,Bandel,Hooghly,West Bengal,Vmart,23.05,88.3833,179931.0,237575.0,corrected,Hugli-Chinsurah,1,
 V-Mart -Chakdaha,741222,Kalyani,Nadia,West Bengal,Vmart,23.076513,88.529407,95203.0,125703.0,fuzzy,chakdaha,5,25141.0
-V-Mart,743165,Naihati,North 24 Parganas,West Bengal,Vmart,22.8756,88.4167,217900.0,287708.0,exact,Naihati,5,57542.0
+V-Mart,743165,Naihati,North 24 Parganas,West Bengal,Vmart,22.895119,88.419178,217900.0,287708.0,exact,Naihati,5,57542.0
 V-Mart - Dankuni,712311,Dankuni,Hooghly,West Bengal,Vmart,22.683,88.2985,94936.0,125350.0,exact,Dankuni,5,25070.0
 V-Mart - Alcove New Kolkata,712202,Serampore,Hooghly,West Bengal,Vmart,22.737118,88.352316,181842.0,240098.0,corrected,Serampore,6,40016.0
 V-Mart - Konnagar-Ig Road,712235,Konnagar,Hooghly,West Bengal,Vmart,22.7167,88.3333,76172.0,100575.0,exact,Konnagar,1,100575.0
