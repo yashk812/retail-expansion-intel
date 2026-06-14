@@ -1134,7 +1134,8 @@ elif page == "🔍 City Explorer":
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
     ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
-    MAPBOX_TOKEN = st.secrets.get("MAPBOX_TOKEN", os.environ.get("MAPBOX_TOKEN", ""))
+    MAPBOX_TOKEN  = st.secrets.get("MAPBOX_TOKEN", os.environ.get("MAPBOX_TOKEN", ""))
+    GOOGLE_GEO_KEY = st.secrets.get("GOOGLE_GEO_KEY", os.environ.get("GOOGLE_GEO_KEY", ""))
 
     # ── Compute PS gaps for all 6 cities ──────────────────────────────────────
     @st.cache_data
@@ -1249,47 +1250,41 @@ Keep response under 400 words total."""
 
             st.session_state["ai_recs"][cache_key] = rec_text
 
-            # ── Call 2: geocode via Mapbox with city proximity bias ────────────
-            import urllib.parse
+            # ── Call 2: geocode via Google Geocoding API ──────────────────────
             pins = []
-            # Get city centroid for proximity bias
-            city_df_mb = df[(df["city"]==city) & (df["state"]==state)].dropna(subset=["lat","lng"])
-            prox = ""
-            if not city_df_mb.empty:
-                clat = city_df_mb["lat"].mean()
-                clng = city_df_mb["lng"].mean()
-                prox = f"&proximity={clng:.4f},{clat:.4f}"
+            # Get city centroid for bounding box validation
+            city_df_g = df[(df["city"]==city) & (df["state"]==state)].dropna(subset=["lat","lng"])
+            if not city_df_g.empty:
+                clat = city_df_g["lat"].mean()
+                clng = city_df_g["lng"].mean()
+            else:
+                clat, clng = 20.5, 78.9  # India centre fallback
 
             if locations_raw:
                 for i, loc in enumerate(locations_raw):
                     area         = loc.get("area", "")
                     pincode      = loc.get("pincode", "")
                     full_address = loc.get("full_address", "")
-                    # Use full_address if available, else fall back to area+city+state+pin
-                    if full_address:
-                        query = full_address
-                    else:
-                        query = f"{area}, {city}, {state}, India"
-                        if pincode and pincode not in ("—", ""):
-                            query += f" {pincode}"
-                    encoded = urllib.parse.quote(query)
-                    mb_url  = (
-                        f"https://api.mapbox.com/geocoding/v5/mapbox.places/{encoded}.json"
-                        f"?country=IN&limit=1{prox}&access_token={MAPBOX_TOKEN}"
-                    )
+                    query = full_address if full_address else f"{area}, {city}, {state}, India {pincode}".strip()
                     try:
-                        mb_r    = requests.get(mb_url, timeout=10)
-                        mb_data = mb_r.json()
-                        if mb_data.get("features"):
-                            lng_mb, lat_mb = mb_data["features"][0]["geometry"]["coordinates"]
-                            lat_mb = float(lat_mb); lng_mb = float(lng_mb)
-                            # Validate within India
-                            if 6.5 <= lat_mb <= 37.5 and 67.5 <= lng_mb <= 97.5:
+                        g_r = requests.get(
+                            "https://maps.googleapis.com/maps/api/geocode/json",
+                            params={"address": query, "key": GOOGLE_GEO_KEY},
+                            timeout=10
+                        )
+                        g_data = g_r.json()
+                        if g_data.get("status") == "OK" and g_data["results"]:
+                            loc_g  = g_data["results"][0]["geometry"]["location"]
+                            lat_g  = float(loc_g["lat"])
+                            lng_g  = float(loc_g["lng"])
+                            # Validate: within India AND within ~60km of city centre
+                            dist_from_city = haversine_km(lat_g, lng_g, clat, clng)
+                            if 6.5 <= lat_g <= 37.5 and 67.5 <= lng_g <= 97.5 and dist_from_city < 60:
                                 pins.append({
                                     "area":    area,
                                     "pincode": pincode if pincode else "—",
-                                    "lat":     lat_mb,
-                                    "lng":     lng_mb,
+                                    "lat":     lat_g,
+                                    "lng":     lng_g,
                                 })
                     except Exception:
                         pass  # fallback below handles gaps
