@@ -1221,9 +1221,9 @@ LOCATIONS_JSON: [{{"area": "ShortName", "full_address": "Locality, {city}, {stat
 Rules for LOCATIONS_JSON:
 - List exactly {n_stores} locations
 - "area": short display name (e.g. "Hirapur Chowk")
-- "full_address": complete geocodable string — be specific, include neighbourhood + city + state + India + 6-digit pincode
-- "pincode": correct 6-digit PIN for that locality
-- All locations must be within {city} city limits
+- "full_address": format MUST be "PINCODE, Locality, {city}, District, {state}, India" — pincode FIRST, then locality, city, district, state, India
+- "pincode": correct 6-digit PIN for that exact locality in {city}
+- All locations must be within {city} city limits — verify the pincode belongs to {city}
 Keep response under 400 words total."""
 
         try:
@@ -1269,7 +1269,7 @@ Keep response under 400 words total."""
                     try:
                         g_r = requests.get(
                             "https://maps.googleapis.com/maps/api/geocode/json",
-                            params={"address": query, "key": GOOGLE_GEO_KEY},
+                            params={"address": query, "key": GOOGLE_GEO_KEY, "region": "in"},
                             timeout=10
                         )
                         g_data = g_r.json()
