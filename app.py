@@ -482,10 +482,26 @@ if page == "🗺️ Store Map":
         companies = sorted(df["company"].unique().tolist())
         sel_companies = st.multiselect("Companies", companies, default=companies)
 
+    # Brand sub-filter — only when BK is selected
+    bk_brand_filter = "All"
+    if "Baazar Kolkata" in sel_companies:
+        bk_brand_filter = st.radio(
+            "BK Brand", ["All", "Baazar Kolkata (core)", "Fashion City"],
+            horizontal=True, key="map_brand",
+            help="Filter Baazar Kolkata stores by sub-brand"
+        )
+
     mdf = df[df["state"].isin(sel_states)] if sel_states else df[df["state"].isin(FOCUS_STATES)]
     if sel_district != "All Districts": mdf = mdf[mdf["district"] == sel_district]
     if sel_city     != "All Cities":    mdf = mdf[mdf["city"]     == sel_city]
     mdf = mdf[mdf["company"].isin(sel_companies)]
+    # Apply brand filter to BK rows
+    if bk_brand_filter == "Baazar Kolkata (core)":
+        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", na=False)]
+    elif bk_brand_filter == "Fashion City":
+        non_bk = mdf[mdf["company"] != "Baazar Kolkata"]
+        fc_only = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", na=False)]
+        mdf = pd.concat([non_bk, fc_only])
 
     # Zoom logic
     has_state_filter = bool(sel_states)
@@ -558,10 +574,25 @@ elif page == "📊 Stats by Company":
         companies2 = sorted(df["company"].unique().tolist())
         sel_cos2 = st.multiselect("Companies", companies2, default=companies2, key="s2_cos")
 
+    # Brand sub-filter
+    bk_brand_filter2 = "All"
+    if "Baazar Kolkata" in sel_cos2:
+        bk_brand_filter2 = st.radio(
+            "BK Brand", ["All", "Baazar Kolkata (core)", "Fashion City"],
+            horizontal=True, key="stats_brand",
+            help="Filter Baazar Kolkata stores by sub-brand"
+        )
+
     sdf = df[df["state"].isin(sel_states2)] if sel_states2 else df[df["state"].isin(FOCUS_STATES)]
     if sel_district2 != "All Districts": sdf = sdf[sdf["district"] == sel_district2]
     if sel_city2     != "All Cities":    sdf = sdf[sdf["city"]     == sel_city2]
     sdf = sdf[sdf["company"].isin(sel_cos2)]
+    if bk_brand_filter2 == "Baazar Kolkata (core)":
+        sdf = sdf[~sdf["store_name"].str.contains("Fashion City", na=False)]
+    elif bk_brand_filter2 == "Fashion City":
+        non_bk2 = sdf[sdf["company"] != "Baazar Kolkata"]
+        fc_only2 = sdf[(sdf["company"] == "Baazar Kolkata") & sdf["store_name"].str.contains("Fashion City", na=False)]
+        sdf = pd.concat([non_bk2, fc_only2])
 
     bk   = sdf[sdf["company"] == "Baazar Kolkata"]
     comp = sdf[sdf["company"] != "Baazar Kolkata"]
@@ -1572,11 +1603,25 @@ elif page == "📋 Master Data":
     with col4:
         search = st.text_input("Search store name", placeholder="e.g. Patna, Zudio...", key="md_search")
 
+    # Brand sub-filter — show when BK selected or no company filter
+    show_brand = not md_companies or "Baazar Kolkata" in md_companies
+    md_brand = "All"
+    if show_brand:
+        md_brand = st.radio("BK Brand", ["All", "Baazar Kolkata (core)", "Fashion City"],
+                            horizontal=True, key="md_brand",
+                            help="Filter Baazar Kolkata stores by sub-brand")
+
     mdf = df.copy()
     if md_companies: mdf = mdf[mdf["company"].isin(md_companies)]
     if md_states:    mdf = mdf[mdf["state"].isin(md_states)]
     if md_districts: mdf = mdf[mdf["district"].isin(md_districts)]
     if search:       mdf = mdf[mdf["store_name"].str.contains(search, case=False, na=False)]
+    if md_brand == "Baazar Kolkata (core)":
+        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", na=False)]
+    elif md_brand == "Fashion City":
+        non_bk_md = mdf[mdf["company"] != "Baazar Kolkata"]
+        fc_md     = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", na=False)]
+        mdf = pd.concat([non_bk_md, fc_md])
 
     st.caption(f"Showing **{len(mdf):,}** of {len(df):,} rows")
 
