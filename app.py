@@ -497,10 +497,10 @@ if page == "🗺️ Store Map":
     mdf = mdf[mdf["company"].isin(sel_companies)]
     # Apply brand filter to BK rows
     if bk_brand_filter == "Baazar Kolkata (core)":
-        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", na=False)]
+        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", case=False, na=False)]
     elif bk_brand_filter == "Fashion City":
         non_bk = mdf[mdf["company"] != "Baazar Kolkata"]
-        fc_only = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", na=False)]
+        fc_only = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", case=False, na=False)]
         mdf = pd.concat([non_bk, fc_only])
 
     # Zoom logic
@@ -588,10 +588,10 @@ elif page == "📊 Stats by Company":
     if sel_city2     != "All Cities":    sdf = sdf[sdf["city"]     == sel_city2]
     sdf = sdf[sdf["company"].isin(sel_cos2)]
     if bk_brand_filter2 == "Baazar Kolkata (core)":
-        sdf = sdf[~sdf["store_name"].str.contains("Fashion City", na=False)]
+        sdf = sdf[~sdf["store_name"].str.contains("Fashion City", case=False, na=False)]
     elif bk_brand_filter2 == "Fashion City":
         non_bk2 = sdf[sdf["company"] != "Baazar Kolkata"]
-        fc_only2 = sdf[(sdf["company"] == "Baazar Kolkata") & sdf["store_name"].str.contains("Fashion City", na=False)]
+        fc_only2 = sdf[(sdf["company"] == "Baazar Kolkata") & sdf["store_name"].str.contains("Fashion City", case=False, na=False)]
         sdf = pd.concat([non_bk2, fc_only2])
 
     bk   = sdf[sdf["company"] == "Baazar Kolkata"]
@@ -1617,10 +1617,10 @@ elif page == "📋 Master Data":
     if md_districts: mdf = mdf[mdf["district"].isin(md_districts)]
     if search:       mdf = mdf[mdf["store_name"].str.contains(search, case=False, na=False)]
     if md_brand == "Baazar Kolkata (core)":
-        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", na=False)]
+        mdf = mdf[~mdf["store_name"].str.contains("Fashion City", case=False, na=False)]
     elif md_brand == "Fashion City":
         non_bk_md = mdf[mdf["company"] != "Baazar Kolkata"]
-        fc_md     = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", na=False)]
+        fc_md     = mdf[(mdf["company"] == "Baazar Kolkata") & mdf["store_name"].str.contains("Fashion City", case=False, na=False)]
         mdf = pd.concat([non_bk_md, fc_md])
 
     st.caption(f"Showing **{len(mdf):,}** of {len(df):,} rows")
