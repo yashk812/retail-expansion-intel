@@ -199,7 +199,7 @@ Citykart Jharsuguda,768201,Jharsuguda,Jharsuguda,Odisha,CityKart,21.86507,84.024
 Citykart Jodhpur,342008,Jodhpur,Jodhpur,Rajasthan,CityKart,26.271336,72.994965,1056191.0,1647909.0,exact,Jodhpur,9.0,183101.0
 Citykart Jogbani,854328,Jogbani,Purnia,Bihar,CityKart,26.399873,87.264708,39281.0,67450.0,fuzzy,jogabani,1.0,67450.0
 CityKart Jorhat,785001,Jorhat,Jorhat,Assam,CityKart,26.757898,94.21105,71782.0,146920.0,corrected,Jorhat (MB + OG),5.0,21535.0
-Citykart Kacchi Dargah Patna,803201,Fatuha,Patna,Bihar,CityKart,25.537338,85.28371,,313469.0,district_fallback,[Patna district est.],2.0,
+Citykart Kacchi Dargah Patna,803201,Fatuha,Patna,Bihar,CityKart,25.537338,85.28371,,87505.0,corrected,Fatwah,2.0,
 Citykart Kanpur,208006,Kanpur,Kanpur Nagar,Uttar Pradesh,CityKart,26.435627,80.308952,2768057.0,4243972.0,exact,Kanpur,13.0,326459.0
 CityKart Kapashera,110037,Delhi,South West Delhi,Delhi,CityKart,28.535715,77.091238,,,no_match,,4.0,
 Citykart Karond,462038,Bhopal,Bhopal,Madhya Pradesh,CityKart,23.294377,77.394287,1798218.0,2697340.0,exact,Bhopal,12.0,224778.0
@@ -423,7 +423,7 @@ SB-BHAGALPUR (02),812001,Bhagalpur,Bhagalpur,Bihar,StyleBaazar,25.250592,86.9775
 SB-KARANJIA,757037,Karanjia,Mayurbhanj,Odisha,StyleBaazar,21.9228,85.1789,116849.0,169977.0,exact,Baripada,6.0,28330.0
 SB - Avani Mall,711102,Howrah,Howrah,West Bengal,StyleBaazar,22.563217,88.323703,1077075.0,1422134.0,corrected,Haora,16.0,
 SB - Uttarpara,712258,Uttarpara,Hooghly,West Bengal,StyleBaazar,22.6677,88.3462,6810.0,8992.0,fuzzy,uttarparanij,2.0,4496.0
-SB - Midnapore,721101,Midnapore,East Midnapore,West Bengal,StyleBaazar,23.692024,86.948326,,50221.0,district_fallback,[Paschim Medinipur district est.],1.0,
+SB - Midnapore,721101,Midnapore,Paschim Medinipur,West Bengal,StyleBaazar,23.692024,86.948326,169264.0,223491.0,corrected,Medinipur,1.0,
 SB - Morabadi,834008,Ranchi,Ranchi,Jharkhand,StyleBaazar,23.404965,85.340884,1073427.0,1701830.0,corrected,Ranchi,19.0,89570.0
 SB - Boring Road Patna,800001,Patna,Patna,Bihar,StyleBaazar,25.594095,85.137564,1684297.0,2892112.0,corrected,Patna,48.0,60252.0
 SB-GONDA,271001,Gonda,Gonda,Uttar Pradesh,StyleBaazar,27.132906,81.958403,,174855.0,corrected,Gonda,1.0,
@@ -2245,7 +2245,7 @@ V-Mart - Patna - Pachim Darwaja,800008,Patna,Patna,Bihar,Vmart,25.60096,85.21881
 V-Mart - Patna-Sampathchak,800007,Patna,Patna,Bihar,Vmart,25.5941,85.1376,1684297.0,2892112.0,corrected,Patna,48.0,60252.0
 V-Mart - Patna City,800008,Patna,Patna,Bihar,Vmart,25.60096,85.21881,1684297.0,2892112.0,corrected,Patna,48.0,60252.0
 V-Mart - Sitamarhi,843320,Pupri,Sitamarhi,Bihar,Vmart,26.569247,85.520339,67818.0,40888.0,district_avg,[Sitamarhi avg],1.0,
-V-Mart - Fatuha,803201,Fatuha,Patna,Bihar,Vmart,25.609907,85.137764,,313469.0,district_fallback,[Patna district est.],2.0,
+V-Mart - Fatuha,803201,Fatuha,Patna,Bihar,Vmart,25.609907,85.137764,,87505.0,corrected,Fatwah,2.0,
 V-Mart - AP Colony,823001,Gaya,Gaya,Bihar,Vmart,24.79357,85.004974,474093.0,814067.0,exact,Gaya,6.0,135678.0
 V-Mart - Church Road,823001,Gaya,Gaya,Bihar,Vmart,24.7936,84.991,474093.0,814067.0,exact,Gaya,6.0,135678.0
 V-Mart - Gaya-Manpur,823003,Manpur,Manpur,Bihar,Vmart,24.54074,84.76642,5815.0,9985.0,fuzzy,mohanpur,1.0,9985.0
