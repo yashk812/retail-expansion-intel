@@ -191,7 +191,7 @@ Citykart Hardoi,241001,Hardoi,Hardoi,Uttar Pradesh,CityKart,27.39632,80.126175,1
 Citykart Hazaribagh,825301,Hazaribagh,Hazaribagh,Jharkhand,CityKart,24.0,85.367,142489.0,225905.0,fuzzy,hazaribag,4.0,56476.0
 Citykart Hospital Road Motihari,845401,Motihari,East Champaran,Bihar,CityKart,26.648737,84.91163,126158.0,216626.0,exact,Motihari,8.0,27078.0
 Citykart Hospital Road Siwan,841227,Siwan,Siwan,Bihar,CityKart,26.231999,84.370866,135066.0,231922.0,exact,Siwan,10.0,23192.0
-Citykart Jamalpur,811214,Jamalpur,Jamalpur,Bihar,CityKart,25.317907,86.493195,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
+Citykart Jamalpur,811214,Jamalpur,Munger,Bihar,CityKart,25.317907,86.493195,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
 Citykart Jamui,811307,Jamui,Jamui,Bihar,CityKart,24.930067,86.226992,87357.0,150001.0,exact,Jamui,3.0,50000.0
 Citykart Jandaha,844505,Vaishali,Vaishali,Bihar,CityKart,25.711759,85.545018,147688.0,133407.0,district_avg,[Vaishali avg],4.0,63399.0
 Citykart Jhalwa,211012,Prayagraj,Prayagraj,Uttar Pradesh,CityKart,25.436092,81.77828,1168385.0,1791363.0,corrected,Allahabad,12.0,149280.0
@@ -708,7 +708,7 @@ V2 Retail Ltd. (HB42),811307,Jamui,Jamui,Bihar,V2 Retail,24.92623,86.224136,8735
 V2 Retail Ltd. (HB43),800004,Patna,Patna,Bihar,V2 Retail,25.612233,85.160052,1684297.0,2892112.0,corrected,Patna,48.0,60252.0
 V2 Retail Ltd. (HB44),811202,Munger,Munger,Bihar,V2 Retail,25.013575,86.618195,213303.0,366263.0,exact,Munger,2.0,183132.0
 V2 Retail Ltd. (HB45),800007,Patna,Patna,Bihar,V2 Retail,25.60096,85.21881,1684297.0,2892112.0,corrected,Patna,48.0,60252.0
-V2 Retail Ltd. (HB47),811214,Jamalpur,Jamalpur,Bihar,V2 Retail,25.376354,86.470985,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
+V2 Retail Ltd. (HB47),811214,Jamalpur,Munger,Bihar,V2 Retail,25.376354,86.470985,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
 V2 Retail Ltd. (HB48),804408,Jehanabad,Jehanabad,Bihar,V2 Retail,25.199143,84.98529,103202.0,177209.0,exact,Jehanabad,2.0,88604.0
 V2 Retail Ltd. (HB50),821101,Bhabua,Kaimur,Bihar,V2 Retail,25.043014,83.613592,50179.0,86163.0,exact,Bhabua,2.0,43082.0
 V2 Retail Ltd. (HB51),801503,Danapur,Patna,Bihar,V2 Retail,25.637017,85.013258,4851.0,8330.0,fuzzy_broad,dariapur,5.0,1666.0
@@ -2065,7 +2065,7 @@ mBaazar - JAJPUR,755019,Jajpur,Jajpur,Odisha,mBaazar,20.849913,86.328445,37458.0
 mBaazar - Jajpur Road,755019,Jajpur,Jajpur,Odisha,mBaazar,20.849913,86.328445,37458.0,54489.0,fuzzy,jajapur,5.0,10898.0
 mBaazar - Jajpur Town,755001,Jajpur Town,Jajpur,Odisha,mBaazar,20.849913,86.328445,37458.0,29741.0,district_avg,[Jajpur avg],1.0,
 mBaazar - JAKHALABANDHA,782136,Jakhalabandha,Nagaon,Assam,mBaazar,26.538136,92.92806,121628.0,40605.0,district_avg,[Nagaon avg],1.0,
-mBaazar - Jamalpur,713408,Jamalpur,Purba Bardhaman,West Bengal,mBaazar,23.17685,88.09513,5460.0,7209.0,fuzzy,jalalpur,1.0,7209.0
+mBaazar - Jamalpur,713408,Jamalpur,Purba Bardhaman,West Bengal,mBaazar,23.17685,88.09513,5460.0,42563.0,district_avg,[Purba Bardhaman avg],1.0,7209.0
 mBaazar - Janata Mall,760001,Phulbani,Kandhamal,Odisha,mBaazar,19.315514,84.78443,37371.0,54362.0,fuzzy,phulabani,11.0,4942.0
 mBaazar - JAUNPUR,222002,Jaunpur,Jaunpur,Uttar Pradesh,mBaazar,25.747393,82.683392,180362.0,276530.0,exact,Jaunpur,4.0,69132.0
 mBaazar - JAYNAGAR,847226,Madhubani,Madhubani,Bihar,mBaazar,25.201756,85.52006,75736.0,130047.0,exact,Madhubani,2.0,65024.0
@@ -2265,7 +2265,7 @@ V-Mart - Saharsa,852201,Saharsa,Saharsa,Bihar,Vmart,25.876531,86.602,156540.0,26
 V-Mart - Khagaria,851204,Khagaria,Khagaria,Bihar,Vmart,25.50549,86.466736,49406.0,84835.0,exact,Khagaria,5.0,16967.0
 V-Mart - Jamui,811307,Jamui,Jamui,Bihar,Vmart,24.927292,86.221083,87357.0,150001.0,exact,Jamui,3.0,50000.0
 V-Mart - Munger,811201,Lakhisarai,Lakhisarai,Bihar,Vmart,25.360853,86.46827,354462.0,171674.0,corrected,Lakhisarai,1.0,
-V-Mart - Jamalpur,811214,Jamalpur,Jamalpur,Bihar,Vmart,25.376354,86.470985,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
+V-Mart - Jamalpur,811214,Jamalpur,Munger,Bihar,Vmart,25.376354,86.470985,105434.0,181041.0,exact,Jamalpur,3.0,60347.0
 V-Mart - Madhepura,852113,Madhepura,Madhepura,Bihar,Vmart,25.920261,86.792237,54472.0,93534.0,exact,Madhepura,6.0,15589.0
 V-Mart - Murliganj,852122,Murliganj,Madhepura,Bihar,Vmart,25.6167,87.5667,28691.0,49265.0,exact,Murliganj,1.0,49265.0
 V-Mart - Chhapra,841301,Chhapra,Saran,Bihar,Vmart,25.9833,84.75,202352.0,347459.0,fuzzy,chapra,4.0,86865.0
@@ -2601,7 +2601,7 @@ V-Mart - Maldahiya,221002,Varanasi,Varanasi,Uttar Pradesh,Vmart,25.32373,82.9946
 V-Mart - Luxa,221010,Varanasi,Varanasi,Uttar Pradesh,Vmart,25.35,83.02,1198491.0,1837521.0,exact,Varanasi,24.0,76563.0
 V-Mart - Varanasi-Shivala,221001,Varanasi,Varanasi,Uttar Pradesh,Vmart,25.3282,82.9789,1198491.0,1837521.0,exact,Varanasi,24.0,76563.0
 V-Mart - Durgakund,221005,Varanasi,Varanasi,Uttar Pradesh,Vmart,25.3245,82.9789,1198491.0,1837521.0,exact,Varanasi,24.0,76563.0
-V-Mart - Mau-Ghosi,275304,Jamalpur,Jamalpur,Uttar Pradesh,Vmart,26.122936,83.55068,31972.0,49019.0,fuzzy,jalalpur,1.0,49019.0
+V-Mart - Mau-Ghosi,275304,Jamalpur,Jamalpur,Uttar Pradesh,Vmart,26.122936,83.55068,31972.0,54670.0,district_avg,[Mau district avg],1.0,49019.0
 V-Mart - Deoria,274001,Deoria,Deoria,Uttar Pradesh,Vmart,26.2167,83.4833,129479.0,198517.0,exact,Deoria,4.0,49629.0
 V-Mart - Deoria-Ramnath Nagar,274001,Deoria,Deoria,Uttar Pradesh,Vmart,26.2167,83.4833,129479.0,198517.0,exact,Deoria,4.0,49629.0
 V-Mart - Mughalsarai,232101,Mughalsarai,Chandauli,Uttar Pradesh,Vmart,25.287977,83.107763,109650.0,168115.0,exact,Mughalsarai,2.0,84058.0
