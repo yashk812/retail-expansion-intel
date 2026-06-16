@@ -124,7 +124,7 @@ Baazar Kolkata - Suri,731101,Suri,Birbhum,West Bengal,Baazar Kolkata,23.9174,87.
 Baazar Kolkata - Tadong,737102,Gangtok,East Sikkim,Sikkim,Baazar Kolkata,27.33032,88.60639,100286.0,183761.0,exact,Gangtok,3.0,61254.0
 Baazar Kolkata - Tamluk,721636,Tamluk,Purba Medinipur,West Bengal,Baazar Kolkata,22.199189,87.923853,65306.0,86228.0,exact,Tamluk,2.0,43114.0
 "Baazar Kolkata - Triveni Mall, Serampore",712202,Serampore,Hooghly,West Bengal,Baazar Kolkata,22.728477,88.352938,181842.0,240098.0,corrected,Serampore,6.0,40016.0
-Baazar Kolkata - Uluberia,711316,Uluberia,Howrah,West Bengal,Baazar Kolkata,22.4717,88.1077,235345.0,310742.0,exact,Uluberia,2.0,155371.0
+Baazar Kolkata - Uluberia,711316,Uluberia,Howrah,West Bengal,Baazar Kolkata,22.4717,88.1077,235345.0,310742.0,corrected,Uluberia,2.0,155371.0
 Baazar Kolkata - Uttar Dinajpur Islampur,733202,Islampur,Uttar Dinajpur,West Bengal,Baazar Kolkata,26.2587,88.1736,54340.0,71749.0,corrected,Islampur,1.0,71749.0
 Citykart Adil nagar Lucknow,226001,Lucknow,Lucknow,Uttar Pradesh,CityKart,26.853705,80.948419,2817105.0,4319172.0,exact,Lucknow,58.0,74468.0
 Citykart Agartala,799001,Agartala,West Tripura,Tripura,CityKart,23.829033,91.276726,400004.0,661458.0,exact,Agartala,11.0,60133.0
@@ -586,7 +586,7 @@ STYLE BAAZAR NAIHATI,743165,Naihati,Naihati,West Bengal,StyleBaazar,22.889175,88
 STYLE BAAZAR METIABRUZ,700024,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.550129,88.285293,4496694.0,5937285.0,exact,Kolkata,73.0,81333.0
 STYLE BAAZAR MEMARI,713146,Memari,Purba Bardhaman,West Bengal,StyleBaazar,23.184,88.1293,41451.0,54731.0,fuzzy,memari,1.0,54731.0
 STYLE BAAZAR LINDSAY,700087,Kolkata,North 24 Parganas,West Bengal,StyleBaazar,22.559951,88.352758,4496694.0,5937285.0,exact,Kolkata,73.0,81333.0
-STYLE BAAZAR ULUBERIA,711316,Uluberia,Howrah,West Bengal,StyleBaazar,22.4717,88.1077,1077075.0,1422134.0,corrected,Haora,1.0,
+STYLE BAAZAR ULUBERIA,711316,Uluberia,Howrah,West Bengal,StyleBaazar,22.4717,88.1077,1077075.0,310742.0,corrected,Uluberia,1.0,
 STYLE BAAZAR TUFANGANJ,736159,Tufan Ganj,Dinajpur,West Bengal,StyleBaazar,26.311265,89.664958,20998.0,27725.0,fuzzy,tufanganj,1.0,27725.0
 STYLE BAAZAR SURI,731101,Suri,Birbhum,West Bengal,StyleBaazar,23.9174,87.5318,67864.0,89605.0,exact,Suri,4.0,22401.0
 STYLE BAAZAR SODEPUR,700110,Sodepur,North 24 Parganas,West Bengal,StyleBaazar,22.6957,88.3748,377347.0,498236.0,corrected,Panihati,1.0,11751.0
@@ -2184,7 +2184,7 @@ mBaazar - Tangla,784521,Tangla,Udalguri,Assam,mBaazar,26.657125,91.91208,17183.0
 mBaazar - TEZPUR,784001,Tezpur,Sonitpur,Assam,mBaazar,26.615965,92.807864,75540.0,113311.0,exact,Tezpur,5.0,22662.0
 mBaazar - Titabar,785630,Titabar,Jorhat,Assam,mBaazar,26.588146,94.180867,71782.0,33729.0,district_avg,[Jorhat avg],1.0,
 mBaazar - UDAIPUR,799120,Udaipur,Gomati,Tripura,mBaazar,23.540003,91.49445,32758.0,54170.0,exact,Udaipur,2.0,27085.0
-mBaazar - ULUBERIA,711315,Uluberia,Howrah,West Bengal,mBaazar,22.4717,88.1077,235345.0,310742.0,exact,Uluberia,2.0,155371.0
+mBaazar - ULUBERIA,711315,Uluberia,Howrah,West Bengal,mBaazar,22.4717,88.1077,235345.0,310742.0,corrected,Uluberia,2.0,155371.0
 mBaazar - VARANASI - ASHAPUR,221105,Varanasi,Varanasi,Uttar Pradesh,mBaazar,25.380522,82.90643,1198491.0,1837521.0,manual_gap_fix,Varanasi,1.0,
 mBaazar - VARANASI - HARTIRATH,221001,Varanasi,Varanasi,Uttar Pradesh,mBaazar,25.336692,83.007013,1198491.0,1837521.0,exact,Varanasi,24.0,76563.0
 mBaazar - VIP,700059,Kolkata,North 24 Parganas,West Bengal,mBaazar,22.591527,88.392631,4496694.0,5937285.0,exact,Kolkata,73.0,81333.0
@@ -2328,7 +2328,7 @@ V-Mart - Srinagar,190001,Srinagar,Srinagar,Jammu and Kashmir,Vmart,34.0833,75.35
 "V-Mart - Sonpurwa Bus Stand, Garhwa",822114,Garhwa,Garhwa,Jharkhand,Vmart,24.16872,83.810666,46059.0,73023.0,exact,Garhwa,3.0,24341.0
 V-Mart - Garhwa,822114,Garhwa,Garhwa,Jharkhand,Vmart,24.158968,83.807623,46059.0,73023.0,exact,Garhwa,3.0,24341.0
 V-Mart - Daltonganj-Redma Chowk,822101,Daltonganj,Palamu,Jharkhand,Vmart,24.03979,84.06363,78396.0,124290.0,corrected,Medininagar (Daltonganj),3.0,
-V-Mart - Latehar,829206,Sasang,West Singhbhum,Jharkhand,Vmart,23.74457,84.501785,414820.0,657663.0,corrected,Bokaro Steel City,1.0,
+V-Mart - Latehar,829206,Latehar,Latehar,Jharkhand,Vmart,23.74457,84.501785,414820.0,42776.0,corrected,Latehar,1.0,
 V-Mart - Lohardaga,835302,Lohardaga,Lohardaga,Jharkhand,Vmart,23.43888,84.68597,57411.0,91020.0,exact,Lohardaga,2.0,45510.0
 V-Mart - Barhi-Dhanbad Road,825405,Barhi,Barhi,Jharkhand,Vmart,24.206482,84.8719,11867.0,18814.0,exact,Barhi,1.0,18814.0
 V-Mart - Hazaribagh-Pugmil Road,825301,Hazaribagh,Hazaribagh,Jharkhand,Vmart,24.0,85.367,142489.0,225905.0,fuzzy,hazaribag,4.0,56476.0
