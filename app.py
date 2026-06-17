@@ -1156,12 +1156,9 @@ elif page == "🔍 City Explorer":
 
     # ── City definitions ───────────────────────────────────────────────────────
     ARCHETYPE_CITIES = {
-        "🔴 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "No BK — 4 new BK stores (50% of 8 gap)",   "color": "#C62828"},
-        "🟠 Dhanbad, JH":     {"city": "Dhanbad",   "state": "Jharkhand",    "archetype": "No BK — 2 new BK stores (50% of 3 gap)",   "color": "#E65100"},
-        "🟡 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 3 new BK stores (80% of 3 gap)",   "color": "#F9A825"},
-        "🟡 Rourkela, OD":    {"city": "Rourkela",  "state": "Odisha",       "archetype": "No BK — 3 new BK stores (80% of 3 gap)",   "color": "#F9A825"},
-        "🔵 Agartala, TR":    {"city": "Agartala",  "state": "Tripura",      "archetype": "Existing Market (3 BK, saturated)",          "color": "#1565C0"},
-        "⚫ Cuttack, OD":     {"city": "Cuttack",   "state": "Odisha",       "archetype": "Existing Market (5 BK, saturated)",          "color": "#424242"},
+        "🔴 Ranchi, JH":      {"city": "Ranchi",    "state": "Jharkhand",    "archetype": "Heavy BK Presence (4 BK stores)",         "color": "#C62828"},
+        "🟡 Nagaon, AS":      {"city": "Nagaon",    "state": "Assam",        "archetype": "No BK, Market Saturated (0 gap)",          "color": "#F9A825"},
+        "🟢 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 4 new BK stores (80% of 4 gap)",   "color": "#2E7D32"},
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
     ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", ""))
