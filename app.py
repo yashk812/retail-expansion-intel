@@ -1156,8 +1156,8 @@ elif page == "🔍 City Explorer":
 
     # ── City definitions ───────────────────────────────────────────────────────
     ARCHETYPE_CITIES = {
-        "🔴 Ranchi, JH":      {"city": "Ranchi",    "state": "Jharkhand",    "archetype": "Heavy BK Presence (4 BK stores)",         "color": "#C62828"},
-        "🟡 Nagaon, AS":      {"city": "Nagaon",    "state": "Assam",        "archetype": "No BK, Market Saturated (0 gap)",          "color": "#F9A825"},
+        "🔴 Kanpur, UP":      {"city": "Kanpur",    "state": "Uttar Pradesh","archetype": "No BK — 4 new BK stores (50% of 8 gap)",   "color": "#C62828"},
+        "🟡 Rourkela, OD":    {"city": "Rourkela",  "state": "Odisha",       "archetype": "No BK — 3 new BK stores (80% of 3 gap)",   "color": "#F9A825"},
         "🟢 Gaya, BR":        {"city": "Gaya",      "state": "Bihar",        "archetype": "No BK — 4 new BK stores (80% of 4 gap)",   "color": "#2E7D32"},
     }
     COMPETITORS = ["CityKart","Yousta","StyleBaazar","V2 Retail","Zudio","mBaazar","Vmart"]
@@ -1250,7 +1250,7 @@ Rules for LOCATIONS_JSON:
 - List exactly {n_stores} locations
 - "area": short display name (e.g. "Hirapur Chowk")
 - "full_address": format MUST be "PINCODE, Locality, {city}, District, {state}, India" — pincode FIRST, then locality, city, district, state, India
-- "pincode": correct 6-digit PIN for that exact locality in {city}
+- "pincode": correct 6-digit PIN for that exact locality in {city} — use DIFFERENT pincodes for each recommendation where possible, to spread across the city
 - All locations must be within {city} city limits — verify the pincode belongs to {city}
 Keep response under 400 words total."""
 
@@ -1320,16 +1320,21 @@ Keep response under 400 words total."""
             # Fallback: fill remaining slots with competitor pincode centroids
             if len(pins) < n_stores and data["comp_pins"]:
                 comp_df_p = data["comp_df"].dropna(subset=["lat","lng"])
-                for j, pin in enumerate(data["comp_pins"]):
+                offsets = [(0,0),(0.008,0.008),(-0.008,0.008),(0.008,-0.008),(-0.008,-0.008),
+                           (0.015,0),(0,-0.015),(0.015,0.015),(-0.015,0)]
+                fallback_count = 0
+                for j, pin in enumerate((data["comp_pins"] * 3)[:n_stores]):
                     if len(pins) >= n_stores: break
                     pin_rows = comp_df_p[comp_df_p["pincode"] == pin]
                     if not pin_rows.empty:
+                        dlat, dlng = offsets[fallback_count % len(offsets)]
                         pins.append({
                             "area": f"PIN {pin} area",
                             "pincode": pin,
-                            "lat": pin_rows["lat"].mean(),
-                            "lng": pin_rows["lng"].mean() + 0.003 * (j % 2)
+                            "lat": round(pin_rows["lat"].mean() + dlat, 6),
+                            "lng": round(pin_rows["lng"].mean() + dlng, 6),
                         })
+                        fallback_count += 1
 
             st.session_state["ai_pins"][cache_key] = pins[:n_stores]
             return rec_text, pins[:n_stores]
