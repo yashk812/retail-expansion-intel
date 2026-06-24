@@ -541,6 +541,26 @@ if page == "🗺️ Store Map":
     folium.LayerControl(collapsed=False).add_to(m)
     st_folium(m, width="100%", height=620, returned_objects=[])
 
+    # ── Competitor breakdown bar chart ────────────────────────────────────────
+    st.markdown("---")
+    st.subheader("🏪 Store Breakdown by Company")
+    comp_counts = mdf.groupby("company").size().reset_index(name="stores").sort_values("stores", ascending=False)
+    comp_counts["color"] = comp_counts["company"].map(COMPANY_COLORS).fillna("#888888")
+    fig_comp = px.bar(
+        comp_counts, x="company", y="stores",
+        color="company",
+        color_discrete_map=COMPANY_COLORS,
+        labels={"company": "Company", "stores": "Number of Stores"},
+        text="stores",
+    )
+    fig_comp.update_traces(textposition="outside")
+    fig_comp.update_layout(
+        height=350, showlegend=False,
+        margin=dict(l=0, r=0, t=20, b=0),
+        xaxis_title=None,
+    )
+    st.plotly_chart(fig_comp, use_container_width=True)
+
     st.markdown("**Legend**")
     cols = st.columns(len(sel_companies))
     for i, co in enumerate(sel_companies):
@@ -1206,7 +1226,7 @@ elif page == "🔍 City Explorer":
             "comp_breakdown": comp_breakdown, "top_pins": top_pins, "comp_pins": comp_pins,
         }
 
-    # ── AI recommendation function ─────────────────────────────────────────────
+    # ── Tool recommendation function ─────────────────────────────────────────────
     def get_ai_recommendation(city, state, data, archetype):
         """Returns (text, list_of_pins) where pins = [{"area": str, "lat": float, "lng": float}]"""
         if "ai_recs" not in st.session_state:
@@ -1353,7 +1373,7 @@ Keep response under 400 words total."""
             help="Cities chosen to represent different BK penetration levels"
         )
     with col_mode:
-        mode = st.radio("Mode", ["🤖 Auto Recommend", "✏️ Manual Pin Drop"], horizontal=True)
+        mode = st.radio("Mode", ["🔧 Auto Recommend", "✏️ Manual Pin Drop"], horizontal=True)
 
     cfg  = ARCHETYPE_CITIES[selected_label]
     city = cfg["city"]; state = cfg["state"]; arch = cfg["archetype"]
@@ -1378,9 +1398,9 @@ Keep response under 400 words total."""
 
     # ── Pre-fetch AI pins before map renders (auto mode only) ─────────────────
     cache_key = f"{city}_{state}"
-    if mode == "🤖 Auto Recommend" and data["gap"] > 0:
+    if mode == "🔧 Auto Recommend" and data["gap"] > 0:
         if "ai_pins" not in st.session_state or cache_key not in st.session_state.get("ai_pins", {}):
-            with st.spinner(f"Generating AI recommendations for {city}... (~10 seconds)"):
+            with st.spinner(f"Generating recommendations for {city}... (~10 seconds)"):
                 _rec, _pins = get_ai_recommendation(city, state, data, arch)
             st.rerun()  # rerun so map renders with pins already in session state
 
@@ -1489,7 +1509,7 @@ Keep response under 400 words total."""
                     mime="text/html"
                 )
         else:
-            # Add proposed store pins from AI recommendation
+            # Add proposed store pins from Tool recommendation
             if data["gap"] > 0:
                 cache_key_map = f"{city}_{state}"
                 ai_pins_map = st.session_state.get("ai_pins", {}).get(cache_key_map, [])
@@ -1499,7 +1519,7 @@ Keep response under 400 words total."""
                         tooltip=f"📍 Proposed BK #{i+1}: {pin_info['area']}",
                         popup=folium.Popup(
                             f"<b style='color:#2E7D32'>📍 Proposed BK Store #{i+1}</b><br>"
-                            f"<b>{pin_info['area']}</b><br>AI-recommended location",
+                            f"<b>{pin_info['area']}</b><br>Tool-recommended location",
                             max_width=220
                         ),
                         icon=folium.Icon(color="green", icon="plus", prefix="fa")
@@ -1534,12 +1554,12 @@ Keep response under 400 words total."""
             "Recommended / Proposed": "",
         })
 
-    if mode == "🤖 Auto Recommend":
+    if mode == "🔧 Auto Recommend":
         ai_pins_t = st.session_state.get("ai_pins", {}).get(f"{city}_{state}", [])
         for pin_info in ai_pins_t:
             pin_rows.append({
                 "Pincode":                pin_info.get("pincode", "—"),
-                "Type":                   "📍 AI Recommended",
+                "Type":                   "📍 Tool Recommended",
                 "BK Stores":              0,
                 "Comp Stores":            0,
                 "Companies":              "",
@@ -1566,9 +1586,9 @@ Keep response under 400 words total."""
                      })
 
     # ── Auto recommendation ────────────────────────────────────────────────────
-    if mode == "🤖 Auto Recommend":
+    if mode == "🔧 Auto Recommend":
         st.markdown("---")
-        st.subheader("🤖 AI Expansion Recommendation")
+        st.subheader("🔧 Expansion Recommendation")
         if data["gap"] == 0:
             st.info(f"{city} is already at or above the recommended store count based on the state PS ratio. Focus on quality over quantity here.")
         else:
@@ -1578,7 +1598,7 @@ Keep response under 400 words total."""
             if rec_text:
                 st.markdown(rec_text)
                 if ai_pins:
-                    st.caption(f"📍 {len(ai_pins)} proposed store location(s) shown on map — AI recommended")
+                    st.caption(f"📍 {len(ai_pins)} proposed store location(s) shown on map — Tool recommended")
             if st.button("🔄 Regenerate", key="regen"):
                 if "ai_recs" in st.session_state and cache_key in st.session_state["ai_recs"]:
                     del st.session_state["ai_recs"][cache_key]
